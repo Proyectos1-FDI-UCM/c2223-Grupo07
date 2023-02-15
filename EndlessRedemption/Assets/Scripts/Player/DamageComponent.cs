@@ -6,15 +6,21 @@ public class DamageComponent : MonoBehaviour
 {
     // Start is called before the first frame update
     private AttackComponent _attack;
+    private Transform _myTransform;
+    private EnemyLifeComponent _enemyLife;
+    private Vector2 _empuje;
+    public float _fuerza = 0f;
+    public int _damage;
     public float _elapsedTime = 0.0001f;
     private float _time = 0f;
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemigo")
         {
-
-            Destroy(collision.gameObject);
-            
+            _enemyLife=collision.gameObject.GetComponent<EnemyLifeComponent>();
+            _enemyLife.vidasEnemy=_enemyLife.vidasEnemy - _damage;
+            _empuje = new Vector2(collision.gameObject.transform.position.x - _myTransform.position.x, collision.gameObject.transform.position.y - _myTransform.position.y);
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce( _empuje*_fuerza, ForceMode2D.Impulse);
         }
     }
    
@@ -22,6 +28,7 @@ public class DamageComponent : MonoBehaviour
     void Start()
     {
         _attack = GetComponentInParent<AttackComponent>();
+        _myTransform = transform;
     }
 
     // Update is called once per frame

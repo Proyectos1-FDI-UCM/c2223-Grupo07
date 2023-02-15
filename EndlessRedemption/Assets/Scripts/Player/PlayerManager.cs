@@ -2,14 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyLifeComponent : MonoBehaviour
+public class PlayerManager : MonoBehaviour
 {
-    [SerializeField]
-    public int vidasEnemy;
-
-    #region methods
-
-    #endregion
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +13,6 @@ public class EnemyLifeComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (vidasEnemy <= 0)
-        {
-            Destroy(gameObject);
-        }
+        
     }
 }

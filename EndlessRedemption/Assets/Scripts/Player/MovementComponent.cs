@@ -55,7 +55,7 @@ public class MovementComponent : MonoBehaviour
     //Impulso inicial del salto
     public void Jump()
     {
-        if (_jumps<2)
+        if (_jumps<1)
         {
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
             _rigidbody2D.AddForce(Vector2.up * _jumpForce , ForceMode2D.Impulse);

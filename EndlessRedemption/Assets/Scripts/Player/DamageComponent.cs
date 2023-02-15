@@ -13,7 +13,7 @@ public class DamageComponent : MonoBehaviour
         if (collision.gameObject.tag == "Enemigo")
         {
 
-            Destroy(collision.gameObject);
+          //  Destroy(collision.gameObject);
             
         }
     }

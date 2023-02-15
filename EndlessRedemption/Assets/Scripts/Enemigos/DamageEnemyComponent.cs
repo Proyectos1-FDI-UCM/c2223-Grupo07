@@ -11,7 +11,8 @@ public class DamageEnemyComponent : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<PlayerLifeComponent>())
         {
-            collision.gameObject.GetComponent<PlayerLifeComponent>().vidasPlayer-=_damage;           
+            PlayerManager.Instance.vidasPlayer-=_damage;
+            collision.gameObject.GetComponent<PlayerLifeComponent>().HitKnockBack(gameObject);
         }
     }
     void Start()

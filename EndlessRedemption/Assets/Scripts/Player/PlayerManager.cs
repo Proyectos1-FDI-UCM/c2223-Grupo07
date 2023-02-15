@@ -8,16 +8,20 @@ public class PlayerManager : MonoBehaviour
     public float _elapsedTime;
     public float _timeInvulnerable;
     private bool _invulnerable = false;
+    public int vidasPlayer = 3;
+
+    static private PlayerManager _instance;
+    static public PlayerManager Instance { get { return _instance; } }
 
     #region methods
 
-    public void Invulnerable()
-    {
-        _invulnerable = true;
-    }
 
     #endregion
 
+    void Awake()
+    {
+        _instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +38,7 @@ public class PlayerManager : MonoBehaviour
             if(_elapsedTime > _timeInvulnerable)
             {
                 gameObject.layer = 7;
+                _invulnerable = false;
             }
         }
     }

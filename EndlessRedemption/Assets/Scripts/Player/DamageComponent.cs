@@ -9,7 +9,7 @@ public class DamageComponent : MonoBehaviour
     private Transform _myTransform;
     private EnemyLifeComponent _enemyLife;
     private Vector2 _empuje;
-    public float _fuerza = 0f;
+    public float _fuerza;
     public int _damage;
     public float _elapsedTime = 0.0001f;
     private float _time = 0f;

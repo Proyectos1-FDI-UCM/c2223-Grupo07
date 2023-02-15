@@ -4382,7 +4382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 519420031}
-  _fuerza: 1.5
+  _fuerza: 1
 --- !u!114 &2001665867
 MonoBehaviour:
   m_ObjectHideFlags: 0

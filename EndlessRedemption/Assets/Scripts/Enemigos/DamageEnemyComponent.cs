@@ -13,6 +13,7 @@ public class DamageEnemyComponent : MonoBehaviour
         {
             PlayerManager.Instance.vidasPlayer-=_damage;
             collision.gameObject.GetComponent<PlayerLifeComponent>().HitKnockBack(gameObject);
+            PlayerManager.Instance.Invulnerable(2.0f);
         }
     }
     void Start()

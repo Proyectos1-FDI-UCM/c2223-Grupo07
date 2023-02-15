@@ -15,7 +15,11 @@ public class PlayerManager : MonoBehaviour
 
     #region methods
 
-
+    public void Invulnerable(float timeInvulnerable)
+    {
+        _invulnerable = true;
+        _timeInvulnerable = timeInvulnerable;
+    }
     #endregion
 
     void Awake()
@@ -39,6 +43,7 @@ public class PlayerManager : MonoBehaviour
             {
                 gameObject.layer = 7;
                 _invulnerable = false;
+                _elapsedTime = 0;
             }
         }
     }

@@ -111,11 +111,11 @@ public class MovementComponent : MonoBehaviour
         _animator.SetFloat("Horizontal", Mathf.Abs(_rigidbody2D.velocity.x));
         _animator.SetBool("OnGround", _onGround);
         _animator.SetBool("Dashing", _dashing);
-        if (_rigidbody2D.velocity.x > 0 && !_lookingRight)
+        if (_rigidbody2D.velocity.x > 1 && !_lookingRight)
         { 
             Girar(); 
         }
-        else if (_rigidbody2D.velocity.x < 0 && _lookingRight)
+        else if (_rigidbody2D.velocity.x < -1 && _lookingRight)
         {
             Girar();           
         }        

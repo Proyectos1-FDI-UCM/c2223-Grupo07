@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class IslandMovement : MonoBehaviour
 {
+    private enum IslandState {STOP , MOVING}
+    private IslandState _islandState;
     [SerializeField]
     float _movementSpeed;
     [SerializeField]
-    float timeMoving;
+    float _timeMoving;
     [SerializeField]
-    float timeStill;//How many time will it stay still until changing direction
+    float _timeStill;//How many time will it stay still until changing direction
     private float _elapsedTime;
     [SerializeField]
     bool _verticalMove;
@@ -19,6 +21,7 @@ public class IslandMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _islandState = IslandState.MOVING;
         _elapsedTime = 0;
     }
 
@@ -26,5 +29,18 @@ public class IslandMovement : MonoBehaviour
     void FixedUpdate()
     {
         _elapsedTime += Time.deltaTime;
+        if (_islandState == IslandState.MOVING && _elapsedTime < _timeMoving)
+        {
+            if (_verticalMove)
+            {
+                transform.position += new Vector3(0, _movementSpeed, 0);
+            }
+            else if (_horizontalMove)
+            {
+                transform.position += new Vector3(_movementSpeed, 0, 0);
+            }
+        }
+        else _islandState = IslandState.STOP;
+        
     }
 }

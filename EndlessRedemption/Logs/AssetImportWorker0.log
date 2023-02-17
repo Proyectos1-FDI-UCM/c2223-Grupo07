@@ -183,3 +183,27 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 72961.938075 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(ba4ca3d3801191641b309511f4692fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(ba4ca3d3801191641b309511f4692fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0cb42c10ae7285700c8a82fb2d981d') in 0.009498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.363765 seconds.
+  path: Assets/Scripts/Player
+  artifactKey: Guid(261277a46c871da409338affb225f3b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player using Guid(261277a46c871da409338affb225f3b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6283cfb8ff96159f4f3ad6964b179b8') in 0.006179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.274783 seconds.
+  path: Assets/Scripts/Player/PlayerLifeComponent.cs
+  artifactKey: Guid(0cf1b3622b7ffca4f931bc0986bb22c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PlayerLifeComponent.cs using Guid(0cf1b3622b7ffca4f931bc0986bb22c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f3f9ae7657ee6fa8a17446767ce2953') in 0.019987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.801727 seconds.
+  path: Assets/Scripts/Player/PlayerManager.cs
+  artifactKey: Guid(43f6443e446d5a847942873525de9f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PlayerManager.cs using Guid(43f6443e446d5a847942873525de9f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5466d28d20560fe20f9533eb7e039893') in 0.005769 seconds 

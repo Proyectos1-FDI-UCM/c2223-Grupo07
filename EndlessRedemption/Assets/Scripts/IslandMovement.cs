@@ -15,8 +15,7 @@ public class IslandMovement : MonoBehaviour
     private float _elapsedTime;
     [SerializeField]
     bool _verticalMove;
-    [SerializeField]
-    bool _horizontalMove;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -29,18 +28,36 @@ public class IslandMovement : MonoBehaviour
     void FixedUpdate()
     {
         _elapsedTime += Time.deltaTime;
-        if (_islandState == IslandState.MOVING && _elapsedTime < _timeMoving)
+        if (_islandState == IslandState.MOVING && _elapsedTime > _timeMoving)
         {
-            if (_verticalMove)
-            {
-                transform.position += new Vector3(0, _movementSpeed, 0);
-            }
-            else if (_horizontalMove)
-            {
-                transform.position += new Vector3(_movementSpeed, 0, 0);
-            }
+            _elapsedTime= 0;
+            ChangeState(IslandState.STOP);
         }
-        else _islandState = IslandState.STOP;
+        else if(_islandState == IslandState.STOP && _elapsedTime > _timeStill)
+        {
+            _elapsedTime= 0;
+            ChangeState(IslandState.MOVING);
+            _movementSpeed *= -1;
+        }
+        if(_islandState == IslandState.MOVING)
+        {
+            Move();
+        }
         
+    }
+    private void Move()
+    {
+        if (_verticalMove)
+        {
+            transform.position += new Vector3(0, _movementSpeed * Time.deltaTime);
+        }
+        else
+        {
+            transform.position += new Vector3(_movementSpeed * Time.deltaTime, 0);
+        }
+    }
+    private void ChangeState(IslandState newState) 
+    { 
+         _islandState = newState;
     }
 }

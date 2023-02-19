@@ -19,6 +19,7 @@ public class EnemyLifeComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (vidasEnemy <= 0)
         {
             Destroy(gameObject);

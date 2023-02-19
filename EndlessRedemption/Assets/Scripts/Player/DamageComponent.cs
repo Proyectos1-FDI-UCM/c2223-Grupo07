@@ -17,8 +17,8 @@ public class DamageComponent : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemigo")
         {
-            _enemyLife=collision.gameObject.GetComponent<EnemyLifeComponent>();
-            _enemyLife.vidasEnemy=_enemyLife.vidasEnemy - _damage;
+            _enemyLife = collision.gameObject.GetComponent<EnemyLifeComponent>();
+            _enemyLife.vidasEnemy =_enemyLife.vidasEnemy - _damage;
             _empuje = new Vector2(collision.gameObject.transform.position.x - _myTransform.position.x, collision.gameObject.transform.position.y - _myTransform.position.y);
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce( _empuje*_fuerza, ForceMode2D.Impulse);
         }
@@ -35,7 +35,7 @@ public class DamageComponent : MonoBehaviour
     void Update()
     {
         _time += Time.deltaTime;
-        if(_time> _elapsedTime )
+        if(_time > _elapsedTime )
         {
             _attack.EndOfAttack();
             Destroy(gameObject);

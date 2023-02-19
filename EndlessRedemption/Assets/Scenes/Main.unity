@@ -30021,7 +30021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _jumps: 0
   _jumpsAvailable: 1
-  _speed: 2000
+  _speed: 1500
   _maxSpeed: 7
   _jumpForce: 15
   _dashForce: 20

@@ -11,6 +11,7 @@ public class AttackComponent : MonoBehaviour
     [SerializeField]
     private GameObject _katana;
     private Animator _animator;
+    private MovementComponent _movementComponent;
 
     public bool _onAttack = false;
     public bool _onUpAttack = false;
@@ -26,10 +27,13 @@ public class AttackComponent : MonoBehaviour
     }
     public void DownAttack()
     {
-        _onDownAttack = true;
-        _animator.SetBool("DownAttack", _onDownAttack);
-        GameObject item = Instantiate(_katana, _myDownTransform.position, Quaternion.identity);
-        item.transform.parent = gameObject.transform;
+        if(!_movementComponent._onGround)
+        {
+            _onDownAttack = true;
+            _animator.SetBool("DownAttack", _onDownAttack);
+            GameObject item = Instantiate(_katana, _myDownTransform.position, Quaternion.identity);
+            item.transform.parent = gameObject.transform;
+        }       
     }
 
     public void HorizontalAttack()
@@ -50,6 +54,7 @@ public class AttackComponent : MonoBehaviour
     }
     void Start()
     {
+        _movementComponent = FindObjectOfType<MovementComponent>();
         _myTransform = gameObject.transform.GetChild(3);
         _animator = GetComponentInParent<Animator>();
         _myUpTransform = gameObject.transform.GetChild(4);

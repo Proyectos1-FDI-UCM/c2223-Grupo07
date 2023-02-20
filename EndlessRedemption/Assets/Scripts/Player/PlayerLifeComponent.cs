@@ -11,7 +11,7 @@ public class PlayerLifeComponent : MonoBehaviour
 
     private Transform _myTransform;
     private Vector2 _empuje;
-    private float _fuerza;
+    public float _fuerza;
     private Rigidbody2D _rb2D;
 
     #region methods

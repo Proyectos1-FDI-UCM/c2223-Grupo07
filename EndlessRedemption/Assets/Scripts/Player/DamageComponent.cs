@@ -9,7 +9,7 @@ public class DamageComponent : MonoBehaviour
     private Transform _myTransform;
     private EnemyLifeComponent _enemyLife;
     private Vector2 _empuje;
-    public float _fuerzaEmpuje;
+    public float _fuerza;
     public int _damage;
     public float _elapsedTime = 0.0001f;
     private float _time = 0f;
@@ -20,7 +20,7 @@ public class DamageComponent : MonoBehaviour
             _enemyLife = collision.gameObject.GetComponent<EnemyLifeComponent>();
             _enemyLife.vidasEnemy =_enemyLife.vidasEnemy - _damage;
             _empuje = new Vector2(collision.gameObject.transform.position.x - _myTransform.position.x, collision.gameObject.transform.position.y - _myTransform.position.y);
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce( _empuje*_fuerzaEmpuje, ForceMode2D.Impulse);
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce( _empuje*_fuerza, ForceMode2D.Impulse);
         }
     }
    

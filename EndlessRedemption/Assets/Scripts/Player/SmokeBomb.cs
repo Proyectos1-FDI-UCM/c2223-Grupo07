@@ -50,12 +50,13 @@ public class SmokeBomb : MonoBehaviour
             _smokeActive = false;
             _elapsedTime = 0;           
         }
+        _animator.SetBool("Smoke", _smokeActive);
     }
     public void ActivateSmoke()
     {
         if(_smokeAvailable && !_smokeActive)
         {
-            PlayerManager.Instance.Invulnerable(_smokeTime);
+           
             _instanced =  Instantiate(_bomb, transform.position, new Quaternion (0,0,0,1));
             _smokeActive = true;
         }

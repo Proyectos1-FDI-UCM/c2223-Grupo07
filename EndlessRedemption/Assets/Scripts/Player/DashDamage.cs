@@ -8,10 +8,6 @@ public class DashDamage : MonoBehaviour
     [SerializeField]
     private Transform _playerTransform;   
     private float _dashDamagePosition;
-    private EnemyLifeComponent _enemyLife;
-    private Vector2 _empuje;
-    public float _fuerzaEmpuje;
-    public int _damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,21 +20,6 @@ public class DashDamage : MonoBehaviour
     {
         
     }
-    
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (_movementComponent._dashing)
-        {
-            if(other.gameObject.tag == "Enemigo")
-            {
-                _enemyLife = other.gameObject.GetComponent<EnemyLifeComponent>();
-                _enemyLife.vidasEnemy = _enemyLife.vidasEnemy - _damage;
-                _empuje = new Vector2(other.gameObject.transform.position.x - _playerTransform.position.x, other.gameObject.transform.position.y - _playerTransform.position.y);
-                other.gameObject.GetComponent<Rigidbody2D>().AddForce(_empuje * _fuerzaEmpuje, ForceMode2D.Impulse);
-            }
-        }
-    }
-
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (_movementComponent._dashing && !_movementComponent._dashAvailable)

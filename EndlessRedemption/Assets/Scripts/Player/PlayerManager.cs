@@ -9,8 +9,6 @@ public class PlayerManager : MonoBehaviour
     public float _timeInvulnerable;
     private bool _invulnerable = false;
     public int vidasPlayer = 3;
-    [Header("Animation")]
-    private Animator _animator;
 
     static private PlayerManager _instance;
     static public PlayerManager Instance { get { return _instance; } }
@@ -32,20 +30,18 @@ public class PlayerManager : MonoBehaviour
     void Start()
     {
         _myTransform= transform;
-        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        _animator.SetBool("Smoke", _invulnerable);
         if (_invulnerable)
         {
             gameObject.layer = 8;
             _elapsedTime += Time.deltaTime;
             if(_elapsedTime > _timeInvulnerable)
             {
-                gameObject.layer = 3;
+                gameObject.layer = 7;
                 _invulnerable = false;
                 _elapsedTime = 0;
             }

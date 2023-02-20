@@ -113,7 +113,7 @@ public class MovementComponent : MonoBehaviour
         _distanceToReach = 0.5f;
         _lookingRight = true;
         _animator = GetComponent<Animator>();
-        _dashDamage = GetComponentInChildren<DashDamage>();
+        _dashDamage = FindObjectOfType<DashDamage>();
         _dashCoolDown = false;
         
        

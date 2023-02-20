@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class DamageComponent : MonoBehaviour
 {
-    // Start is called before the first frame update
+    #region references
     private AttackComponent _attack;
     private Transform _myTransform;
     private EnemyLifeComponent _enemyLife;
+    #endregion
+
+    #region properties
     private Vector2 _empuje;
     public float _fuerza;
     public int _damage;
     public float _elapsedTime = 0.00000000001f;
     private float _time = 0f;
+    #endregion
+
+
+    #region methods
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemigo")
@@ -23,8 +30,9 @@ public class DamageComponent : MonoBehaviour
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce( _empuje*_fuerza, ForceMode2D.Impulse);
         }
     }
-   
+    #endregion
 
+    // Start is called before the first frame update
     void Start()
     {
         _attack = GetComponentInParent<AttackComponent>();

@@ -6,8 +6,6 @@ public class EnemyDetectionComponent : MonoBehaviour
 {
     [SerializeField]
     private float _enemySpeed = 1f;
-    [SerializeField]
-    private float _detectionDistance = 5f;
     public bool _attacking;
     public bool _directionRight;
     private Transform _playerTransform;
@@ -26,7 +24,7 @@ public class EnemyDetectionComponent : MonoBehaviour
         {
             _vectorDirection = _playerTransform.position - transform.position;
             _vectorDirection.Normalize();
-            if (_playerTransform.position.x - transform.position.x < _detectionDistance)
+            if (_playerTransform.position.x - transform.position.x < EnemyManager.Instance._detectionDistance)
             {
                 _attacking = true;
                 transform.Translate(_vectorDirection * Time.fixedDeltaTime * _enemySpeed);

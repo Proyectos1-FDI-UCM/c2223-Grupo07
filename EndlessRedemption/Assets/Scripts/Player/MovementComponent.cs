@@ -94,9 +94,6 @@ public class MovementComponent : MonoBehaviour
 
         }
     }
-   
-   
-
 
     #endregion
     // Start is called before the first frame update
@@ -169,7 +166,4 @@ public class MovementComponent : MonoBehaviour
         transform.localScale = scale;
         
     }
-    // Update is called once per frame
-
-
 }

@@ -4,21 +4,15 @@ using UnityEngine;
 
 public class Dash : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private void OnCollisionEnter2D(Collision2D collision)
+    #region methods
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("e");
-        collision.gameObject.GetComponent<MovementComponent>()._dashPickUp=true;
-        Destroy(gameObject);
+        if (collider.gameObject.GetComponent<PlayerManager>())//Si lo coge el jugador solo, para que no triggeree con elementos de la escena
+        {
+            collider.gameObject.GetComponent<MovementComponent>()._dashPickUp = true;
+            Destroy(gameObject);
+            Debug.Log("Dash recogido");
+        }
     }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    #endregion
 }

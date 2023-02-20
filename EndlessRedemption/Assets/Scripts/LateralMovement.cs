@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IslandMovement : MonoBehaviour
+public class LateralMovement : MonoBehaviour
 {
     private enum IslandState {STOP , MOVING}
     private IslandState _islandState;

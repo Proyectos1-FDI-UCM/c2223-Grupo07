@@ -40,17 +40,18 @@ public class SmokeBomb : MonoBehaviour
             _cooldownElapsed = 0;
             _smokeAvailable = true;
         }
-        if(_elapsedTime > 0.5)
-        {
-            Destroy(_instanced);
-        }
+        
         if(_elapsedTime > _smokeTime)
         {
             _smokeAvailable = false;
             _smokeActive = false;
             _elapsedTime = 0;           
         }
-        
+        if (_elapsedTime > 0.5)
+        {
+            Destroy(_instanced);
+        }
+
     }
     public void ActivateSmoke()
     {

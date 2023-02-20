@@ -23,11 +23,16 @@ public class MovementComponent : MonoBehaviour
     private float _jumpForce;
     [SerializeField]
     private float _dashForce;
+    [SerializeField]
+    private float _cooldown;
+    private float _cooldownElapsed;
+    
     [HideInInspector]
     public bool _onGround;
     public bool _dashAvailable;
     public bool _dashing;
     public bool _dashPickUp = false;
+    private bool _dashCoolDown;
     private bool _lookingRight;
     [Header("Animation")]
     private Animator _animator;
@@ -66,8 +71,9 @@ public class MovementComponent : MonoBehaviour
     }
     public void Dash()
     {
-        if (_dashPickUp)
+        if (_dashPickUp && !_dashCoolDown)
         {
+            _dashCoolDown = true;
             if (_dashAvailable)
             {
                 _inputComponent.enabled = false;
@@ -108,11 +114,21 @@ public class MovementComponent : MonoBehaviour
         _lookingRight = true;
         _animator = GetComponent<Animator>();
         _dashDamage = GetComponentInChildren<DashDamage>();
+        _dashCoolDown = false;
         
        
     }
     private void Update()
     {
+        if(_dashCoolDown)
+        {           
+            _cooldownElapsed += Time.deltaTime;
+        }
+        if(_cooldownElapsed > _cooldown)
+        {
+            _cooldownElapsed = 0;
+            _dashCoolDown = false;
+        }
         _animator.SetFloat("Horizontal", Mathf.Abs(_rigidbody2D.velocity.x));
         _animator.SetBool("OnGround", _onGround);
         _animator.SetBool("Dashing", _dashing);
@@ -138,9 +154,10 @@ public class MovementComponent : MonoBehaviour
             {
                 _rigidbody2D.AddForce(Vector2.right * (_dashForce- _maxSpeed), ForceMode2D.Impulse);
             }
-            _reachPosition = new Vector3(0, 0, 0);
+           
                 _inputComponent.enabled = true;
-            }       
+            }
+        
     }
     private void Girar ()
     {

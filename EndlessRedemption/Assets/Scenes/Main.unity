@@ -9360,7 +9360,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318423391}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 67.79, y: 40.82, z: -0.25669098}
+  m_LocalPosition: {x: 66.3, y: 40.82, z: -0.25669098}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9817,7 +9817,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 191326, guid: b046278bb9b6e104790392b566667ba5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 465656, guid: b046278bb9b6e104790392b566667ba5, type: 3}
       propertyPath: m_RootOrder
@@ -10002,7 +10002,7 @@ MonoBehaviour:
   Size: 1
   HorizontalSpeed: 0.2
   VerticalSpeed: 0
-  Density: 1.01
+  Density: 1.33
   Shader: {fileID: 4800000, guid: 00e888b8dfe2842c1a10e04b2d083b64, type: 3}
 --- !u!1 &551802268
 GameObject:
@@ -30828,6 +30828,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerTransform: {fileID: 2001665862}
+  _fuerzaEmpuje: 0
+  _damage: 0
 --- !u!61 &1724437426
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31916,7 +31918,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001665856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 187.8, y: 26.7, z: 0}
+  m_LocalPosition: {x: 188.74, y: 26.1, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -48,19 +48,19 @@ public class InputComponent : MonoBehaviour
         {
             _smokeBomb.ActivateSmoke();
         }
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             _attack.HorizontalAttack();
           
             
         }
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             _attack.UpAttack();
 
 
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             _attack.DownAttack();
 

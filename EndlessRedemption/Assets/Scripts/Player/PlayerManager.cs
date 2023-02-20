@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    private Animator _animator;
     private Transform _myTransform;
     public float _elapsedTime;
     public float _timeInvulnerable;
@@ -30,11 +31,13 @@ public class PlayerManager : MonoBehaviour
     void Start()
     {
         _myTransform= transform;
+        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        _animator.SetBool("Smoke", _invulnerable);
         if (_invulnerable)
         {
             gameObject.layer = 8;

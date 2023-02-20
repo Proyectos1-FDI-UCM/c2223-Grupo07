@@ -42,15 +42,17 @@ public class AttackComponent : MonoBehaviour
         _animator.SetBool("Attack", _onAttack);
         GameObject item= Instantiate(_katana, _myTransform.position,Quaternion.identity);
         item.transform.parent = gameObject.transform;
+        
     }
     public void EndOfAttack()
-    {
+    {     
         _onAttack = false;
         _animator.SetBool("Attack", _onAttack);
         _onUpAttack = false;
         _animator.SetBool("UpAttack", _onUpAttack);
         _onDownAttack = false;
-        _animator.SetBool("DownAttack", _onUpAttack);
+        _animator.SetBool("DownAttack", _onDownAttack);
+
     }
     void Start()
     {
@@ -64,5 +66,6 @@ public class AttackComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
     }
 }

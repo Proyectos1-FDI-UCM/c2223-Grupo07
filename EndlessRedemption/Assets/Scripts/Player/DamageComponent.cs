@@ -11,7 +11,7 @@ public class DamageComponent : MonoBehaviour
     private Vector2 _empuje;
     public float _fuerza;
     public int _damage;
-    public float _elapsedTime = 0.0001f;
+    public float _elapsedTime = 0.00000000001f;
     private float _time = 0f;
     void OnCollisionEnter2D(Collision2D collision)
     {

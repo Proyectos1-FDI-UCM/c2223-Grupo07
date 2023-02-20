@@ -48,7 +48,7 @@ public class InputComponent : MonoBehaviour
         {
             _smokeBomb.ActivateSmoke();
         }
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             _attack.HorizontalAttack();
           

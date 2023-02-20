@@ -17,7 +17,6 @@ public class DamageComponent : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemigo")
         {
-            Debug.Log(_enemyLife.vidasEnemy);
             _enemyLife = collision.gameObject.GetComponent<EnemyLifeComponent>();
             _enemyLife.vidasEnemy =_enemyLife.vidasEnemy - _damage;
             _empuje = new Vector2(collision.gameObject.transform.position.x - _myTransform.position.x, collision.gameObject.transform.position.y - _myTransform.position.y);

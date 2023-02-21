@@ -19,6 +19,7 @@ public class EnemyManager : MonoBehaviour
     [SerializeField]
     public float _detectionDistance = 5f; //Distancia a la que detecta al jugador
     public float _appearingDistance; //Distancia a la que aparece del suelo
+    private int aparecido = 0;  //Para que solo aparezca una vez
     #endregion
 
     void Awake()
@@ -32,11 +33,24 @@ public class EnemyManager : MonoBehaviour
         _myEnemyDetection = GetComponent<EnemyDetectionComponent>();
         _cameraComponent = PlayerManager.Instance._cameraComponent;
         _myLateralMovement = GetComponent<LateralMovement>();
+        _myEnemyDetection.enabled = false;
+        _myLateralMovement.enabled = false;
+        _playerTransform = PlayerManager.Instance.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(Mathf.Abs(_playerTransform.position.x - transform.position.x) < _appearingDistance && Mathf.Abs(_playerTransform.position.x - transform.position.x) > _detectionDistance)
+        {
+            _myLateralMovement.enabled = true;
+            aparecido++;
+        }
+
+        if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _detectionDistance)
+        {
+            _myEnemyDetection.enabled = true;
+        }else _myEnemyDetection.enabled = false;
+
     }
 }

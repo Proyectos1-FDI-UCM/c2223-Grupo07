@@ -26095,7 +26095,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430315814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 191.47, y: -20.9, z: 0}
+  m_LocalPosition: {x: 203.36, y: -23.45, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26177,7 +26177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemySpeed: 1
-  _detectionDistance: 5
   _attacking: 0
   _directionRight: 0
 --- !u!1 &1462612583
@@ -28402,6 +28401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f6443e446d5a847942873525de9f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _camera: {fileID: 519420031}
+  _cameraComponent: {fileID: 0}
   _fuerza: 0
   _elapsedTime: 0
   _timeInvulnerable: 2
@@ -28418,7 +28419,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cf1b3622b7ffca4f931bc0986bb22c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 519420031}
 --- !u!1 &2005606631
 GameObject:
   m_ObjectHideFlags: 0

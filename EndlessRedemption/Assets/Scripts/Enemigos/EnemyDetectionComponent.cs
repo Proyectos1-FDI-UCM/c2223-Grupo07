@@ -9,7 +9,7 @@ public class EnemyDetectionComponent : MonoBehaviour
     public bool _attacking;
     public bool _directionRight;
     private Transform _playerTransform;
-    private Vector3 _vectorDirection;
+    private Vector2 _vectorDirection;
 
     private void Start()
     {
@@ -24,12 +24,16 @@ public class EnemyDetectionComponent : MonoBehaviour
         {
             _vectorDirection = _playerTransform.position - transform.position;
             _vectorDirection.Normalize();
-            if (_playerTransform.position.x - transform.position.x < EnemyManager.Instance._detectionDistance)
+            if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < EnemyManager.Instance._detectionDistance)
             {
                 _attacking = true;
                 transform.Translate(_vectorDirection * Time.fixedDeltaTime * _enemySpeed);
+                GetComponent<LateralMovement>().enabled = false;
             }
-            else _attacking = false;
+            else
+            {
+                _attacking = false;
+            }
             if (_vectorDirection.x > 0)
             {
                 _directionRight = true;

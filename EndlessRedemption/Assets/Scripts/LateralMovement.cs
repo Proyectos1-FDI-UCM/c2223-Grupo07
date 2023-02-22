@@ -49,7 +49,8 @@ public class LateralMovement : MonoBehaviour
         }
         if(_islandState == IslandState.MOVING)
         {
-            Move();
+             Move();
+            
         }
         
     }
@@ -61,14 +62,18 @@ public class LateralMovement : MonoBehaviour
         }
         else
         {
-            if (_movementSpeed > 0 && transform.localScale.x > 0)
+            if(GetComponent<EnemyManager>() != null) 
             {
-                _enemyManager.Girar();
+                if (_movementSpeed > 0 && transform.localScale.x > 0)
+                {
+                    _enemyManager.Girar();
+                }
+                if (_movementSpeed < 0 && transform.localScale.x < 0)
+                {
+                    _enemyManager.Girar();
+                }
             }
-            if (_movementSpeed < 0 && transform.localScale.x < 0)
-            {
-                _enemyManager.Girar();
-            }
+           
 
             transform.position += new Vector3(_movementSpeed * Time.deltaTime, 0);
          

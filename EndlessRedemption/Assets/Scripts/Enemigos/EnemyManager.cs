@@ -68,25 +68,37 @@ public class EnemyManager : MonoBehaviour
         _myEnemyDetection.enabled = false;
         _myLateralMovement.enabled = false;
         _playerTransform = PlayerManager.Instance.transform;
-        GetComponent<Renderer>().enabled = false;
+        if(GetComponent<BabyDragonComponent>() == null )
+        {
+            GetComponent<Renderer>().enabled = false;
+        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _appearingDistance && Mathf.Abs(_playerTransform.position.x - transform.position.x) > _detectionDistance)
+        if(PlayerManager.Instance != null)
         {
-            GetComponent<Renderer>().enabled = true;
-            Appearing();
-            _elapsedTime += Time.deltaTime;
-            if (_elapsedTime > _appearingTime)
-            {
-                EndOfAppearing();
-            }
-            _myLateralMovement.enabled = true;
-            aparecido++;
+            _playerTransform = PlayerManager.Instance.transform;
         }
+        
+        if (GetComponent<BabyDragonComponent>() == null)
+        {
+            if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _appearingDistance && Mathf.Abs(_playerTransform.position.x - transform.position.x) > _detectionDistance)
+            {
+                GetComponent<Renderer>().enabled = true;
+                Appearing();
+                _elapsedTime += Time.deltaTime;
+                if (_elapsedTime > _appearingTime)
+                {
+                    EndOfAppearing();
+                }
+                _myLateralMovement.enabled = true;
+                aparecido++;
+            }
+        }
+        
         if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _detectionDistance)
         {
             _myLateralMovement.enabled = false;

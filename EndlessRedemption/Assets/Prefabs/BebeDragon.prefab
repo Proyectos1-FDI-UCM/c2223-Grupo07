@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 8420716314514321814}
   - component: {fileID: 8420716314514321903}
   - component: {fileID: 8420716314514321902}
+  - component: {fileID: -2844702400907703774}
+  - component: {fileID: -1926299955471291575}
   m_Layer: 7
   m_Name: BebeDragon
   m_TagString: Enemigo
@@ -153,7 +155,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemySpeed: 1
-  _detectionDistance: 7
   _attacking: 0
   _directionRight: 0
 --- !u!114 &8420716314514321814
@@ -202,3 +203,35 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-2844702400907703774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420716314514321815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a08355acc6e58540824664e7340a66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _detectionDistance: 10
+  _appearingDistance: 12
+  _onAppearing: 0
+  _lookingRight: 1
+--- !u!114 &-1926299955471291575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420716314514321815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2908c12335dfcdb4f90d8e10f7975152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movementSpeed: 1
+  _timeMoving: 1
+  _timeStill: 0
+  _verticalMove: 0

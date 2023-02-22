@@ -6,6 +6,7 @@ public class LateralMovement : MonoBehaviour
 {
     private enum IslandState {STOP , MOVING}
     private IslandState _islandState;
+    private EnemyManager _enemyManager;
     [SerializeField]
     float _movementSpeed;
     [SerializeField]
@@ -18,9 +19,11 @@ public class LateralMovement : MonoBehaviour
     
 
     // Start is called before the first frame update
+    
     void Start()
     {
         _islandState = IslandState.MOVING;
+        _enemyManager = GetComponent<EnemyManager>();
         _elapsedTime = 0;
     }
 
@@ -31,11 +34,16 @@ public class LateralMovement : MonoBehaviour
         if (_islandState == IslandState.MOVING && _elapsedTime > _timeMoving)
         {
             _elapsedTime= 0;
+
+            
             ChangeState(IslandState.STOP);
+            
         }
         else if(_islandState == IslandState.STOP && _elapsedTime > _timeStill)
         {
             _elapsedTime= 0;
+
+            
             ChangeState(IslandState.MOVING);
             _movementSpeed *= -1;
         }
@@ -53,7 +61,17 @@ public class LateralMovement : MonoBehaviour
         }
         else
         {
+            if (_movementSpeed > 0 && transform.localScale.x > 0)
+            {
+                _enemyManager.Girar();
+            }
+            if (_movementSpeed < 0 && transform.localScale.x < 0)
+            {
+                _enemyManager.Girar();
+            }
+
             transform.position += new Vector3(_movementSpeed * Time.deltaTime, 0);
+         
         }
     }
     private void ChangeState(IslandState newState) 

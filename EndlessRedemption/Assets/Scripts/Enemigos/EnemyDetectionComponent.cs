@@ -10,12 +10,16 @@ public class EnemyDetectionComponent : MonoBehaviour
     public bool _directionRight;
     private Transform _playerTransform;
     private Vector2 _vectorDirection;
+    private EnemyManager _enemyManager;
+    
+
 
     private void Start()
     {
         _directionRight = false;
         _attacking = false;
         _playerTransform = PlayerManager.Instance.transform;
+        _enemyManager = GetComponent<EnemyManager>();
     }
     // Update is called once per frame
     void Update()
@@ -26,19 +30,30 @@ public class EnemyDetectionComponent : MonoBehaviour
             _vectorDirection.Normalize();
             if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < EnemyManager.Instance._detectionDistance)
             {
+                GetComponent<LateralMovement>().enabled = false;
                 _attacking = true;
                 transform.Translate(_vectorDirection * Time.fixedDeltaTime * _enemySpeed);
-                GetComponent<LateralMovement>().enabled = false;
+                
             }
             else
             {
                 _attacking = false;
             }
-            if (_vectorDirection.x > 0)
+            if (_vectorDirection.x > 0&& _playerTransform.localScale.x<0)
             {
-                _directionRight = true;
+                
+                _enemyManager.Girar();
+                
             }
-            else _directionRight = false;
+            if (_vectorDirection.x < 0 && _playerTransform.localScale.x > 0)
+            {
+                
+                _enemyManager.Girar();
+                
+            }
+
+            
+          
         }
         
 

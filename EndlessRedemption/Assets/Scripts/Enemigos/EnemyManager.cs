@@ -22,12 +22,24 @@ public class EnemyManager : MonoBehaviour
     public float _appearingDistance; //Distancia a la que aparece del suelo
     private int aparecido = 0;  //Para que solo aparezca una vez
     public bool _onAppearing = false;
+    public bool _lookingRight = true;
     private float _elapsedTime = 0f;
     private float _appearingTime = 1f;
     #endregion
 
     #region methods 
 
+    public void Girar()
+    {
+      
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
+            
+        
+    }
+   
+ 
     public void Appearing()
     {
         _onAppearing=true;
@@ -49,6 +61,7 @@ public class EnemyManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _animator = GetComponent<Animator>();
         _myEnemyDetection = GetComponent<EnemyDetectionComponent>();
         _cameraComponent = PlayerManager.Instance._cameraComponent;
         _myLateralMovement = GetComponent<LateralMovement>();
@@ -76,8 +89,16 @@ public class EnemyManager : MonoBehaviour
         }
         if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _detectionDistance)
         {
+            _myLateralMovement.enabled = false;
             _myEnemyDetection.enabled = true;
-        }else _myEnemyDetection.enabled = false;
 
+        }
+        else
+        {
+            _myEnemyDetection.enabled = false;
+            _myLateralMovement.enabled = true;
+        }
+     
+        
     }
 }

@@ -9160,6 +9160,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 135457631513103552, guid: 72ed2e8173487f2488c21d746f405879, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4924516023139892899, guid: 72ed2e8173487f2488c21d746f405879, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -26340,7 +26344,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemySpeed: 0.7
-  _detectionDistance: 5
   _attacking: 0
   _directionRight: 0
 --- !u!1 &1462612583
@@ -27759,6 +27762,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 647232823417833768, guid: bc2f85d238753cd4bbb4f3ee70ea4df3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4969443289301567226, guid: bc2f85d238753cd4bbb4f3ee70ea4df3, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -28518,6 +28525,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f6443e446d5a847942873525de9f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _camera: {fileID: 0}
+  _cameraComponent: {fileID: 0}
+  _fuerza: 0
   _elapsedTime: 0
   _timeInvulnerable: 2
   vidasPlayer: 10
@@ -28533,8 +28543,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cf1b3622b7ffca4f931bc0986bb22c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 519420031}
-  _fuerza: 1.5
 --- !u!1 &2005606631
 GameObject:
   m_ObjectHideFlags: 0

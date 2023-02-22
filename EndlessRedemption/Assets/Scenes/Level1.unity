@@ -670,7 +670,7 @@ GameObject:
   - component: {fileID: 64433513}
   - component: {fileID: 64433512}
   - component: {fileID: 64433511}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Feet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9120,7 +9120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 287474625}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: KatanaDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9262,7 +9262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 293333858}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Katana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10047,7 +10047,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 558743238}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: KatanaUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11468,7 +11468,7 @@ GameObject:
   - component: {fileID: 1063128521}
   - component: {fileID: 1063128520}
   - component: {fileID: 1063128519}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: DashDetection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11613,6 +11613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _checkPoints: []
+  _lifes: 1
   _maxLifes: 10
 --- !u!4 &1072419575
 Transform:
@@ -36224,7 +36225,7 @@ GameObject:
   - component: {fileID: 1724437427}
   - component: {fileID: 1724437426}
   - component: {fileID: 1724437425}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: DashHitDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37211,9 +37212,9 @@ GameObject:
   - component: {fileID: 2001665863}
   - component: {fileID: 2001665864}
   - component: {fileID: 2001665865}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

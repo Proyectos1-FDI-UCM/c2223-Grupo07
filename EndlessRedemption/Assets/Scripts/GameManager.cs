@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     private int _currentScene;
     [SerializeField]
     private Transform[] _checkPoints; //Array con los checkpoints, cada escena tiene los suyos
+    [SerializeField]
     private float _lifes;
     private float _currenShurikens;
     private float _maxShurikens; //Depende de la dificultad de la partida
@@ -31,6 +32,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         _currentScene = PlayerPrefs.GetInt("LevelX");
+        _currentState = GameStates.GAME;
     }
     public void WinLife()
     {

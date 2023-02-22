@@ -6,7 +6,7 @@ public class PlayerLifeComponent : MonoBehaviour
 {
     #region references
     private CameraComponent _cameraComponent;
-    private GameManager _gameManager;
+   
     
     #endregion
 
@@ -14,7 +14,7 @@ public class PlayerLifeComponent : MonoBehaviour
     void Start()
     {
 
-        _gameManager = GameManager.Instance;
+       
         _cameraComponent = PlayerManager.Instance._cameraComponent; 
     }
 

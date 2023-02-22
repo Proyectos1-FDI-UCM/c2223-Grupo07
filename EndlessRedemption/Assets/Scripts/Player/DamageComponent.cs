@@ -20,14 +20,15 @@ public class DamageComponent : MonoBehaviour
 
 
     #region methods
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Enemigo")
-        {
+    private void OnTriggerEnter2D(Collider2D collision)
+    {     
+        if (collision.gameObject.GetComponent<EnemyLifeComponent>())
+        {           
             _enemyLife = collision.gameObject.GetComponent<EnemyLifeComponent>();
             _enemyLife.vidasEnemy =_enemyLife.vidasEnemy - _damage;
-            _empuje = new Vector2(collision.gameObject.transform.position.x - _myTransform.position.x, collision.gameObject.transform.position.y - _myTransform.position.y);
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce( _empuje*_fuerza, ForceMode2D.Impulse);
+            _empuje = new Vector3(collision.gameObject.transform.position.x - _myTransform.position.x, collision.gameObject.transform.position.y - _myTransform.position.y);
+            _empuje.Normalize();
+            
         }
     }
     #endregion

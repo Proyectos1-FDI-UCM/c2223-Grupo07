@@ -75,7 +75,7 @@ public class EnemyManager : MonoBehaviour
     void Update()
     {
 
-        if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _appearingDistance && Mathf.Abs(_playerTransform.position.x - transform.position.x) > _detectionDistance)
+        if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _appearingDistance && Mathf.Abs(_playerTransform.position.y - transform.position.y) < _appearingDistance)
         {
             GetComponent<Renderer>().enabled = true;
             Appearing();
@@ -83,17 +83,18 @@ public class EnemyManager : MonoBehaviour
             if (_elapsedTime > _appearingTime)
             {
                 EndOfAppearing();
+                aparecido++;
             }
-            _myLateralMovement.enabled = true;
-            aparecido++;
+            
+            
         }
-        if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _detectionDistance)
+        if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _detectionDistance&&aparecido==1)
         {
             _myLateralMovement.enabled = false;
             _myEnemyDetection.enabled = true;
 
         }
-        else
+        if (Mathf.Abs(_playerTransform.position.x - transform.position.x) > _detectionDistance && aparecido == 1)
         {
             _myEnemyDetection.enabled = false;
             _myLateralMovement.enabled = true;

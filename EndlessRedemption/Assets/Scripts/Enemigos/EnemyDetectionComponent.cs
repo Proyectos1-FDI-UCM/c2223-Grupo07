@@ -39,13 +39,13 @@ public class EnemyDetectionComponent : MonoBehaviour
             {
                 _attacking = false;
             }
-            if (_vectorDirection.x > 0&& _playerTransform.localScale.x<0)
+            if (_vectorDirection.x > 0&& transform.localScale.x>0)
             {
                 
                 _enemyManager.Girar();
                 
             }
-            if (_vectorDirection.x < 0 && _playerTransform.localScale.x > 0)
+            if (_vectorDirection.x < 0 && transform.localScale.x < 0)
             {
                 
                 _enemyManager.Girar();

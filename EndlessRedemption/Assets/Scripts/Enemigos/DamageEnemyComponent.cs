@@ -13,10 +13,10 @@ public class DamageEnemyComponent : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.GetComponent<PlayerLifeComponent>())
+        if (collision.gameObject.GetComponent<PlayerManager>())
         {
            
-            PlayerManager.Instance.vidasPlayer-=_damage; //Dañar al player si choca con el
+            GameManager.Instance.LoseLife(); //Dañar al player si choca con el
             PlayerManager.Instance.Invulnerable(2.0f); //Player se vuelve invulnerable durante dos segundos
             Debug.Log("Vidas: " + PlayerManager.Instance.vidasPlayer);
             GameManager.Instance.LoseLife();

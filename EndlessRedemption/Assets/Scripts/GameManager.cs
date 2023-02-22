@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     private int _currentScene;
     [SerializeField]
     private Transform[] _checkPoints; //Array con los checkpoints, cada escena tiene los suyos
+    public int _currentCheckpoint;
     [SerializeField]
     private float _lifes;
     private float _currenShurikens;
@@ -27,10 +28,11 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         _instance = this;
-        
     }
     void Start()
     {
+        Debug.Log("Empieza en " + _currentCheckpoint);
+        PlayerManager.Instance.transform.position = _checkPoints[_currentCheckpoint].position; //Mover al jugador a la posicion del checkpoint
         _currentScene = PlayerPrefs.GetInt("LevelX");
         _currentState = GameStates.GAME;
     }
@@ -57,12 +59,17 @@ public class GameManager : MonoBehaviour
             case GameStates.GAME:
                 if(_lifes <= 0)
                 {
+                    while (_currentCheckpoint < _checkPoints.Length - 1 && PlayerManager.Instance.transform.position.x > _checkPoints[_currentCheckpoint + 1].position.x) //Ver por que checkpoint va el jugador
+                    {
+                        _currentCheckpoint++;
+                        Debug.Log("Vuelta a checkpoint " + _currentCheckpoint);
+                    }
                     ChangeState(GameStates.RESTART);
-                }
+                }           
                 break;
             case GameStates.PAUSE:
                 break;            
-            case GameStates.RESTART:
+            case GameStates.RESTART:               
                 SceneManager.LoadScene(_sceneNames[_currentScene]);
                 break;           
         }    

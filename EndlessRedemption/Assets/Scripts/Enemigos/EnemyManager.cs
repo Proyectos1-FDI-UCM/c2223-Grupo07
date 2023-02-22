@@ -68,8 +68,11 @@ public class EnemyManager : MonoBehaviour
         _myEnemyDetection.enabled = false;
         _myLateralMovement.enabled = false;
         _playerTransform = PlayerManager.Instance.transform;
-        if(GetComponent<BabyDragonComponent>()== null)
-        GetComponent<Renderer>().enabled = false;
+        if (GetComponent<BabyDragonComponent>() == null)
+        {
+            GetComponent<Renderer>().enabled = false;
+        }
+        else aparecido = 1;
     }
 
     // Update is called once per frame
@@ -77,7 +80,7 @@ public class EnemyManager : MonoBehaviour
     {
         if(GetComponent<BabyDragonComponent>() == null)
         {
-            if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _appearingDistance && Mathf.Abs(_playerTransform.position.y - transform.position.y) < _appearingDistance)
+            if (Mathf.Sqrt(Mathf.Pow(_playerTransform.position.x - transform.position.x, 2) + Mathf.Pow(_playerTransform.position.y - transform.position.y, 2)) < _appearingDistance)
             {
                 GetComponent<Renderer>().enabled = true;
                 Appearing();
@@ -89,6 +92,7 @@ public class EnemyManager : MonoBehaviour
                 }
             }
         }
+        
        
         if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _detectionDistance && aparecido==1)
         {

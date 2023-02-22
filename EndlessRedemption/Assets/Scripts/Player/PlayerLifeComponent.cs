@@ -6,11 +6,15 @@ public class PlayerLifeComponent : MonoBehaviour
 {
     #region references
     private CameraComponent _cameraComponent;
+    private GameManager _gameManager;
+    
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
+
+        _gameManager = GameManager.Instance;
         _cameraComponent = PlayerManager.Instance._cameraComponent; 
     }
 
@@ -19,8 +23,10 @@ public class PlayerLifeComponent : MonoBehaviour
     {
         if (PlayerManager.Instance.vidasPlayer <= 0)
         {
+            
             Debug.Log("Vidas perdidas");
             _cameraComponent.enabled = false;
+            
             Destroy(gameObject);
         }
     }

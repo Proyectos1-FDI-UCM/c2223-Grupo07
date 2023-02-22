@@ -28476,7 +28476,7 @@ MonoBehaviour:
   _fuerza: 0
   _elapsedTime: 0
   _timeInvulnerable: 2
-  vidasPlayer: 10
+  vidasPlayer: 1
 --- !u!114 &2001665867
 MonoBehaviour:
   m_ObjectHideFlags: 0

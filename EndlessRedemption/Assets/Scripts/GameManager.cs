@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public enum GameStates { START, GAME, PAUSE, RESTART }
-    private GameStates _currentState;   
+    private GameStates _currentState;
+    private string[] _sceneNames = { "Level1", "Level2", "Level3", "Level4 Dragon"};//Nombres de las escenas
+    private int _currentScene;
     [SerializeField]
     private Transform[] _checkPoints; //Array con los checkpoints, cada escena tiene los suyos
     private float _lifes;
@@ -14,8 +16,8 @@ public class GameManager : MonoBehaviour
     private float _maxShurikens; //Depende de la dificultad de la partida
     [SerializeField]
     private float _maxLifes; //Depende de la dificultad de la partida
-    private GameManager _instance;
-    public GameManager Instance { get { return _instance; } }
+    static private GameManager _instance;
+    static public GameManager Instance { get { return _instance; } }
     public float Lifes { get { return _lifes; } }
     public GameStates CurrentState {get { return _currentState; }} //Estado actual
     private float Maxlifes { get { return _maxLifes; } }
@@ -24,10 +26,11 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         _instance = this;
+        
     }
     void Start()
     {
-        
+        _currentScene = PlayerPrefs.GetInt("LevelX");
     }
     public void WinLife()
     {
@@ -57,7 +60,8 @@ public class GameManager : MonoBehaviour
                 break;
             case GameStates.PAUSE:
                 break;            
-            case GameStates.RESTART:                
+            case GameStates.RESTART:
+                SceneManager.LoadScene(_sceneNames[_currentScene]);
                 break;           
         }    
     }

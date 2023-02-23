@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidasEnemy: 5
+  VidaPickUp: {fileID: 5156510250345167162, guid: 78d45011921c34c4fabbbaecfadaabe5, type: 3}
 --- !u!114 &2655293198798456700
 MonoBehaviour:
   m_ObjectHideFlags: 0

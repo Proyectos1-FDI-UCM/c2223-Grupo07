@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-
     #region references
     private Transform _playerTransform;
     private EnemyDetectionComponent _myEnemyDetection;
@@ -31,12 +30,9 @@ public class EnemyManager : MonoBehaviour
 
     public void Girar()
     {
-      
-            Vector3 scale = transform.localScale;
-            scale.x *= -1;
-            transform.localScale = scale;
-            
-        
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
    
  
@@ -92,8 +88,7 @@ public class EnemyManager : MonoBehaviour
                 }
             }
         }
-        
-       
+              
         if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _detectionDistance && aparecido==1)
         {
             _myLateralMovement.enabled = false;
@@ -104,8 +99,6 @@ public class EnemyManager : MonoBehaviour
         {
             _myEnemyDetection.enabled = false;
             _myLateralMovement.enabled = true;
-        }
-     
-        
+        }     
     }
 }

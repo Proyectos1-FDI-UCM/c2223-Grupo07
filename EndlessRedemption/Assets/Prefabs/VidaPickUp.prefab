@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5156510250345167108}
   - component: {fileID: 5156510250345167109}
+  - component: {fileID: -4964004091722901476}
   m_Layer: 0
   m_Name: VidaPickUp
   m_TagString: Untagged
@@ -84,3 +85,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-4964004091722901476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5156510250345167162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8fb002528edd34c95c48a22055e09a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

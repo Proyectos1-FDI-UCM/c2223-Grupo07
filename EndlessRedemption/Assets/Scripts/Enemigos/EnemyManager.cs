@@ -28,6 +28,10 @@ public class EnemyManager : MonoBehaviour
 
     #region methods 
 
+    public void HitAnimation()
+    {
+        _animator.SetTrigger("Hit");
+    }
     public void Girar()
     {
         Vector3 scale = transform.localScale;

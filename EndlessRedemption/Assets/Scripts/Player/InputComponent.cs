@@ -8,6 +8,7 @@ public class InputComponent : MonoBehaviour
     private MovementComponent _movementComponent;
     private SmokeBomb _smokeBomb;
     private AttackComponent _attack;
+    private ShurikenLauncher _shurikenLauncher;
     
     #endregion
 
@@ -17,7 +18,7 @@ public class InputComponent : MonoBehaviour
         _movementComponent = GetComponent<MovementComponent>();
         _smokeBomb = GetComponent<SmokeBomb>();
         _attack = GetComponentInChildren<AttackComponent>();
-       
+        _shurikenLauncher = GetComponent<ShurikenLauncher>();
     }
 
     void Update()
@@ -27,45 +28,58 @@ public class InputComponent : MonoBehaviour
         {
             _movementComponent.Jump();
         }
-
-
         // Sistema de movimiento
         if (Input.GetKey(KeyCode.D))
         {
             _movementComponent.Right();
 
         }
-        if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A))
         {
             _movementComponent.Left();
 
         }
+        //Dash
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             _movementComponent.Dash();
         }
+        //Bomba humo
         if(Input.GetKeyDown(KeyCode.Q))
         {
             _smokeBomb.ActivateSmoke();
         }
+        //Ataque
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             _attack.HorizontalAttack();
           
             
         }
-        if (Input.GetKeyDown(KeyCode.W))
+        else if (Input.GetKeyDown(KeyCode.W))
         {
             _attack.UpAttack();
 
 
         }
-        if (Input.GetKeyDown(KeyCode.S))
+         else if (Input.GetKeyDown(KeyCode.S))
         {
             _attack.DownAttack();
-
-
         }
+       //Lanzamiento shuriken
+        if(Input.GetKey(KeyCode.W) && Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            _shurikenLauncher.UpThrow();
+        }
+        else if (Input.GetKey(KeyCode.S) && Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            _shurikenLauncher.DownThrow();
+        }
+        else if(Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            _shurikenLauncher.LateralThrow();
+        }
+        
 
 
     }

@@ -14,15 +14,14 @@ public class GameManager : MonoBehaviour
     public int _currentCheckpoint;
     [SerializeField]
     private float _lifes;
-    private float _currenShurikens;
+    public float _currenShurikens;
     private float _maxShurikens; //Depende de la dificultad de la partida
     [SerializeField]
     private float _maxLifes; //Depende de la dificultad de la partida
     static private GameManager _instance;
-    static public GameManager Instance { get { return _instance; } }
-    public float Lifes { get { return _lifes; } }
+    static public GameManager Instance { get { return _instance; } }   
     public GameStates CurrentState {get { return _currentState; }} //Estado actual
-    private float Maxlifes { get { return _maxLifes; } }
+    public float Maxlifes { get { return _maxLifes; } }
     
     // Start is called before the first frame update
     private void Awake()

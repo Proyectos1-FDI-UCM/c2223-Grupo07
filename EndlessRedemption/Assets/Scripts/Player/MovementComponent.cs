@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovementComponent : MonoBehaviour
 {
-    
+   
     private Rigidbody2D _rigidbody2D;
     private Collider2D _myCollider2D;
     private DashDetection _dashDetection;
@@ -74,13 +74,14 @@ public class MovementComponent : MonoBehaviour
     {
         if (_dashPickUp && !_dashCoolDown)
         {
+            _reachPosition = _dashDetection.PositionToReach;
             _dashCoolDown = true;
             if (_dashAvailable)
             {
                 _inputComponent.enabled = false;
                 _rigidbody2D.gravityScale = 0;
                 _myCollider2D.enabled = false;
-                _reachPosition = _dashDetection.PositionToReach;
+                
             }
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
             if (_lookingRight)
@@ -108,11 +109,12 @@ public class MovementComponent : MonoBehaviour
         _myCollider2D = GetComponent<Collider2D>();
         _dashAvailable = true;
         _dashing = false;
-        _distanceToReach = 0.5f;
+        _distanceToReach = 1f;
         _lookingRight = true;
         _animator = GetComponent<Animator>();
         _dashDamage = FindObjectOfType<DashDamage>();
         _dashCoolDown = false;
+        
         
         
        
@@ -142,6 +144,7 @@ public class MovementComponent : MonoBehaviour
         }        
             if (_dashing && Mathf.Sqrt(Mathf.Pow(_reachPosition.x - transform.position.x, 2f) + Mathf.Pow(_reachPosition.y - transform.position.y, 2f)) < _distanceToReach)
             {
+            
                 _dashing = false;
                 _myCollider2D.enabled = true;
                 _rigidbody2D.gravityScale = 4;
@@ -157,6 +160,7 @@ public class MovementComponent : MonoBehaviour
            
                 _inputComponent.enabled = true;
             }
+        
         
     }
     private void Girar ()

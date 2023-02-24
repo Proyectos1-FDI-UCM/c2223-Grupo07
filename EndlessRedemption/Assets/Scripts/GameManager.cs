@@ -30,8 +30,13 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        _currentCheckpoint = PlayerPrefs.GetInt("CheckpointX");
+        for(int i = 0; i < _currentCheckpoint; i++) //Desactivar anteriores
+        {
+            _checkPoints[i].gameObject.SetActive(false);
+        }
         Debug.Log("Empieza en " + _currentCheckpoint);
-        PlayerManager.Instance.transform.position = _checkPoints[_currentCheckpoint].position; //Mover al jugador a la posicion del checkpoint
+        PlayerManager.Instance.transform.position = new Vector3 (_checkPoints[_currentCheckpoint].position.x+2, _checkPoints[_currentCheckpoint].position.y, _checkPoints[_currentCheckpoint].position.z); //Mover al jugador a la posicion del checkpoint
         _currentScene = PlayerPrefs.GetInt("LevelX");
         _currentState = GameStates.GAME;
     }
@@ -62,17 +67,12 @@ public class GameManager : MonoBehaviour
             case GameStates.GAME:
                 if(_lifes <= 0)
                 {
-                    while (_currentCheckpoint < _checkPoints.Length - 1 && PlayerManager.Instance.transform.position.x > _checkPoints[_currentCheckpoint + 1].position.x) //Ver por que checkpoint va el jugador
-                    {
-                        _currentCheckpoint++;
-                        Debug.Log("Vuelta a checkpoint " + _currentCheckpoint);
-                    }
                     ChangeState(GameStates.RESTART);
                 }           
                 break;
             case GameStates.PAUSE:
                 break;            
-            case GameStates.RESTART:               
+            case GameStates.RESTART:
                 SceneManager.LoadScene(_sceneNames[_currentScene]);
                 break;           
         }    

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 23035d260d2961e4eb109a128d0f1d53
+guid: e2d2058f6081d5a479ca11440460633f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -52,7 +52,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -164,7 +164,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ninja 1_0
+      name: Ninja 2_0
       rect:
         serializedVersion: 2
         x: 8
@@ -178,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b64b9e0aae874f41bca404f212b3279
-      internalID: -1403049265
+      spriteID: b3ec5511e9afb804fa0b47122e1cd85b
+      internalID: -402611016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_1
+      name: Ninja 2_1
       rect:
         serializedVersion: 2
         x: 74
@@ -199,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b13cdd09ea0633049a2c4ada0b422576
-      internalID: -1655965132
+      spriteID: 1098af7b6803ce84688e507eae790237
+      internalID: -2136422241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_2
+      name: Ninja 2_2
       rect:
         serializedVersion: 2
         x: 116
@@ -220,14 +220,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b901806d9a578c448896a54894df2c55
-      internalID: 683828535
+      spriteID: cf03a667abb24954991eb3c98f685537
+      internalID: 1231180611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_3
+      name: Ninja 2_3
       rect:
         serializedVersion: 2
         x: 152
@@ -241,14 +241,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ddb4cafef1e32a4793b7a45f7450b50
-      internalID: -1063151589
+      spriteID: 902fe836d61be4f4e84197530e164a8f
+      internalID: 2060426590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_4
+      name: Ninja 2_4
       rect:
         serializedVersion: 2
         x: 197
@@ -262,14 +262,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c476ea2442904c3408a459eb9112a6a6
-      internalID: 1038592289
+      spriteID: c7fcdb2ddf3dbb349bd68c7ce3ac69da
+      internalID: -1698547510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_5
+      name: Ninja 2_5
       rect:
         serializedVersion: 2
         x: 250
@@ -283,14 +283,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e26a772ba4dc297479a2313ba373d8ee
-      internalID: 2144759045
+      spriteID: df48d0f13a8468846942380845478fad
+      internalID: 56453760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_6
+      name: Ninja 2_6
       rect:
         serializedVersion: 2
         x: 292
@@ -304,14 +304,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8de27d7e12e52a945a09fdb88107958f
-      internalID: -1641878600
+      spriteID: 894e330b7c8571a48bce2a4ec55e2ded
+      internalID: 106319379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_7
+      name: Ninja 2_7
       rect:
         serializedVersion: 2
         x: 373
@@ -325,14 +325,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed0009bed08434645a8add8f366de410
-      internalID: -1527009151
+      spriteID: aed8426f85e2fae44a8f16168cdc9cf1
+      internalID: 756339990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_8
+      name: Ninja 2_8
       rect:
         serializedVersion: 2
         x: 8
@@ -346,14 +346,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85a8ab148871fca43936773c17f11f4e
-      internalID: -1673253450
+      spriteID: f01298d096c44984aafa4de7ca0b1756
+      internalID: -1994944444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_9
+      name: Ninja 2_9
       rect:
         serializedVersion: 2
         x: 80
@@ -367,14 +367,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c707e91b1aa13174e95808a03dfe0529
-      internalID: -898463624
+      spriteID: 1106fcea1ae5ffe4dab4ecd4a60406cc
+      internalID: 2067149575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_10
+      name: Ninja 2_10
       rect:
         serializedVersion: 2
         x: 176
@@ -388,14 +388,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63bb87f80b8315d41a6ab1526760efc7
-      internalID: -254654755
+      spriteID: cfa449aa6d5a23c44a08bd5fc8c11ede
+      internalID: -1655806222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_11
+      name: Ninja 2_11
       rect:
         serializedVersion: 2
         x: 271
@@ -409,14 +409,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb86be6cf93a6b44f8ce5972d6e17cf3
-      internalID: 1889307637
+      spriteID: 494499a9827d9d24cbccb15dbf1db598
+      internalID: 583192059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_12
+      name: Ninja 2_12
       rect:
         serializedVersion: 2
         x: 333
@@ -430,14 +430,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26078f98fd4b19d42aabce6b29c0925d
-      internalID: -1722163979
+      spriteID: 23ec1174930b0ab4b900649c21da18d2
+      internalID: -666033266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_13
+      name: Ninja 2_13
       rect:
         serializedVersion: 2
         x: 389
@@ -451,14 +451,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3a5863965fed6b47b518d01b50bb047
-      internalID: 1789225820
+      spriteID: e027dd91ef9a53e419da09cfafc90450
+      internalID: 2118223007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_14
+      name: Ninja 2_14
       rect:
         serializedVersion: 2
         x: 453
@@ -472,14 +472,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caa966271faef784d946ed64e910a428
-      internalID: -2071652614
+      spriteID: 8aad1b220171f244b939f45c4b083e09
+      internalID: 1287464435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_15
+      name: Ninja 2_15
       rect:
         serializedVersion: 2
         x: 520
@@ -493,14 +493,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 901007959f00b2043a1feff3939c96c4
-      internalID: -500221046
+      spriteID: f77be8971ed71bc48abf7d7c997921a8
+      internalID: 1561918403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_16
+      name: Ninja 2_16
       rect:
         serializedVersion: 2
         x: 5
@@ -514,14 +514,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ab102b695569e54f9ac60b482ba8fa0
-      internalID: -1918355494
+      spriteID: 91150925f0d727b439ab601d1baac162
+      internalID: -1621798996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_17
+      name: Ninja 2_17
       rect:
         serializedVersion: 2
         x: 65
@@ -535,14 +535,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0693a0ead5748d74eb635ef3aa474d33
-      internalID: -1089917103
+      spriteID: c6be6b1f1539af14eadcfc8db69f0701
+      internalID: -843573296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_18
+      name: Ninja 2_18
       rect:
         serializedVersion: 2
         x: 136
@@ -556,14 +556,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6150f5f926605e4f99f5c90de82ed38
-      internalID: 1252541467
+      spriteID: 748587ea44ebecd40964302303c9b8c7
+      internalID: -177271977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_19
+      name: Ninja 2_19
       rect:
         serializedVersion: 2
         x: 206
@@ -577,14 +577,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 162ca6d6e11dc124a8b87dcc79e16160
-      internalID: 2116944942
+      spriteID: 2fa4fdb4a4658d84892b3f14216e94d5
+      internalID: 1131687594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_20
+      name: Ninja 2_20
       rect:
         serializedVersion: 2
         x: 272
@@ -598,14 +598,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57238b43d03fba9428499b405c0dcaa8
-      internalID: -183765069
+      spriteID: 6b7ffb10c1f0e694480c00f0aa7c9ca0
+      internalID: -1739376244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_21
+      name: Ninja 2_21
       rect:
         serializedVersion: 2
         x: 336
@@ -619,14 +619,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3523baaa58bc3734089742094090c6b2
-      internalID: 59580294
+      spriteID: f7c16389380000b488c1cd765b3fd273
+      internalID: -426569619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_22
+      name: Ninja 2_22
       rect:
         serializedVersion: 2
         x: 432
@@ -640,14 +640,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6574cce326f8b64b80993cafb750ccf
-      internalID: 739443021
+      spriteID: 0795f1a202c0a2540a0acac50b3fb846
+      internalID: -1786042752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_23
+      name: Ninja 2_23
       rect:
         serializedVersion: 2
         x: 524
@@ -661,14 +661,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e223c62ba6268a4ca7a2aee15f4fe35
-      internalID: -564677588
+      spriteID: 8fe8f6552285c1e4ebc9d6096fa62a5e
+      internalID: 1463661738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_24
+      name: Ninja 2_24
       rect:
         serializedVersion: 2
         x: 592
@@ -682,14 +682,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a7956189efdcb34b8626d3e6e3b7c75
-      internalID: 509070198
+      spriteID: 3133547b9f80da447be2304d9a514953
+      internalID: -764361820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_25
+      name: Ninja 2_25
       rect:
         serializedVersion: 2
         x: 648
@@ -703,14 +703,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1409e5313b8cf594f9be1f0ef2c6f1cc
-      internalID: 1390574090
+      spriteID: 7e34244ffd5ff124fb47aaee35cebe63
+      internalID: -629815300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_26
+      name: Ninja 2_26
       rect:
         serializedVersion: 2
         x: 8
@@ -724,14 +724,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ff1ff95b60d69340b7ab062eebbc4db
-      internalID: 1468380436
+      spriteID: c639d2e6fe40bfb4184b8daa22f7cec1
+      internalID: -620806948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_27
+      name: Ninja 2_27
       rect:
         serializedVersion: 2
         x: 63
@@ -745,14 +745,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80d9ab723bd3a974482b89e8acfcdeaa
-      internalID: 1173758229
+      spriteID: 3bc998f2b55e22d4a89e892427cb00fd
+      internalID: 1105530028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_28
+      name: Ninja 2_28
       rect:
         serializedVersion: 2
         x: 120
@@ -766,14 +766,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 654c2269686acb34b88c2b2afece34ed
-      internalID: 674950072
+      spriteID: de2058098a252904caef2f0a17145508
+      internalID: 443827580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_29
+      name: Ninja 2_29
       rect:
         serializedVersion: 2
         x: 184
@@ -787,14 +787,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3a0952b04c3ab94b92bf2de59c73779
-      internalID: 444626589
+      spriteID: e87cc9c37b753c14c90945d261870828
+      internalID: -1785134901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_30
+      name: Ninja 2_30
       rect:
         serializedVersion: 2
         x: 248
@@ -808,14 +808,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc197195e876d3d4fb06260846f720bf
-      internalID: -1820136530
+      spriteID: 97024a981dc9ac14ebfd92a7252ba49b
+      internalID: -1342973248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_31
+      name: Ninja 2_31
       rect:
         serializedVersion: 2
         x: 296
@@ -829,14 +829,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f4fc927396938b479ace272af063f28
-      internalID: -1274051047
+      spriteID: d5fa6542318f92f4aa93c50f519ca476
+      internalID: -1268617475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja 1_32
+      name: Ninja 2_32
       rect:
         serializedVersion: 2
         x: 355
@@ -850,192 +850,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01d30286307d5ad40aefffbc330ed1f3
-      internalID: 683186456
+      spriteID: 9df53418a75774c49be3d3fb237c33de
+      internalID: 179299184
       vertices: []
       indices: 
       edges: []
       weights: []
-    outline:
-    - - {x: -353, y: 110.5}
-      - {x: -353, y: 191.5}
-      - {x: -293, y: 191.5}
-      - {x: -293, y: 110.5}
-    - - {x: -285, y: 110.5}
-      - {x: -285, y: 196.5}
-      - {x: -240, y: 196.5}
-      - {x: -240, y: 110.5}
-    - - {x: -239, y: 111.5}
-      - {x: -239, y: 197.5}
-      - {x: -206, y: 197.5}
-      - {x: -206, y: 111.5}
-    - - {x: -205, y: 112.5}
-      - {x: -205, y: 194.5}
-      - {x: -170, y: 194.5}
-      - {x: -170, y: 112.5}
-    - - {x: -164, y: 110.5}
-      - {x: -164, y: 194.5}
-      - {x: -113, y: 194.5}
-      - {x: -113, y: 110.5}
-    - - {x: -109, y: 109.5}
-      - {x: -109, y: 194.5}
-      - {x: -65, y: 194.5}
-      - {x: -65, y: 109.5}
-    - - {x: -63, y: 110.5}
-      - {x: -63, y: 197.5}
-      - {x: -31, y: 197.5}
-      - {x: -31, y: 110.5}
-    - - {x: -30, y: 111.5}
-      - {x: -30, y: 195.5}
-      - {x: 5, y: 195.5}
-      - {x: 5, y: 111.5}
-    - - {x: 10, y: 109.5}
-      - {x: 10, y: 192.5}
-      - {x: 61, y: 192.5}
-      - {x: 61, y: 109.5}
-    - - {x: -353, y: -0.5}
-      - {x: -353, y: 79.5}
-      - {x: -294, y: 79.5}
-      - {x: -294, y: -0.5}
-    - - {x: -286, y: 0.5}
-      - {x: -286, y: 80.5}
-      - {x: -186, y: 80.5}
-      - {x: -186, y: 0.5}
-    - - {x: -181, y: 0.5}
-      - {x: -181, y: 80.5}
-      - {x: -86, y: 80.5}
-      - {x: -86, y: 0.5}
-    - - {x: -85, y: -0.5}
-      - {x: -85, y: 77.5}
-      - {x: -25, y: 77.5}
-      - {x: -25, y: -0.5}
-    - - {x: -24, y: -0.5}
-      - {x: -24, y: 103.5}
-      - {x: 31, y: 103.5}
-      - {x: 31, y: -0.5}
-    - - {x: 32, y: -0.5}
-      - {x: 32, y: 81.5}
-      - {x: 90, y: 81.5}
-      - {x: 90, y: -0.5}
-    - - {x: 92, y: -0.5}
-      - {x: 92, y: 80.5}
-      - {x: 154, y: 80.5}
-      - {x: 154, y: -0.5}
-    - - {x: 157, y: -0.5}
-      - {x: 157, y: 76.5}
-      - {x: 225, y: 76.5}
-      - {x: 225, y: -0.5}
-    - - {x: -355, y: -104.5}
-      - {x: -355, y: -17.5}
-      - {x: -296, y: -17.5}
-      - {x: -296, y: -104.5}
-    - - {x: -294, y: -104.5}
-      - {x: -294, y: -17.5}
-      - {x: -229, y: -17.5}
-      - {x: -229, y: -104.5}
-    - - {x: -222, y: -107.5}
-      - {x: -222, y: -6.5}
-      - {x: -154, y: -6.5}
-      - {x: -154, y: -107.5}
-    - - {x: -152, y: -107.5}
-      - {x: -152, y: -43.5}
-      - {x: -91, y: -43.5}
-      - {x: -91, y: -107.5}
-    - - {x: -88, y: -107.5}
-      - {x: -88, y: -44.5}
-      - {x: -28, y: -44.5}
-      - {x: -28, y: -107.5}
-    - - {x: -23, y: -107.5}
-      - {x: -23, y: -45.5}
-      - {x: 68, y: -45.5}
-      - {x: 68, y: -107.5}
-    - - {x: 73, y: -108.5}
-      - {x: 73, y: -41.5}
-      - {x: 167, y: -41.5}
-      - {x: 167, y: -108.5}
-    - - {x: 168, y: -108.5}
-      - {x: 168, y: -46.5}
-      - {x: 225, y: -46.5}
-      - {x: 225, y: -108.5}
-    - - {x: 230, y: -104.5}
-      - {x: 230, y: -41.5}
-      - {x: 289, y: -41.5}
-      - {x: 289, y: -104.5}
-    - - {x: 289, y: -106.5}
-      - {x: 289, y: -44.5}
-      - {x: 349, y: -44.5}
-      - {x: 349, y: -106.5}
-    - - {x: -353, y: -189.5}
-      - {x: -353, y: -125.5}
-      - {x: -301, y: -125.5}
-      - {x: -301, y: -189.5}
-    - - {x: -298, y: -194.5}
-      - {x: -298, y: -116.5}
-      - {x: -240, y: -116.5}
-      - {x: -240, y: -194.5}
-    - - {x: -237, y: -195.5}
-      - {x: -237, y: -117.5}
-      - {x: -176, y: -117.5}
-      - {x: -176, y: -195.5}
-    - - {x: -173, y: -194.5}
-      - {x: -173, y: -119.5}
-      - {x: -116, y: -119.5}
-      - {x: -116, y: -194.5}
-    - - {x: -113, y: -192.5}
-      - {x: -113, y: -122.5}
-      - {x: -66, y: -122.5}
-      - {x: -66, y: -192.5}
-    - - {x: -62, y: -196.5}
-      - {x: -62, y: -118.5}
-      - {x: -5, y: -126.5}
-      - {x: -1, y: -196.5}
-    - - {x: -3, y: -194.5}
-      - {x: -3, y: -112.5}
-      - {x: 55, y: -112.5}
-      - {x: 55, y: -194.5}
+    outline: []
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ninja 1_8: -1673253450
-      Ninja 1_30: -1820136530
-      Ninja 1_32: 683186456
-      Ninja 1_2: 683828535
-      Ninja 1_26: 1468380436
-      Ninja 1_25: 1390574090
-      Ninja 1_11: 1889307637
-      Ninja 1_31: -1274051047
-      Ninja 1_3: -1063151589
-      Ninja 1_4: 1038592289
-      Ninja 1_14: -2071652614
-      Ninja 1_5: 2144759045
-      Ninja 1_7: -1527009151
-      Ninja 1_12: -1722163979
-      Ninja 1_19: 2116944942
-      Ninja 1_23: -564677588
-      Ninja 1_27: 1173758229
-      Ninja 1_0: -1403049265
-      Ninja 1_10: -254654755
-      Ninja 1_28: 674950072
-      Ninja 1_6: -1641878600
-      Ninja 1_20: -183765069
-      Ninja 1_24: 509070198
-      Ninja 1_29: 444626589
-      Ninja 1_18: 1252541467
-      Ninja 1_15: -500221046
-      Ninja 1_21: 59580294
-      Ninja 1_16: -1918355494
-      Ninja 1_22: 739443021
-      Ninja 1_9: -898463624
-      Ninja 1_1: -1655965132
-      Ninja 1_13: 1789225820
-      Ninja 1_17: -1089917103
+      Ninja 2_15: 1561918403
+      Ninja 2_10: -1655806222
+      Ninja 2_30: -1342973248
+      Ninja 2_11: 583192059
+      Ninja 2_32: 179299184
+      Ninja 2_7: 756339990
+      Ninja 2_19: 1131687594
+      Ninja 2_2: 1231180611
+      Ninja 2_6: 106319379
+      Ninja 2_5: 56453760
+      Ninja 2_31: -1268617475
+      Ninja 2_23: 1463661738
+      Ninja 2_0: -402611016
+      Ninja 2_28: 443827580
+      Ninja 2_3: 2060426590
+      Ninja 2_26: -620806948
+      Ninja 2_16: -1621798996
+      Ninja 2_8: -1994944444
+      Ninja 2_13: 2118223007
+      Ninja 2_24: -764361820
+      Ninja 2_22: -1786042752
+      Ninja 2_21: -426569619
+      Ninja 2_17: -843573296
+      Ninja 2_20: -1739376244
+      Ninja 2_14: 1287464435
+      Ninja 2_27: 1105530028
+      Ninja 2_1: -2136422241
+      Ninja 2_9: 2067149575
+      Ninja 2_4: -1698547510
+      Ninja 2_29: -1785134901
+      Ninja 2_18: -177271977
+      Ninja 2_12: -666033266
+      Ninja 2_25: -629815300
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

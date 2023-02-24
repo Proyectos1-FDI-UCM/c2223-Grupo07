@@ -43,6 +43,10 @@ public class GameManager : MonoBehaviour
     {
         _lifes--;
     }
+    public void PickShuriken()
+    {
+        _currenShurikens += 5;
+    }
     public void ChangeState(GameStates newState)
     {
         _currentState = newState;

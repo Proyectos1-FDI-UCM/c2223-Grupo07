@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MovementComponent : MonoBehaviour
 {
+    
     private Rigidbody2D _rigidbody2D;
     private Collider2D _myCollider2D;
     private DashDetection _dashDetection;
@@ -113,10 +114,12 @@ public class MovementComponent : MonoBehaviour
         _dashDamage = FindObjectOfType<DashDamage>();
         _dashCoolDown = false;
         
+        
        
     }
     private void Update()
     {
+       
         if(_dashCoolDown)
         {           
             _cooldownElapsed += Time.deltaTime;

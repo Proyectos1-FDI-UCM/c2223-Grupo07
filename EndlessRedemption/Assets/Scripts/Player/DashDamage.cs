@@ -44,7 +44,8 @@ public class DashDamage : MonoBehaviour
     {
         if (_movementComponent._dashing && !_movementComponent._dashAvailable)
         {
-            _movementComponent._dashing = false;//aregla el bug de la animacion
+            _movementComponent._dashing = false;
+            _movementComponent.DashStop();//aregla el bug de la animacion
             _movementComponent._dashAvailable = true;
         }
         //Para hacer el daño necesito enemigo primero

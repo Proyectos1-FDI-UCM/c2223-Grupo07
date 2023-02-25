@@ -74,6 +74,7 @@ public class MovementComponent : MonoBehaviour
     {
         if (_dashPickUp && !_dashCoolDown)
         {
+            gameObject.layer = 8;
             _reachPosition = _dashDetection.PositionToReach;
             _dashCoolDown = true;
             if (_dashAvailable)
@@ -141,28 +142,26 @@ public class MovementComponent : MonoBehaviour
         else if (_rigidbody2D.velocity.x < -1 && _lookingRight)
         {
             Girar();           
-        }        
-            if (_dashing && Mathf.Sqrt(Mathf.Pow(_reachPosition.x - transform.position.x, 2f) + Mathf.Pow(_reachPosition.y - transform.position.y, 2f)) < _distanceToReach)
-            {
-            
-                _dashing = false;
-                _myCollider2D.enabled = true;
-                _rigidbody2D.gravityScale = 4;
-
+        }
+        if (_dashing && Mathf.Sqrt(Mathf.Pow(_reachPosition.x - transform.position.x, 2f) + Mathf.Pow(_reachPosition.y - transform.position.y, 2f)) < _distanceToReach)
+        {
+            DashStop();
             if (_lookingRight)
             {
                 _rigidbody2D.AddForce(Vector2.left * (_dashForce - _maxSpeed), ForceMode2D.Impulse);
             }
             else if (!_lookingRight)
             {
-                _rigidbody2D.AddForce(Vector2.right * (_dashForce- _maxSpeed), ForceMode2D.Impulse);
+                _rigidbody2D.AddForce(Vector2.right * (_dashForce - _maxSpeed), ForceMode2D.Impulse);
             }
-           
-                _inputComponent.enabled = true;
-            }
-        
-        
+
+            
+        }
     }
+           
+        
+        
+    
     private void Girar ()
     {
         _dashDetection.DashDirection();
@@ -172,5 +171,13 @@ public class MovementComponent : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
         
+    }
+    public void DashStop()
+    {
+        gameObject.layer = 3;
+        _dashing = false;
+        _myCollider2D.enabled = true;
+        _rigidbody2D.gravityScale = 4;
+        _inputComponent.enabled = true;
     }
 }

@@ -22,7 +22,7 @@ public class ShurikenLauncher : MonoBehaviour
     {
         if(GameManager.Instance._currenShurikens > 0)
         {
-            if (_rigidbody2D.velocity.x > 0)
+            if (transform.localScale.x > 0)
                 _expectedDirection = Direction.RIGHT;
             else _expectedDirection = Direction.LEFT;
             Instantiate(_shuriken, transform.position, Quaternion.identity);

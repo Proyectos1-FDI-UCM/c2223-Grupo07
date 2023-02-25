@@ -8,6 +8,7 @@ public class Shuriken : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     [SerializeField]
     private float _spawnForce;
+    private float _randomLateralForce;
     private float _elapsed;
     [SerializeField]
     private float availableTime;
@@ -18,7 +19,9 @@ public class Shuriken : MonoBehaviour
         _collider= GetComponent<Collider2D>();      
         _rigidbody2D= GetComponent<Rigidbody2D>();
         _collider.enabled = false;
+        _randomLateralForce = Random.Range(-30, 30);
         _rigidbody2D.AddForce(Vector2.up * _spawnForce);
+        _rigidbody2D.AddForce(Vector2.left * _randomLateralForce);
         _elapsed = 0;
     }
    

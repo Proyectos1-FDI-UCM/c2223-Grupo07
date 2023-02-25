@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2142575765
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 1531880034, guid: a616bd894231e5145878228c7c92889d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,7 +103,7 @@ MonoBehaviour:
   _collisionParticles: {fileID: 6553844716301178796, guid: 7c6e3ebe3c0834048bee24895aabacf0, type: 3}
   _shurikenSpeed: 12
   _damage: 1
-  _rotationAngle: 10
+  _rotationAngle: -5
   _turn: 1
 --- !u!50 &395035664879814487
 Rigidbody2D:

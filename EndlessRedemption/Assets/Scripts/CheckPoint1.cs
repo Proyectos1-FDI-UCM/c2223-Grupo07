@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CheckPoint1 : MonoBehaviour
 {
-    public int checkpoint;
+    [SerializeField]
+    private int checkpoint;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<PlayerManager>())

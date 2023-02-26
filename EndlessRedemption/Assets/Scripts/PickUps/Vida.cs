@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Vida : MonoBehaviour
 {
+
     #region methods
     private void OnTriggerEnter2D(Collider2D collider)
     {

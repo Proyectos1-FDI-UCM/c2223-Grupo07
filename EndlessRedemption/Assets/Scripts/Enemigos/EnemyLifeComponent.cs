@@ -8,6 +8,8 @@ public class EnemyLifeComponent : MonoBehaviour
     public int vidasEnemy;
     [SerializeField]
     private GameObject VidaPickUp;
+    private GameObject aux;
+    private float thrust = 3f;
     private int prob;
 
     // Start is called before the first frame update
@@ -22,7 +24,8 @@ public class EnemyLifeComponent : MonoBehaviour
         {
             if(prob == 0)
             {
-                Instantiate(VidaPickUp, transform.position, Quaternion.identity);
+                aux = Instantiate(VidaPickUp, transform.position, Quaternion.identity);
+                aux.GetComponent<Rigidbody2D>().AddForce(transform.up * thrust, ForceMode2D.Impulse);
             }
             Destroy(gameObject);
         }

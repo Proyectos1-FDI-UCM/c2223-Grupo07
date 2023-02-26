@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         _currentCheckpoint = PlayerPrefs.GetInt("CheckpointX");
-        for(int i = 0; i < _currentCheckpoint; i++) //Desactivar anteriores
+        for(int i = 0; i <= _currentCheckpoint; i++) //Desactivar anteriores
         {
             _checkPoints[i].gameObject.SetActive(false);
         }

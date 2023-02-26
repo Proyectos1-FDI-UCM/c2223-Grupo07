@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class DashDamage : MonoBehaviour
 {
+    
+    [SerializeField]
+    private GameObject _hitParticles;
     private MovementComponent _movementComponent;
     [SerializeField]
     private Transform _playerTransform;   
@@ -29,6 +32,7 @@ public class DashDamage : MonoBehaviour
             if(other.gameObject.tag == "Enemigo")
             {
                 _enemyLife = other.gameObject.GetComponent<EnemyLifeComponent>();
+                Instantiate(_hitParticles, _enemyLife.transform.position, Quaternion.identity);
                 _enemyLife.vidasEnemy = _enemyLife.vidasEnemy - _damage;
                 _empuje = new Vector2(other.gameObject.transform.position.x - _playerTransform.position.x, other.gameObject.transform.position.y - _playerTransform.position.y);
                 other.gameObject.GetComponent<Rigidbody2D>().AddForce(_empuje * _fuerzaEmpuje, ForceMode2D.Impulse);
@@ -40,7 +44,8 @@ public class DashDamage : MonoBehaviour
     {
         if (_movementComponent._dashing && !_movementComponent._dashAvailable)
         {
-            _movementComponent._dashing = false;//aregla el bug de la animacion
+            _movementComponent._dashing = false;
+            _movementComponent.DashStop();//aregla el bug de la animacion
             _movementComponent._dashAvailable = true;
         }
         //Para hacer el daño necesito enemigo primero

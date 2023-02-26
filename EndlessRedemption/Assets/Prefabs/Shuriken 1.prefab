@@ -56,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2142575765
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 1531880034, guid: a616bd894231e5145878228c7c92889d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -100,9 +100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a11744aeeefdd488021ecc75aca38d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _collisionParticles: {fileID: 6553844716301178796, guid: 7c6e3ebe3c0834048bee24895aabacf0, type: 3}
   _shurikenSpeed: 12
   _damage: 1
-  _rotationAngle: 10
+  _rotationAngle: -5
   _turn: 1
 --- !u!50 &395035664879814487
 Rigidbody2D:

@@ -9,7 +9,7 @@ public class Vida : MonoBehaviour
     {
         if (collider.gameObject.GetComponent<PlayerManager>()) //Si lo coge el jugador solo, para que no triggeree con elementos de la escena
         {
-            PlayerManager.Instance.vidasPlayer++;
+            GameManager.Instance.WinLife();
             Destroy(gameObject);
             Debug.Log("Vida Recogida; vidas = " + PlayerManager.Instance.vidasPlayer);
         }

@@ -5,6 +5,8 @@ using UnityEngine;
 public class DamageComponent : MonoBehaviour
 {
     #region references
+    [SerializeField]
+    private GameObject _hitExplosion;
     private AttackComponent _attack;
     private Transform _myTransform;
     private EnemyLifeComponent _enemyLife;
@@ -25,6 +27,7 @@ public class DamageComponent : MonoBehaviour
         if (collision.gameObject.GetComponent<EnemyLifeComponent>())
         {           
             _enemyLife = collision.gameObject.GetComponent<EnemyLifeComponent>();
+            Instantiate(_hitExplosion, _enemyLife.transform.position, Quaternion.identity);
             _enemyLife.vidasEnemy =_enemyLife.vidasEnemy - _damage;
             _empuje = new Vector3(collision.gameObject.transform.position.x - _myTransform.position.x, collision.gameObject.transform.position.y - _myTransform.position.y);
             _empuje.Normalize();

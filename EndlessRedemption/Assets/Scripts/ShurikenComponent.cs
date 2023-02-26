@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ShurikenComponent : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject _collisionParticles;
     private EnemyLifeComponent _enemyLifeComponent;
     private Rigidbody2D _rigidbody2D;
     private ShurikenLauncher _shurikenLauncher;
@@ -23,9 +25,9 @@ public class ShurikenComponent : MonoBehaviour
         _shurikenLauncher = FindObjectOfType<ShurikenLauncher>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         if(_shurikenLauncher._expectedDirection == ShurikenLauncher.Direction.RIGHT) { _vertical = false; }
-        else if(_shurikenLauncher._expectedDirection == ShurikenLauncher.Direction.LEFT) { _shurikenSpeed *= -1; _vertical = false; }
+        else if(_shurikenLauncher._expectedDirection == ShurikenLauncher.Direction.LEFT) { _shurikenSpeed *= -1; _vertical = false; _rotationAngle *= -1; }
         else if(_shurikenLauncher._expectedDirection == ShurikenLauncher.Direction.UP) { _vertical = true; }
-        else if(_shurikenLauncher._expectedDirection == ShurikenLauncher.Direction.DOWN) { _shurikenSpeed *= -1; _vertical = true; }
+        else if(_shurikenLauncher._expectedDirection == ShurikenLauncher.Direction.DOWN) { _shurikenSpeed *= -1; _vertical = true; _rotationAngle *= -1; }
     }
 
     // Update is called once per frame
@@ -43,7 +45,8 @@ public class ShurikenComponent : MonoBehaviour
         }
     }
     private void OnCollisionStay2D(Collision2D collision)
-    {      
+    {
+        Instantiate(_collisionParticles, transform.position, Quaternion.identity);
         if (collision.collider.GetComponent<EnemyLifeComponent>() != null)
         {
             collision.collider.GetComponent<EnemyLifeComponent>().vidasEnemy -=_damage;

@@ -42,17 +42,17 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -69,6 +69,90 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -78,18 +162,880 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline: []
+    sprites:
+    - serializedVersion: 2
+      name: Ninja 1_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 312
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b64b9e0aae874f41bca404f212b3279
+      internalID: -1403049265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 312
+        width: 37
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13cdd09ea0633049a2c4ada0b422576
+      internalID: -1655965132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_2
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 312
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b901806d9a578c448896a54894df2c55
+      internalID: 683828535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 312
+        width: 34
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ddb4cafef1e32a4793b7a45f7450b50
+      internalID: -1063151589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_4
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 312
+        width: 42
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c476ea2442904c3408a459eb9112a6a6
+      internalID: 1038592289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 312
+        width: 37
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26a772ba4dc297479a2313ba373d8ee
+      internalID: 2144759045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_6
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 312
+        width: 68
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de27d7e12e52a945a09fdb88107958f
+      internalID: -1641878600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_7
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 312
+        width: 42
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0009bed08434645a8add8f366de410
+      internalID: -1527009151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 200
+        width: 53
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a8ab148871fca43936773c17f11f4e
+      internalID: -1673253450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 200
+        width: 88
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c707e91b1aa13174e95808a03dfe0529
+      internalID: -898463624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_10
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 200
+        width: 88
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bb87f80b8315d41a6ab1526760efc7
+      internalID: -254654755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_11
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 200
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb86be6cf93a6b44f8ce5972d6e17cf3
+      internalID: 1889307637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_12
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 200
+        width: 51
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26078f98fd4b19d42aabce6b29c0925d
+      internalID: -1722163979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_13
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 200
+        width: 53
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a5863965fed6b47b518d01b50bb047
+      internalID: 1789225820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_14
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 200
+        width: 53
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa966271faef784d946ed64e910a428
+      internalID: -2071652614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_15
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 200
+        width: 57
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901007959f00b2043a1feff3939c96c4
+      internalID: -500221046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 96
+        width: 53
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab102b695569e54f9ac60b482ba8fa0
+      internalID: -1918355494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_17
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 96
+        width: 57
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0693a0ead5748d74eb635ef3aa474d33
+      internalID: -1089917103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_18
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 96
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6150f5f926605e4f99f5c90de82ed38
+      internalID: 1252541467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_19
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 96
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162ca6d6e11dc124a8b87dcc79e16160
+      internalID: 2116944942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_20
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 96
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57238b43d03fba9428499b405c0dcaa8
+      internalID: -183765069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3523baaa58bc3734089742094090c6b2
+      internalID: 59580294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_22
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 96
+        width: 82
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6574cce326f8b64b80993cafb750ccf
+      internalID: 739443021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_23
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 96
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e223c62ba6268a4ca7a2aee15f4fe35
+      internalID: -564677588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_24
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 96
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7956189efdcb34b8626d3e6e3b7c75
+      internalID: 509070198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_25
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 96
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1409e5313b8cf594f9be1f0ef2c6f1cc
+      internalID: 1390574090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_26
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 45
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff1ff95b60d69340b7ab062eebbc4db
+      internalID: 1468380436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_27
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 8
+        width: 50
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d9ab723bd3a974482b89e8acfcdeaa
+      internalID: 1173758229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_28
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 8
+        width: 57
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654c2269686acb34b88c2b2afece34ed
+      internalID: 674950072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_29
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 8
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a0952b04c3ab94b92bf2de59c73779
+      internalID: 444626589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_30
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 8
+        width: 41
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc197195e876d3d4fb06260846f720bf
+      internalID: -1820136530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_31
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 8
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4fc927396938b479ace272af063f28
+      internalID: -1274051047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja 1_32
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 8
+        width: 50
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d30286307d5ad40aefffbc330ed1f3
+      internalID: 683186456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -353, y: 110.5}
+      - {x: -353, y: 191.5}
+      - {x: -293, y: 191.5}
+      - {x: -293, y: 110.5}
+    - - {x: -285, y: 110.5}
+      - {x: -285, y: 196.5}
+      - {x: -240, y: 196.5}
+      - {x: -240, y: 110.5}
+    - - {x: -239, y: 111.5}
+      - {x: -239, y: 197.5}
+      - {x: -206, y: 197.5}
+      - {x: -206, y: 111.5}
+    - - {x: -205, y: 112.5}
+      - {x: -205, y: 194.5}
+      - {x: -170, y: 194.5}
+      - {x: -170, y: 112.5}
+    - - {x: -164, y: 110.5}
+      - {x: -164, y: 194.5}
+      - {x: -113, y: 194.5}
+      - {x: -113, y: 110.5}
+    - - {x: -109, y: 109.5}
+      - {x: -109, y: 194.5}
+      - {x: -65, y: 194.5}
+      - {x: -65, y: 109.5}
+    - - {x: -63, y: 110.5}
+      - {x: -63, y: 197.5}
+      - {x: -31, y: 197.5}
+      - {x: -31, y: 110.5}
+    - - {x: -30, y: 111.5}
+      - {x: -30, y: 195.5}
+      - {x: 5, y: 195.5}
+      - {x: 5, y: 111.5}
+    - - {x: 10, y: 109.5}
+      - {x: 10, y: 192.5}
+      - {x: 61, y: 192.5}
+      - {x: 61, y: 109.5}
+    - - {x: -353, y: -0.5}
+      - {x: -353, y: 79.5}
+      - {x: -294, y: 79.5}
+      - {x: -294, y: -0.5}
+    - - {x: -286, y: 0.5}
+      - {x: -286, y: 80.5}
+      - {x: -186, y: 80.5}
+      - {x: -186, y: 0.5}
+    - - {x: -181, y: 0.5}
+      - {x: -181, y: 80.5}
+      - {x: -86, y: 80.5}
+      - {x: -86, y: 0.5}
+    - - {x: -85, y: -0.5}
+      - {x: -85, y: 77.5}
+      - {x: -25, y: 77.5}
+      - {x: -25, y: -0.5}
+    - - {x: -24, y: -0.5}
+      - {x: -24, y: 103.5}
+      - {x: 31, y: 103.5}
+      - {x: 31, y: -0.5}
+    - - {x: 32, y: -0.5}
+      - {x: 32, y: 81.5}
+      - {x: 90, y: 81.5}
+      - {x: 90, y: -0.5}
+    - - {x: 92, y: -0.5}
+      - {x: 92, y: 80.5}
+      - {x: 154, y: 80.5}
+      - {x: 154, y: -0.5}
+    - - {x: 157, y: -0.5}
+      - {x: 157, y: 76.5}
+      - {x: 225, y: 76.5}
+      - {x: 225, y: -0.5}
+    - - {x: -355, y: -104.5}
+      - {x: -355, y: -17.5}
+      - {x: -296, y: -17.5}
+      - {x: -296, y: -104.5}
+    - - {x: -294, y: -104.5}
+      - {x: -294, y: -17.5}
+      - {x: -229, y: -17.5}
+      - {x: -229, y: -104.5}
+    - - {x: -222, y: -107.5}
+      - {x: -222, y: -6.5}
+      - {x: -154, y: -6.5}
+      - {x: -154, y: -107.5}
+    - - {x: -152, y: -107.5}
+      - {x: -152, y: -43.5}
+      - {x: -91, y: -43.5}
+      - {x: -91, y: -107.5}
+    - - {x: -88, y: -107.5}
+      - {x: -88, y: -44.5}
+      - {x: -28, y: -44.5}
+      - {x: -28, y: -107.5}
+    - - {x: -23, y: -107.5}
+      - {x: -23, y: -45.5}
+      - {x: 68, y: -45.5}
+      - {x: 68, y: -107.5}
+    - - {x: 73, y: -108.5}
+      - {x: 73, y: -41.5}
+      - {x: 167, y: -41.5}
+      - {x: 167, y: -108.5}
+    - - {x: 168, y: -108.5}
+      - {x: 168, y: -46.5}
+      - {x: 225, y: -46.5}
+      - {x: 225, y: -108.5}
+    - - {x: 230, y: -104.5}
+      - {x: 230, y: -41.5}
+      - {x: 289, y: -41.5}
+      - {x: 289, y: -104.5}
+    - - {x: 289, y: -106.5}
+      - {x: 289, y: -44.5}
+      - {x: 349, y: -44.5}
+      - {x: 349, y: -106.5}
+    - - {x: -353, y: -189.5}
+      - {x: -353, y: -125.5}
+      - {x: -301, y: -125.5}
+      - {x: -301, y: -189.5}
+    - - {x: -298, y: -194.5}
+      - {x: -298, y: -116.5}
+      - {x: -240, y: -116.5}
+      - {x: -240, y: -194.5}
+    - - {x: -237, y: -195.5}
+      - {x: -237, y: -117.5}
+      - {x: -176, y: -117.5}
+      - {x: -176, y: -195.5}
+    - - {x: -173, y: -194.5}
+      - {x: -173, y: -119.5}
+      - {x: -116, y: -119.5}
+      - {x: -116, y: -194.5}
+    - - {x: -113, y: -192.5}
+      - {x: -113, y: -122.5}
+      - {x: -66, y: -122.5}
+      - {x: -66, y: -192.5}
+    - - {x: -62, y: -196.5}
+      - {x: -62, y: -118.5}
+      - {x: -5, y: -126.5}
+      - {x: -1, y: -196.5}
+    - - {x: -3, y: -194.5}
+      - {x: -3, y: -112.5}
+      - {x: 55, y: -112.5}
+      - {x: 55, y: -194.5}
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ninja 1_8: -1673253450
+      Ninja 1_30: -1820136530
+      Ninja 1_32: 683186456
+      Ninja 1_2: 683828535
+      Ninja 1_26: 1468380436
+      Ninja 1_25: 1390574090
+      Ninja 1_11: 1889307637
+      Ninja 1_31: -1274051047
+      Ninja 1_3: -1063151589
+      Ninja 1_4: 1038592289
+      Ninja 1_14: -2071652614
+      Ninja 1_5: 2144759045
+      Ninja 1_7: -1527009151
+      Ninja 1_12: -1722163979
+      Ninja 1_19: 2116944942
+      Ninja 1_23: -564677588
+      Ninja 1_27: 1173758229
+      Ninja 1_0: -1403049265
+      Ninja 1_10: -254654755
+      Ninja 1_28: 674950072
+      Ninja 1_6: -1641878600
+      Ninja 1_20: -183765069
+      Ninja 1_24: 509070198
+      Ninja 1_29: 444626589
+      Ninja 1_18: 1252541467
+      Ninja 1_15: -500221046
+      Ninja 1_21: 59580294
+      Ninja 1_16: -1918355494
+      Ninja 1_22: 739443021
+      Ninja 1_9: -898463624
+      Ninja 1_1: -1655965132
+      Ninja 1_13: 1789225820
+      Ninja 1_17: -1089917103
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

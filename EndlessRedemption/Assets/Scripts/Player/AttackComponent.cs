@@ -33,6 +33,7 @@ public class AttackComponent : MonoBehaviour
             _animator.SetBool("DownAttack", _onDownAttack);
             GameObject item = Instantiate(_katana, _myDownTransform.position, Quaternion.identity);
             item.transform.parent = gameObject.transform;
+            item.GetComponent<DamageComponent>()._downAttack = true;
         }       
     }
 

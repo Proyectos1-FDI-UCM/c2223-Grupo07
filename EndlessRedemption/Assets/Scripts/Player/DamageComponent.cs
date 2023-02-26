@@ -16,8 +16,9 @@ public class DamageComponent : MonoBehaviour
     private Vector2 _empuje;
     public float _fuerza;
     public int _damage;
-    public float _elapsedTime = 0.00000000001f;
+    public float _elapsedTime = 0.1f;
     private float _time = 0f;
+    public bool _downAttack = false;
     #endregion
 
 
@@ -33,6 +34,11 @@ public class DamageComponent : MonoBehaviour
             _empuje.Normalize();
             collision.gameObject.GetComponent<EnemyManager>().HitAnimation();
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(_empuje * _fuerza, ForceMode2D.Impulse);
+            if (_downAttack)
+            {
+                gameObject.GetComponentInParent<MovementComponent>().Up();
+                _downAttack = false;
+            }
 
 
         }

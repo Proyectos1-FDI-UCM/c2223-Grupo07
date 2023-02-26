@@ -26,6 +26,8 @@ public class MovementComponent : MonoBehaviour
     private float _dashForce;
     [SerializeField]
     private float _cooldown;
+    [SerializeField]
+    private float _impulse=5;
     private float _cooldownElapsed;
     
     [HideInInspector]
@@ -58,7 +60,13 @@ public class MovementComponent : MonoBehaviour
             
         }
         
-    }    
+    }
+    public void Up()
+    {
+        Debug.Log("e");
+        _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
+        _rigidbody2D.AddForce(Vector2.up * _impulse, ForceMode2D.Force);
+    }
 
     //Impulso inicial del salto
     public void Jump()

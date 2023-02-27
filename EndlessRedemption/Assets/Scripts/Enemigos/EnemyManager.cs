@@ -19,7 +19,7 @@ public class EnemyManager : MonoBehaviour
     [SerializeField]
     public float _detectionDistance = 5f; //Distancia a la que detecta al jugador
     public float _appearingDistance; //Distancia a la que aparece del suelo
-    private int aparecido = 0;  //Para que solo aparezca una vez
+    private bool aparecido = false;  //Para que solo aparezca una vez
     public bool _onAppearing = false;
     public bool _lookingRight = true;
     private float _elapsedTime = 0f;
@@ -72,7 +72,7 @@ public class EnemyManager : MonoBehaviour
         {
             GetComponent<Renderer>().enabled = false;
         }
-        else aparecido = 1;
+        else aparecido = true;
     }
 
     // Update is called once per frame
@@ -80,7 +80,7 @@ public class EnemyManager : MonoBehaviour
     {
         if(GetComponent<BabyDragonComponent>() == null)
         {
-            if (Mathf.Sqrt(Mathf.Pow(_playerTransform.position.x - transform.position.x, 2) + Mathf.Pow(_playerTransform.position.y - transform.position.y, 2)) < _appearingDistance)
+            if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _appearingDistance && !aparecido)
             {
                 GetComponent<Renderer>().enabled = true;
                 Appearing();
@@ -88,18 +88,18 @@ public class EnemyManager : MonoBehaviour
                 if (_elapsedTime > _appearingTime)
                 {
                     EndOfAppearing();
-                    aparecido++;
+                    aparecido = true;
                 }
             }
         }
               
-        if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _detectionDistance && aparecido==1)
+        if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _detectionDistance && aparecido)
         {
             _myLateralMovement.enabled = false;
             _myEnemyDetection.enabled = true;
 
         }
-        if (Mathf.Abs(_playerTransform.position.x - transform.position.x) > _detectionDistance && aparecido == 1)
+        else
         {
             _myEnemyDetection.enabled = false;
             _myLateralMovement.enabled = true;

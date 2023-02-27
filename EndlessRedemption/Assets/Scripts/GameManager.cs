@@ -44,6 +44,11 @@ public class GameManager : MonoBehaviour
     {
         _lifes++;
     }
+    public void Muerte()
+    {
+
+        _lifes=0;
+    }
     public void LoseLife()
     {
         _lifes--;

@@ -13,6 +13,10 @@ public class EnemyLifeComponent : MonoBehaviour
     private int prob;
 
     // Start is called before the first frame update
+    public void Muerte()
+    {
+        vidasEnemy= 0;
+    }
     void Start()
     {
         prob = Random.Range(0,3);

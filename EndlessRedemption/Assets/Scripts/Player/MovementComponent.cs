@@ -10,6 +10,7 @@ public class MovementComponent : MonoBehaviour
     private DashDetection _dashDetection;
     private InputComponent _inputComponent;
     private DashDamage _dashDamage;
+    private DisableCollider _disableCollider;
     private int _fpsLimit = 144;//Para no petar el PC un saludo
     [HideInInspector]
     public int _jumps = 0;
@@ -93,6 +94,7 @@ public class MovementComponent : MonoBehaviour
     {
         if (_dashPickUp && !_dashCoolDown)
         {
+            _disableCollider.Collider();
             gameObject.layer = 8;
             _reachPosition = _dashDetection.PositionToReach;
             _dashCoolDown = true;
@@ -133,6 +135,7 @@ public class MovementComponent : MonoBehaviour
     }
     public void DashStop()
     {
+        _disableCollider.ColliderEnable();
         gameObject.layer = 3;
         _dashing = false;
         _myCollider2D.enabled = true;
@@ -147,6 +150,7 @@ public class MovementComponent : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _dashDetection = GetComponentInChildren<DashDetection>();
         _inputComponent = GetComponent<InputComponent>();
+        _disableCollider = GetComponentInChildren<DisableCollider>();
         _onGround = true;        
         _myCollider2D = GetComponent<Collider2D>();
         _dashAvailable = true;

@@ -9,15 +9,17 @@ public class DisableCollider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _collider2D = GetComponent<Collider2D>();
-        _movementComponent = GetComponentInParent<MovementComponent>();
+        _collider2D = GetComponent<Collider2D>();     
     }
 
     // Update is called once per frame
-    void Update()
+    
+    public void Collider()
     {
-        if (_movementComponent._dashing)
-            _collider2D.enabled = false;
-        else _collider2D.enabled = true;
+        _collider2D.enabled = false;
+    }
+    public void ColliderEnable()
+    {
+        _collider2D.enabled = true;
     }
 }

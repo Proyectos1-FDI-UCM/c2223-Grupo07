@@ -170,7 +170,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidasEnemy: 2
-  VidaPickUp: {fileID: 0}
+  VidaPickUp: {fileID: 5156510250345167162, guid: 78d45011921c34c4fabbbaecfadaabe5, type: 3}
+  _deadExplosion: {fileID: 5642766282230003982, guid: b5c8ca7ed10b61e499cce8ec3b6e2e4c, type: 3}
 --- !u!114 &8420716314514321903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,7 +195,7 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
+  m_UseAutoMass: 0
   m_Mass: 5000
   m_LinearDrag: 0
   m_AngularDrag: 0.05

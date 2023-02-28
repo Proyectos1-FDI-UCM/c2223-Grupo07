@@ -23,11 +23,11 @@ public class GameManager : MonoBehaviour
     public GameStates CurrentState {get { return _currentState; }} //Estado actual
     public float Maxlifes { get { return _maxLifes; } }
     
-    // Start is called before the first frame update
     private void Awake()
     {
         _instance = this;
     }
+    // Preparación de escena y checkpoint
     void Start()
     {
         _currentCheckpoint = PlayerPrefs.GetInt("CheckpointX");
@@ -43,15 +43,16 @@ public class GameManager : MonoBehaviour
     public void WinLife()
     {
         _lifes++;
+        Debug.Log("VIDAS: "+ _lifes);
     }
-    public void Muerte()
+    public void Muerte() //Para cuando cae al vacio una entidad
     {
-
         _lifes=0;
     }
     public void LoseLife()
     {
         _lifes--;
+        Debug.Log("VIDAS: " + _lifes);
     }
     public void PickShuriken()
     {

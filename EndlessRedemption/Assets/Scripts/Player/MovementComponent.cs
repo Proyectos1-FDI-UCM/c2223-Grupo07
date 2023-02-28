@@ -132,7 +132,7 @@ public class MovementComponent : MonoBehaviour
         _myCollider2D = GetComponent<Collider2D>();
         _dashAvailable = true;
         _dashing = false;
-        _distanceToReach = 1f;
+        _distanceToReach = 0.3f;
         _lookingRight = true;
         _animator = GetComponent<Animator>();
         _dashDamage = FindObjectOfType<DashDamage>();

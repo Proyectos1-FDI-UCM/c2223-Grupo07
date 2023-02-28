@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &603014457875631837
+--- !u!1 &831598543213018888
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8985005605366899852}
-  - component: {fileID: 4991597372332489042}
-  - component: {fileID: -3621716452675447885}
-  m_Layer: 6
-  m_Name: Katana
+  - component: {fileID: 831598543213018893}
+  - component: {fileID: 831598543213018894}
+  - component: {fileID: 831598543213018895}
+  m_Layer: 0
+  m_Name: Vacio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8985005605366899852
+--- !u!4 &831598543213018893
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 603014457875631837}
+  m_GameObject: {fileID: 831598543213018888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 243.59738, y: -37.9, z: 0.7303856}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &4991597372332489042
+--- !u!61 &831598543213018894
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 603014457875631837}
+  m_GameObject: {fileID: 831598543213018888}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.28828132, y: 0.029331386}
+  m_Offset: {x: -20.620026, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -57,25 +57,17 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4594166, y: 0.5543575}
+  m_Size: {x: 395.04395, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-3621716452675447885
+--- !u!114 &831598543213018895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 603014457875631837}
+  m_GameObject: {fileID: 831598543213018888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d680697a0988d4aad3c83cc00889c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 11cf37d6dbff4db439ab2457c6f57ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitExplosion: {fileID: 6553844716301178796, guid: 7c6e3ebe3c0834048bee24895aabacf0, type: 3}
-  _UpExplosion: {fileID: 3432958286849152088, guid: 41f779661e82d4247839007f00d8171e, type: 3}
-  _DownExplosion: {fileID: 3432958286849152088, guid: 87ee7299dd44ed747af24dbb91bcd33b, type: 3}
-  _fuerza: 4
-  _damage: 1
-  _elapsedTime: 0.25
-  _downAttack: 0
-  _upAttack: 0

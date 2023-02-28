@@ -7,6 +7,10 @@ public class DamageComponent : MonoBehaviour
     #region references
     [SerializeField]
     private GameObject _hitExplosion;
+    [SerializeField]
+    private GameObject _UpExplosion;
+    [SerializeField]
+    private GameObject _DownExplosion;
     private AttackComponent _attack;
     private Transform _myTransform;
     private EnemyLifeComponent _enemyLife;
@@ -19,6 +23,7 @@ public class DamageComponent : MonoBehaviour
     public float _elapsedTime = 0.1f;
     private float _time = 0f;
     public bool _downAttack = false;
+    public bool _upAttack = false;
     #endregion
 
 
@@ -28,7 +33,11 @@ public class DamageComponent : MonoBehaviour
         if (collision.gameObject.GetComponent<EnemyLifeComponent>())
         {           
             _enemyLife = collision.gameObject.GetComponent<EnemyLifeComponent>();
-            Instantiate(_hitExplosion, _enemyLife.transform.position, Quaternion.identity);
+            if(!_downAttack&&!_upAttack)
+            {
+                Instantiate(_hitExplosion, _enemyLife.transform.position, Quaternion.identity);
+            }
+            
             _enemyLife.vidasEnemy =_enemyLife.vidasEnemy - _damage;
             _empuje = new Vector3(collision.gameObject.transform.position.x - _myTransform.position.x, collision.gameObject.transform.position.y - _myTransform.position.y);
             _empuje.Normalize();
@@ -36,8 +45,12 @@ public class DamageComponent : MonoBehaviour
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(_empuje * _fuerza, ForceMode2D.Impulse);
             if (_downAttack)
             {
+                Instantiate(_DownExplosion, _enemyLife.transform.position, Quaternion.identity);
                 gameObject.GetComponentInParent<MovementComponent>().Up();
                 _downAttack = false;
+            }else if (_upAttack)
+            {
+                Instantiate(_UpExplosion, _enemyLife.transform.position, Quaternion.identity);
             }
 
 

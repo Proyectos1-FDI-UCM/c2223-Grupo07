@@ -8,6 +8,8 @@ public class EnemyLifeComponent : MonoBehaviour
     public int vidasEnemy;
     [SerializeField]
     private GameObject VidaPickUp;
+    [SerializeField]
+    private GameObject _deadExplosion;
     private GameObject aux;
     private float thrust = 3f;
     private int prob;
@@ -31,6 +33,7 @@ public class EnemyLifeComponent : MonoBehaviour
                 aux = Instantiate(VidaPickUp, transform.position, Quaternion.identity);
                 aux.GetComponent<Rigidbody2D>().AddForce(transform.up * thrust, ForceMode2D.Impulse);
             }
+            Instantiate(_deadExplosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

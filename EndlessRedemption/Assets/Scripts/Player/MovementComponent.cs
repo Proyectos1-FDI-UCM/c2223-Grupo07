@@ -17,6 +17,8 @@ public class MovementComponent : MonoBehaviour
     private Vector3 _reachPosition;
     private float _distanceToReach;
     [SerializeField]
+    private GameObject _secondJump;
+    [SerializeField]
     private float _speed;
     [SerializeField]
     private float _maxSpeed;
@@ -27,7 +29,9 @@ public class MovementComponent : MonoBehaviour
     [SerializeField]
     private float _cooldown;
     [SerializeField]
-    private float _impulse=5;
+    private float _impulse;
+    [SerializeField]
+    private GameObject _dashExplosion;
     private float _cooldownElapsed;
     
     [HideInInspector]
@@ -63,7 +67,7 @@ public class MovementComponent : MonoBehaviour
     }
     public void Up()
     {
-        Debug.Log("e");
+        
         _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
         _rigidbody2D.AddForce(Vector2.up * _impulse, ForceMode2D.Force);
     }
@@ -73,6 +77,11 @@ public class MovementComponent : MonoBehaviour
     {
         if (_jumps<_jumpsAvailable)
         {
+            if(_jumps>0)
+            {
+                Instantiate(_secondJump, transform.position, Quaternion.identity);
+                _animator.SetTrigger("DoubleJump");
+            }
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
             _rigidbody2D.AddForce(Vector2.up * _jumpForce , ForceMode2D.Impulse);
             _jumps++;
@@ -95,10 +104,15 @@ public class MovementComponent : MonoBehaviour
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
             if (_lookingRight)
             {
+                GameObject item=Instantiate(_dashExplosion, transform.position, Quaternion.identity);
+                //item.transform.parent = transform;
                 _rigidbody2D.AddForce(Vector2.right * _dashForce, ForceMode2D.Impulse);
+                
             }
             else if (!_lookingRight)
             {
+                GameObject item = Instantiate(_dashExplosion, transform.position, Quaternion.identity);
+                //item.transform.parent = transform;
                 _rigidbody2D.AddForce(Vector2.left * _dashForce, ForceMode2D.Impulse);
             }
             _dashing = true;

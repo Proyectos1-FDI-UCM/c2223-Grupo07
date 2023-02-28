@@ -16,6 +16,7 @@ public class MovementComponent : MonoBehaviour
     public int _jumpsAvailable = 1;
     private Vector3 _reachPosition;
     private float _distanceToReach;
+    private float _timeDashing;
     [SerializeField]
     private GameObject _secondJump;
     [SerializeField]
@@ -46,6 +47,7 @@ public class MovementComponent : MonoBehaviour
    
 
     #region Methods
+
     public void Left()
     {
         if (_rigidbody2D.velocity.x > -_maxSpeed)
@@ -106,20 +108,37 @@ public class MovementComponent : MonoBehaviour
             {
                 GameObject item=Instantiate(_dashExplosion, transform.position, Quaternion.identity);
                 //item.transform.parent = transform;
+                _myCollider2D.enabled = false;
                 _rigidbody2D.AddForce(Vector2.right * _dashForce, ForceMode2D.Impulse);
-                
             }
             else if (!_lookingRight)
             {
                 GameObject item = Instantiate(_dashExplosion, transform.position, Quaternion.identity);
                 //item.transform.parent = transform;
+                _myCollider2D.enabled = false;
                 _rigidbody2D.AddForce(Vector2.left * _dashForce, ForceMode2D.Impulse);
             }
             _dashing = true;
-
         }
     }
+    private void Girar()
+    {
+        _dashDetection.DashDirection();
+        _dashDamage.DamageDirection();
+        _lookingRight = !_lookingRight;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
 
+    }
+    public void DashStop()
+    {
+        gameObject.layer = 3;
+        _dashing = false;
+        _myCollider2D.enabled = true;
+        _rigidbody2D.gravityScale = 4;
+        _inputComponent.enabled = true;
+    }
     #endregion
     // Start is called before the first frame update
     void Start()
@@ -136,18 +155,19 @@ public class MovementComponent : MonoBehaviour
         _lookingRight = true;
         _animator = GetComponent<Animator>();
         _dashDamage = FindObjectOfType<DashDamage>();
-        _dashCoolDown = false;
-        
-        
-        
-       
+        _dashCoolDown = false; 
     }
     private void Update()
     {
-       
+        /*if (_dashing)
+        {
+            _timeDashing += Time.deltaTime;
+            if(_timeDashing > 2f)DashStop();
+        }*/
         if(_dashCoolDown)
         {           
             _cooldownElapsed += Time.deltaTime;
+            Debug.Log("DASH CD: " + _cooldownElapsed);
         }
         if(_cooldownElapsed > _cooldown)
         {
@@ -176,30 +196,7 @@ public class MovementComponent : MonoBehaviour
             {
                 _rigidbody2D.AddForce(Vector2.right * (_dashForce - _maxSpeed), ForceMode2D.Impulse);
             }
-
-            
         }
-    }
-           
-        
-        
-    
-    private void Girar ()
-    {
-        _dashDetection.DashDirection();
-        _dashDamage.DamageDirection();
-        _lookingRight = !_lookingRight;
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
-        
-    }
-    public void DashStop()
-    {
-        gameObject.layer = 3;
-        _dashing = false;
-        _myCollider2D.enabled = true;
-        _rigidbody2D.gravityScale = 4;
-        _inputComponent.enabled = true;
-    }
+        if(!_dashing)_myCollider2D.enabled = true;
+    }                 
 }

@@ -22,7 +22,6 @@ public class PlayerManager : MonoBehaviour
     public float _elapsedTime;
     public float _timeInvulnerable;
     private bool _invulnerable = false;
-    public int vidasPlayer = 3;
     #endregion
 
     #region methods

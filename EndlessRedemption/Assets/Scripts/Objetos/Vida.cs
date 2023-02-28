@@ -12,7 +12,6 @@ public class Vida : MonoBehaviour
         {
             GameManager.Instance.WinLife();
             Destroy(gameObject);
-            Debug.Log("Vida Recogida; vidas = " + PlayerManager.Instance.vidasPlayer);
         }
     }
     #endregion

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class MuerteVacio : MonoBehaviour
 {
-	// Start is called before the first frame update
-	private void OnTriggerEnter2D(Collider2D collision)
+	private void OnTriggerEnter2D(Collider2D collision) //Matar entidad
 	{
         if (collision.gameObject.GetComponent<PlayerManager>())
         {
@@ -19,14 +18,4 @@ public class MuerteVacio : MonoBehaviour
 
 
 	}
-	void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

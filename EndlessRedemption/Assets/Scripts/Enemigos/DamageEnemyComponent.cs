@@ -18,8 +18,6 @@ public class DamageEnemyComponent : MonoBehaviour
            
             GameManager.Instance.LoseLife(); //Dañar al player si choca con el
             PlayerManager.Instance.Invulnerable(2.0f); //Player se vuelve invulnerable durante dos segundos
-            Debug.Log("Vidas: " + PlayerManager.Instance.vidasPlayer);
-            GameManager.Instance.LoseLife();
         }
     }
     #endregion

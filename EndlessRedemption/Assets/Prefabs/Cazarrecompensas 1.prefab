@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movementSpeed: 1.5
   _timeMoving: 2
-  _timeStill: 1
+  _timeStill: 0
   _verticalMove: 0
 --- !u!114 &9005307715582013927
 MonoBehaviour:

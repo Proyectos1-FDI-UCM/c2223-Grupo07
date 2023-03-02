@@ -51554,11 +51554,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8996204126286014245, guid: b1870dd9a98641746814ece92bec419e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 349.5
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8996204126286014245, guid: b1870dd9a98641746814ece92bec419e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -17.6
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 8996204126286014245, guid: b1870dd9a98641746814ece92bec419e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -86833,6 +86833,10 @@ PrefabInstance:
     - target: {fileID: 8098501951189362842, guid: bc2f85d238753cd4bbb4f3ee70ea4df3, type: 3}
       propertyPath: m_Name
       value: Dash
+      objectReference: {fileID: 0}
+    - target: {fileID: 8098501951189362842, guid: bc2f85d238753cd4bbb4f3ee70ea4df3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc2f85d238753cd4bbb4f3ee70ea4df3, type: 3}

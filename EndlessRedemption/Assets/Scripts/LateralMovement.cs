@@ -7,6 +7,7 @@ public class LateralMovement : MonoBehaviour
     private enum IslandState {STOP , MOVING}
     private IslandState _islandState;
     private EnemyManager _enemyManager;
+    private IABountyHunter1 _iABountyHunter1;
     [SerializeField]
     float _movementSpeed;
     [SerializeField]
@@ -23,7 +24,10 @@ public class LateralMovement : MonoBehaviour
     void Start()
     {
         _islandState = IslandState.MOVING;
-        _enemyManager = GetComponent<EnemyManager>();
+        if (GetComponent<IABountyHunter1>() == null)
+            _enemyManager = GetComponent<EnemyManager>();
+        if(GetComponent<IABountyHunter1>())
+            _iABountyHunter1 = GetComponent<IABountyHunter1>();
         _elapsedTime = 0;
     }
 
@@ -62,7 +66,7 @@ public class LateralMovement : MonoBehaviour
         }
         else
         {
-            if(GetComponent<EnemyManager>() != null) 
+            if(GetComponent<EnemyManager>()) 
             {
                 if (_movementSpeed > 0 && transform.localScale.x > 0)
                 {
@@ -71,6 +75,17 @@ public class LateralMovement : MonoBehaviour
                 if (_movementSpeed < 0 && transform.localScale.x < 0)
                 {
                     _enemyManager.Girar();
+                }
+            }
+            else if(GetComponent<IABountyHunter1>())
+            {
+                if (_movementSpeed >= 0 && transform.localScale.x < 0)
+                {
+                    _iABountyHunter1.Turn();
+                }
+                if (_movementSpeed < 0 && transform.localScale.x > 0)
+                {
+                    _iABountyHunter1.Turn();
                 }
             }
            

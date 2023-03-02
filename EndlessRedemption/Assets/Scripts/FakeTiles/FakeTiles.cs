@@ -5,6 +5,7 @@ using UnityEngine;
 public class FakeTiles : MonoBehaviour
 {
     public float _timeToDestroy = 1f; //tiempo que tarda en destruirse
+    public float _time = 0f;
     //public GameObject rompible; //prefab de la plataforma rompible
     private bool _destroyed = false;
 
@@ -28,8 +29,12 @@ public class FakeTiles : MonoBehaviour
     {
         if (_destroyed)
         {
-            _timeToDestroy -= Time.deltaTime;
-            if (_timeToDestroy <= 0) Destroy(gameObject);
+            _time += Time.deltaTime;
+            if (_time >= _timeToDestroy)
+            {
+                Destroy(gameObject);
+                _time = 0f;
+            }  
         }
     }
 

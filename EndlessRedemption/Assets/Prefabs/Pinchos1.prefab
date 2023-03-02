@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8497460935108162307}
   - component: {fileID: 8497460935108162332}
   - component: {fileID: -6082583320041518780}
+  - component: {fileID: 9183284962635007118}
   m_Layer: 0
   m_Name: Pinchos1
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7965221746292824749, guid: 0b0ba242c6354d744b4524eb0fc98ee7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -98,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.085128784, y: -0.21913004}
+  m_Offset: {x: -0.06315613, y: -0.2502594}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -109,5 +110,18 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6973572, y: 0.5617399}
+  m_Size: {x: 0.65341187, y: 0.4994812}
   m_EdgeRadius: 0
+--- !u!114 &9183284962635007118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8497460935108162333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca774d0a4942bfc43a2af99c4017c427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 1

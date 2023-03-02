@@ -38,6 +38,7 @@ public class MovementComponent : MonoBehaviour
     
     [HideInInspector]
     public bool _onGround;
+    private bool _doubleJump=false;
     public bool _dashAvailable;
     public bool _dashing;
     public bool _dashPickUp = false;
@@ -45,8 +46,9 @@ public class MovementComponent : MonoBehaviour
     private bool _lookingRight;
     [Header("Animation")]
     private Animator _animator;
-   
 
+    private float _time=0.5f;
+    private float _elapsedtime=0f;
     #region Methods
 
     public void Left()
@@ -82,8 +84,10 @@ public class MovementComponent : MonoBehaviour
         {
             if(_jumps>0)
             {
+                
                 Instantiate(_secondJump, transform.position, Quaternion.identity);
-                _animator.SetTrigger("DoubleJump");
+                _doubleJump =true;
+                _animator.SetBool("DoubleJump", _doubleJump);
             }
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
             _rigidbody2D.AddForce(Vector2.up * _jumpForce , ForceMode2D.Impulse);
@@ -202,5 +206,17 @@ public class MovementComponent : MonoBehaviour
             }
         }
         if(!_dashing)_myCollider2D.enabled = true;
-    }                 
+
+        if (_doubleJump)
+        {
+            _elapsedtime += Time.deltaTime;
+            if(_elapsedtime > _time)
+            {
+                _doubleJump = false;
+                _animator.SetBool("DoubleJump", _doubleJump);
+                _elapsedtime = 0;
+            }
+        }
+    }   
+    
 }

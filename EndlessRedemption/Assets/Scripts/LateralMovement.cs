@@ -17,10 +17,11 @@ public class LateralMovement : MonoBehaviour
     private float _elapsedTime;
     [SerializeField]
     bool _verticalMove;
-    
+
+  
 
     // Start is called before the first frame update
-    
+
     void Start()
     {
         _islandState = IslandState.MOVING;

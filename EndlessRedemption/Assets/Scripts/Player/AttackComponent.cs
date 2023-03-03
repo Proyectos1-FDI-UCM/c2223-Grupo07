@@ -26,8 +26,12 @@ public class AttackComponent : MonoBehaviour
             _animator.SetBool("UpAttack", _onUpAttack);
             GameObject item = Instantiate(_katana, _myUpTransform.position, Quaternion.identity);
             item.transform.parent = gameObject.transform;
+<<<<<<< HEAD
         }
     
+=======
+        }        
+>>>>>>> parent of ef8eeb5 (Revert "Mejoras")
     }
     public void DownAttack()
     {
@@ -73,8 +77,5 @@ public class AttackComponent : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

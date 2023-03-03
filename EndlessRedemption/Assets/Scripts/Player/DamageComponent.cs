@@ -39,7 +39,7 @@ public class DamageComponent : MonoBehaviour
             }
             
             _enemyLife.vidasEnemy =_enemyLife.vidasEnemy - _damage;
-            if(collision.gameObject.GetComponent<EnemyManager>())
+            if(collision.gameObject.GetComponent<EnemyLifeComponent>())
             {
                 _empuje = new Vector3(collision.gameObject.transform.position.x - _myTransform.position.x, collision.gameObject.transform.position.y - _myTransform.position.y);
                 _empuje.Normalize();

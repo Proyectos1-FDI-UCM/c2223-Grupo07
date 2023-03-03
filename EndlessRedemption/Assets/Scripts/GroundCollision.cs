@@ -14,7 +14,7 @@ public class GroundCollision : MonoBehaviour
         _movementComponent._jumps= 0;
         
     }
-    private void OnTriggerExit2D(Collider2D collision)
+     private void OnTriggerExit2D(Collider2D collision)
     {
         _movementComponent._onGround = false;
     }

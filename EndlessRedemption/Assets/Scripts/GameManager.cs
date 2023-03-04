@@ -13,11 +13,11 @@ public class GameManager : MonoBehaviour
     private Transform[] _checkPoints; //Array con los checkpoints, cada escena tiene los suyos
     public int _currentCheckpoint;
     [SerializeField]
-    private float _lifes;
+    public float _lifes;
     public float _currenShurikens;
     private float _maxShurikens; //Depende de la dificultad de la partida
     [SerializeField]
-    private float _maxLifes; //Depende de la dificultad de la partida
+    public float _maxLifes; //Depende de la dificultad de la partida
     static private GameManager _instance;
     static public GameManager Instance { get { return _instance; } }   
     public GameStates CurrentState {get { return _currentState; }} //Estado actual

@@ -9,11 +9,12 @@ public class SpiderBehaviour : MonoBehaviour
     private float _detectionDistance = 0;
     private Rigidbody2D _myRigidbody;
     private bool _onGround = false;
+    private bool _attacking;
     private BoxCollider2D _myBoxcollider;
     private Vector2 _vectorDirection;
     [SerializeField]
     private float _enemySpeed = 1f;
-    private EnemyManager _enemyManager;
+    private Animator _animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,9 @@ public class SpiderBehaviour : MonoBehaviour
         _myRigidbody.gravityScale = 0;
         _myBoxcollider = GetComponent<BoxCollider2D>();
         _myBoxcollider.enabled = false;
-        _enemyManager = GetComponent<EnemyManager>();
+        _animator = GetComponent<Animator>();
+        _attacking = false;
+       
     }
 
     // Update is called once per frame
@@ -38,20 +41,19 @@ public class SpiderBehaviour : MonoBehaviour
         }
         else if (_myRigidbody.gravityScale == 1 && _onGround == true)
         {
-            transform.Translate(_vectorDirection * Time.fixedDeltaTime * _enemySpeed);
-            if (_vectorDirection.x > 0 && transform.localScale.x > 0)
+            _attacking = true;
+            transform.Translate(-_vectorDirection * Time.fixedDeltaTime * _enemySpeed);
+            if (_vectorDirection.x > 0 && transform.localScale.x < 0)
             {
-
-                _enemyManager.Girar();
-
+                Girar();
             }
-            if (_vectorDirection.x < 0 && transform.localScale.x < 0)
+            if (_vectorDirection.x < 0 && transform.localScale.x > 0)
             {
-
-                _enemyManager.Girar();
-
+                Girar();
             }
         }
+        else _attacking = false;
+        _animator.SetBool("attacking", _attacking);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -59,5 +61,11 @@ public class SpiderBehaviour : MonoBehaviour
         {
             _onGround = true;
         }
+    }
+    private void Girar()
+    {
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 }

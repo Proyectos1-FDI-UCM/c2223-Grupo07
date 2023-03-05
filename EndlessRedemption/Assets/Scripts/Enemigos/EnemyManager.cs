@@ -78,7 +78,7 @@ public class EnemyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GetComponent<BabyDragonComponent>() == null)
+        if(!GetComponent<BabyDragonComponent>() || !GetComponent<SpiderBehaviour>())
         {
             if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _appearingDistance && !aparecido)
             {

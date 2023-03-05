@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public float _lifes;
     public float _currenShurikens;
-    private float _maxShurikens; //Depende de la dificultad de la partida
+    public float _maxShurikens; //Depende de la dificultad de la partida
     [SerializeField]
     public float _maxLifes; //Depende de la dificultad de la partida
     static private GameManager _instance;

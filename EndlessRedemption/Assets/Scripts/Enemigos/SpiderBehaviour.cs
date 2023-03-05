@@ -15,6 +15,7 @@ public class SpiderBehaviour : MonoBehaviour
     [SerializeField]
     private float _enemySpeed = 1f;
     private Animator _animator;
+    private SmokeBomb _mySmokeBomb;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,8 +25,8 @@ public class SpiderBehaviour : MonoBehaviour
         _myBoxcollider = GetComponent<BoxCollider2D>();
         _myBoxcollider.enabled = false;
         _animator = GetComponent<Animator>();
+        _mySmokeBomb = FindObjectOfType<SmokeBomb>();
         _attacking = false;
-       
     }
 
     // Update is called once per frame
@@ -54,6 +55,20 @@ public class SpiderBehaviour : MonoBehaviour
         }
         else _attacking = false;
         _animator.SetBool("attacking", _attacking);
+        if (!_mySmokeBomb._playerTarget)
+        {
+            _vectorDirection = _mySmokeBomb._smokePosition - transform.position;
+            _vectorDirection.Normalize();
+            transform.Translate(_vectorDirection * Time.fixedDeltaTime * _enemySpeed);
+            if (_vectorDirection.x > 0 && transform.localScale.x > 0)
+            {
+                Girar();
+            }
+            if (_vectorDirection.x < 0 && transform.localScale.x < 0)
+            {
+                Girar();
+            }
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

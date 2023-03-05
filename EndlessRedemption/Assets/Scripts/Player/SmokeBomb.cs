@@ -17,6 +17,8 @@ public class SmokeBomb : MonoBehaviour
     [Header("Animation")]
     private Animator _animator;
     private GameObject _instanced;
+    public Vector3 _smokePosition;
+    public bool _playerTarget = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,13 +47,13 @@ public class SmokeBomb : MonoBehaviour
         {
             _smokeAvailable = false;
             _smokeActive = false;
-            _elapsedTime = 0;           
+            _elapsedTime = 0;
+            _playerTarget = true;
         }
         if (_elapsedTime > 0.5)
         {
             Destroy(_instanced);
         }
-
     }
     public void ActivateSmoke()
     {
@@ -60,7 +62,8 @@ public class SmokeBomb : MonoBehaviour
             PlayerManager.Instance.Invulnerable(3);
             _instanced =  Instantiate(_bomb, transform.position, Quaternion.identity);
             _smokeActive = true;
+            _playerTarget = false;
+            _smokePosition = transform.position;
         }
-        
     }
 }

@@ -40,7 +40,7 @@ public class SpiderBehaviour : MonoBehaviour
             _myBoxcollider.enabled = true;
             transform.localScale = new Vector2(transform.localScale.x, -transform.localScale.y);
         }
-        else if (_myRigidbody.gravityScale == 1 && _onGround == true)
+        else if (_myRigidbody.gravityScale == 1 && _onGround == true && _mySmokeBomb._playerTarget)
         {
             _attacking = true;
             transform.Translate(-_vectorDirection * Time.fixedDeltaTime * _enemySpeed);
@@ -53,13 +53,11 @@ public class SpiderBehaviour : MonoBehaviour
                 Girar();
             }
         }
-        else _attacking = false;
-        _animator.SetBool("attacking", _attacking);
-        if (!_mySmokeBomb._playerTarget)
+        else if (!_mySmokeBomb._playerTarget && _myRigidbody.gravityScale == 1 && _onGround == true)
         {
             _vectorDirection = _mySmokeBomb._smokePosition - transform.position;
             _vectorDirection.Normalize();
-            transform.Translate(_vectorDirection * Time.fixedDeltaTime * _enemySpeed);
+            transform.Translate(-_vectorDirection * Time.fixedDeltaTime * _enemySpeed);
             if (_vectorDirection.x > 0 && transform.localScale.x > 0)
             {
                 Girar();
@@ -69,6 +67,9 @@ public class SpiderBehaviour : MonoBehaviour
                 Girar();
             }
         }
+        else _attacking = false;
+        _animator.SetBool("attacking", _attacking);
+       
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

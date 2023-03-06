@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
     public void WinLife()
     {
         _lifes++;
+        UIManager.Instance.GanaVidas();
         Debug.Log("VIDAS: "+ _lifes);
     }
     public void Muerte() //Para cuando cae al vacio una entidad
@@ -52,6 +53,7 @@ public class GameManager : MonoBehaviour
     public void LoseLife()
     {
         _lifes--;
+        UIManager.Instance.PierdeVidas();
         Debug.Log("VIDAS: " + _lifes);
     }
     public void PickShuriken()

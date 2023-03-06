@@ -10,6 +10,7 @@ public class DoubleJump : MonoBehaviour
         if (collider.gameObject.GetComponent<PlayerManager>())//Si lo coge el jugador solo, para que no triggeree con elementos de la escena
         {
             collider.gameObject.GetComponent<MovementComponent>()._jumpsAvailable++;
+            UIManager.Instance.ShowDoubleJumpIcon();
             Destroy(gameObject);
             Debug.Log("Doble salto recogido");
         }

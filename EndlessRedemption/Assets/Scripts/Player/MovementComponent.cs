@@ -19,6 +19,8 @@ public class MovementComponent : MonoBehaviour
     private float _distanceToReach;
     private float _timeDashing;
     [SerializeField]
+    private float _maxFallSpeed;
+    [SerializeField]
     private GameObject _secondJump;
     [SerializeField]
     private float _speed;
@@ -167,11 +169,8 @@ public class MovementComponent : MonoBehaviour
     }
     private void Update()
     {
-        /*if (_dashing)
-        {
-            _timeDashing += Time.deltaTime;
-            if(_timeDashing > 2f)DashStop();
-        }*/
+        if (_rigidbody2D.velocity.y < _maxFallSpeed)
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _maxFallSpeed);
         if(_dashCoolDown)
         {           
             _cooldownElapsed += Time.deltaTime;

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8519373143796695192}
   - component: {fileID: 2547443264625238589}
   - component: {fileID: 4291698256131806893}
+  - component: {fileID: 3283720503266569038}
   m_Layer: 0
   m_Name: MovingRock
   m_TagString: Untagged
@@ -167,4 +168,30 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.48, y: 0.2034764}
+  m_EdgeRadius: 0
+--- !u!61 &3283720503266569038
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806338991777563333}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 3e4301cd5e3eefa418ea797e4159bd90, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00071156025, y: 0.14734927}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.48, y: 0.32}
+    newSize: {x: 0.48, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4131105, y: 0.045425966}
   m_EdgeRadius: 0

@@ -7,6 +7,8 @@ public class SpiderBehaviour : MonoBehaviour
     private Transform _playerTransform;
     [SerializeField]
     private float _detectionDistance = 0;
+    [SerializeField]
+    private float _detectionDistanceY = 0;
     private Rigidbody2D _myRigidbody;
     private bool _onGround = false;
     private bool _attacking;
@@ -34,7 +36,7 @@ public class SpiderBehaviour : MonoBehaviour
     {
         _vectorDirection = _playerTransform.position - transform.position;
         _vectorDirection.Normalize();
-        if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _detectionDistance && _myRigidbody.gravityScale == 0)
+        if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _detectionDistance && _myRigidbody.gravityScale == 0 && Mathf.Abs(_playerTransform.position.y - transform.position.y) < _detectionDistanceY)
         {
             _myRigidbody.gravityScale = 1;
             _myBoxcollider.enabled = true;

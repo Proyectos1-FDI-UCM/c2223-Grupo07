@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1346952140293121494}
   - component: {fileID: 1045579267100044718}
   - component: {fileID: 2977186642929400728}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: VidaPickUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011711441, y: -1.0678027}
+  m_Offset: {x: 0.0051247254, y: -1.229158}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -150,7 +150,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.50526935, y: 0.36459398}
+  m_Size: {x: 0.182546, y: 0.04188323}
   m_EdgeRadius: 0
 --- !u!50 &2977186642929400728
 Rigidbody2D:

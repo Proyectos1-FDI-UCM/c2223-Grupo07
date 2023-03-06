@@ -69,7 +69,7 @@ public class EnemyManager : MonoBehaviour
         _myEnemyDetection.enabled = false;
         _myLateralMovement.enabled = false;
         _playerTransform = PlayerManager.Instance.transform;
-        if (GetComponent<BabyDragonComponent>() == null)
+        if (GetComponent<BabyDragonComponent>() == null && !GetComponent<Soldier>())
         {
             GetComponent<Renderer>().enabled = false;
         }

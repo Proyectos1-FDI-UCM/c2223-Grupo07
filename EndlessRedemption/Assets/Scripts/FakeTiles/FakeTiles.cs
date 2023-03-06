@@ -5,13 +5,13 @@ using UnityEngine;
 public class FakeTiles : MonoBehaviour
 {
     public float _timeToDestroy = 1f; //tiempo que tarda en destruirse
-    public float _time = 0f;
+    private float _time = 0f;
     //public GameObject rompible; //prefab de la plataforma rompible
     private bool _destroyed = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.GetComponent<PlayerManager>())
         {
            // Instantiate(rompible, transform.position, Quaternion.identity);
             _destroyed = true;

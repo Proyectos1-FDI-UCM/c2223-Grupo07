@@ -39,10 +39,11 @@ public class DamageComponent : MonoBehaviour
             }
             
             _enemyLife.vidasEnemy =_enemyLife.vidasEnemy - _damage;
-            if(collision.gameObject.GetComponent<EnemyManager>())
+            if(collision.gameObject.GetComponent<EnemyLifeComponent>())
             {
                 _empuje = new Vector3(collision.gameObject.transform.position.x - _myTransform.position.x, collision.gameObject.transform.position.y - _myTransform.position.y);
                 _empuje.Normalize();
+                if(collision.gameObject.GetComponent<EnemyManager>())
                 collision.gameObject.GetComponent<EnemyManager>().HitAnimation();
                 collision.gameObject.GetComponent<Rigidbody2D>().AddForce(_empuje * _fuerza, ForceMode2D.Impulse);
             }

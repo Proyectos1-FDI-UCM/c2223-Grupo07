@@ -7,17 +7,17 @@ public class GameManager : MonoBehaviour
 {
     public enum GameStates { START, GAME, PAUSE, RESTART }
     private GameStates _currentState;
-    private string[] _sceneNames = { "Level1", "Level2", "Level3", "Level4 Dragon"};//Nombres de las escenas
+    private string[] _sceneNames = { "cazarrecopensas", "Level2", "Level3", "Level4 Dragon"};//Nombres de las escenas
     private int _currentScene;
     [SerializeField]
     private Transform[] _checkPoints; //Array con los checkpoints, cada escena tiene los suyos
     public int _currentCheckpoint;
     [SerializeField]
-    private float _lifes;
+    public float _lifes;
     public float _currenShurikens;
-    private float _maxShurikens; //Depende de la dificultad de la partida
+    public float _maxShurikens; //Depende de la dificultad de la partida
     [SerializeField]
-    private float _maxLifes; //Depende de la dificultad de la partida
+    public float _maxLifes; //Depende de la dificultad de la partida
     static private GameManager _instance;
     static public GameManager Instance { get { return _instance; } }   
     public GameStates CurrentState {get { return _currentState; }} //Estado actual

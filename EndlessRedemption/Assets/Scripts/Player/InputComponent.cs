@@ -9,7 +9,9 @@ public class InputComponent : MonoBehaviour
     private SmokeBomb _smokeBomb;
     private AttackComponent _attack;
     private ShurikenLauncher _shurikenLauncher;
-    
+    private PauseMenu _PauseMenu;
+    [SerializeField]
+    private GameObject PauseMenuObject;
     #endregion
 
 
@@ -19,6 +21,7 @@ public class InputComponent : MonoBehaviour
         _smokeBomb = GetComponent<SmokeBomb>();
         _attack = GetComponentInChildren<AttackComponent>();
         _shurikenLauncher = GetComponent<ShurikenLauncher>();
+        _PauseMenu = PauseMenuObject.GetComponent<PauseMenu>();
     }
 
     void Update()
@@ -79,8 +82,11 @@ public class InputComponent : MonoBehaviour
         {
             _shurikenLauncher.LateralThrow();
         }
-        
-
-
+        //Pausa
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (PauseMenu.isPaused) _PauseMenu.ResumeGame(PauseMenuObject);
+            else _PauseMenu.PauseGame(PauseMenuObject);
+        }
     }
 }

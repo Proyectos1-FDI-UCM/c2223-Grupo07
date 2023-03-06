@@ -10,6 +10,7 @@ public class EnemyManager : MonoBehaviour
     private LateralMovement _myLateralMovement;
     private CameraComponent _cameraComponent;
     private Animator _animator;
+    private SmokeBomb _mySmokeBomb;
 
     static private EnemyManager _instance;
     static public EnemyManager Instance { get { return _instance; } }
@@ -38,11 +39,10 @@ public class EnemyManager : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
     }
-   
  
     public void Appearing()
     {
-        _onAppearing=true;
+        _onAppearing = true;
         _animator.SetBool("Appearing", _onAppearing);
     }
 
@@ -65,10 +65,11 @@ public class EnemyManager : MonoBehaviour
         _myEnemyDetection = GetComponent<EnemyDetectionComponent>();
         _cameraComponent = PlayerManager.Instance._cameraComponent;
         _myLateralMovement = GetComponent<LateralMovement>();
+        _mySmokeBomb = FindObjectOfType<SmokeBomb>();
         _myEnemyDetection.enabled = false;
         _myLateralMovement.enabled = false;
         _playerTransform = PlayerManager.Instance.transform;
-        if (GetComponent<BabyDragonComponent>() == null)
+        if (GetComponent<BabyDragonComponent>() == null && !GetComponent<Soldier>())
         {
             GetComponent<Renderer>().enabled = false;
         }
@@ -78,7 +79,7 @@ public class EnemyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GetComponent<BabyDragonComponent>() == null)
+        if(!GetComponent<BabyDragonComponent>() || !GetComponent<SpiderBehaviour>())
         {
             if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _appearingDistance && !aparecido)
             {
@@ -93,16 +94,20 @@ public class EnemyManager : MonoBehaviour
             }
         }
               
-        if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _detectionDistance && aparecido)
+        if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _detectionDistance && aparecido && _mySmokeBomb._playerTarget)
         {
             _myLateralMovement.enabled = false;
             _myEnemyDetection.enabled = true;
-
         }
-        else
+        else if (Mathf.Abs(_playerTransform.position.x - transform.position.x) > _detectionDistance && aparecido && _mySmokeBomb._playerTarget)
         {
             _myEnemyDetection.enabled = false;
             _myLateralMovement.enabled = true;
-        }     
+        }
+        else if (!_mySmokeBomb._playerTarget)
+        {
+            _myLateralMovement.enabled = false;
+            _myEnemyDetection.enabled = true;
+        }
     }
 }

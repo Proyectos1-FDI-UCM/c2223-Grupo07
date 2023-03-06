@@ -11,20 +11,20 @@ public class EnemyDetectionComponent : MonoBehaviour
     private Transform _playerTransform;
     private Vector2 _vectorDirection;
     private EnemyManager _enemyManager;
-    
-
+    private SmokeBomb _mySmokeBomb;
 
     private void Start()
     {
         _directionRight = false;
         _attacking = false;
         _playerTransform = PlayerManager.Instance.transform;
-        _enemyManager = GetComponent<EnemyManager>();
+        _enemyManager = GetComponent<EnemyManager>(); 
+        _mySmokeBomb = FindObjectOfType<SmokeBomb>();
     }
     // Update is called once per frame
     void Update()
     {
-        if(_playerTransform != null)
+        if(_playerTransform != null && _mySmokeBomb._playerTarget)
         {
             _vectorDirection = _playerTransform.position - transform.position;
             _vectorDirection.Normalize();
@@ -33,7 +33,6 @@ public class EnemyDetectionComponent : MonoBehaviour
                 GetComponent<LateralMovement>().enabled = false;
                 _attacking = true;
                 transform.Translate(_vectorDirection * Time.fixedDeltaTime * _enemySpeed);
-                
             }
             else
             {
@@ -41,22 +40,25 @@ public class EnemyDetectionComponent : MonoBehaviour
             }
             if (_vectorDirection.x > 0&& transform.localScale.x>0)
             {
-                
+                _enemyManager.Girar();            }
+            if (_vectorDirection.x < 0 && transform.localScale.x < 0)
+            {
                 _enemyManager.Girar();
-                
+            }
+        }
+        else if(!_mySmokeBomb._playerTarget)
+        {
+            _vectorDirection = _mySmokeBomb._smokePosition - transform.position;
+            _vectorDirection.Normalize();
+            transform.Translate(_vectorDirection * Time.fixedDeltaTime * _enemySpeed);
+            if (_vectorDirection.x > 0 && transform.localScale.x > 0)
+            {
+                _enemyManager.Girar();
             }
             if (_vectorDirection.x < 0 && transform.localScale.x < 0)
             {
-                
                 _enemyManager.Girar();
-                
             }
-
-            
-          
         }
-        
-
     }
-    
 }

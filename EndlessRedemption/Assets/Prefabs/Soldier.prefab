@@ -697,7 +697,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxJumpCooldown: 6
   _minimumJumpCooldown: 3
-  _jumpforce: 5
+  _jumpforce: 8
+  _forwardForce: 3
 --- !u!61 &4646179167783449351
 BoxCollider2D:
   m_ObjectHideFlags: 0

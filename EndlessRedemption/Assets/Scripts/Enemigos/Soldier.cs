@@ -14,6 +14,8 @@ public class Soldier : MonoBehaviour
     private float _minimumJumpCooldown;
     [SerializeField]
     private float _jumpforce;
+    [SerializeField]
+    private float _forwardForce;
     private float _elapsed;
     private float _jumpTime = 0;
     // Start is called before the first frame update
@@ -34,9 +36,9 @@ public class Soldier : MonoBehaviour
             _elapsed = 0;
             _jumpTime = Random.Range(_minimumJumpCooldown, _maxJumpCooldown + 1);
             if(transform.localScale.x >= 0)
-            _rigidbody2D.AddForce(Vector2.up * _jumpforce * 1.5f + Vector2.left * _jumpforce, ForceMode2D.Impulse);
+            _rigidbody2D.AddForce(Vector2.up * _jumpforce  + Vector2.left * _forwardForce, ForceMode2D.Impulse);
             else if(transform.localScale.x < 0)
-            _rigidbody2D.AddForce(Vector2.up * _jumpforce * 1.5f + Vector2.right * _jumpforce, ForceMode2D.Impulse);
+            _rigidbody2D.AddForce(Vector2.up * _jumpforce  + Vector2.right * _forwardForce, ForceMode2D.Impulse);
         }
         _animator.SetBool("isMoving", _moving);
         

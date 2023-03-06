@@ -5,6 +5,12 @@ using UnityEngine;
 public class AttackComponent : MonoBehaviour
 {
     // Start is called before the first frame update
+    [SerializeField]
+    private GameObject _swordTrailUp;
+    [SerializeField]
+    private GameObject _swordTrail;
+    [SerializeField]
+    private GameObject _swordTrailDown;
     private Transform _myTransform;
     private Transform _myUpTransform;
     private Transform _myDownTransform;
@@ -22,6 +28,7 @@ public class AttackComponent : MonoBehaviour
     {
         if(!_onUpAttack)
         {
+            _swordTrailUp.SetActive(true);
             _onUpAttack = true;
             _animator.SetBool("UpAttack", _onUpAttack);
             GameObject item = Instantiate(_katana, _myUpTransform.position, Quaternion.identity);
@@ -37,6 +44,7 @@ public class AttackComponent : MonoBehaviour
     {
         if(!_movementComponent._onGround && !_onDownAttack)
         {
+            _swordTrailDown.SetActive(true);
             _onDownAttack = true;
             _animator.SetBool("DownAttack", _onDownAttack);
             GameObject item = Instantiate(_katana, _myDownTransform.position, Quaternion.identity);
@@ -49,8 +57,9 @@ public class AttackComponent : MonoBehaviour
     {
         if(!_onAttack)
         {
+           _swordTrail.SetActive(true);          
             _onAttack = true;
-            _animator.SetBool("Attack", _onAttack);
+            _animator.SetBool("Attack", _onAttack);                      
             GameObject item = Instantiate(_katana, _myTransform.position, Quaternion.identity);
             item.transform.parent = gameObject.transform;
         }
@@ -58,7 +67,10 @@ public class AttackComponent : MonoBehaviour
         
     }
     public void EndOfAttack()
-    {     
+    {
+        _swordTrailUp.SetActive(false);
+        _swordTrailDown.SetActive(false);
+        _swordTrail.SetActive(false);
         _onAttack = false;
         _animator.SetBool("Attack", _onAttack);
         _onUpAttack = false;

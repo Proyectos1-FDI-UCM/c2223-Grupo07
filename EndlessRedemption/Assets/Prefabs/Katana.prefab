@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d680697a0988d4aad3c83cc00889c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitExplosion: {fileID: 6553844716301178796, guid: 7c6e3ebe3c0834048bee24895aabacf0, type: 3}
+  _hitExplosion: {fileID: 3094472060122969119, guid: 8b23e7d23b913ab49ad4b513134673ca, type: 3}
   _UpExplosion: {fileID: 3432958286849152088, guid: 41f779661e82d4247839007f00d8171e, type: 3}
   _DownExplosion: {fileID: 3432958286849152088, guid: 87ee7299dd44ed747af24dbb91bcd33b, type: 3}
   _fuerza: 4

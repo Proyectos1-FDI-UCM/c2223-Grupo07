@@ -42,13 +42,14 @@ public class DashDamage : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (_movementComponent._dashing && !_movementComponent._dashAvailable)
+
+        if (!collision.gameObject.GetComponent<PlayerManager>() && !collision.gameObject.GetComponent<DisableCollider>() && _movementComponent._dashing && !_movementComponent._dashAvailable)
         {
             _movementComponent._dashing = false;
             _movementComponent.DashStop();//aregla el bug de la animacion
             _movementComponent._dashAvailable = true;
         }
-        //Para hacer el daño necesito enemigo primero
+        
         
     }
     private void LateUpdate()

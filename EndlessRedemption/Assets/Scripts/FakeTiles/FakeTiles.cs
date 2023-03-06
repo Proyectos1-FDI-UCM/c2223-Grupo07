@@ -6,7 +6,7 @@ public class FakeTiles : MonoBehaviour
 {
     public float _timeToDestroy = 1f; //tiempo que tarda en destruirse
     private float _time = 0f;
-    //public GameObject rompible; //prefab de la plataforma rompible
+    public GameObject rompible; //prefab de la plataforma rompible
     private bool _destroyed = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,6 +32,7 @@ public class FakeTiles : MonoBehaviour
             _time += Time.deltaTime;
             if (_time >= _timeToDestroy)
             {
+                Instantiate(rompible, transform.position, Quaternion.identity);
                 Destroy(gameObject);
                 _time = 0f;
             }  

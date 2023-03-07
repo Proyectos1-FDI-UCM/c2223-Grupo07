@@ -85,7 +85,10 @@ public class InputComponent : MonoBehaviour
         //Pausa
         if (Input.GetKeyDown(KeyCode.P))
         {
-            if (PauseMenu.isPaused) _PauseMenu.ResumeGame(PauseMenuObject);
+            if (PauseMenu.isPaused) 
+            {
+                _PauseMenu.ResumeGame(PauseMenuObject); 
+            }
             else _PauseMenu.PauseGame(PauseMenuObject);
         }
     }

@@ -148,6 +148,11 @@ public class MovementComponent : MonoBehaviour
         _rigidbody2D.gravityScale = 4;
         _inputComponent.enabled = true;
     }
+
+    public void DecreaseFallSpeed(int decrement)
+    {
+        _maxFallSpeed += decrement;
+    }
     #endregion
     // Start is called before the first frame update
     void Start()

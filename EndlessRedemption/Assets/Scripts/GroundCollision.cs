@@ -9,9 +9,13 @@ public class GroundCollision : MonoBehaviour
     
 
     private void OnTriggerStay2D(Collider2D collision)
-    {      
-        _movementComponent._onGround = true;
-        _movementComponent._jumps= 0;
+    {
+        if (!(collision.gameObject.GetComponent<WindComponent>()))
+        {
+            _movementComponent._onGround = true;
+            _movementComponent._jumps = 0;
+        }
+       
         
     }
      private void OnTriggerExit2D(Collider2D collision)

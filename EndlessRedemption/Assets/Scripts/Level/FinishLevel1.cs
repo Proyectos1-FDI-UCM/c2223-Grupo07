@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class FinishLevel1 : MonoBehaviour
 {
+    [SerializeField]
+    private int _nextLevel;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        PlayerPrefs.SetInt("LevelX", 2);
+        PlayerPrefs.SetInt("LevelX", _nextLevel);
         SceneManager.LoadScene("Level2");
         
     }

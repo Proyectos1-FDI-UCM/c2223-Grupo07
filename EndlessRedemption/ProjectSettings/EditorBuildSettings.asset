@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 56b1f9e27732d924eb1b30733f68fbfe
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/cazarrecopensas.unity
     guid: 24f747515c2347045afb806bb7ea1cf7
   - enabled: 1

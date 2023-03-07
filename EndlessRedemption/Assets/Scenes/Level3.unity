@@ -65327,7 +65327,7 @@ MonoBehaviour:
   _lifes: 3
   _currenShurikens: 30
   _maxShurikens: 30
-  _maxLifes: 10
+  _maxLifes: 5
 --- !u!4 &400939655
 Transform:
   m_ObjectHideFlags: 0

@@ -907,6 +907,7 @@ GameObject:
   - component: {fileID: 44347568}
   - component: {fileID: 44347569}
   - component: {fileID: 44347570}
+  - component: {fileID: 44347571}
   m_Layer: 0
   m_Name: big-floating-rock
   m_TagString: Untagged
@@ -1033,6 +1034,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7170538, y: 0.33328503}
   m_EdgeRadius: 0
+--- !u!114 &44347571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44347566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3d78bb4c38db489a8ea45fe781c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &49521039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,6 +1059,7 @@ GameObject:
   - component: {fileID: 49521040}
   - component: {fileID: 49521043}
   - component: {fileID: 49521044}
+  - component: {fileID: 49521045}
   m_Layer: 0
   m_Name: Sprite4_18
   m_TagString: Untagged
@@ -1188,6 +1202,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.2671509, y: 0.9101257}
   m_EdgeRadius: 0
+--- !u!114 &49521045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49521039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3d78bb4c38db489a8ea45fe781c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &49529316
 GameObject:
   m_ObjectHideFlags: 0
@@ -48185,6 +48211,7 @@ GameObject:
   - component: {fileID: 213921006}
   - component: {fileID: 213921005}
   - component: {fileID: 213921007}
+  - component: {fileID: 213921008}
   m_Layer: 0
   m_Name: floating-rock-2
   m_TagString: Untagged
@@ -48311,6 +48338,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.48, y: 0.20705462}
   m_EdgeRadius: 0
+--- !u!114 &213921008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213921003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3d78bb4c38db489a8ea45fe781c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &217906240
 GameObject:
   m_ObjectHideFlags: 0
@@ -52702,6 +52741,7 @@ GameObject:
   - component: {fileID: 610629019}
   - component: {fileID: 610629018}
   - component: {fileID: 610629020}
+  - component: {fileID: 610629021}
   m_Layer: 0
   m_Name: floating-rock-2 (1)
   m_TagString: Untagged
@@ -52828,6 +52868,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.48, y: 0.19731808}
   m_EdgeRadius: 0
+--- !u!114 &610629021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610629016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3d78bb4c38db489a8ea45fe781c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &611148493
 GameObject:
   m_ObjectHideFlags: 0
@@ -55057,6 +55109,8 @@ GameObject:
   - component: {fileID: 863177826}
   - component: {fileID: 863177828}
   - component: {fileID: 863177827}
+  - component: {fileID: 863177830}
+  - component: {fileID: 863177829}
   m_Layer: 0
   m_Name: floating-rock-2
   m_TagString: Untagged
@@ -55157,6 +55211,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &863177829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863177825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3d78bb4c38db489a8ea45fe781c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &863177830
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863177825}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.12027082}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.48, y: 0.32}
+    newSize: {x: 0.48, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.48, y: 0.20898074}
+  m_EdgeRadius: 0
 --- !u!4 &865602811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5064903639783295331, guid: b9b2a75de7583904eaf5e39f9f1058be, type: 3}
@@ -57911,6 +58003,7 @@ GameObject:
   - component: {fileID: 1118517960}
   - component: {fileID: 1118517962}
   - component: {fileID: 1118517963}
+  - component: {fileID: 1118517964}
   m_Layer: 0
   m_Name: floating-rock-1 (1)
   m_TagString: Untagged
@@ -58040,7 +58133,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.081925064}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -58051,8 +58144,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48, y: 0.39}
+  m_Size: {x: 0.48, y: 0.22614986}
   m_EdgeRadius: 0
+--- !u!114 &1118517964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118517958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3d78bb4c38db489a8ea45fe781c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1118766938
 GameObject:
   m_ObjectHideFlags: 0
@@ -85373,6 +85478,7 @@ GameObject:
   - component: {fileID: 1280680943}
   - component: {fileID: 1280680942}
   - component: {fileID: 1280680945}
+  - component: {fileID: 1280680946}
   m_Layer: 0
   m_Name: Hitbox
   m_TagString: Untagged
@@ -85499,6 +85605,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.6947746}
   m_EdgeRadius: 0
+--- !u!114 &1280680946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280680941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3d78bb4c38db489a8ea45fe781c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1292169111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85565,6 +85683,49 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4371201966070470695, guid: 8cc938fe21b426a4daedf2f6c7e34c80, type: 3}
   m_PrefabInstance: {fileID: 6413310}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1303679092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7620121425089089047, guid: 2d59c24bfcaf2eb4ea1d2ba3fbc54f48, type: 3}
+  m_PrefabInstance: {fileID: 7620121425073137111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1303679095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303679092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3d78bb4c38db489a8ea45fe781c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1303679096
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303679092}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.1142602}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.48, y: 0.32}
+    newSize: {x: 0.48, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.48, y: 0.1777134}
+  m_EdgeRadius: 0
 --- !u!1 &1304374570
 GameObject:
   m_ObjectHideFlags: 0
@@ -90156,6 +90317,8 @@ GameObject:
   - component: {fileID: 1695487081}
   - component: {fileID: 1695487083}
   - component: {fileID: 1695487082}
+  - component: {fileID: 1695487085}
+  - component: {fileID: 1695487084}
   m_Layer: 0
   m_Name: floating-rock-1 (2)
   m_TagString: Untagged
@@ -90256,6 +90419,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1695487084
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695487080}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.122370124}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.48, y: 0.39}
+    newSize: {x: 0.48, y: 0.39}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.48, y: 0.14525974}
+  m_EdgeRadius: 0
+--- !u!114 &1695487085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695487080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3d78bb4c38db489a8ea45fe781c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1700023097 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2179244884616129054, guid: 9dc0ef71f38c7d84fa56367f8ba5b88a, type: 3}
@@ -90996,6 +91197,7 @@ GameObject:
   - component: {fileID: 1784299352}
   - component: {fileID: 1784299351}
   - component: {fileID: 1784299354}
+  - component: {fileID: 1784299355}
   m_Layer: 0
   m_Name: floating-rock-2 (2)
   m_TagString: Untagged
@@ -91138,6 +91340,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.48, y: 0.24315852}
   m_EdgeRadius: 0
+--- !u!114 &1784299355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784299349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3d78bb4c38db489a8ea45fe781c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1788096351 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2179244884616129054, guid: 5fe408c8bf759ce449fe2d105d5b46dd, type: 3}

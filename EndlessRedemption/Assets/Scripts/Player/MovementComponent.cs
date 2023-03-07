@@ -12,7 +12,6 @@ public class MovementComponent : MonoBehaviour
     private DashDamage _dashDamage;
     private DisableCollider _disableCollider;
     private int _fpsLimit = 144;//Para no petar el PC un saludo
-    [HideInInspector]
     public int _jumps = 0;
     public int _jumpsAvailable = 1;
     private Vector3 _reachPosition;
@@ -38,7 +37,7 @@ public class MovementComponent : MonoBehaviour
     private GameObject _dashExplosion;
     private float _cooldownElapsed;
     
-    [HideInInspector]
+
     public bool _onGround;
     private bool _doubleJump=false;
     public bool _dashAvailable;

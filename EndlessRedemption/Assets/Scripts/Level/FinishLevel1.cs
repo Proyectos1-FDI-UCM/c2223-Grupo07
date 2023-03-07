@@ -10,7 +10,7 @@ public class FinishLevel1 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         PlayerPrefs.SetInt("LevelX", _nextLevel);
+        PlayerPrefs.SetInt("CheckpointX", 0);
         SceneManager.LoadScene("Level2");
-        
     }
 }

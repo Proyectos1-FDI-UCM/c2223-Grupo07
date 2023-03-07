@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1346952140293121494}
   - component: {fileID: 1045579267100044718}
   - component: {fileID: 2977186642929400728}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: VidaPickUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}

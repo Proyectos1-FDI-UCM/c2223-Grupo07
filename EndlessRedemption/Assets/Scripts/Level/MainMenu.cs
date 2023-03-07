@@ -7,12 +7,12 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayNormalGame()
     {
-        SceneManager.LoadScene("cazarrecopensas"); //Cargar juego en modo normal
+        SceneManager.LoadScene("Level1"); //Cargar juego en modo normal
     }
 
     public void PlayNightmareGame()
     {
-        SceneManager.LoadScene("cazarrecopensas"); //Cargar juego en modo pesadilla
+        SceneManager.LoadScene("Level1"); //Cargar juego en modo pesadilla
         GameManager.Instance._maxLifes = 3;
         GameManager.Instance._maxShurikens = 10;
     }

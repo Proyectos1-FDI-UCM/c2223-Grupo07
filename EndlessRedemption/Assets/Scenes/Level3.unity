@@ -65324,9 +65324,9 @@ MonoBehaviour:
   - {fileID: 180214600}
   - {fileID: 876566139}
   _currentCheckpoint: 0
-  _lifes: 5
+  _lifes: 3
   _currenShurikens: 30
-  _maxShurikens: 0
+  _maxShurikens: 30
   _maxLifes: 10
 --- !u!4 &400939655
 Transform:
@@ -77012,8 +77012,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 220590440525831503, guid: c141bf8905ae8ef4e802c208ae5a246f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -186
+      objectReference: {fileID: 0}
+    - target: {fileID: 220590440525831503, guid: c141bf8905ae8ef4e802c208ae5a246f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 30
+      value: 87
       objectReference: {fileID: 0}
     - target: {fileID: 220590440567813048, guid: c141bf8905ae8ef4e802c208ae5a246f, type: 3}
       propertyPath: m_Name
@@ -77105,7 +77109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 220590440634761427, guid: c141bf8905ae8ef4e802c208ae5a246f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 15
+      value: 74
       objectReference: {fileID: 0}
     - target: {fileID: 4920723203017191483, guid: c141bf8905ae8ef4e802c208ae5a246f, type: 3}
       propertyPath: m_AnchoredPosition.x

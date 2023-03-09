@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8142200151948511590}
   - component: {fileID: 1949811713619558657}
   - component: {fileID: 1904392542235100837}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pinchos6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,6 +137,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mainlevbuild_105
       objectReference: {fileID: 0}
+    - target: {fileID: 1795554351876361338, guid: 01bc4ff6f144a3344acd6d700d03ca31, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2532957667020257031, guid: 01bc4ff6f144a3344acd6d700d03ca31, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -180,6 +184,10 @@ PrefabInstance:
     - target: {fileID: 2532957667020257031, guid: 01bc4ff6f144a3344acd6d700d03ca31, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176507202781397746, guid: 01bc4ff6f144a3344acd6d700d03ca31, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01bc4ff6f144a3344acd6d700d03ca31, type: 3}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8034265995351219248}
   - component: {fileID: 4464037967422469534}
   - component: {fileID: 5942001436943799111}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pinchos3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

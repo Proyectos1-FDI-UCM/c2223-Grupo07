@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class MovementComponent : MonoBehaviour
 {
-   
+    public enum DashDirection {LEFT, RIGHT};
+    private DashDirection _dashDirection;
     private Rigidbody2D _rigidbody2D;
     private Collider2D _myCollider2D;
     private DashDetection _dashDetection;
@@ -35,9 +36,7 @@ public class MovementComponent : MonoBehaviour
     private float _impulse;
     [SerializeField]
     private GameObject _dashExplosion;
-    private float _cooldownElapsed;
-    
-
+    private float _cooldownElapsed;    
     public bool _onGround;
     private bool _doubleJump=false;
     public bool _dashAvailable;
@@ -99,6 +98,10 @@ public class MovementComponent : MonoBehaviour
     {
         if (_dashPickUp && !_dashCoolDown)
         {
+            if (transform.localScale.x >= 0)//Sirve para calcular cuando para el dash
+                _dashDirection = DashDirection.RIGHT;
+            else _dashDirection = DashDirection.LEFT;
+
             _disableCollider.Collider();
             gameObject.layer = 8;
             _reachPosition = _dashDetection.PositionToReach;
@@ -201,20 +204,17 @@ public class MovementComponent : MonoBehaviour
         {
             Girar();           
         }
-        if (_dashing && Mathf.Sqrt(Mathf.Pow(_reachPosition.x - transform.position.x, 2f) + Mathf.Pow(_reachPosition.y - transform.position.y, 2f)) < _distanceToReach)
+        if (_dashing && _dashDirection == DashDirection.RIGHT && transform.position.x > _reachPosition.x)
+        {
+            DashStop();         
+            _rigidbody2D.AddForce(Vector2.left * (_dashForce - _maxSpeed), ForceMode2D.Impulse);                                             
+        }
+        else if(_dashing && _dashDirection == DashDirection.LEFT && transform.position.x < _reachPosition.x)
         {
             DashStop();
-            if (_lookingRight)
-            {
-                _rigidbody2D.AddForce(Vector2.left * (_dashForce - _maxSpeed), ForceMode2D.Impulse);
-            }
-            else if (!_lookingRight)
-            {
-                _rigidbody2D.AddForce(Vector2.right * (_dashForce - _maxSpeed), ForceMode2D.Impulse);
-            }
+            _rigidbody2D.AddForce(Vector2.right * (_dashForce - _maxSpeed), ForceMode2D.Impulse);
         }
         if(!_dashing)_myCollider2D.enabled = true;
-
         if (_doubleJump)
         {
             _elapsedtime += Time.deltaTime;

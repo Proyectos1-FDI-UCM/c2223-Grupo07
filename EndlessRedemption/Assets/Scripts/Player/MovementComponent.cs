@@ -169,10 +169,15 @@ public class MovementComponent : MonoBehaviour
         _lookingRight = true;
         _animator = GetComponent<Animator>();
         _dashDamage = FindObjectOfType<DashDamage>();
-        _dashCoolDown = false; 
+
+        _dashCoolDown = false;
+
     }
     private void Update()
     {
+        if (PlayerPrefs.GetInt("hasDash") == 1) _dashPickUp = true;
+        if (PlayerPrefs.GetInt("hasDoubleJump") == 1) _jumpsAvailable = 2;
+        ;
         if (_rigidbody2D.velocity.y < _maxFallSpeed)
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _maxFallSpeed);
         if(_dashCoolDown)

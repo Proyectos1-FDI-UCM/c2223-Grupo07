@@ -22,6 +22,11 @@ public class UIManager : MonoBehaviour
         _instance = this;
     }
 
+    void Start()
+    {
+        if (PlayerPrefs.GetInt("hasDash") == 1) ShowDashIcon();
+        if (PlayerPrefs.GetInt("hasDoubleJump") == 1) ShowDoubleJumpIcon();
+    }
     // Update is called once per frame
     void Update()
     {

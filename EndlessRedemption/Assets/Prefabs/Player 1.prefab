@@ -807,7 +807,7 @@ MonoBehaviour:
   _maxSpeed: 7
   _jumpForce: 15
   _dashForce: 20
-  _cooldown: 0
+  _cooldown: 4
   _impulse: 500
   _dashExplosion: {fileID: 1602180625524123211, guid: 9279d82264060414abab2b8120bea29a, type: 3}
   _onGround: 0

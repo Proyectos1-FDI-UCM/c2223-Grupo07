@@ -47,7 +47,7 @@ public class MovementComponent : MonoBehaviour
     [Header("Animation")]
     private Animator _animator;
 
-    private float _time=0.5f;
+    private float _time=0.2f;
     private float _elapsedtime=0f;
     #region Methods
 

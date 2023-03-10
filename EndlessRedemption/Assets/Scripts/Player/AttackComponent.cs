@@ -57,7 +57,8 @@ public class AttackComponent : MonoBehaviour
     {
         if(!_onAttack)
         {
-           _swordTrail.SetActive(true);          
+           _swordTrail.SetActive(true);
+            _swordTrail.transform.Rotate(new Vector3(0, transform.rotation.eulerAngles.y + 180, transform.rotation.eulerAngles.z + 180));
             _onAttack = true;
             _animator.SetBool("Attack", _onAttack);                      
             GameObject item = Instantiate(_katana, _myTransform.position, Quaternion.identity);

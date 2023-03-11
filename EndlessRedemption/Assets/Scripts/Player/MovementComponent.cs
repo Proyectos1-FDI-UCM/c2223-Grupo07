@@ -36,7 +36,7 @@ public class MovementComponent : MonoBehaviour
     private float _impulse;
     [SerializeField]
     private GameObject _dashExplosion;
-    private float _cooldownElapsed;    
+    public float _cooldownElapsed;    
     public bool _onGround;
     private bool _doubleJump=false;
     public bool _dashAvailable;
@@ -46,6 +46,7 @@ public class MovementComponent : MonoBehaviour
     private bool _lookingRight;
     [Header("Animation")]
     private Animator _animator;
+    public float Cooldown { get { return _cooldown; } }
 
     private float _time=0.2f;
     private float _elapsedtime=0f;
@@ -158,7 +159,7 @@ public class MovementComponent : MonoBehaviour
     #endregion
     // Start is called before the first frame update
     void Start()
-    {
+    {   
         Application.targetFrameRate = _fpsLimit;//limitador, no quitar
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _dashDetection = GetComponentInChildren<DashDetection>();

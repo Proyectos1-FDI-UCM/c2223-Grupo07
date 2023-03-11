@@ -6,7 +6,7 @@ public class SmokeBomb : MonoBehaviour
 {
     [SerializeField]
     private GameObject _bomb;  
-    private float _elapsedTime;
+    public float _elapsedTime;
     private float _cooldownElapsed;
     [SerializeField]
     private float _smokeTime;
@@ -19,6 +19,7 @@ public class SmokeBomb : MonoBehaviour
     private GameObject _instanced;
     public Vector3 _smokePosition;
     public bool _playerTarget = true;
+    public float SmokeCoolDown { get { return _coolDown; } }
     // Start is called before the first frame update
     void Start()
     {

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SmokeBomb : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class SmokeBomb : MonoBehaviour
     public Vector3 _smokePosition;
     public bool _playerTarget = true;
     public float SmokeCoolDown { get { return _coolDown; } }
+
+    public AudioSource _clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +68,7 @@ public class SmokeBomb : MonoBehaviour
             _smokeActive = true;
             _playerTarget = false;
             _smokePosition = transform.position;
+            _clip.Play();
         }
     }
 }

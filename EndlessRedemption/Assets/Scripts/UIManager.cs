@@ -38,7 +38,7 @@ public class UIManager : MonoBehaviour
         if (Mathf.Round(PlayerManager.Instance.GetComponent<MovementComponent>().Cooldown - PlayerManager.Instance.GetComponent<MovementComponent>()._cooldownElapsed) == PlayerManager.Instance.GetComponent<MovementComponent>().Cooldown)
             _dashCooldown.SetText(" ");//Si dash cargado que no se vea el cooldown
         else//Cooldown dash
-        _dashCooldown.SetText("" + Mathf.Round(PlayerManager.Instance.GetComponent<MovementComponent>().Cooldown - PlayerManager.Instance.GetComponent<MovementComponent>()._cooldownElapsed));
+        _dashCooldown.SetText("" + Mathf.Round(1 +PlayerManager.Instance.GetComponent<MovementComponent>().Cooldown - PlayerManager.Instance.GetComponent<MovementComponent>()._cooldownElapsed));
 
         if (Mathf.Round(PlayerManager.Instance.GetComponent<SmokeBomb>().SmokeCoolDown - PlayerManager.Instance.GetComponent<SmokeBomb>()._elapsedTime) == PlayerManager.Instance.GetComponent<SmokeBomb>().SmokeCoolDown)
             _DBJumpCooldown.SetText(" ");

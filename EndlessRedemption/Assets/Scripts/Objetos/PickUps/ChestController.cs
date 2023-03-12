@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class ChestController : MonoBehaviour
 {
@@ -14,7 +15,8 @@ public class ChestController : MonoBehaviour
     private int _ShurikensSpawned;
     [SerializeField]
     private float _spawnTime;
-    
+    public AudioSource _clip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +49,7 @@ public class ChestController : MonoBehaviour
         {
             _opened= true;
             _animator.SetBool("Open", _opened);
+            _clip.Play();
         }
     }
 }

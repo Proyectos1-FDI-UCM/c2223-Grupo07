@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b34bf638b19c914390ea83e81b14a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidasEnemy: 2
+  vidasEnemy: 4
   VidaPickUp: {fileID: 5156510250345167162, guid: 78d45011921c34c4fabbbaecfadaabe5, type: 3}
   _deadExplosion: {fileID: 5642766282230003982, guid: b5c8ca7ed10b61e499cce8ec3b6e2e4c, type: 3}
 --- !u!50 &8420716314514321902
@@ -168,8 +168,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 1.4301167
+  m_UseAutoMass: 0
+  m_Mass: 200
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -223,10 +223,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b60933a16dd0d504089bc55a2a24aac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _shootDistance: 7
+  _shootDistance: 9
   _attackingSpeed: 2
   _randomStateTime: 6
-  _detectionDistance: 8
+  _detectionDistance: 11
   _vectorDirection: {x: 0, y: 0, z: 0}
   _currentState: 0
 --- !u!1 &8666995724168504292

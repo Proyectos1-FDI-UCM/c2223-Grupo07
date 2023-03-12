@@ -85,7 +85,7 @@ public class FireDragon : MonoBehaviour
                 else if ((PlayerManager.Instance.transform.position.x - transform.position.x) > 0)
                 {
 
-                    Vector3 target = new Vector3(PlayerManager.Instance.transform.position.x, PlayerManager.Instance.transform.position.y);
+                    Vector3 target = new Vector3(PlayerManager.Instance.transform.position.x,PlayerManager.Instance.transform.position.y);
                     Vector3 Trayectoria = target - transform.position;
                     Trayectoria.Normalize();
                     transform.Translate(Trayectoria * Time.fixedDeltaTime * _attackingSpeed);

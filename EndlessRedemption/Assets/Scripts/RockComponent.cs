@@ -32,7 +32,7 @@ public class RockComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Mathf.Abs(_transform.position.x - PlayerManager.Instance.transform.position.x)<= _distance && !_falling)
+        if(Mathf.Abs(_transform.position.x - PlayerManager.Instance.transform.position.x)<= _distance && !_falling && Mathf.Abs(_transform.position.y - PlayerManager.Instance.transform.position.y)<= 10 )
         {
             Instantiate(_rock, transform.position, Quaternion.identity);
             _rigidbody2D.gravityScale = _velocity;

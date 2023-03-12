@@ -20,7 +20,7 @@ InputManager:
     invert: 0
     type: 0
     axis: 0
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
     m_Name: Vertical
     descriptiveName: 
@@ -246,12 +246,12 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Submit
-    descriptiveName: 
-    descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: return
-    altNegativeButton: 
+    m_Name: JoyStickHorz
+    descriptiveName: JoyStickHorz0
+    descriptiveNegativeName: JoyStickHorz1
+    negativeButton: left
+    positiveButton: right
+    altNegativeButton: joystick button 1
     altPositiveButton: joystick button 0
     gravity: 1000
     dead: 0.001

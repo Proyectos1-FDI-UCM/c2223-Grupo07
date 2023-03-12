@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Shoot : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class Shoot : MonoBehaviour
     private FireDragon _fireDragon;
     [SerializeField]
     private Vector3 _offset;
+
+    public AudioSource _clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +54,7 @@ public class Shoot : MonoBehaviour
                     Instantiate(_explosion, (transform.position + _offset), Quaternion.identity);
                     GameObject bullet = Instantiate(_bullet, transform.position + _offset, Quaternion.identity);
                     _elapsedTime = 0;
+                    _clip.Play();
                 }
             }
         }

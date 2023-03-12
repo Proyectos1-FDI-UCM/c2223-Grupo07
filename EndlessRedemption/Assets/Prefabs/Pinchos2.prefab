@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8967063016588388391}
   - component: {fileID: 8967063016588388390}
   - component: {fileID: 7025520680902354469}
-  - component: {fileID: 754403056616730022}
-  m_Layer: 0
+  - component: {fileID: 5497562052459455679}
+  m_Layer: 7
   m_Name: Pinchos2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.73709404, y: 0.79312295}
   m_EdgeRadius: 0
---- !u!114 &754403056616730022
+--- !u!114 &5497562052459455679
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8967063016588388389}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca774d0a4942bfc43a2af99c4017c427, type: 3}
+  m_Script: {fileID: 11500000, guid: 6935ec7552aec6244be75dc7e950df51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 1

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class FakeTiles : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class FakeTiles : MonoBehaviour
     private float _time = 0f;
     public GameObject rompible; //prefab de la plataforma rompible
     private bool _destroyed = false;
+    public AudioSource _clip;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,6 +17,7 @@ public class FakeTiles : MonoBehaviour
         {
            // Instantiate(rompible, transform.position, Quaternion.identity);
             _destroyed = true;
+
         }
     }
 
@@ -35,6 +38,7 @@ public class FakeTiles : MonoBehaviour
                 Instantiate(rompible, transform.position, Quaternion.identity);
                 Destroy(gameObject);
                 _time = 0f;
+                _clip.Play();
             }  
         }
     }

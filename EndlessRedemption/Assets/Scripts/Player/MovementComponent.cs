@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class MovementComponent : MonoBehaviour
 {
-   
+    public enum DashDirection {LEFT, RIGHT};
+    private DashDirection _dashDirection;
     private Rigidbody2D _rigidbody2D;
     private Collider2D _myCollider2D;
     private DashDetection _dashDetection;
@@ -35,9 +37,7 @@ public class MovementComponent : MonoBehaviour
     private float _impulse;
     [SerializeField]
     private GameObject _dashExplosion;
-    private float _cooldownElapsed;
-    
-
+    public float _cooldownElapsed;    
     public bool _onGround;
     private bool _doubleJump=false;
     public bool _dashAvailable;
@@ -47,9 +47,13 @@ public class MovementComponent : MonoBehaviour
     private bool _lookingRight;
     [Header("Animation")]
     private Animator _animator;
+    public float Cooldown { get { return _cooldown; } }
 
-    private float _time=0.5f;
+    private float _time=0.2f;
     private float _elapsedtime=0f;
+
+    public AudioSource _clip1;
+    public AudioSource _clip2;
     #region Methods
 
     public void Left()
@@ -93,12 +97,17 @@ public class MovementComponent : MonoBehaviour
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
             _rigidbody2D.AddForce(Vector2.up * _jumpForce , ForceMode2D.Impulse);
             _jumps++;
+            _clip2.Play();
         }
     }
     public void Dash()
     {
         if (_dashPickUp && !_dashCoolDown)
         {
+            if (transform.localScale.x >= 0)//Sirve para calcular cuando para el dash
+                _dashDirection = DashDirection.RIGHT;
+            else _dashDirection = DashDirection.LEFT;
+
             _disableCollider.Collider();
             gameObject.layer = 8;
             _reachPosition = _dashDetection.PositionToReach;
@@ -126,6 +135,8 @@ public class MovementComponent : MonoBehaviour
                 _rigidbody2D.AddForce(Vector2.left * _dashForce, ForceMode2D.Impulse);
             }
             _dashing = true;
+
+            _clip1.Play();
         }
     }
     private void Girar()
@@ -155,7 +166,7 @@ public class MovementComponent : MonoBehaviour
     #endregion
     // Start is called before the first frame update
     void Start()
-    {
+    {   
         Application.targetFrameRate = _fpsLimit;//limitador, no quitar
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _dashDetection = GetComponentInChildren<DashDetection>();
@@ -169,10 +180,15 @@ public class MovementComponent : MonoBehaviour
         _lookingRight = true;
         _animator = GetComponent<Animator>();
         _dashDamage = FindObjectOfType<DashDamage>();
-        _dashCoolDown = false; 
+
+        _dashCoolDown = false;
+
     }
     private void Update()
     {
+        if (PlayerPrefs.GetInt("hasDash") == 1) _dashPickUp = true;
+        if (PlayerPrefs.GetInt("hasDoubleJump") == 1) _jumpsAvailable = 2;
+        ;
         if (_rigidbody2D.velocity.y < _maxFallSpeed)
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _maxFallSpeed);
         if(_dashCoolDown)
@@ -196,20 +212,17 @@ public class MovementComponent : MonoBehaviour
         {
             Girar();           
         }
-        if (_dashing && Mathf.Sqrt(Mathf.Pow(_reachPosition.x - transform.position.x, 2f) + Mathf.Pow(_reachPosition.y - transform.position.y, 2f)) < _distanceToReach)
+        if (_dashing && _dashDirection == DashDirection.RIGHT && transform.position.x > _reachPosition.x)
+        {
+            DashStop();         
+            _rigidbody2D.AddForce(Vector2.left * (_dashForce - _maxSpeed), ForceMode2D.Impulse);                                             
+        }
+        else if(_dashing && _dashDirection == DashDirection.LEFT && transform.position.x < _reachPosition.x)
         {
             DashStop();
-            if (_lookingRight)
-            {
-                _rigidbody2D.AddForce(Vector2.left * (_dashForce - _maxSpeed), ForceMode2D.Impulse);
-            }
-            else if (!_lookingRight)
-            {
-                _rigidbody2D.AddForce(Vector2.right * (_dashForce - _maxSpeed), ForceMode2D.Impulse);
-            }
+            _rigidbody2D.AddForce(Vector2.right * (_dashForce - _maxSpeed), ForceMode2D.Impulse);
         }
         if(!_dashing)_myCollider2D.enabled = true;
-
         if (_doubleJump)
         {
             _elapsedtime += Time.deltaTime;

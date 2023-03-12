@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2179244884616129054}
   - component: {fileID: 8142200151948511590}
   - component: {fileID: 1949811713619558657}
-  - component: {fileID: 1904392542235100837}
-  m_Layer: 0
+  - component: {fileID: 1651569060860490669}
+  m_Layer: 7
   m_Name: Pinchos6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6138916, y: 0.7326908}
   m_EdgeRadius: 0
---- !u!114 &1904392542235100837
+--- !u!114 &1651569060860490669
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,10 +122,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 876730719344009351}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca774d0a4942bfc43a2af99c4017c427, type: 3}
+  m_Script: {fileID: 11500000, guid: 6935ec7552aec6244be75dc7e950df51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 1
 --- !u!1001 &2448413583943263528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -136,6 +135,10 @@ PrefabInstance:
     - target: {fileID: 1795554351876361338, guid: 01bc4ff6f144a3344acd6d700d03ca31, type: 3}
       propertyPath: m_Name
       value: mainlevbuild_105
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795554351876361338, guid: 01bc4ff6f144a3344acd6d700d03ca31, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2532957667020257031, guid: 01bc4ff6f144a3344acd6d700d03ca31, type: 3}
       propertyPath: m_RootOrder
@@ -180,6 +183,10 @@ PrefabInstance:
     - target: {fileID: 2532957667020257031, guid: 01bc4ff6f144a3344acd6d700d03ca31, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176507202781397746, guid: 01bc4ff6f144a3344acd6d700d03ca31, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01bc4ff6f144a3344acd6d700d03ca31, type: 3}

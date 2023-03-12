@@ -5,7 +5,6 @@ using UnityEngine.Video;
 
 public class DamageEnemyComponent : MonoBehaviour
 {
-    
     #region properties
     public int _damage;
     #endregion

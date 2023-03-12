@@ -11,6 +11,6 @@ public class FinishLevel1 : MonoBehaviour
     {
         PlayerPrefs.SetInt("LevelX", _nextLevel);
         PlayerPrefs.SetInt("CheckpointX", 0);
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene(_nextLevel+1);
     }
 }

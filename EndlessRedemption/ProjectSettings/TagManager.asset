@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Enemigo
   - FxTemporaire
+  - Soldier
+  - Moco
+  - "Ara\xF1a"
+  - Cazarrecompensas
+  - Dragon1
+  - Dragon2
   layers:
   - Default
   - TransparentFX
@@ -20,7 +26,7 @@ TagManager:
   - Wall
   - Bullet
   - PickUP
-  - 
+  - Pinchos
   - 
   - 
   - 

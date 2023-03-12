@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -8877440301036667359}
   m_Layer: 7
   m_Name: SpiderPrefab 1
-  m_TagString: Enemigo
+  m_TagString: "Ara\xF1a"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

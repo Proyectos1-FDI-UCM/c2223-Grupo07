@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: -1834361311032020064}
   m_Layer: 7
   m_Name: thing1
-  m_TagString: Enemigo
+  m_TagString: Moco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -28,6 +28,7 @@ public class ShurikenComponent : MonoBehaviour
         else if(_shurikenLauncher._expectedDirection == ShurikenLauncher.Direction.LEFT) { _shurikenSpeed *= -1; _vertical = false; _rotationAngle *= -1; }
         else if(_shurikenLauncher._expectedDirection == ShurikenLauncher.Direction.UP) { _vertical = true; }
         else if(_shurikenLauncher._expectedDirection == ShurikenLauncher.Direction.DOWN) { _shurikenSpeed *= -1; _vertical = true; _rotationAngle *= -1; }
+        
     }
 
     // Update is called once per frame

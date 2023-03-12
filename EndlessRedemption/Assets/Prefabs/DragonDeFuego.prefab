@@ -126,9 +126,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.013174638, y: -0.07765213}
+  m_Offset: {x: -0.013174653, y: -0.3448081}
   serializedVersion: 2
-  m_Radius: 0.4498001
+  m_Radius: 0.5032317
 --- !u!114 &8420716314514321896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b34bf638b19c914390ea83e81b14a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidasEnemy: 4
+  vidasEnemy: 3
   VidaPickUp: {fileID: 5156510250345167162, guid: 78d45011921c34c4fabbbaecfadaabe5, type: 3}
   _deadExplosion: {fileID: 5642766282230003982, guid: b5c8ca7ed10b61e499cce8ec3b6e2e4c, type: 3}
 --- !u!50 &8420716314514321902

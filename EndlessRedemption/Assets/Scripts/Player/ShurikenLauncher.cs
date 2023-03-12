@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class ShurikenLauncher : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class ShurikenLauncher : MonoBehaviour
     [SerializeField]
     private GameObject _shuriken;
     [SerializeField]
-    private float _speed;  
+    private float _speed;
+    public AudioSource _clip;
     // Start is called before the first frame update
     private void Start()
     {
@@ -27,6 +29,7 @@ public class ShurikenLauncher : MonoBehaviour
             else _expectedDirection = Direction.LEFT;
             Instantiate(_shuriken, transform.position, Quaternion.identity);
             GameManager.Instance._currenShurikens--;
+            _clip.Play();
         }
       
     }
@@ -37,6 +40,7 @@ public class ShurikenLauncher : MonoBehaviour
             _expectedDirection = Direction.UP;
             Instantiate(_shuriken, transform.position, Quaternion.identity);
             GameManager.Instance._currenShurikens--;
+            _clip.Play();
         }
         
     }
@@ -47,6 +51,7 @@ public class ShurikenLauncher : MonoBehaviour
             _expectedDirection = Direction.DOWN;
             Instantiate(_shuriken, transform.position, Quaternion.identity);
             GameManager.Instance._currenShurikens--;
+            _clip.Play();
         }
     }
     

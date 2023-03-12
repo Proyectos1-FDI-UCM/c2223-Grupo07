@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,7 +23,8 @@ public class GameManager : MonoBehaviour
     static public GameManager Instance { get { return _instance; } }   
     public GameStates CurrentState {get { return _currentState; }} //Estado actual
     public float Maxlifes { get { return _maxLifes; } }
-    
+    public AudioSource _clip1;
+    public AudioSource _clip2;
     private void Awake()
     {
         _instance = this;
@@ -45,6 +47,7 @@ public class GameManager : MonoBehaviour
         _lifes++;
         UIManager.Instance.GanaVidas();
         Debug.Log("VIDAS: "+ _lifes);
+        _clip1.Play();
     }
     public void Muerte() //Para cuando cae al vacio una entidad
     {
@@ -55,6 +58,7 @@ public class GameManager : MonoBehaviour
         _lifes--;
         UIManager.Instance.PierdeVidas();
         Debug.Log("VIDAS: " + _lifes);
+        _clip2.Play();
     }
     public void PickShuriken()
     {

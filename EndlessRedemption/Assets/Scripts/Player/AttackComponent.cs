@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AttackComponent : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class AttackComponent : MonoBehaviour
     public bool _onUpAttack = false;
     public bool _onDownAttack = false;
 
-
+    public AudioSource _clip;
     public void UpAttack()
     {
         if(!_onUpAttack)
@@ -33,7 +34,7 @@ public class AttackComponent : MonoBehaviour
             _animator.SetBool("UpAttack", _onUpAttack);
             GameObject item = Instantiate(_katana, _myUpTransform.position, Quaternion.identity);
             item.transform.parent = gameObject.transform;
-
+            _clip.Play();
         }
     
 
@@ -50,6 +51,7 @@ public class AttackComponent : MonoBehaviour
             GameObject item = Instantiate(_katana, _myDownTransform.position, Quaternion.identity);
             item.transform.parent = gameObject.transform;
             item.GetComponent<DamageComponent>()._downAttack = true;
+            _clip.Play();
         }       
     }
 
@@ -63,6 +65,7 @@ public class AttackComponent : MonoBehaviour
             _animator.SetBool("Attack", _onAttack);                      
             GameObject item = Instantiate(_katana, _myTransform.position, Quaternion.identity);
             item.transform.parent = gameObject.transform;
+            _clip.Play();
         }
       
         

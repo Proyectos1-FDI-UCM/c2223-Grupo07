@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 9177323886993363061}
   m_Layer: 7
   m_Name: Cazarrecompensas 1
-  m_TagString: Enemigo
+  m_TagString: Cazarrecompensas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,6 +171,7 @@ MonoBehaviour:
   _bulletSpeed: 15
   _shootInterval: 2
   _offset: {x: 0, y: 0.5, z: 0}
+  _clip: {fileID: 0}
 --- !u!50 &766634469303981131
 Rigidbody2D:
   serializedVersion: 4

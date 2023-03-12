@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class DamageComponent : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class DamageComponent : MonoBehaviour
     private AttackComponent _attack;
     private Transform _myTransform;
     private EnemyLifeComponent _enemyLife;
+    public AudioSource _clip;
     #endregion
 
     #region properties
@@ -31,15 +33,15 @@ public class DamageComponent : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {     
         if (collision.gameObject.GetComponent<EnemyLifeComponent>())
-        {           
+        {
             _enemyLife = collision.gameObject.GetComponent<EnemyLifeComponent>();
             if(!_downAttack&&!_upAttack)
             {
                 Instantiate(_hitExplosion, _enemyLife.transform.position, Quaternion.identity);
             }
-            
-            _enemyLife.vidasEnemy =_enemyLife.vidasEnemy - _damage;
-            if(collision.gameObject.GetComponent<EnemyLifeComponent>())
+            _enemyLife.vidasEnemy = _enemyLife.vidasEnemy - _damage;
+            if (collision != null) _clip.Play();
+            if (collision.gameObject.GetComponent<EnemyLifeComponent>())
             {
                 _empuje = new Vector3(collision.gameObject.transform.position.x - _myTransform.position.x, collision.gameObject.transform.position.y - _myTransform.position.y);
                 _empuje.Normalize();

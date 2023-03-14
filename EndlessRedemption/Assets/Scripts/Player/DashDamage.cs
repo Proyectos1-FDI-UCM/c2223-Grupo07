@@ -29,7 +29,7 @@ public class DashDamage : MonoBehaviour
     {
         if (_movementComponent._dashing)
         {
-            if(other.gameObject.tag == "Enemigo")
+            if(other.gameObject.GetComponent<EnemyLifeComponent>())
             {
                 _enemyLife = other.gameObject.GetComponent<EnemyLifeComponent>();
                 Instantiate(_hitParticles, _enemyLife.transform.position, Quaternion.identity);

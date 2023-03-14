@@ -38,7 +38,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ColorMask: 6.46
+    - _ColorMask: 15.08
     - _EnableExternalAlpha: 0
     - _Stencil: 0
     - _StencilComp: 7.69

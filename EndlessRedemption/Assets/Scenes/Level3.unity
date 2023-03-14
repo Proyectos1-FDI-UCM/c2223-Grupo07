@@ -875,7 +875,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 50
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &117393622 stripped
 Transform:
@@ -66394,11 +66394,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5325937758783936061, guid: 391d4c63d5667d941957cba61c5675b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 539.4
+      value: 329
       objectReference: {fileID: 0}
     - target: {fileID: 5325937758783936061, guid: 391d4c63d5667d941957cba61c5675b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -144.1
+      value: -13.3
       objectReference: {fileID: 0}
     - target: {fileID: 5325937758783936061, guid: 391d4c63d5667d941957cba61c5675b0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -71217,6 +71217,10 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -3.8878112
       objectReference: {fileID: 0}
+    - target: {fileID: 5064903639783295328, guid: b9b2a75de7583904eaf5e39f9f1058be, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5064903639783295331, guid: b9b2a75de7583904eaf5e39f9f1058be, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -73715,6 +73719,111 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4772634663576477652, guid: e1385af346f4e624eb313ec1ea4fcd7e, type: 3}
   m_PrefabInstance: {fileID: 1522194667}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1394490762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1394490764}
+  - component: {fileID: 1394490763}
+  m_Layer: 14
+  m_Name: MapConfiner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &1394490763
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394490762}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 1}
+      - {x: -1.8065498, y: 1.1987294}
+      - {x: -2.4040291, y: 1.1376203}
+      - {x: -2.2862632, y: -0.46429855}
+      - {x: -2.3681483, y: -0.9395686}
+      - {x: -1.2190132, y: -0.9742908}
+      - {x: -0.010937303, y: -0.975227}
+      - {x: -0.013521537, y: -1.0151126}
+      - {x: -2.0463219, y: -1.0143098}
+      - {x: -2.8097835, y: -1.0267963}
+      - {x: -2.78742, y: -2.8267422}
+      - {x: -2.7927425, y: -2.8401697}
+      - {x: -2.7507913, y: -2.8878121}
+      - {x: -2.7979639, y: -2.914922}
+      - {x: -2.8655481, y: -2.9316835}
+      - {x: -2.8937173, y: -4.3727775}
+      - {x: -2.8898034, y: -4.4163375}
+      - {x: -2.816984, y: -4.443286}
+      - {x: -2.907255, y: -4.4722714}
+      - {x: -2.847515, y: -5.448646}
+      - {x: -2.8540263, y: -8.195875}
+      - {x: 17.028032, y: -8.058067}
+      - {x: 17.952114, y: -5.0231194}
+      - {x: 1.1062739, y: -5.281795}
+      - {x: -0.77287066, y: -5.149601}
+      - {x: 0.6663263, y: -5.149937}
+      - {x: 0.61680543, y: -4.182604}
+      - {x: 0.91849315, y: -3.6149247}
+      - {x: 0.99960715, y: -3.6577582}
+      - {x: 0.97166985, y: -3.5360913}
+      - {x: 1.1179757, y: -3.5785909}
+      - {x: 1.0872812, y: -3.8392885}
+      - {x: 1.4355723, y: -2.2182012}
+      - {x: 0.58394253, y: -2.0706787}
+      - {x: 0.29488614, y: -2.083356}
+      - {x: 0.17580958, y: -2.080512}
+      - {x: 0.05026025, y: -2.0843055}
+      - {x: -1.1423897, y: -2.0860345}
+      - {x: -1.1449257, y: -2.0449824}
+      - {x: 0.1379525, y: -2.0433373}
+      - {x: 1.409379, y: -2.042447}
+      - {x: 0.80288094, y: -2.0604806}
+      - {x: 1.1533228, y: -2.0592349}
+      - {x: 1.7060893, y: -2.0499382}
+      - {x: 1.8106806, y: -0.36327878}
+      - {x: 1.8410136, y: -0.34152672}
+      - {x: 1.9230739, y: -0.31091598}
+      - {x: 0.9510565, y: 0.30901712}
+--- !u!4 &1394490764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394490762}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 359.8, y: -13.2, z: 0}
+  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 50
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1413227679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75386,6 +75495,7 @@ GameObject:
   - component: {fileID: 1718768979}
   - component: {fileID: 1718768981}
   - component: {fileID: 1718768980}
+  - component: {fileID: 1718768982}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -75467,6 +75577,23 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1530685796}
+--- !u!114 &1718768982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718768978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ConfineMode: 0
+  m_BoundingVolume: {fileID: 0}
+  m_BoundingShape2D: {fileID: 1394490763}
+  m_ConfineScreenEdges: 1
+  m_Damping: 0
 --- !u!1001 &1721197117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76529,7 +76656,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 51
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1905269433 stripped
 GameObject:

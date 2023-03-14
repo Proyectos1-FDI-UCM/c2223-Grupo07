@@ -36,6 +36,8 @@ public class MovementComponent : MonoBehaviour
     [SerializeField]
     private float _impulse;
     [SerializeField]
+    private GameObject _dashAnimation;
+    [SerializeField]
     private GameObject _dashExplosion;
     public float _cooldownElapsed;    
     public bool _onGround;
@@ -104,6 +106,7 @@ public class MovementComponent : MonoBehaviour
     {
         if (_dashPickUp && !_dashCoolDown)
         {
+            _dashAnimation.SetActive(true);
             if (transform.localScale.x >= 0)//Sirve para calcular cuando para el dash
                 _dashDirection = DashDirection.RIGHT;
             else _dashDirection = DashDirection.LEFT;
@@ -151,6 +154,7 @@ public class MovementComponent : MonoBehaviour
     }
     public void DashStop()
     {
+        _dashAnimation.SetActive(false);
         _disableCollider.ColliderEnable();
         gameObject.layer = 3;
         _dashing = false;

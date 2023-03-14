@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Dash : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject dashUI;
+
     #region methods
     private void OnTriggerEnter2D(Collider2D collider)
     {

@@ -12,6 +12,7 @@ public class Dash : MonoBehaviour
             collider.gameObject.GetComponent<MovementComponent>()._dashPickUp = true;
             PlayerPrefs.SetInt("hasDash", 1);
             UIManager.Instance.ShowDashIcon();
+            collider.gameObject.GetComponent<PowerUps>().enabled = true; 
             Destroy(gameObject);
             Debug.Log("Dash recogido");
         }

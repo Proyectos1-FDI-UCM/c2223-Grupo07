@@ -696,7 +696,7 @@ MonoBehaviour:
   _hitParticles: {fileID: 1602180625524123211, guid: 9279d82264060414abab2b8120bea29a, type: 3}
   _playerTransform: {fileID: 5064903639783295331}
   _fuerzaEmpuje: 0
-  _damage: 1
+  _damage: 2
 --- !u!1 &5064903639783295333
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ public class EnemyLifeComponent : MonoBehaviour
     private GameObject aux;
     private float thrust = 3f;
     private int prob;
+    private bool _taken;
 
     // Start is called before the first frame update
     public void Muerte()
@@ -21,15 +22,17 @@ public class EnemyLifeComponent : MonoBehaviour
     }
     void Start()
     {
-        prob = Random.Range(0,3);
+        prob = Random.Range(0,4);
+        _taken = false;
     }
     // Update is called once per frame
     void Update()
     {
         if (vidasEnemy <= 0)
         {
-            if(prob == 0)
+            if(prob == 0 && !_taken)
             {
+                _taken = true;
                 aux = Instantiate(VidaPickUp, transform.position, Quaternion.identity);
                 aux.GetComponent<Rigidbody2D>().AddForce(transform.up * thrust, ForceMode2D.Impulse);
             }

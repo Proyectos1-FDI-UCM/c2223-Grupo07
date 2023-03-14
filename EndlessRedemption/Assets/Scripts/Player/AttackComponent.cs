@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Audio;
 
 public class AttackComponent : MonoBehaviour
 {
@@ -24,7 +23,7 @@ public class AttackComponent : MonoBehaviour
     public bool _onUpAttack = false;
     public bool _onDownAttack = false;
 
-    public AudioSource _clip;
+    private SoundManager _soundManager;
     public void UpAttack()
     {
         if(!_onUpAttack)
@@ -34,7 +33,7 @@ public class AttackComponent : MonoBehaviour
             _animator.SetBool("UpAttack", _onUpAttack);
             GameObject item = Instantiate(_katana, _myUpTransform.position, Quaternion.identity);
             item.transform.parent = gameObject.transform;
-            _clip.Play();
+            _soundManager.SeleccionAudio(0, 0.5f);
         }
     
 
@@ -51,7 +50,7 @@ public class AttackComponent : MonoBehaviour
             GameObject item = Instantiate(_katana, _myDownTransform.position, Quaternion.identity);
             item.transform.parent = gameObject.transform;
             item.GetComponent<DamageComponent>()._downAttack = true;
-            _clip.Play();
+            _soundManager.SeleccionAudio(0, 0.5f);
         }       
     }
 
@@ -65,7 +64,7 @@ public class AttackComponent : MonoBehaviour
             _animator.SetBool("Attack", _onAttack);                      
             GameObject item = Instantiate(_katana, _myTransform.position, Quaternion.identity);
             item.transform.parent = gameObject.transform;
-            _clip.Play();
+            _soundManager.SeleccionAudio(0, 0.5f);
         }
       
         
@@ -90,6 +89,7 @@ public class AttackComponent : MonoBehaviour
         _animator = GetComponentInParent<Animator>();
         _myUpTransform = gameObject.transform.GetChild(4);
         _myDownTransform = gameObject.transform.GetChild(5);
+        _soundManager = FindObjectOfType<SoundManager>();
     }
 
     // Update is called once per frame

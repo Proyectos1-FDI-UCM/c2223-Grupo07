@@ -54,8 +54,7 @@ public class MovementComponent : MonoBehaviour
     private float _time=0.2f;
     private float _elapsedtime=0f;
 
-    public AudioSource _clip1;
-    public AudioSource _clip2;
+    private SoundManager _soundManager;
     #region Methods
 
     public void Left()
@@ -99,7 +98,7 @@ public class MovementComponent : MonoBehaviour
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
             _rigidbody2D.AddForce(Vector2.up * _jumpForce , ForceMode2D.Impulse);
             _jumps++;
-            _clip2.Play();
+            _soundManager.SeleccionAudio(8, 0.5f);
         }
     }
     public void Dash()
@@ -139,7 +138,7 @@ public class MovementComponent : MonoBehaviour
             }
             _dashing = true;
 
-            _clip1.Play();
+            _soundManager.SeleccionAudio(4, 0.5f);
         }
     }
     private void Girar()
@@ -187,6 +186,7 @@ public class MovementComponent : MonoBehaviour
 
         _dashCoolDown = false;
 
+        _soundManager = FindObjectOfType<SoundManager>();
     }
     private void Update()
     {

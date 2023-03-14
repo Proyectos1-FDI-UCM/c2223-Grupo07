@@ -9,7 +9,7 @@ public class FakeTiles : MonoBehaviour
     private float _time = 0f;
     public GameObject rompible; //prefab de la plataforma rompible
     private bool _destroyed = false;
-    public AudioSource _clip;
+    private SoundManager _soundManager;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,7 +24,7 @@ public class FakeTiles : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        _soundManager = FindObjectOfType<SoundManager>();
     }
 
     // Update is called once per frame
@@ -38,7 +38,7 @@ public class FakeTiles : MonoBehaviour
                 Instantiate(rompible, transform.position, Quaternion.identity);
                 Destroy(gameObject);
                 _time = 0f;
-                _clip.Play();
+                _soundManager.SeleccionAudio(7, 0.5f);
             }  
         }
     }

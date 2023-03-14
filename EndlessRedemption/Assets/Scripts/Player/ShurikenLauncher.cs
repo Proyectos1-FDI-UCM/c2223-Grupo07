@@ -12,11 +12,12 @@ public class ShurikenLauncher : MonoBehaviour
     private GameObject _shuriken;
     [SerializeField]
     private float _speed;
-    public AudioSource _clip;
+    private SoundManager _soundManager;
     // Start is called before the first frame update
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _soundManager = FindObjectOfType<SoundManager>();
     }
 
 
@@ -29,7 +30,7 @@ public class ShurikenLauncher : MonoBehaviour
             else _expectedDirection = Direction.LEFT;
             Instantiate(_shuriken, transform.position, Quaternion.identity);
             GameManager.Instance._currenShurikens--;
-            _clip.Play();
+            _soundManager.SeleccionAudio(9, 0.5f);
         }
       
     }
@@ -40,7 +41,7 @@ public class ShurikenLauncher : MonoBehaviour
             _expectedDirection = Direction.UP;
             Instantiate(_shuriken, transform.position, Quaternion.identity);
             GameManager.Instance._currenShurikens--;
-            _clip.Play();
+            _soundManager.SeleccionAudio(9, 0.5f);
         }
         
     }
@@ -51,7 +52,7 @@ public class ShurikenLauncher : MonoBehaviour
             _expectedDirection = Direction.DOWN;
             Instantiate(_shuriken, transform.position, Quaternion.identity);
             GameManager.Instance._currenShurikens--;
-            _clip.Play();
+            _soundManager.SeleccionAudio(9, 0.5f);
         }
     }
     

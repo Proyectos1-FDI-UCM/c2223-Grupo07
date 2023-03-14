@@ -22,7 +22,7 @@ public class SmokeBomb : MonoBehaviour
     public bool _playerTarget = true;
     public float SmokeCoolDown { get { return _coolDown; } }
 
-    public AudioSource _clip;
+    private SoundManager _soundManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +31,7 @@ public class SmokeBomb : MonoBehaviour
         _cooldownElapsed = 0;
         _smokeActive = false;
         _animator = GetComponent<Animator>();
+        _soundManager = FindObjectOfType<SoundManager>();
     }
 
     // Update is called once per frame
@@ -68,7 +69,7 @@ public class SmokeBomb : MonoBehaviour
             _smokeActive = true;
             _playerTarget = false;
             _smokePosition = transform.position;
-            _clip.Play();
+            _soundManager.SeleccionAudio(2, 0.5f);
         }
     }
 }

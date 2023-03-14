@@ -23,8 +23,8 @@ public class GameManager : MonoBehaviour
     static public GameManager Instance { get { return _instance; } }   
     public GameStates CurrentState {get { return _currentState; }} //Estado actual
     public float Maxlifes { get { return _maxLifes; } }
-    public AudioSource _clip1;
-    public AudioSource _clip2;
+
+    private SoundManager _soundManager;
     private void Awake()
     {
         _instance = this;
@@ -41,13 +41,15 @@ public class GameManager : MonoBehaviour
         PlayerManager.Instance.transform.position = new Vector3 (_checkPoints[_currentCheckpoint].position.x, _checkPoints[_currentCheckpoint].position.y, _checkPoints[_currentCheckpoint].position.z); //Mover al jugador a la posicion del checkpoint
         _currentScene = PlayerPrefs.GetInt("LevelX");
         _currentState = GameStates.GAME;
+
+        _soundManager = FindObjectOfType<SoundManager>();
     }
     public void WinLife()
     {
         _lifes++;
         UIManager.Instance.GanaVidas();
         Debug.Log("VIDAS: "+ _lifes);
-        _clip1.Play();
+        _soundManager.SeleccionAudio(10, 0.5f);
     }
     public void Muerte() //Para cuando cae al vacio una entidad
     {
@@ -58,7 +60,7 @@ public class GameManager : MonoBehaviour
         _lifes--;
         UIManager.Instance.PierdeVidas();
         Debug.Log("VIDAS: " + _lifes);
-        _clip2.Play();
+        _soundManager.SeleccionAudio(11, 0.5f);
     }
     public void PickShuriken()
     {

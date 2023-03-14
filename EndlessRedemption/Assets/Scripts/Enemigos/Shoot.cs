@@ -19,12 +19,13 @@ public class Shoot : MonoBehaviour
     [SerializeField]
     private Vector3 _offset;
 
-    public AudioSource _clip;
+    private SoundManager _soundManager;
     // Start is called before the first frame update
     void Start()
     {
         _IABountyHunter = GetComponent<IABountyHunter1>();
         _fireDragon = GetComponent<FireDragon>();
+        _soundManager = FindObjectOfType<SoundManager>();
     }
 
     // Update is called once per frame
@@ -54,7 +55,7 @@ public class Shoot : MonoBehaviour
                     Instantiate(_explosion, (transform.position + _offset), Quaternion.identity);
                     GameObject bullet = Instantiate(_bullet, transform.position + _offset, Quaternion.identity);
                     _elapsedTime = 0;
-                    _clip.Play();
+                    _soundManager.SeleccionAudio(5, 0.5f);
                 }
             }
         }

@@ -15,7 +15,7 @@ public class ChestController : MonoBehaviour
     private int _ShurikensSpawned;
     [SerializeField]
     private float _spawnTime;
-    public AudioSource _clip;
+    private SoundManager _soundManager;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class ChestController : MonoBehaviour
         _animator = GetComponent<Animator>();
         _animator.SetBool("Open", _opened);
         _spawned= false;
-        
+        _soundManager = FindObjectOfType<SoundManager>();
     }
 
     // Update is called once per frame
@@ -49,7 +49,7 @@ public class ChestController : MonoBehaviour
         {
             _opened= true;
             _animator.SetBool("Open", _opened);
-            _clip.Play();
+            _soundManager.SeleccionAudio(3, 0.5f);
         }
     }
 }

@@ -1017,6 +1017,7 @@ MonoBehaviour:
   _DBJumpCooldown: {fileID: 3678821300782022201}
   DashIcon: {fileID: 3656297499916860199}
   DoubleJumpIcon: {fileID: 7301439600915140942}
+  ShurikenImage: {fileID: 5867759795202840377}
 --- !u!1 &5867759794966287278
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,6 +20,8 @@ public class UIManager : MonoBehaviour
     private GameObject DashIcon;
     [SerializeField]
     private GameObject DoubleJumpIcon;
+    [SerializeField]
+    private GameObject ShurikenImage;
 
     private void Awake()
     {
@@ -34,7 +36,15 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        shurikenText.SetText("x" + GameManager.Instance._currenShurikens);
+        if (GameManager.Instance._hasShurikensBag)
+        {
+            shurikenText.SetText("x" + GameManager.Instance._currenShurikens);
+            ShurikenImage.SetActive(true);
+        }
+        else
+        {
+            ShurikenImage.SetActive(false);
+        }
         if (Mathf.Round(PlayerManager.Instance.GetComponent<MovementComponent>().Cooldown - PlayerManager.Instance.GetComponent<MovementComponent>()._cooldownElapsed) == PlayerManager.Instance.GetComponent<MovementComponent>().Cooldown)
             _dashCooldown.SetText(" ");//Si dash cargado que no se vea el cooldown
         else//Cooldown dash

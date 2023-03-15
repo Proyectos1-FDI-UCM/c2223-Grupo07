@@ -17,12 +17,20 @@ public class GameManager : MonoBehaviour
     public float _lifes;
     public float _currenShurikens;
     public float _maxShurikens; //Depende de la dificultad de la partida
+    public bool _hasShurikensBag = false;
     [SerializeField]
     public float _maxLifes; //Depende de la dificultad de la partida
     static private GameManager _instance;
     static public GameManager Instance { get { return _instance; } }   
     public GameStates CurrentState {get { return _currentState; }} //Estado actual
     public float Maxlifes { get { return _maxLifes; } }
+    [SerializeField]
+    private GameObject _player;
+    [SerializeField]
+    private GameObject _playerDeath;
+    private float _elapsedTime = 0f;
+    private float _maxDeath = 3f;
+    private bool _hasDeath = false;
 
     private SoundManager _soundManager;
     private void Awake()
@@ -81,7 +89,17 @@ public class GameManager : MonoBehaviour
             case GameStates.GAME:
                 if(_lifes <= 0)
                 {
-                    ChangeState(GameStates.RESTART);
+                    if (!_hasDeath)
+                    {
+                        Instantiate(_playerDeath, _player.transform.position, Quaternion.identity);
+                        Destroy(_player);
+                        _hasDeath = true;
+                    }
+                    _elapsedTime += Time.deltaTime;
+                    if(_elapsedTime > _maxDeath)
+                    {
+                        ChangeState(GameStates.RESTART);
+                    }
                 }           
                 break;
             case GameStates.PAUSE:

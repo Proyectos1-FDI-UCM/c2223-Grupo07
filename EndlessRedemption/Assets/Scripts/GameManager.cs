@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public enum GameStates { START, GAME, PAUSE, RESTART }
     private GameStates _currentState;
-    private string[] _sceneNames = { "Level1", "Level2", "Level3", "Level4 Dragon"};//Nombres de las escenas
+    private string[] _sceneNames = { "Level1", "Level2", "Level3", "Castillo 2"};//Nombres de las escenas
     private int _currentScene;
     [SerializeField]
     private Transform[] _checkPoints; //Array con los checkpoints, cada escena tiene los suyos
@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     private GameObject _playerDeath;
     private float _elapsedTime = 0f;
     private float _maxDeath = 3f;
-    private bool _hasDeath = false;
+    public bool _hasDeath = false;
 
     private SoundManager _soundManager;
     private void Awake()

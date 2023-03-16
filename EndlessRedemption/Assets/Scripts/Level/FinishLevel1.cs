@@ -12,9 +12,12 @@ public class FinishLevel1 : MonoBehaviour
     private float _transitionTime = 1f;
     private Animator _transitionAnimator;
 
+    private GameManager _gameManager;
+
     private void Start()
     {
         _transitionAnimator = GetComponentInChildren<Animator>();
+        _gameManager = FindObjectOfType<GameManager>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -27,6 +30,7 @@ public class FinishLevel1 : MonoBehaviour
     {
         _transitionAnimator.SetTrigger("StartTransition");
         yield return new WaitForSeconds(_transitionTime);
-        SceneManager.LoadScene(_nextLevel + 1);
+        if (_gameManager._hasDeath) SceneManager.LoadScene(_nextLevel);
+        else SceneManager.LoadScene(_nextLevel + 1);
     }
 }

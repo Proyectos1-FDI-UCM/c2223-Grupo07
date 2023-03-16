@@ -13,6 +13,8 @@ public class DoubleJump : MonoBehaviour
             PlayerPrefs.SetInt("hasDoubleJump", 1);
             UIManager.Instance.ShowDoubleJumpIcon();
             collider.gameObject.GetComponent<PowerUps>().enabled=true;
+            collider.gameObject.GetComponent<PowerUps>()._dJump = true;
+            collider.gameObject.GetComponent<PowerUps>()._objetive = transform;
             Destroy(gameObject);
             Debug.Log("Doble salto recogido");
 

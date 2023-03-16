@@ -13,24 +13,26 @@ public class PowerUps : MonoBehaviour
 
     [SerializeField]
     private GameObject _ToFresco;
-
-    [SerializeField]
-    private Transform _objetive;
+    
+    public Transform _objetive;
 
     private float _movementSpeed=5f;
 
     private bool _powerUp = true;
 
+    [SerializeField]
     private float _time=3f;
     
     private float _elapsedtime;
 
-    
-    private float _time2=5.5f;
+    [SerializeField]
+    private float _time2=7f;
     
     private float _elapsedtime2;
 
+    public bool _dash=false;
 
+    public bool _dJump=false;
 
     void Start()
     {
@@ -50,26 +52,43 @@ public class PowerUps : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        _elapsedtime2 += Time.deltaTime;
-        _elapsedtime += Time.deltaTime;
-
-
-
-        if (_elapsedtime >= _time)
+        if (_dJump)
         {
-            _item = Instantiate(_ToFresco, new Vector3(transform.position.x, transform.position.y), Quaternion.identity);
-        }
+            _elapsedtime2 += Time.deltaTime;
+            _elapsedtime += Time.deltaTime;
+
+            if (_elapsedtime >= _time)
+            {
+                _item = Instantiate(_ToFresco, new Vector3(transform.position.x, transform.position.y), Quaternion.identity);
+            }
 
             if (_elapsedtime2 >= _time2)
-        {
-            _elapsedtime2 = 0;
-            _inputComponent.enabled = true;
-            _rigid.gravityScale = 4;
-            _powerUp = false;
-            _animator.SetBool("PowerUp", _powerUp);
-            Destroy(_item);
-            this.enabled = false;
+            {
+                _elapsedtime2 = 0;
+                _inputComponent.enabled = true;
+                _rigid.gravityScale = 4;
+                _powerUp = false;
+                _animator.SetBool("PowerUp", _powerUp);
+                Destroy(_item);
+                this.enabled = false;
+            }
         }
+        else if (_dash)
+        {
+            _elapsedtime2 += Time.deltaTime;
+            _elapsedtime += Time.deltaTime;
+
+            if (_elapsedtime2 >= _time2)
+            {
+                _elapsedtime2 = 0;
+                _inputComponent.enabled = true;
+                _rigid.gravityScale = 4;
+                _powerUp = false;
+                _animator.SetBool("PowerUp", _powerUp);
+                Destroy(_item);
+                this.enabled = false;
+            }
+        }
+   
     }
 }

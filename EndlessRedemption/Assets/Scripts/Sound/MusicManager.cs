@@ -22,7 +22,7 @@ public class MusicManager : MonoBehaviour
         _enterZone = false;
         _audioSourceMusic = GetComponent<AudioSource>();
         if(_playAtStart)
-        switch(PlayerPrefs.GetInt("LevelX"))
+        switch(PlayerPrefs.GetInt("LevelX"))//Musica y ambiente de cada level
             {
                 case 0:
                     SelectSong(0, 0.4f);
@@ -63,10 +63,10 @@ public class MusicManager : MonoBehaviour
             switch (PlayerPrefs.GetInt("LevelX"))
             {
                 case 0:
-                    SelectSong(2, 1f);
+                    SelectSong(2, 0.8f);
                     break;
                 case 1:
-
+                    SelectSong(0, 0.5f);
                     break;
                 case 2:
                     break;

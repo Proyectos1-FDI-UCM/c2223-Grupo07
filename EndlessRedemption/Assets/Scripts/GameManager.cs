@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
     // Preparación de escena y checkpoint
     void Start()
     {
+        _player.SetActive(true);
         _currentCheckpoint = PlayerPrefs.GetInt("CheckpointX");
         for(int i = 0; i <= _currentCheckpoint; i++) //Desactivar anteriores
         {
@@ -92,7 +93,7 @@ public class GameManager : MonoBehaviour
                     if (!_hasDeath)
                     {
                         Instantiate(_playerDeath, _player.transform.position, Quaternion.identity);
-                        Destroy(_player);
+                        _player.SetActive(false);
                         _hasDeath = true;
                     }
                     _elapsedTime += Time.deltaTime;

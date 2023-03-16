@@ -33,6 +33,8 @@ public class MusicManager : MonoBehaviour
                     SelectSong(2, 0.6f);
                     break;
                 case 2:
+                    SelectSong(0, 0.3f);
+                    SelectSong(1, 2f);
                     break;
                 case 3:
                     break;
@@ -56,7 +58,7 @@ public class MusicManager : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)//Cambio de musica al entrar en una zona
     {
-        if(!_enterZone)
+        if (!_enterZone && collision.gameObject.GetComponent<PlayerManager>()) 
         {
             _enterZone = true;
             StopMusic();
@@ -69,6 +71,7 @@ public class MusicManager : MonoBehaviour
                     SelectSong(0, 0.5f);
                     break;
                 case 2:
+                    SelectSong(2, 0.3f);
                     break;
                 case 3:
                     break;

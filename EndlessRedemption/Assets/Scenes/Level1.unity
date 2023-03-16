@@ -51075,9 +51075,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -517.79
       objectReference: {fileID: 0}
+    - target: {fileID: 5867759794874125874, guid: 6bf859a3dc5e4ff468a5a970e66af111, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5867759794941558106, guid: 6bf859a3dc5e4ff468a5a970e66af111, type: 3}
       propertyPath: m_Name
       value: HUD 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5867759794941558106, guid: 6bf859a3dc5e4ff468a5a970e66af111, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5867759794941558110, guid: 6bf859a3dc5e4ff468a5a970e66af111, type: 3}
       propertyPath: m_Pivot.x
@@ -51162,6 +51170,10 @@ PrefabInstance:
     - target: {fileID: 5867759794941558110, guid: 6bf859a3dc5e4ff468a5a970e66af111, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6156398237645657329, guid: 6bf859a3dc5e4ff468a5a970e66af111, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bf859a3dc5e4ff468a5a970e66af111, type: 3}
@@ -55689,6 +55701,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ToFresco: {fileID: 2427654455839297022, guid: 4a1d6af5edcfa444c8dca5e06d9cb744, type: 3}
   _objetive: {fileID: 83927209}
+  _time: 3
+  _time2: 5.5
+  _dash: 0
+  _dJump: 0
 --- !u!1 &874008282
 GameObject:
   m_ObjectHideFlags: 0
@@ -57873,6 +57889,7 @@ MonoBehaviour:
   _maxLifes: 5
   _player: {fileID: 5064903639783295333, guid: b9b2a75de7583904eaf5e39f9f1058be, type: 3}
   _playerDeath: {fileID: 2863547037217844996, guid: 9f48c0777a9f79d428a092fa521b8995, type: 3}
+  _hasDeath: 0
 --- !u!4 &1072419575
 Transform:
   m_ObjectHideFlags: 0

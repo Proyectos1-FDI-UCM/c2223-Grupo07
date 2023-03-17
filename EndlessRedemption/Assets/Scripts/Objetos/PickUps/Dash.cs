@@ -18,8 +18,9 @@ public class Dash : MonoBehaviour
             collider.gameObject.GetComponent<PowerUps>().enabled = true;
             collider.gameObject.GetComponent<PowerUps>()._dJump = false;
             collider.gameObject.GetComponent<PowerUps>()._dash = true;
+            collider.gameObject.GetComponent<PowerUps>()._iniciar = true;
             collider.gameObject.GetComponent<PowerUps>()._objetive = transform;
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             Debug.Log("Dash recogido");
         }
     }

@@ -1,0 +1,1750 @@
+fileFormatVersion: 2
+guid: 361d2d0910615c140abccef1477ce6f1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dragon2patas_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1075
+        width: 65
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d753a5ddb14f2842bb141d70e18e3e8
+      internalID: 1702318431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 941
+        width: 80
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf2b09a45e51f04a81396e00ab0b048
+      internalID: 1760244888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 941
+        width: 79
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1903ea9ea9d25a4280be3c9262cb3ed
+      internalID: 1329100948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_3
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 941
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fb23c68554cfb4da03aff36aceb215
+      internalID: 435442598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_4
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 941
+        width: 65
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927f56a2d2a44f2428b4c46a87911044
+      internalID: 217753962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_5
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 941
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc44195d09af41469e07af54702e010
+      internalID: -1487182189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_6
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 941
+        width: 80
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f1a2891f6ab8f42a3360569bb0219e
+      internalID: -1938784889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 911
+        width: 74
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f4442133a2ca144a0828b7a886f00b
+      internalID: 999125134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_8
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 917
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc44fac26e587c4d9db3643c353c5be
+      internalID: -1042834453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_9
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 919
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f623b4e21df08364bae59731c8bd800d
+      internalID: 2075733345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_10
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 919
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824d9a8c42cca0a44a8fe9eac53146f8
+      internalID: -1610328348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_11
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 782
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0698b4ab17a89be4d9b9007af315c0c5
+      internalID: 503258751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_12
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 782
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf411f4642a7d2489080545c3535abf
+      internalID: 10918811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_13
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 783
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e415a06a71f3c941b3433b3e7a8265b
+      internalID: -1642225393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_14
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 796
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c7e04ff075787488027c3211ca0de3
+      internalID: -1850170496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_15
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 796
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84229ef18d8644746aa1b6833d56556a
+      internalID: 2043701197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_16
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 782
+        width: 88
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c96d679afb78b49afbd71109110dcc
+      internalID: 703314143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_17
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 804
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fd5b82502ff22468b91a5363f6fe04
+      internalID: -149184546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_18
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 782
+        width: 88
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aadaca0dd111224d8339f8459f293b0
+      internalID: -52826606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_19
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 805
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fc2fb0f6fc8054e90c888cee68b782
+      internalID: -1584363831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_20
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 782
+        width: 107
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5fde228f43035d45b87de4f5dd011f0
+      internalID: -903906992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_21
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 810
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4657ddbdcfa780b4691d5ce82a12bfd6
+      internalID: 195990628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_22
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 782
+        width: 112
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c1b7c86a31c344295b8b6d87bf348d
+      internalID: 1477392791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_23
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 810
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a2acff57df4c4448fcb5f14a13af3b
+      internalID: 2015677993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_24
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 785
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf1fee6c1bce2e4d865d8010c71978c
+      internalID: -9784733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_25
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 782
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89acda49a1f4ae24681993125891ef52
+      internalID: -467784183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_26
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 782
+        width: 64
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5e95a1a311a92458e197d29046982b
+      internalID: 673097870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_27
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 782
+        width: 64
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956ff16aaf14fdf478c064f6ea10db8e
+      internalID: -1641097270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_28
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 752
+        width: 74
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e508a55f75ff3ad4f86859a2ca0083bf
+      internalID: 383004550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_29
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 758
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd379970ee78a3d4cb6ebaafab6a5088
+      internalID: 379097492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_30
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 760
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef91b2c6a7102bd4880b140033ac577b
+      internalID: -1038334681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_31
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 760
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6808693b112a62439425d4510f80c20
+      internalID: -548555698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_32
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 623
+        width: 112
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5b942fcfcad1f428032c5cac892f76
+      internalID: -661248940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_33
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 651
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56431a3fba07b3142aba9a6ac6bc142f
+      internalID: -754762036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_34
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 623
+        width: 83
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8d084bbf26d2042b7cc0ce5a9c5262
+      internalID: 569494369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_35
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 651
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df23f22c235e61a45ac71ef21886fdaf
+      internalID: -1197889981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_36
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 623
+        width: 72
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b318df99cf4134e90d34d8bfbe6464
+      internalID: -859254179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_37
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 651
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e624f1a512f50d48b62e8210ac819a4
+      internalID: 473301037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_38
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 651
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b84c1c23875e642b4ea5aec110e078
+      internalID: -53187281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_39
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 651
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53be0916ac054de469c2470088976ef9
+      internalID: 1490650525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_40
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 623
+        width: 80
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d47e932487fe949b2fc6138c885bab
+      internalID: -879886173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_41
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 623
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6e0ac49bc36604db3393df33ff3e87
+      internalID: 360389640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_42
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 593
+        width: 74
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf6ace6bb4d8d4499c4b9064bc10715
+      internalID: 904347479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_43
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 601
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc315c5519d90b469e81c95f790df77
+      internalID: 510470759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_44
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 601
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bdb5664b9c78c4db5b5a86ce09f310
+      internalID: 1174079287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_45
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 601
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54abac6c5205fa4cb0938079ddc8805
+      internalID: 693993669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_46
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 464
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5ba01da0e15b64287b262597f00491
+      internalID: -1204247793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_47
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 473
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20826ff834882e4eb70156d1520ceab
+      internalID: 1118963702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_48
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 464
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ce55dece99d1b488eeae6cee955422
+      internalID: -1174977287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_49
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 492
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1b280c69b2a5e4b9f430ba9171aa15
+      internalID: 1149378567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_50
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 464
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990275c31643fd54ab96dc5a25a34bd4
+      internalID: 1793991108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_51
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 492
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50beea504362bab45beb3174cc795485
+      internalID: -1227223624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_52
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 464
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae7f612fc105e0479de946f3f85f9cc
+      internalID: -671694079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_53
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 491
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84680cfe64c2cab4796d8b9da4ccf7e6
+      internalID: 784780359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_54
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 464
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1852ea6ea1dd0f469f6f1f06371be8c
+      internalID: 32264356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_55
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 491
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b1b01bafac5d14d88b4a1a80171858
+      internalID: 384061126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_56
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 464
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feae8a0f071bb7345a49ebb5b57f3b68
+      internalID: 981424433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_57
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 434
+        width: 74
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44aefb5458d467c4f8fa8b2b50e7bf71
+      internalID: 938653583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_58
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 442
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ad72350375402469b020ab41cd087d
+      internalID: -562298590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_59
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 442
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d706096cea2b7094bb56cab7984f2569
+      internalID: -1874462471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_60
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 442
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f1157caa1498d4680a1d902ff8e68a
+      internalID: -1339212928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_61
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 305
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8955d7a053e7f40b7c4d35ca792a60
+      internalID: -10521162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_62
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 332
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334a8b39c8c096a459a0172923a80f28
+      internalID: 224769136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_63
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 332
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965ab5554d713e640947b9206537341e
+      internalID: -640378193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_64
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 333
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e3dac2a06fbcd43bb5bf0c49fa434e
+      internalID: 993366892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_65
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 333
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0b6448cfc862d4bbec1723b3a94278
+      internalID: 112088164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_66
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 305
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1626a77ebad0bf4f983069c171ef3d0
+      internalID: 717845307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_67
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 305
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dabd0ffa71545c458b4515e9471ae12
+      internalID: -506220966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_68
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 275
+        width: 57
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2df6aecb4e0a2048bce47d6ad637d51
+      internalID: 1118367658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_69
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 146
+        width: 80
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f218db88827b7924f9a7ad1e044bd662
+      internalID: -1023982000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_70
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 185
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b52f59a29fdb7409d1a97dee4a3b7b
+      internalID: -1533108416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_71
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 187
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c941caeb99e84104783d6227f12f5af6
+      internalID: 1715309153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_72
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 185
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6405b126f01e482468fd76c2744b6f74
+      internalID: 182675912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon2patas_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 153
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def42614b47d2f646a7a8f98a73379e5
+      internalID: -656551626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dragon2patas_31: -548555698
+      Dragon2patas_36: -859254179
+      Dragon2patas_53: 784780359
+      Dragon2patas_10: -1610328348
+      Dragon2patas_4: 217753962
+      Dragon2patas_3: 435442598
+      Dragon2patas_35: -1197889981
+      Dragon2patas_38: -53187281
+      Dragon2patas_72: 182675912
+      Dragon2patas_1: 1760244888
+      Dragon2patas_33: -754762036
+      Dragon2patas_62: 224769136
+      Dragon2patas_45: 693993669
+      Dragon2patas_51: -1227223624
+      Dragon2patas_14: -1850170496
+      Dragon2patas_18: -52826606
+      Dragon2patas_2: 1329100948
+      Dragon2patas_71: 1715309153
+      Dragon2patas_39: 1490650525
+      Dragon2patas_66: 717845307
+      Dragon2patas_22: 1477392791
+      Dragon2patas_48: -1174977287
+      Dragon2patas_30: -1038334681
+      Dragon2patas_58: -562298590
+      Dragon2patas_57: 938653583
+      Dragon2patas_34: 569494369
+      Dragon2patas_7: 999125134
+      Dragon2patas_64: 993366892
+      Dragon2patas_61: -10521162
+      Dragon2patas_42: 904347479
+      Dragon2patas_68: 1118367658
+      Dragon2patas_5: -1487182189
+      Dragon2patas_21: 195990628
+      Dragon2patas_27: -1641097270
+      Dragon2patas_44: 1174079287
+      Dragon2patas_37: 473301037
+      Dragon2patas_47: 1118963702
+      Dragon2patas_15: 2043701197
+      Dragon2patas_63: -640378193
+      Dragon2patas_67: -506220966
+      Dragon2patas_0: 1702318431
+      Dragon2patas_41: 360389640
+      Dragon2patas_9: 2075733345
+      Dragon2patas_26: 673097870
+      Dragon2patas_40: -879886173
+      Dragon2patas_56: 981424433
+      Dragon2patas_8: -1042834453
+      Dragon2patas_25: -467784183
+      Dragon2patas_43: 510470759
+      Dragon2patas_28: 383004550
+      Dragon2patas_46: -1204247793
+      Dragon2patas_12: 10918811
+      Dragon2patas_16: 703314143
+      Dragon2patas_55: 384061126
+      Dragon2patas_69: -1023982000
+      Dragon2patas_19: -1584363831
+      Dragon2patas_70: -1533108416
+      Dragon2patas_6: -1938784889
+      Dragon2patas_49: 1149378567
+      Dragon2patas_65: 112088164
+      Dragon2patas_20: -903906992
+      Dragon2patas_73: -656551626
+      Dragon2patas_17: -149184546
+      Dragon2patas_23: 2015677993
+      Dragon2patas_60: -1339212928
+      Dragon2patas_50: 1793991108
+      Dragon2patas_59: -1874462471
+      Dragon2patas_13: -1642225393
+      Dragon2patas_29: 379097492
+      Dragon2patas_54: 32264356
+      Dragon2patas_11: 503258751
+      Dragon2patas_52: -671694079
+      Dragon2patas_24: -9784733
+      Dragon2patas_32: -661248940
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

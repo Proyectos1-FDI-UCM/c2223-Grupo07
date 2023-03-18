@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3.unity
     guid: 43d9567468bfcdd43a3b4bc8f712ef02
   - enabled: 1
+    path: Assets/Scenes/Castillo 2.unity
+    guid: 6eeafe417a2127c43a8ef85fa586216c
+  - enabled: 1
     path: Assets/Scenes/Level4 Dragon.unity
     guid: 1d66172c73351c94a8b678c6d64240cf
   m_configObjects: {}

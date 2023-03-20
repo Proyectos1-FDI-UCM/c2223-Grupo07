@@ -16,6 +16,7 @@ public class TutorialManager : MonoBehaviour
 
     public void ClickBox()
     {
+        _tutorialBoxes[i].SetActive(false);
         _boxClicked = true;
         Debug.Log("Click");
     }
@@ -25,20 +26,41 @@ public class TutorialManager : MonoBehaviour
         _tutorial.SetActive(true);
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
+        switch (i)//cada caja de texto desaparece para dar paso a la siguiente dependiendo del input que coincide con la mecánica enseñada
+        {
+            case 0:
+                if(Input.GetKey(KeyCode.A))
+                {
+                     ClickBox();
+                }
+                break;
+            case 1:
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    ClickBox();
+                }
+                break;
+            case 2:
+                if (Input.GetKeyDown(KeyCode.Mouse0))
+                {
+                    ClickBox();
+                }
+                break;
+            case 3:
+                if (Input.GetKeyDown(KeyCode.Q))
+                {
+                    ClickBox();
+                }
+                break;
+        }
+
         if (_boxClicked)
         {
-            _tutorialBoxes[i].SetActive(false);
             _elapsedTime += Time.deltaTime;
-            if(_elapsedTime > _boxTime)
+            if (_elapsedTime > _boxTime)
             {
                 if (i < 3)
                 {
@@ -47,7 +69,7 @@ public class TutorialManager : MonoBehaviour
                     i++;
                     _boxClicked = false;
                 }
-            }  
+            }
         }
     }
 }

@@ -5,13 +5,14 @@ using UnityEngine;
 public class Dash : MonoBehaviour
 {
     [SerializeField]
-    private GameObject dashUI;
+    private GameObject dashUI;//tutorial del dash
 
     #region methods
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.GetComponent<PlayerManager>())//Si lo coge el jugador solo, para que no triggeree con elementos de la escena
         {
+            dashUI.SetActive(true);
             collider.gameObject.GetComponent<MovementComponent>()._dashPickUp = true;
             PlayerPrefs.SetInt("hasDash", 1);
             UIManager.Instance.ShowDashIcon();

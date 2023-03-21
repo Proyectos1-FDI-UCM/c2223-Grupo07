@@ -43,15 +43,15 @@ public class SeiryuManager : MonoBehaviour
         {
             case BossStates.MOLESTO:
                 _randomAttack = Random.Range(0, 2);
-                _currentAttackState = _randomAttack;
+                _currentAttackState = (AttackStates)_randomAttack;
                 break;
             case BossStates.ENFADADO:
                 _randomAttack = Random.Range(0, 4);
-                _currentAttackState = _randomAttack;
+                _currentAttackState = (AttackStates)_randomAttack ;
                 break;
             case BossStates.FURIOSO:
                 _randomAttack = Random.Range(0, 5);
-                _currentAttackState = _randomAttack;
+                _currentAttackState = (AttackStates)_randomAttack;
                 break;
         }
     }

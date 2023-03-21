@@ -1,0 +1,5908 @@
+fileFormatVersion: 2
+guid: 1883d7c89c1b6a941af7f9cc26987f7c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DragonFondoLimpio_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1285
+        width: 178
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eaa14ef9afbe0f45b93b5b0d367ef9c
+      internalID: 1908670013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1284
+        width: 209
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cc9aa58ce50ae4e8a000ef5302f038
+      internalID: 495318234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_2
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1294
+        width: 253
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42442ef4ba561bc4d8b0ea255cf3a72a
+      internalID: 758841251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_3
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1308
+        width: 252
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51e0846653601b418e5bba4ad1b622b
+      internalID: 1341648638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_4
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 1308
+        width: 249
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c860bfd0fd9114a894335c86b178a0
+      internalID: 1199664624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_5
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1305
+        width: 216
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de487dab06bfdc848a38cbc860f1ab0c
+      internalID: 1886526815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_6
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 1314
+        width: 223
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde74bf2467181f4899e1b41a3d4b2d1
+      internalID: 2053128641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_7
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 1305
+        width: 248
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6347de66dbb981d46b525fb32dca6e62
+      internalID: -1634756721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_8
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 1294
+        width: 248
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721c20a78fc12b145ad1fab01bb7df3a
+      internalID: -1114084053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_9
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 1288
+        width: 219
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08555458a869bab4b8005d16b902c33e
+      internalID: 850909550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_10
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 1332
+        width: 227
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a15da276a18f645a151b4635d168d5
+      internalID: 724826440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_11
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 1332
+        width: 230
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97461623dfa948a4db796bbfa0c82925
+      internalID: 1758210955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_12
+      rect:
+        serializedVersion: 2
+        x: 3113
+        y: 1328
+        width: 199
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64ced855ff7b8b459b8c23a6d1ef86d
+      internalID: -1452869421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_13
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 1340
+        width: 165
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca760b1965cff4b4989b478671d80684
+      internalID: 139407096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_14
+      rect:
+        serializedVersion: 2
+        x: 3615
+        y: 1310
+        width: 217
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d6891da4dc52b46b8250bc857ab535
+      internalID: -149904914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_15
+      rect:
+        serializedVersion: 2
+        x: 3858
+        y: 1335
+        width: 230
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8f1dea27bff5745948fd94b42d4bb2
+      internalID: -1750060460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_16
+      rect:
+        serializedVersion: 2
+        x: 4116
+        y: 1322
+        width: 232
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc41f1af6f5ec9344b8012273680498d
+      internalID: 489253474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_17
+      rect:
+        serializedVersion: 2
+        x: 4354
+        y: 1301
+        width: 254
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f44333a86faed7429f3f8ce1227b830
+      internalID: 2028542860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_18
+      rect:
+        serializedVersion: 2
+        x: 4647
+        y: 1313
+        width: 201
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebb02f9ad57cf044b6d8017c48e9840
+      internalID: -1082709048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_19
+      rect:
+        serializedVersion: 2
+        x: 4924
+        y: 1332
+        width: 139
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7cf59698385bb3479dd64d2a525ea10
+      internalID: 1548224013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_20
+      rect:
+        serializedVersion: 2
+        x: 5159
+        y: 1336
+        width: 183
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427b2730847397542bced74ced82c702
+      internalID: -2132594920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_21
+      rect:
+        serializedVersion: 2
+        x: 5380
+        y: 1342
+        width: 251
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51b12aeddc9e7d4c88e29fd6ac12618
+      internalID: -1007475951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_22
+      rect:
+        serializedVersion: 2
+        x: 5636
+        y: 1348
+        width: 250
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a91182cc594a9146ad71b3ba842eeb4
+      internalID: 980137395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_23
+      rect:
+        serializedVersion: 2
+        x: 5905
+        y: 1322
+        width: 224
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abc214534e9ef346bae467779c61c50
+      internalID: 370336397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_24
+      rect:
+        serializedVersion: 2
+        x: 6178
+        y: 1315
+        width: 194
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46b44ee7d3709547991b33eb7d67e96
+      internalID: 380926342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_25
+      rect:
+        serializedVersion: 2
+        x: 6433
+        y: 1325
+        width: 197
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3751e994065e364f9ae342db6ba666f
+      internalID: 741620832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_26
+      rect:
+        serializedVersion: 2
+        x: 6680
+        y: 1339
+        width: 214
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a41271a7db8fed4abc389c6ed5a8c99
+      internalID: -1272480115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_27
+      rect:
+        serializedVersion: 2
+        x: 6922
+        y: 1342
+        width: 239
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ea0c0486c7e7445bb8b093e0628f9c
+      internalID: 74457166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_28
+      rect:
+        serializedVersion: 2
+        x: 7177
+        y: 1337
+        width: 242
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25098e6b59c82f41a8fae976667fe54
+      internalID: 1256415630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_29
+      rect:
+        serializedVersion: 2
+        x: 7456
+        y: 1334
+        width: 196
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893b6e71d6ee1c04cab4223720b4ee43
+      internalID: 1355119195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_30
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1029
+        width: 180
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7b42930d272684cbd611e9a32dfeb9
+      internalID: -1660024781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_31
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1028
+        width: 184
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96be40a534a97864d8099f9d1144d5d5
+      internalID: -1824252826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_32
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1038
+        width: 201
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09b2f64b1d6ab3429f684780988f3f1
+      internalID: -246913934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_33
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 1051
+        width: 209
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a672279cd424641b17bc07598c8f83
+      internalID: -1580860527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_34
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 1051
+        width: 186
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc6623828863bc48890da0bb0cc3ac5
+      internalID: -1090093158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_35
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 1050
+        width: 166
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d93337849a138e4b9e314d84cfcd3b5
+      internalID: 696963071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_36
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 1058
+        width: 173
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1172991a18c5e442a57ae14e00253cd
+      internalID: -844086792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_37
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 1048
+        width: 189
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77044612ae9c80642bc1a36a424e7d2d
+      internalID: -1820854025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_38
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 1037
+        width: 191
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0228ed97cfbadd44a29f4594f8f15e6
+      internalID: -819275522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_39
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 1032
+        width: 193
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6827573ad8ac84c9f37c2584247ec6
+      internalID: 1665054187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_40
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 1076
+        width: 209
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838195a802cf7b446bd46e027e440be9
+      internalID: -683383119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_41
+      rect:
+        serializedVersion: 2
+        x: 2855
+        y: 1078
+        width: 168
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d67edb59381c98418f12b04bfa476a8
+      internalID: -332220240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_42
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 1071
+        width: 166
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc003a918bed4f446afdbe2c5efe4b81
+      internalID: 277992236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_43
+      rect:
+        serializedVersion: 2
+        x: 3374
+        y: 1084
+        width: 165
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ae1bb83a07180478566e651719302b
+      internalID: -1579770738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_44
+      rect:
+        serializedVersion: 2
+        x: 3629
+        y: 1054
+        width: 172
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736a0fd019ba3904ba7b9c6cea24ae16
+      internalID: 440247627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_45
+      rect:
+        serializedVersion: 2
+        x: 3846
+        y: 1079
+        width: 181
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b91b3241597091409213495aa020628
+      internalID: -550690293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_46
+      rect:
+        serializedVersion: 2
+        x: 4101
+        y: 1066
+        width: 187
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a82407f203a1646931d6eb269f8637
+      internalID: -772323444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_47
+      rect:
+        serializedVersion: 2
+        x: 4353
+        y: 1045
+        width: 201
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decd42092d43f5d458b6820e4386214c
+      internalID: 57353702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_48
+      rect:
+        serializedVersion: 2
+        x: 4617
+        y: 1056
+        width: 200
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4984c507b5e0042bf1c235a4343fa5
+      internalID: 1434947462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_49
+      rect:
+        serializedVersion: 2
+        x: 4900
+        y: 1076
+        width: 175
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58569f47a0b650e4eabc91235ceb5681
+      internalID: -879272664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_50
+      rect:
+        serializedVersion: 2
+        x: 5154
+        y: 1080
+        width: 170
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4768f45b4e18a3447bb7d7b12a2bc29a
+      internalID: 1802201193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_51
+      rect:
+        serializedVersion: 2
+        x: 5397
+        y: 1086
+        width: 197
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e44470f38c1d74a9b552dbbc9c07e8
+      internalID: -1831035618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_52
+      rect:
+        serializedVersion: 2
+        x: 5638
+        y: 1092
+        width: 214
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42db2745a82552047a6365a86d19ed0b
+      internalID: 1320525499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_53
+      rect:
+        serializedVersion: 2
+        x: 5918
+        y: 1067
+        width: 181
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4cb3b633434e3a448ba1dd74c0e83df
+      internalID: 535000753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_54
+      rect:
+        serializedVersion: 2
+        x: 6187
+        y: 1060
+        width: 167
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2c7ff037b0d6541a127a21f9a3ea49
+      internalID: 1040349659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_55
+      rect:
+        serializedVersion: 2
+        x: 6442
+        y: 1068
+        width: 169
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d83e39e883301047ad9257e86293873
+      internalID: -1680722222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_56
+      rect:
+        serializedVersion: 2
+        x: 6688
+        y: 1083
+        width: 180
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78676f248c220dd48af4d83ac2eab2c2
+      internalID: 629765247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_57
+      rect:
+        serializedVersion: 2
+        x: 6930
+        y: 1086
+        width: 194
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802b08909cbe913469e03839eb9f329e
+      internalID: -701497663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_58
+      rect:
+        serializedVersion: 2
+        x: 7175
+        y: 1081
+        width: 198
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc015beae66562743b9ac5e97fd37c01
+      internalID: 1603824530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_59
+      rect:
+        serializedVersion: 2
+        x: 7441
+        y: 1078
+        width: 191
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbc49ae8930dc942878be873d567de0
+      internalID: 1426449197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_60
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 772
+        width: 180
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93f42fb3596c8645a3052219a432445
+      internalID: 988375841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_61
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 771
+        width: 176
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2e125df92ff7b4eaf2db4911374132
+      internalID: -549868660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_62
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 781
+        width: 180
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f0f4f80d8d1ab44967f90b19535843
+      internalID: -580786775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_63
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 795
+        width: 182
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c9cf195f5390744bff9f9072f1ed58
+      internalID: -254739376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_64
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 796
+        width: 180
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293d28ff2565c4842ae04b8f20e05306
+      internalID: -573102544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_65
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 794
+        width: 177
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2986a8eceb0d954ca03c57d93e8ba9c
+      internalID: -1474460208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_66
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 801
+        width: 184
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338fbd2b4baa4d542ae3d6217710b5ca
+      internalID: 2029304534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_67
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 792
+        width: 186
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde33cede6e338a44a1076adc44d3209
+      internalID: 21354377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_68
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 780
+        width: 183
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95214e8bd1a7a0542ab77111839d8801
+      internalID: 700569578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_69
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 775
+        width: 183
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2eb5cfa0a313074d9afd66d223bfb8b
+      internalID: -1403054049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_70
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 820
+        width: 183
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2861f2082fbb0d44b5f21c50b3b689d
+      internalID: 1489089205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_71
+      rect:
+        serializedVersion: 2
+        x: 2866
+        y: 822
+        width: 160
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f57454eef8c6e4d912f3dbfda9c508
+      internalID: -1112990624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_72
+      rect:
+        serializedVersion: 2
+        x: 3152
+        y: 816
+        width: 130
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2dda4adb14521c499b7f856c6bad182
+      internalID: 1401289888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_73
+      rect:
+        serializedVersion: 2
+        x: 3388
+        y: 828
+        width: 147
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293dc29386d192249938f6d88b2814e7
+      internalID: 1240886687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_74
+      rect:
+        serializedVersion: 2
+        x: 3655
+        y: 798
+        width: 101
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad42eafc81a9e746870e743caca4b87
+      internalID: 945944695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_75
+      rect:
+        serializedVersion: 2
+        x: 3892
+        y: 823
+        width: 126
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac89ebc2ec805644a32899c2ec2df7f
+      internalID: 1609468997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_76
+      rect:
+        serializedVersion: 2
+        x: 4156
+        y: 810
+        width: 131
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedea46a929e48f4eaf1e35d9c5b5b95
+      internalID: -2082772875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_77
+      rect:
+        serializedVersion: 2
+        x: 4405
+        y: 789
+        width: 150
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f3e56648cb854468b767c221d157b2
+      internalID: 2113648449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_78
+      rect:
+        serializedVersion: 2
+        x: 4625
+        y: 799
+        width: 198
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b38f1e270caf4f40ba98900938b7f47
+      internalID: 1649783897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_79
+      rect:
+        serializedVersion: 2
+        x: 4878
+        y: 820
+        width: 211
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20595941dfa934847b27a20e689c31d7
+      internalID: 251405978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_80
+      rect:
+        serializedVersion: 2
+        x: 5130
+        y: 824
+        width: 219
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29eed5654646ae346b33e3ba9eaad104
+      internalID: -504094487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_81
+      rect:
+        serializedVersion: 2
+        x: 5382
+        y: 830
+        width: 226
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065136eef2fe60348b304128b9cbf3a1
+      internalID: 1640242532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_82
+      rect:
+        serializedVersion: 2
+        x: 5639
+        y: 837
+        width: 231
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e47fff22d00d9c4488f761d211f7be3
+      internalID: 34722192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_83
+      rect:
+        serializedVersion: 2
+        x: 5899
+        y: 811
+        width: 230
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da03e716d1762b44ae33a9bbaf1fb91
+      internalID: -1520920695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_84
+      rect:
+        serializedVersion: 2
+        x: 6159
+        y: 804
+        width: 227
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6736cc1ba632b479bde6cfdd6c91c2
+      internalID: 1820121887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_85
+      rect:
+        serializedVersion: 2
+        x: 6421
+        y: 812
+        width: 222
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd75022c2c199b408c679f63b95b957
+      internalID: 1469234052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_86
+      rect:
+        serializedVersion: 2
+        x: 6673
+        y: 826
+        width: 224
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d505dc60a694c47a1db8e07871432b
+      internalID: -1314395863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_87
+      rect:
+        serializedVersion: 2
+        x: 6924
+        y: 830
+        width: 225
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f20dff92ed36647aaabc671c742dc0
+      internalID: 1203805248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_88
+      rect:
+        serializedVersion: 2
+        x: 7179
+        y: 825
+        width: 221
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cdf2047f8b018e4898f2aa7e43dbd13
+      internalID: -1609550036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_89
+      rect:
+        serializedVersion: 2
+        x: 7436
+        y: 822
+        width: 216
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045ed8a3886019b44b4c031827925f52
+      internalID: -209462114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_90
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 515
+        width: 180
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e83748bbb585e946a58359d564c8f36
+      internalID: -2128342738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_91
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 514
+        width: 186
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984c5655aadc46b4281736dfeb7cffa6
+      internalID: 1876208419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_92
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 525
+        width: 204
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85434340feb97444fb2c0e473c594fc8
+      internalID: 1815340359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_93
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 538
+        width: 204
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f487a549c8d336459c73f065179aa1f
+      internalID: -1934749211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_94
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 540
+        width: 178
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1697063f2a5e82a40afd823b3dcc633c
+      internalID: -160647148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_95
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 538
+        width: 165
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048d666e7e9f2264089b45c4c1b74287
+      internalID: -1249278813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_96
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 544
+        width: 165
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796504070804e404a97649e4dc499d7c
+      internalID: -162946436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_97
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 535
+        width: 188
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3143107a700261e41894ceb6365d65b1
+      internalID: -279881826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_98
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 523
+        width: 189
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6d4651d9033514499b0e12df4f43be
+      internalID: -915730798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_99
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 518
+        width: 193
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4f088bcd30b5742a887c9aea68cb87
+      internalID: 108540350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_100
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 564
+        width: 210
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76a301a674982e45a1c18b57d9e04fb
+      internalID: 854955210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_101
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 567
+        width: 223
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1c4ac6608a19f48a68b17191f9f634
+      internalID: -998592274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_102
+      rect:
+        serializedVersion: 2
+        x: 3151
+        y: 560
+        width: 163
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ff8bd227c93e047a1b49167ffa299c
+      internalID: -792763264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_103
+      rect:
+        serializedVersion: 2
+        x: 3414
+        y: 573
+        width: 145
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb1a3c5f9fa0f243acb85c7e3497a9e
+      internalID: -888379809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_104
+      rect:
+        serializedVersion: 2
+        x: 3622
+        y: 542
+        width: 166
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c890b47b110d6439f391d8e8add41c
+      internalID: -301579555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_105
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 567
+        width: 182
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdebfcdf45e36294f8b46a72215a5147
+      internalID: 132333369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_106
+      rect:
+        serializedVersion: 2
+        x: 4097
+        y: 554
+        width: 214
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6f820b24818b846a6c98b8cf4b78a4
+      internalID: -593961799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_107
+      rect:
+        serializedVersion: 2
+        x: 4353
+        y: 532
+        width: 195
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1e0bd5055a3bc40a0759259762ccc0
+      internalID: -434053831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_108
+      rect:
+        serializedVersion: 2
+        x: 4617
+        y: 543
+        width: 191
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98416dcec8118c1409332b2c22b4d925
+      internalID: -2023618669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_109
+      rect:
+        serializedVersion: 2
+        x: 4899
+        y: 564
+        width: 176
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4afb18f60fe5446489339889530023c4
+      internalID: 355542633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_110
+      rect:
+        serializedVersion: 2
+        x: 5150
+        y: 568
+        width: 175
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9eb44e90658a349ad54e69447471a4
+      internalID: 426935801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_111
+      rect:
+        serializedVersion: 2
+        x: 5395
+        y: 574
+        width: 204
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bd80fe57001e641b044a4272351a3f
+      internalID: 1340489212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_112
+      rect:
+        serializedVersion: 2
+        x: 5641
+        y: 581
+        width: 211
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655baa0235feb604384496924722b912
+      internalID: -1369972010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_113
+      rect:
+        serializedVersion: 2
+        x: 5909
+        y: 554
+        width: 190
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d58794500059114cba6e63097479fcf
+      internalID: 386969888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_114
+      rect:
+        serializedVersion: 2
+        x: 6178
+        y: 547
+        width: 176
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488d9b8315d1c884283408e3ec033e05
+      internalID: -528737527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_115
+      rect:
+        serializedVersion: 2
+        x: 6445
+        y: 556
+        width: 164
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376a67800309e5e4dbbe4580a63564c9
+      internalID: -142324188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_116
+      rect:
+        serializedVersion: 2
+        x: 6691
+        y: 569
+        width: 175
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c965e9778250069499c063bca192da76
+      internalID: 874720019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_117
+      rect:
+        serializedVersion: 2
+        x: 6932
+        y: 573
+        width: 192
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abfeb69a16083c4b9cf88671df0cbbe
+      internalID: -1160738964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_118
+      rect:
+        serializedVersion: 2
+        x: 7176
+        y: 569
+        width: 196
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae10d896668b004e99fda42b874cc6c
+      internalID: -793675510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_119
+      rect:
+        serializedVersion: 2
+        x: 7441
+        y: 566
+        width: 190
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dcbb8d7ce4b560429290faf3ddb904f
+      internalID: 1460188929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_120
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 258
+        width: 179
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7726bf529d0294f9ed3d51267c26ad
+      internalID: 472851339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_121
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 258
+        width: 212
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7750a7cf4f54a1a4da5eff1cf5ec6bfc
+      internalID: -942011239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_122
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 268
+        width: 256
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29fbeaca9a47c54589c0dee6da89b8f
+      internalID: -1162654734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_123
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 282
+        width: 255
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f687e0563ac934399119ee87beffc5
+      internalID: -780363780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_124
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 284
+        width: 249
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b552f8d53f6851346ae6829d757175ce
+      internalID: -1905246779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_125
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 281
+        width: 216
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5a427cdfcbdb3438f020eab5e91019
+      internalID: 95119607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_126
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 288
+        width: 224
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1aad9570319fe46ae5e95ec86312c1
+      internalID: -315875055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_127
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 279
+        width: 250
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f38cd3887671040832b4433595ac43
+      internalID: 129265306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_128
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 267
+        width: 251
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eca18530eb366847b86919523cd3e4e
+      internalID: 274786693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_129
+      rect:
+        serializedVersion: 2
+        x: 2322
+        y: 261
+        width: 222
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c23d5763a5ef6479e64b3cc85c02e8
+      internalID: 1388124682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_130
+      rect:
+        serializedVersion: 2
+        x: 2586
+        y: 308
+        width: 228
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3306a2164efa64f878b5b8c83e0a2a
+      internalID: 566771616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_131
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 308
+        width: 229
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c603a6591d7fa439cb8f952d125778
+      internalID: 1340375812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_132
+      rect:
+        serializedVersion: 2
+        x: 3091
+        y: 305
+        width: 198
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffe09a56e32ed94699a91fedfa4e149
+      internalID: -12004982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_133
+      rect:
+        serializedVersion: 2
+        x: 3382
+        y: 317
+        width: 164
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143f8992466e7304e8a158ff9783e405
+      internalID: 1106176294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_134
+      rect:
+        serializedVersion: 2
+        x: 3595
+        y: 287
+        width: 217
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd4001ccb4cdec4aa310517ee3d23ad
+      internalID: 554391758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_135
+      rect:
+        serializedVersion: 2
+        x: 3850
+        y: 311
+        width: 232
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6f952380b279c42896461d8b7a67c0
+      internalID: -585081088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_136
+      rect:
+        serializedVersion: 2
+        x: 4100
+        y: 297
+        width: 247
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8438c0eea3cbc4a9167a6fa9dcc32c
+      internalID: 888256097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_137
+      rect:
+        serializedVersion: 2
+        x: 4353
+        y: 275
+        width: 256
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f7bc9f0a2afe447878e0469005a46c
+      internalID: -578711346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_138
+      rect:
+        serializedVersion: 2
+        x: 4626
+        y: 286
+        width: 212
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5a1aa3494b73443b630db19c74469e
+      internalID: -1262003899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_139
+      rect:
+        serializedVersion: 2
+        x: 4922
+        y: 308
+        width: 141
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d19c53e758a3b4cafc6585317399dc
+      internalID: 1820999274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_140
+      rect:
+        serializedVersion: 2
+        x: 5156
+        y: 312
+        width: 183
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1074a917245c53148aa8972d5a8d2e68
+      internalID: -1382597238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_141
+      rect:
+        serializedVersion: 2
+        x: 5379
+        y: 318
+        width: 253
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ec368febe4f0e439a4dc4bebc86a9e
+      internalID: -2095747902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_142
+      rect:
+        serializedVersion: 2
+        x: 5635
+        y: 325
+        width: 253
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf67dd8295303314c94717e4ac99e171
+      internalID: 1420554176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_143
+      rect:
+        serializedVersion: 2
+        x: 5905
+        y: 297
+        width: 224
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf009a23f414a8247bc124e9542cb3b3
+      internalID: 2055131925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_144
+      rect:
+        serializedVersion: 2
+        x: 6174
+        y: 290
+        width: 195
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3880c5084e08a248be0c0a1981451fe
+      internalID: 745748584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_145
+      rect:
+        serializedVersion: 2
+        x: 6427
+        y: 300
+        width: 199
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4254858c5ef0b4496f4f4fd5a906fa
+      internalID: 335867995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_146
+      rect:
+        serializedVersion: 2
+        x: 6677
+        y: 313
+        width: 214
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444190d398fb8404ea2b762cf19c1bc7
+      internalID: 855258644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_147
+      rect:
+        serializedVersion: 2
+        x: 6921
+        y: 317
+        width: 240
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d18c9c184553a644849a6fe8022aca8
+      internalID: -275351888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_148
+      rect:
+        serializedVersion: 2
+        x: 7174
+        y: 313
+        width: 245
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae2fd5c8df276441abb7c67904625f3
+      internalID: -1553662823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_149
+      rect:
+        serializedVersion: 2
+        x: 7453
+        y: 309
+        width: 199
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5e843a3fc2e164680261f1af8cd3a4
+      internalID: -679590205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_150
+      rect:
+        serializedVersion: 2
+        x: 3381
+        y: 68
+        width: 201
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de617c6cf46d9e4097f73d3f5136127
+      internalID: 38269737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_151
+      rect:
+        serializedVersion: 2
+        x: 3644
+        y: 76
+        width: 172
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f369fa0f96d94c4d9fc52a7c766824b
+      internalID: 2102723788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_152
+      rect:
+        serializedVersion: 2
+        x: 3884
+        y: 55
+        width: 172
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26d5d19015c21844b0e51bf9f5373d8
+      internalID: 1597263889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_153
+      rect:
+        serializedVersion: 2
+        x: 3949
+        y: 246
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669fee869f0da4840b2608a224a92995
+      internalID: 137911261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_154
+      rect:
+        serializedVersion: 2
+        x: 4109
+        y: 21
+        width: 208
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06473ca3bebeeab46bc6b6f742df3e8e
+      internalID: 1449250753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_155
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 44
+        width: 158
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1206135545b2c53479f86f1747aa2c81
+      internalID: 661132286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_156
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 27
+        width: 211
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f914a5c25fdc05846a7265c8ab597b7f
+      internalID: -948323246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_157
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 9
+        width: 220
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1ffd0a5b5307740a066ee688025538
+      internalID: -431586190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_158
+      rect:
+        serializedVersion: 2
+        x: 3079
+        y: 37
+        width: 246
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99dcffed3824114e9b7acb1f04f36da
+      internalID: -76940248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_159
+      rect:
+        serializedVersion: 2
+        x: 4355
+        y: 17
+        width: 215
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91adc3ccf3b7ea4cad4fce708f607c2
+      internalID: -1439099956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_160
+      rect:
+        serializedVersion: 2
+        x: 4613
+        y: 13
+        width: 221
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413aa5860ab0cf144b2efbf850f678ff
+      internalID: 1431933797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_161
+      rect:
+        serializedVersion: 2
+        x: 4883
+        y: 2
+        width: 222
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cc73995518c11408bafc860659854f
+      internalID: -1221571006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_162
+      rect:
+        serializedVersion: 2
+        x: 5945
+        y: 211
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2737ce3acab575a439a173edf5bb2107
+      internalID: -882930106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_163
+      rect:
+        serializedVersion: 2
+        x: 5955
+        y: 211
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6151cfb3e52a9d141bd43cb0f0c70539
+      internalID: 798253746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_164
+      rect:
+        serializedVersion: 2
+        x: 5968
+        y: 211
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70f135660f017f44b798efa1a90b3f8
+      internalID: -1476163233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_165
+      rect:
+        serializedVersion: 2
+        x: 5988
+        y: 211
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4ad080479a2264988ce64d6d406eb5
+      internalID: -1395644353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_166
+      rect:
+        serializedVersion: 2
+        x: 5998
+        y: 211
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24aae0c7ee72a1842b3dd80e3a25c065
+      internalID: -1893978307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_167
+      rect:
+        serializedVersion: 2
+        x: 6004
+        y: 211
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e6e068487e21a4bafab9e52cc4985b
+      internalID: 594052518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_168
+      rect:
+        serializedVersion: 2
+        x: 6013
+        y: 208
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4e5fb9dfcd9ce4e9a54bd0bf1632f1
+      internalID: 1995426430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_169
+      rect:
+        serializedVersion: 2
+        x: 6022
+        y: 211
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03cec28adb8b4d428c7263f4b417354
+      internalID: -1514673326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_170
+      rect:
+        serializedVersion: 2
+        x: 6031
+        y: 211
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e8878b20d63654c9eab16448554bf5
+      internalID: -135569688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_171
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 21
+        width: 252
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1a2a58c64a2c240aef57819b48a321
+      internalID: 1840310971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_172
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 43
+        width: 204
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d13c2251a12d674db2563913735f615
+      internalID: 2108854315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_173
+      rect:
+        serializedVersion: 2
+        x: 5145
+        y: 1
+        width: 289
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b7a912297c7794786b4c93e2b24652
+      internalID: -1655092577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_174
+      rect:
+        serializedVersion: 2
+        x: 5945
+        y: 189
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35d3bb27a8778240bb7139121957f35
+      internalID: 561098111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_175
+      rect:
+        serializedVersion: 2
+        x: 5959
+        y: 186
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbdb8dd1e0325a47b4bd1f8ce8ae832
+      internalID: 251522796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_176
+      rect:
+        serializedVersion: 2
+        x: 5967
+        y: 189
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d999fac92e2d84b84e4bfc36e40435
+      internalID: 1655492144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_177
+      rect:
+        serializedVersion: 2
+        x: 5975
+        y: 189
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba547f8d1dcd55b479d5369a10ed66f1
+      internalID: 352878396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_178
+      rect:
+        serializedVersion: 2
+        x: 5986
+        y: 189
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55676ad391fd12c42900e8c5c6d2c9ba
+      internalID: -1850490594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_179
+      rect:
+        serializedVersion: 2
+        x: 5994
+        y: 189
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b34915d03ead0543ba4bd996cc5e14d
+      internalID: 1645615115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_180
+      rect:
+        serializedVersion: 2
+        x: 6002
+        y: 189
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ae44054c79eab45bbfc8a46a96dd12
+      internalID: 1389437796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_181
+      rect:
+        serializedVersion: 2
+        x: 6015
+        y: 189
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430eb63fb0676304ab04e92ce387d2bf
+      internalID: 1799025083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_182
+      rect:
+        serializedVersion: 2
+        x: 6026
+        y: 189
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409d18666d57cfc4c80cb158c7c10026
+      internalID: 1209347330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_183
+      rect:
+        serializedVersion: 2
+        x: 6034
+        y: 186
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6f6e7e75d7c064d96d53e27fb1d349
+      internalID: 1449973952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_184
+      rect:
+        serializedVersion: 2
+        x: 6045
+        y: 189
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a39a2c4b3fb5a49b216ee3a2c73c32
+      internalID: -1563826930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_185
+      rect:
+        serializedVersion: 2
+        x: 6058
+        y: 189
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a557805a1045b4f4d8ceb7aafe07a7f5
+      internalID: 879782109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_186
+      rect:
+        serializedVersion: 2
+        x: 6072
+        y: 189
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8314ef42b41ed9e488538c52a49005d3
+      internalID: 980067769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_187
+      rect:
+        serializedVersion: 2
+        x: 6096
+        y: 189
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8365388f13325d49a73b403911c1ebd
+      internalID: -1553557416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_188
+      rect:
+        serializedVersion: 2
+        x: 6104
+        y: 189
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77a86be935a9ea4faeb83d357164a7e
+      internalID: -365906408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_189
+      rect:
+        serializedVersion: 2
+        x: 6114
+        y: 189
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2322b80425c75e45ac7ec04f9835455
+      internalID: 263056316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_190
+      rect:
+        serializedVersion: 2
+        x: 6122
+        y: 189
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d235f793fc5add46b48505ed132a5f0
+      internalID: -964990915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_191
+      rect:
+        serializedVersion: 2
+        x: 6133
+        y: 189
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c905d5385c26ece449de1bd3f581ff97
+      internalID: 62761170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_192
+      rect:
+        serializedVersion: 2
+        x: 6141
+        y: 189
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8982a679c6ef5db4b8d2dfd17ef0ebbf
+      internalID: 1492134244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_193
+      rect:
+        serializedVersion: 2
+        x: 6154
+        y: 189
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02890f9a3ad8b5d41ba880d51e5f2745
+      internalID: 1533770239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_194
+      rect:
+        serializedVersion: 2
+        x: 6162
+        y: 189
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d45c3f8879fafd48890e2a53a4849ff
+      internalID: -880279892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_195
+      rect:
+        serializedVersion: 2
+        x: 6170
+        y: 189
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0202d4cb691514cab9617609cb50c8
+      internalID: -68066468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_196
+      rect:
+        serializedVersion: 2
+        x: 6183
+        y: 189
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ed4b2b89d0bc24da0c21744b4c78b0
+      internalID: -2016409009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_197
+      rect:
+        serializedVersion: 2
+        x: 6192
+        y: 189
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4b1855d77037e419acb2f605f14e74
+      internalID: 1590457203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_198
+      rect:
+        serializedVersion: 2
+        x: 6200
+        y: 189
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d74e2ec68f86e0488e602e01b7e3a42
+      internalID: -20569774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_199
+      rect:
+        serializedVersion: 2
+        x: 6208
+        y: 189
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191d0b387d6d1fc4a86d8cbb2ec89e63
+      internalID: -530982774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_200
+      rect:
+        serializedVersion: 2
+        x: 6216
+        y: 189
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bdfa4761adc4214f909416465bbe00b
+      internalID: -263469532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_201
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 32
+        width: 247
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66db3658d7e6ca34ba4affbf796feb1c
+      internalID: -1452200197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_202
+      rect:
+        serializedVersion: 2
+        x: 5945
+        y: 173
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799eea69e4890ca44b0ac6d67b1fcbc7
+      internalID: -381380058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_203
+      rect:
+        serializedVersion: 2
+        x: 5953
+        y: 173
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9cf5b143ba15b4d899bbc54e2501ff
+      internalID: 1450982078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_204
+      rect:
+        serializedVersion: 2
+        x: 5966
+        y: 171
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27171a0453a4484e8285fbb054f76fc
+      internalID: -1085124002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_205
+      rect:
+        serializedVersion: 2
+        x: 5978
+        y: 173
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe4fb453394520468aea5de22e93918
+      internalID: 1492227446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_206
+      rect:
+        serializedVersion: 2
+        x: 5987
+        y: 173
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3cc8ced73722646b47f64ff7bbe327
+      internalID: -1134064526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_207
+      rect:
+        serializedVersion: 2
+        x: 5995
+        y: 173
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c298c733fd05b1141a32d6a3360fed3a
+      internalID: -1891406067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_208
+      rect:
+        serializedVersion: 2
+        x: 6006
+        y: 170
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec01da4392d8d845b22d1ad6567bb51
+      internalID: 1424026319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_209
+      rect:
+        serializedVersion: 2
+        x: 6014
+        y: 173
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7204c09c56fbc174193df20372537f9d
+      internalID: -1672903540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_210
+      rect:
+        serializedVersion: 2
+        x: 6022
+        y: 173
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ecdde632265d343aae829487cab732
+      internalID: -578650498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_211
+      rect:
+        serializedVersion: 2
+        x: 6028
+        y: 173
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402203740d6f20346b493d94ce23cf76
+      internalID: -530845354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_212
+      rect:
+        serializedVersion: 2
+        x: 6036
+        y: 173
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57008e8e0c302ff4da0b2ad0f1895f31
+      internalID: -582337905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_213
+      rect:
+        serializedVersion: 2
+        x: 6059
+        y: 173
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c2049cd15e1c441b9f531544c93399
+      internalID: 739210350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_214
+      rect:
+        serializedVersion: 2
+        x: 6066
+        y: 173
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207ff66df0409e446bc3c080c88672da
+      internalID: -566744329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_215
+      rect:
+        serializedVersion: 2
+        x: 6074
+        y: 173
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986860596d85fee4db0b7ad3e5ffc6fd
+      internalID: 179420268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_216
+      rect:
+        serializedVersion: 2
+        x: 6082
+        y: 173
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fadd6fc1f0d4b8a4aada7e687a70cde4
+      internalID: 404704121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_217
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 27
+        width: 234
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cd3c6c43fd62d4fa274abd2a333786
+      internalID: -1866598641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_218
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 23
+        width: 215
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a9f5544674ab34ea880c6c9a6fb96e
+      internalID: 206871841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_219
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 13
+        width: 236
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d20a7b77041d84448bd88c4a59cf6d4
+      internalID: -329473443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_220
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 24
+        width: 253
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4806ea910f65c4aa7642389afcc5ae
+      internalID: -1554724172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_221
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 41
+        width: 239
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ef2a9fb28ea7e4c91f92c145d799e4
+      internalID: -514187237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_222
+      rect:
+        serializedVersion: 2
+        x: 5396
+        y: 1
+        width: 223
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14c5f983c2f105419a2784195c476b6
+      internalID: -1719488503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_223
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 71
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84fcc44a5350b284fbfe8d92ffc292a0
+      internalID: 812399857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_224
+      rect:
+        serializedVersion: 2
+        x: 6250
+        y: 68
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1938601871d14af4290ce6044a164d84
+      internalID: 150401076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_225
+      rect:
+        serializedVersion: 2
+        x: 6258
+        y: 68
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd08153e4d1eb948a7f1e34b3068947
+      internalID: -571375561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_226
+      rect:
+        serializedVersion: 2
+        x: 6266
+        y: 71
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c98b2a2d51db748812a8e7e1ecfc1f
+      internalID: -1209651440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_227
+      rect:
+        serializedVersion: 2
+        x: 6274
+        y: 71
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b36b511a7e957945a707b9c2761945b
+      internalID: 437330421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_228
+      rect:
+        serializedVersion: 2
+        x: 6287
+        y: 71
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802bb3d1dd3de0a42844417ab5d3ca4a
+      internalID: -316263092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_229
+      rect:
+        serializedVersion: 2
+        x: 6295
+        y: 68
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcffa382646b9647ad001678ad31e1c
+      internalID: 1899086480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_230
+      rect:
+        serializedVersion: 2
+        x: 6314
+        y: 6
+        width: 73
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d5458d1f7a4054783f6bfc7772f972
+      internalID: 205049198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_231
+      rect:
+        serializedVersion: 2
+        x: 5651
+        y: 1
+        width: 236
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cec1d86cc5f6654ea9b341f9e0f2f06
+      internalID: -2088903653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_232
+      rect:
+        serializedVersion: 2
+        x: 6179
+        y: 50
+        width: 125
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c18dbeabba3acc49bfd37d527a8e14c
+      internalID: 570998844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_233
+      rect:
+        serializedVersion: 2
+        x: 6179
+        y: 53
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b246d73f733ee4db54dc7034393b0e
+      internalID: 1125015875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_234
+      rect:
+        serializedVersion: 2
+        x: 6225
+        y: 53
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc572f7191332e74aafcdff494157580
+      internalID: 1039098833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_235
+      rect:
+        serializedVersion: 2
+        x: 6257
+        y: 53
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7bf549a4ec7da4fbe38d12335bdb97
+      internalID: 1577013378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_236
+      rect:
+        serializedVersion: 2
+        x: 6282
+        y: 53
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c048eada01f1347be9488b268914db
+      internalID: -35960926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_237
+      rect:
+        serializedVersion: 2
+        x: 6159
+        y: 37
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c263ae39d79dc94eaa0ea5836a61a16
+      internalID: 1899477949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_238
+      rect:
+        serializedVersion: 2
+        x: 6166
+        y: 37
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95b017b44e959d44aa9160a3f3cd2b0
+      internalID: -1440838928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_239
+      rect:
+        serializedVersion: 2
+        x: 6177
+        y: 37
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563d8f354c5b95a4ba1f216202300326
+      internalID: 770805154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_240
+      rect:
+        serializedVersion: 2
+        x: 6193
+        y: 37
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c2863ef23d05547bb61a36c77aead8
+      internalID: -330739188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_241
+      rect:
+        serializedVersion: 2
+        x: 6201
+        y: 34
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d7f886b8fb80f47816527d6e931ba1
+      internalID: -1018178370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_242
+      rect:
+        serializedVersion: 2
+        x: 6209
+        y: 37
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2266c6cc2fe2444b89334433ba1f8cb
+      internalID: 670905260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_243
+      rect:
+        serializedVersion: 2
+        x: 6222
+        y: 37
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ded0428a1a5484b9034c76ca375154
+      internalID: -957202584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_244
+      rect:
+        serializedVersion: 2
+        x: 6229
+        y: 35
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68dd0ebc33e638d4ba5e06a59907d6f9
+      internalID: 684187347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_245
+      rect:
+        serializedVersion: 2
+        x: 6242
+        y: 34
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09bf994c2c641bd46ac6cc0eaa4e1e6c
+      internalID: -1103225098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_246
+      rect:
+        serializedVersion: 2
+        x: 6250
+        y: 37
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592f993efd7af584189f24c547779df4
+      internalID: 1220486271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_247
+      rect:
+        serializedVersion: 2
+        x: 6261
+        y: 37
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327c199bb916a804381406fcb520c552
+      internalID: 1681408312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_248
+      rect:
+        serializedVersion: 2
+        x: 6276
+        y: 37
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bdf59ef96c69649aaea41dbfc4ab05
+      internalID: 553916660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_249
+      rect:
+        serializedVersion: 2
+        x: 6288
+        y: 37
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606def38838f804478301101a8cddc1d
+      internalID: 169877807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_250
+      rect:
+        serializedVersion: 2
+        x: 6296
+        y: 37
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aade47d08128dbd42a22593c2f557c9e
+      internalID: -994238622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_251
+      rect:
+        serializedVersion: 2
+        x: 6173
+        y: 18
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793117b6cf452b845ac07f7d19e05a8a
+      internalID: 1285556199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_252
+      rect:
+        serializedVersion: 2
+        x: 6191
+        y: 21
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6009153426c004885c8d326a379ff6
+      internalID: -228184448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_253
+      rect:
+        serializedVersion: 2
+        x: 6199
+        y: 21
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2691d82444c34246b4886cf9f02f3c1
+      internalID: -1569797547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_254
+      rect:
+        serializedVersion: 2
+        x: 6207
+        y: 21
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb1d792c91fddd4593fe45f3d0a58a9
+      internalID: 1263487694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_255
+      rect:
+        serializedVersion: 2
+        x: 6214
+        y: 21
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1c0d63eda3c9441bd7c6f0655cefba
+      internalID: 654417886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_256
+      rect:
+        serializedVersion: 2
+        x: 6227
+        y: 18
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01b14e18e6bb704fa9210429678640a
+      internalID: 1969858067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_257
+      rect:
+        serializedVersion: 2
+        x: 6238
+        y: 21
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c38e2d6e45e4c4286f9d550a771b68
+      internalID: 1693319652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_258
+      rect:
+        serializedVersion: 2
+        x: 6246
+        y: 21
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3482aeea1b5cc46a3bb5f84536c7aa
+      internalID: -564626687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_259
+      rect:
+        serializedVersion: 2
+        x: 6259
+        y: 21
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02baef27fad66074fb40b0bd1790b279
+      internalID: -2142243907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_260
+      rect:
+        serializedVersion: 2
+        x: 6267
+        y: 21
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5523cfd2fcc0246439e1b2c31a089056
+      internalID: 925073712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_261
+      rect:
+        serializedVersion: 2
+        x: 6280
+        y: 21
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a31667e6265ba4ca969a49e5849d04
+      internalID: -48970477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFondoLimpio_262
+      rect:
+        serializedVersion: 2
+        x: 6291
+        y: 21
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c990c47709e4cc4c9a1cf5ffcf8d7e0
+      internalID: -1536729830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DragonFondoLimpio_79: 251405978
+      DragonFondoLimpio_236: -35960926
+      DragonFondoLimpio_43: -1579770738
+      DragonFondoLimpio_37: -1820854025
+      DragonFondoLimpio_116: 874720019
+      DragonFondoLimpio_197: 1590457203
+      DragonFondoLimpio_217: -1866598641
+      DragonFondoLimpio_90: -2128342738
+      DragonFondoLimpio_233: 1125015875
+      DragonFondoLimpio_121: -942011239
+      DragonFondoLimpio_41: -332220240
+      DragonFondoLimpio_13: 139407096
+      DragonFondoLimpio_182: 1209347330
+      DragonFondoLimpio_250: -994238622
+      DragonFondoLimpio_180: 1389437796
+      DragonFondoLimpio_64: -573102544
+      DragonFondoLimpio_83: -1520920695
+      DragonFondoLimpio_166: -1893978307
+      DragonFondoLimpio_23: 370336397
+      DragonFondoLimpio_25: 741620832
+      DragonFondoLimpio_51: -1831035618
+      DragonFondoLimpio_3: 1341648638
+      DragonFondoLimpio_27: 74457166
+      DragonFondoLimpio_168: 1995426430
+      DragonFondoLimpio_80: -504094487
+      DragonFondoLimpio_162: -882930106
+      DragonFondoLimpio_99: 108540350
+      DragonFondoLimpio_60: 988375841
+      DragonFondoLimpio_71: -1112990624
+      DragonFondoLimpio_176: 1655492144
+      DragonFondoLimpio_91: 1876208419
+      DragonFondoLimpio_194: -880279892
+      DragonFondoLimpio_211: -530845354
+      DragonFondoLimpio_29: 1355119195
+      DragonFondoLimpio_11: 1758210955
+      DragonFondoLimpio_256: 1969858067
+      DragonFondoLimpio_214: -566744329
+      DragonFondoLimpio_259: -2142243907
+      DragonFondoLimpio_237: 1899477949
+      DragonFondoLimpio_155: 661132286
+      DragonFondoLimpio_111: 1340489212
+      DragonFondoLimpio_110: 426935801
+      DragonFondoLimpio_69: -1403054049
+      DragonFondoLimpio_119: 1460188929
+      DragonFondoLimpio_74: 945944695
+      DragonFondoLimpio_134: 554391758
+      DragonFondoLimpio_167: 594052518
+      DragonFondoLimpio_128: 274786693
+      DragonFondoLimpio_146: 855258644
+      DragonFondoLimpio_77: 2113648449
+      DragonFondoLimpio_247: 1681408312
+      DragonFondoLimpio_6: 2053128641
+      DragonFondoLimpio_16: 489253474
+      DragonFondoLimpio_244: 684187347
+      DragonFondoLimpio_228: -316263092
+      DragonFondoLimpio_257: 1693319652
+      DragonFondoLimpio_53: 535000753
+      DragonFondoLimpio_24: 380926342
+      DragonFondoLimpio_258: -564626687
+      DragonFondoLimpio_221: -514187237
+      DragonFondoLimpio_138: -1262003899
+      DragonFondoLimpio_219: -329473443
+      DragonFondoLimpio_249: 169877807
+      DragonFondoLimpio_245: -1103225098
+      DragonFondoLimpio_45: -550690293
+      DragonFondoLimpio_76: -2082772875
+      DragonFondoLimpio_112: -1369972010
+      DragonFondoLimpio_143: 2055131925
+      DragonFondoLimpio_86: -1314395863
+      DragonFondoLimpio_127: 129265306
+      DragonFondoLimpio_190: -964990915
+      DragonFondoLimpio_113: 386969888
+      DragonFondoLimpio_242: 670905260
+      DragonFondoLimpio_226: -1209651440
+      DragonFondoLimpio_204: -1085124002
+      DragonFondoLimpio_118: -793675510
+      DragonFondoLimpio_84: 1820121887
+      DragonFondoLimpio_100: 854955210
+      DragonFondoLimpio_224: 150401076
+      DragonFondoLimpio_169: -1514673326
+      DragonFondoLimpio_177: 352878396
+      DragonFondoLimpio_67: 21354377
+      DragonFondoLimpio_175: 251522796
+      DragonFondoLimpio_149: -679590205
+      DragonFondoLimpio_151: 2102723788
+      DragonFondoLimpio_192: 1492134244
+      DragonFondoLimpio_171: 1840310971
+      DragonFondoLimpio_22: 980137395
+      DragonFondoLimpio_130: 566771616
+      DragonFondoLimpio_232: 570998844
+      DragonFondoLimpio_261: -48970477
+      DragonFondoLimpio_234: 1039098833
+      DragonFondoLimpio_131: 1340375812
+      DragonFondoLimpio_253: -1569797547
+      DragonFondoLimpio_5: 1886526815
+      DragonFondoLimpio_210: -578650498
+      DragonFondoLimpio_42: 277992236
+      DragonFondoLimpio_72: 1401289888
+      DragonFondoLimpio_39: 1665054187
+      DragonFondoLimpio_15: -1750060460
+      DragonFondoLimpio_30: -1660024781
+      DragonFondoLimpio_20: -2132594920
+      DragonFondoLimpio_212: -582337905
+      DragonFondoLimpio_34: -1090093158
+      DragonFondoLimpio_246: 1220486271
+      DragonFondoLimpio_104: -301579555
+      DragonFondoLimpio_156: -948323246
+      DragonFondoLimpio_252: -228184448
+      DragonFondoLimpio_193: 1533770239
+      DragonFondoLimpio_206: -1134064526
+      DragonFondoLimpio_144: 745748584
+      DragonFondoLimpio_124: -1905246779
+      DragonFondoLimpio_97: -279881826
+      DragonFondoLimpio_62: -580786775
+      DragonFondoLimpio_108: -2023618669
+      DragonFondoLimpio_235: 1577013378
+      DragonFondoLimpio_55: -1680722222
+      DragonFondoLimpio_227: 437330421
+      DragonFondoLimpio_145: 335867995
+      DragonFondoLimpio_21: -1007475951
+      DragonFondoLimpio_94: -160647148
+      DragonFondoLimpio_136: 888256097
+      DragonFondoLimpio_215: 179420268
+      DragonFondoLimpio_241: -1018178370
+      DragonFondoLimpio_89: -209462114
+      DragonFondoLimpio_14: -149904914
+      DragonFondoLimpio_200: -263469532
+      DragonFondoLimpio_239: 770805154
+      DragonFondoLimpio_201: -1452200197
+      DragonFondoLimpio_179: 1645615115
+      DragonFondoLimpio_105: 132333369
+      DragonFondoLimpio_240: -330739188
+      DragonFondoLimpio_174: 561098111
+      DragonFondoLimpio_229: 1899086480
+      DragonFondoLimpio_78: 1649783897
+      DragonFondoLimpio_125: 95119607
+      DragonFondoLimpio_9: 850909550
+      DragonFondoLimpio_185: 879782109
+      DragonFondoLimpio_103: -888379809
+      DragonFondoLimpio_198: -20569774
+      DragonFondoLimpio_158: -76940248
+      DragonFondoLimpio_220: -1554724172
+      DragonFondoLimpio_102: -792763264
+      DragonFondoLimpio_159: -1439099956
+      DragonFondoLimpio_165: -1395644353
+      DragonFondoLimpio_260: 925073712
+      DragonFondoLimpio_12: -1452869421
+      DragonFondoLimpio_7: -1634756721
+      DragonFondoLimpio_33: -1580860527
+      DragonFondoLimpio_163: 798253746
+      DragonFondoLimpio_96: -162946436
+      DragonFondoLimpio_32: -246913934
+      DragonFondoLimpio_225: -571375561
+      DragonFondoLimpio_132: -12004982
+      DragonFondoLimpio_188: -365906408
+      DragonFondoLimpio_85: 1469234052
+      DragonFondoLimpio_56: 629765247
+      DragonFondoLimpio_251: 1285556199
+      DragonFondoLimpio_123: -780363780
+      DragonFondoLimpio_49: -879272664
+      DragonFondoLimpio_223: 812399857
+      DragonFondoLimpio_230: 205049198
+      DragonFondoLimpio_68: 700569578
+      DragonFondoLimpio_213: 739210350
+      DragonFondoLimpio_120: 472851339
+      DragonFondoLimpio_255: 654417886
+      DragonFondoLimpio_248: 553916660
+      DragonFondoLimpio_238: -1440838928
+      DragonFondoLimpio_1: 495318234
+      DragonFondoLimpio_58: 1603824530
+      DragonFondoLimpio_47: 57353702
+      DragonFondoLimpio_26: -1272480115
+      DragonFondoLimpio_36: -844086792
+      DragonFondoLimpio_17: 2028542860
+      DragonFondoLimpio_183: 1449973952
+      DragonFondoLimpio_199: -530982774
+      DragonFondoLimpio_184: -1563826930
+      DragonFondoLimpio_114: -528737527
+      DragonFondoLimpio_196: -2016409009
+      DragonFondoLimpio_173: -1655092577
+      DragonFondoLimpio_54: 1040349659
+      DragonFondoLimpio_164: -1476163233
+      DragonFondoLimpio_107: -434053831
+      DragonFondoLimpio_141: -2095747902
+      DragonFondoLimpio_101: -998592274
+      DragonFondoLimpio_150: 38269737
+      DragonFondoLimpio_160: 1431933797
+      DragonFondoLimpio_95: -1249278813
+      DragonFondoLimpio_209: -1672903540
+      DragonFondoLimpio_8: -1114084053
+      DragonFondoLimpio_40: -683383119
+      DragonFondoLimpio_28: 1256415630
+      DragonFondoLimpio_61: -549868660
+      DragonFondoLimpio_57: -701497663
+      DragonFondoLimpio_75: 1609468997
+      DragonFondoLimpio_202: -381380058
+      DragonFondoLimpio_98: -915730798
+      DragonFondoLimpio_137: -578711346
+      DragonFondoLimpio_35: 696963071
+      DragonFondoLimpio_38: -819275522
+      DragonFondoLimpio_2: 758841251
+      DragonFondoLimpio_0: 1908670013
+      DragonFondoLimpio_191: 62761170
+      DragonFondoLimpio_205: 1492227446
+      DragonFondoLimpio_231: -2088903653
+      DragonFondoLimpio_46: -772323444
+      DragonFondoLimpio_154: 1449250753
+      DragonFondoLimpio_208: 1424026319
+      DragonFondoLimpio_135: -585081088
+      DragonFondoLimpio_178: -1850490594
+      DragonFondoLimpio_254: 1263487694
+      DragonFondoLimpio_109: 355542633
+      DragonFondoLimpio_115: -142324188
+      DragonFondoLimpio_92: 1815340359
+      DragonFondoLimpio_133: 1106176294
+      DragonFondoLimpio_181: 1799025083
+      DragonFondoLimpio_187: -1553557416
+      DragonFondoLimpio_203: 1450982078
+      DragonFondoLimpio_195: -68066468
+      DragonFondoLimpio_44: 440247627
+      DragonFondoLimpio_88: -1609550036
+      DragonFondoLimpio_18: -1082709048
+      DragonFondoLimpio_140: -1382597238
+      DragonFondoLimpio_147: -275351888
+      DragonFondoLimpio_70: 1489089205
+      DragonFondoLimpio_216: 404704121
+      DragonFondoLimpio_52: 1320525499
+      DragonFondoLimpio_152: 1597263889
+      DragonFondoLimpio_172: 2108854315
+      DragonFondoLimpio_243: -957202584
+      DragonFondoLimpio_59: 1426449197
+      DragonFondoLimpio_139: 1820999274
+      DragonFondoLimpio_82: 34722192
+      DragonFondoLimpio_93: -1934749211
+      DragonFondoLimpio_66: 2029304534
+      DragonFondoLimpio_161: -1221571006
+      DragonFondoLimpio_157: -431586190
+      DragonFondoLimpio_63: -254739376
+      DragonFondoLimpio_65: -1474460208
+      DragonFondoLimpio_222: -1719488503
+      DragonFondoLimpio_126: -315875055
+      DragonFondoLimpio_87: 1203805248
+      DragonFondoLimpio_129: 1388124682
+      DragonFondoLimpio_31: -1824252826
+      DragonFondoLimpio_19: 1548224013
+      DragonFondoLimpio_48: 1434947462
+      DragonFondoLimpio_142: 1420554176
+      DragonFondoLimpio_10: 724826440
+      DragonFondoLimpio_153: 137911261
+      DragonFondoLimpio_170: -135569688
+      DragonFondoLimpio_218: 206871841
+      DragonFondoLimpio_117: -1160738964
+      DragonFondoLimpio_106: -593961799
+      DragonFondoLimpio_81: 1640242532
+      DragonFondoLimpio_4: 1199664624
+      DragonFondoLimpio_122: -1162654734
+      DragonFondoLimpio_73: 1240886687
+      DragonFondoLimpio_148: -1553662823
+      DragonFondoLimpio_186: 980067769
+      DragonFondoLimpio_207: -1891406067
+      DragonFondoLimpio_50: 1802201193
+      DragonFondoLimpio_262: -1536729830
+      DragonFondoLimpio_189: 263056316
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

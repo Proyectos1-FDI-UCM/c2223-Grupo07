@@ -166,12 +166,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac3cdb643455bbd48886bfaf7a4962bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explosion: {fileID: 2427654455839297022, guid: 4a1d6af5edcfa444c8dca5e06d9cb744, type: 3}
+  _explosion: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56, type: 3}
   _bullet: {fileID: 7655677763705373577, guid: 440c848647254d8458d5df68577bd702, type: 3}
   _bulletSpeed: 15
   _shootInterval: 2
   _offset: {x: 0, y: 0.5, z: 0}
-  _clip: {fileID: 0}
 --- !u!50 &766634469303981131
 Rigidbody2D:
   serializedVersion: 4

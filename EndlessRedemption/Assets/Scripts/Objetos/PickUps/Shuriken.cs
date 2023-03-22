@@ -27,7 +27,7 @@ public class Shuriken : MonoBehaviour
    
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.GetComponent<PlayerManager>() && GameManager.Instance._hasShurikensBag) 
+        if((collision.collider.GetComponent<PlayerManager>() || collision.collider.GetComponent<DisableCollider>()) && GameManager.Instance._hasShurikensBag) 
         {
             GameManager.Instance.PickShuriken();
             Destroy(gameObject);

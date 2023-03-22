@@ -34,8 +34,14 @@ public class SeiryuManager : MonoBehaviour
     private float _columnasTime = 6f;
     private float _pinchosTime = 6f;
     private float _embestidaTime = 6f;
+    private int _signx;
+    private int _signy;
+    private int _randomcentre;
     private bool _isAttacking = false;
     private bool _goCenter;
+    private bool _changeDirection;
+    private bool _randomDirectionGenerated = false;
+    private bool _randomCentreGenerated = false;
     private Vector3 _movementDirection;
     
 
@@ -46,7 +52,7 @@ public class SeiryuManager : MonoBehaviour
 
     //Referencias
     [SerializeField]
-    private Transform _roomCentre;
+    private Transform[] _roomCentre;
     private GameObject _bossUI;
     private Rigidbody2D _rigidbody2D;
 
@@ -89,7 +95,7 @@ public class SeiryuManager : MonoBehaviour
        
         _isAttacking = true;
         _elapsedTime = 0;
-        _parabolicIndex = 0;
+        _parabolicIndex = -3;
         _currentAttackState = attackState;
         _currentMovementState = MovementStates.QUIETO;
         _elapsedAttackTime = 0;
@@ -98,6 +104,8 @@ public class SeiryuManager : MonoBehaviour
     void ExitState()
     {
         _isAttacking = false;
+        _randomCentreGenerated = false;
+        _randomDirectionGenerated = false;
         if (_goCenter)
             _currentMovementState = MovementStates.HUIR;
         else
@@ -158,17 +166,38 @@ public class SeiryuManager : MonoBehaviour
         switch(_currentMovementState)
         {
             case MovementStates.QUIETO:
+                _rigidbody2D.velocity = Vector2.zero;
                 break;
             case MovementStates.RANDOM:
                 _parabolicIndex += Time.deltaTime;
-                _movementDirection.x = Random.Range(-1, 2);
-                _movementDirection.y = Random.Range(-1, 2);
-                _movementDirection = new Vector3(Mathf.Pow(_movementDirection.x * _parabolicIndex, 2), Mathf.Pow(_movementDirection.y * _parabolicIndex, 2), 0);
-                
+                if(!_randomDirectionGenerated)
+                {
+                    _randomDirectionGenerated = true;
+                    _movementDirection.x = Random.Range(2, 4);
+                    _movementDirection.y = Random.Range(-3, 4);
+                    _signx = Random.Range(0, 2);
+                    _signy = Random.Range(0, 2);
+                }            
+                _movementDirection = new Vector3(Mathf.Pow(_movementDirection.x * _parabolicIndex, 2), (_movementDirection.y * _parabolicIndex), 0);               
+                    if (_signx == 1)
+                        _movementDirection.x *= -1;
+                    if (_signy == 1)
+                        _movementDirection.y *= -1;
+                if (_changeDirection)
+                {
+                    _movementDirection *= -1;//Si se choca gira
+                }                
+                    _movementDirection.Normalize();
+                                              
                 _rigidbody2D.velocity = _movementDirection * _bossSpeed;
                 break;
             case MovementStates.HUIR:
-                _movementDirection = _roomCentre.position - transform.position;
+                if(!_randomCentreGenerated)
+                {
+                    _randomcentre = Random.Range(0, _roomCentre.Length + 1);//elige al punto al que ir
+                    _randomCentreGenerated = true;
+                }               
+                _movementDirection = _roomCentre[_randomcentre].position - transform.position;
                 _movementDirection.Normalize();
                 _rigidbody2D.velocity = _movementDirection * _bossSpeed;               
                 break;
@@ -225,5 +254,12 @@ public class SeiryuManager : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         _goCenter = false;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (_changeDirection)
+            _changeDirection = !_changeDirection;
+        else if (!_changeDirection)
+            _changeDirection = !_changeDirection;
     }
 }

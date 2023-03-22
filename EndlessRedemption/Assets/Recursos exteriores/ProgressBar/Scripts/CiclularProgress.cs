@@ -18,7 +18,7 @@ public class CiclularProgress : MonoBehaviour {
 		while (i < 1)
 		{
 			i += Time.deltaTime * rate;
-			gameObject.renderer.material.SetFloat("_Progress", i);
+			gameObject.GetComponent<Renderer>().material.SetFloat("_Progress", i);
 			yield return 0;
 		}
 	}

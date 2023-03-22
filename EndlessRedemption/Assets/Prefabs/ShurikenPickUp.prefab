@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2532532320836819437}
   - component: {fileID: 7102882480373424696}
   - component: {fileID: -2691253126369157385}
-  - component: {fileID: 315926059925322201}
+  - component: {fileID: 199752090545796966}
   m_Layer: 0
   m_Name: ShurikenPickUp
   m_TagString: Untagged
@@ -122,8 +122,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &315926059925322201
-PolygonCollider2D:
+--- !u!58 &199752090545796966
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -135,19 +135,6 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.15, y: 2.5}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.203125, y: 0.203125}
-      - {x: -0.203125, y: -0.203125}
-      - {x: 0.203125, y: -0.203125}
-      - {x: 0.203125, y: 0.203125}
+  m_Offset: {x: -0.007573962, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.8565312

@@ -13,8 +13,12 @@ public class PowerUps : MonoBehaviour
 
     [SerializeField]
     private GameObject _ToFresco;
-    
+
+    [SerializeField]
     public Transform _objetive;
+
+    [SerializeField]
+    public Transform _objetive2;
 
     private float _movementSpeed=5f;
 
@@ -52,11 +56,12 @@ public class PowerUps : MonoBehaviour
     {
         if (_iniciar)
         {
-           // _transform.position = new Vector2(_objetive.position.x, _objetive.position.y);
+          
             _inputComponent.enabled = false;
             _rigid.velocity = new Vector2(0, 0);
             _rigid.gravityScale = 0;
             _animator = GetComponent<Animator>();
+            _powerUp = true;
             _animator.SetBool("PowerUp", _powerUp);
             _iniciar= false;
         }
@@ -66,6 +71,7 @@ public class PowerUps : MonoBehaviour
 
         if (_elapsedtime2 >= _time2)
         {
+            
             _elapsedtime2 = 0;
             _inputComponent.enabled = true;
             _rigid.gravityScale = 4;
@@ -76,14 +82,19 @@ public class PowerUps : MonoBehaviour
         }
 
         if (_dJump)
-        {       
+        {
+            _transform.position = new Vector2(_objetive.position.x, _objetive.position.y);
             if (_elapsedtime >= _time)
             {
                 _item = Instantiate(_ToFresco, new Vector3(transform.position.x, transform.position.y), Quaternion.identity);
             }
 
         }
-       
-   
+        if (_dash)
+        {
+            _transform.position = new Vector2(_objetive2.position.x, _objetive2.position.y);
+        }
+
+
     }
 }

@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     public void PlayNormalGame()
     {
         SceneManager.LoadScene("Level1"); //Cargar juego en modo normal
+        PlayerPrefs.DeleteAll();
     }
 
     public void PlayNightmareGame()

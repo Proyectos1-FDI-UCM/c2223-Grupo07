@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         _level = PlayerPrefs.GetInt("LevelX");
+        
         switch (_level)
         {
             case 1:

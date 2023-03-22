@@ -106,6 +106,7 @@ public class GameManager : MonoBehaviour
             case GameStates.PAUSE:
                 break;            
             case GameStates.RESTART:
+                PlayerPrefs.SetInt("FirstRound", 1);
                 SceneManager.LoadScene(_sceneNames[_currentScene]);
                 break;           
         }    

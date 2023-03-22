@@ -21,16 +21,17 @@ public class MusicManager : MonoBehaviour
     {
         _enterZone = false;
         _audioSourceMusic = GetComponent<AudioSource>();
-        if(_playAtStart)
+        
+        if(_playAtStart && PlayerPrefs.GetInt("FirstRound") == 0)
         switch(PlayerPrefs.GetInt("LevelX"))//Musica y ambiente de cada level
             {
                 case 0:
                     SelectSong(0, 0.4f);
-                    SelectSong(1, 0.5f);
+                    SelectSong(1, 0.4f);
                     break;
                 case 1:
                     SelectSong(1, 0.4f);
-                    SelectSong(2, 0.6f);
+                    SelectSong(3, 0.8f);
                     break;
                 case 2:
                     SelectSong(0, 0.3f);
@@ -43,6 +44,30 @@ public class MusicManager : MonoBehaviour
                 case 4:
                     break;
             }
+        if(PlayerPrefs.GetInt("FirstRound") == 1)
+        {
+            switch (PlayerPrefs.GetInt("LevelX"))//Musica y ambiente de cada level
+            {
+                case 0:
+                    SelectSong(1, 0.4f);
+                    SelectSong(3, 0.2f);
+                    break;
+                case 1:
+                    SelectSong(1, 0.4f);
+                    SelectSong(3, 0.8f);
+                    break;
+                case 2:
+                    SelectSong(0, 0.3f);
+                    SelectSong(1, 2f);
+                    break;
+                case 3:
+                    SelectSong(0, 0.3f);
+                    SelectSong(1, 0.1f);
+                    break;
+                case 4:
+                    break;
+            }
+        }
     }
     public void SelectSong(int pista, float volume)
     {

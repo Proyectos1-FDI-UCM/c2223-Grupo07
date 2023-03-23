@@ -21834,7 +21834,7 @@ MonoBehaviour:
   _maxLifes: 5
   _player: {fileID: 5064903639783295333, guid: b9b2a75de7583904eaf5e39f9f1058be, type: 3}
   _playerDeath: {fileID: 2863547037217844996, guid: 9f48c0777a9f79d428a092fa521b8995, type: 3}
-  _hasDeath: 0
+  _hasDeath: 1
 --- !u!4 &2080510649
 Transform:
   m_ObjectHideFlags: 0

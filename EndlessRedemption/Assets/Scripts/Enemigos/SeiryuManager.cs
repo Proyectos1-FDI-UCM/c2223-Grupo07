@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class SeiryuManager : MonoBehaviour
 {
     //Estados
     public enum BossStates { MOLESTO, ENFADADO, FURIOSO}
-    public enum AttackStates { BASICO, BOLAS,VOLCAN, COLUMNAS, PINCHOS, EMBESTIDA}
+    public enum AttackStates { BASICO, BOLAS, VOLCAN, PINCHOS,COLUMNAS , EMBESTIDA}
     public enum MovementStates { HUIR, RANDOM, QUIETO}
     private BossStates _currentBossState;
     private AttackStates _currentAttackState;
@@ -25,15 +26,23 @@ public class SeiryuManager : MonoBehaviour
     private int _bossLifes = 60;
     private int _randomAttack;
     [SerializeField]
+    private int _pinchosExplusados = 6;
+    [SerializeField]
     private float _minTimeBetweenAttacks = 2f;
     [SerializeField]
     private float _maxTimeBetweenAttacks = 9f;
+    [SerializeField]
+    private float _pinchoSpeed = 1f;
     private float _timeBetweenAttacks;
     private float _basicTime = 6f;
     private float _bolasTime = 3f;
+    private float _volcanTime = 2.0f;
     private float _columnasTime = 10f;
     private float _pinchosTime = 1f;
     private float _embestidaTime = 2f;
+    private float _elapsedAttack = 0f;
+    [SerializeField]
+    private float _bolaDeFuegoSpeed = 3f;
     private int _signx;
     private int _signy;
     private int _randomcentre;
@@ -42,8 +51,9 @@ public class SeiryuManager : MonoBehaviour
     private bool _changeDirection;
     private bool _randomDirectionGenerated = false;
     private bool _randomCentreGenerated = false;
-    private Vector3 _movementDirection;
-    
+    private bool _bolaInstance = false;
+    private bool _bolasInstance = false;
+    private bool _pinchosInstance = false;
 
 
     private float _elapsedTime = 0f;
@@ -53,9 +63,16 @@ public class SeiryuManager : MonoBehaviour
     //Referencias
     [SerializeField]
     private Transform[] _roomCentre;
+    [SerializeField]
+    private GameObject _bolaDeFuego;
     private GameObject _bossUI;
     private Rigidbody2D _rigidbody2D;
     private EnemyLifeComponent _lifeComponent;
+    private Vector3 _movementDirection;
+    private GameObject _bolaDeFuego2;
+    private GameObject _bolaDeFuego3;
+    [SerializeField]
+    private GameObject _pinchoPrefab;
 
     //Metodos
     public void ChooseAttack(BossStates bossState)//Seleccion de estado de ataque segun el boss state
@@ -66,7 +83,7 @@ public class SeiryuManager : MonoBehaviour
                 _bossSpeed = _bossSpeed1;
                 if(_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(0, 2);
+                    _randomAttack = Random.Range(3, 4);
                     _currentAttackState = (AttackStates)_randomAttack;//Elige ataque random
                     EnterState(_currentAttackState);
                 }             
@@ -84,7 +101,7 @@ public class SeiryuManager : MonoBehaviour
                 _bossSpeed = _bossSpeed3;
                 if (_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(0, 6);
+                    _randomAttack = Random.Range(2, 6);
                     _currentAttackState = (AttackStates)_randomAttack;
                     EnterState(_currentAttackState);
                 }                
@@ -113,6 +130,9 @@ public class SeiryuManager : MonoBehaviour
         _currentMovementState = MovementStates.RANDOM;
         _elapsedTime = 0;
         _timeBetweenAttacks = Random.Range(_minTimeBetweenAttacks, _maxTimeBetweenAttacks + 1);
+        _bolaInstance = false;
+        _pinchosInstance = false;
+        
         Debug.Log(_currentMovementState);
     }
     public void Girar()
@@ -200,15 +220,62 @@ public class SeiryuManager : MonoBehaviour
             switch (_currentAttackState)
             {
                 case AttackStates.BASICO:
+                    _elapsedAttack += Time.deltaTime;
+                    if (_elapsedAttack > 0.2)
+                    {
+                        GameObject bolaDeFuego = Instantiate(_bolaDeFuego, transform.position, Quaternion.identity);
+                        Vector3 direction = -transform.position + PlayerManager.Instance.transform.position;
+                        direction.Normalize();
+                        bolaDeFuego.GetComponent<Rigidbody2D>().velocity = direction * _bolaDeFuegoSpeed;
+                        _elapsedAttack = 0;
+                    }
                     _elapsedAttackTime += Time.deltaTime;
-                    if(_elapsedAttackTime > _basicTime)
+                    if (_elapsedAttackTime > _basicTime)
                     {
                         ExitState();
                     }
                     break;
                 case AttackStates.BOLAS:
+                    if (!_bolaInstance) {
+                        GameObject bolaDeFuego2 = Instantiate(_bolaDeFuego, transform.position, Quaternion.identity);
+                        bolaDeFuego2.GetComponent<Rigidbody2D>().velocity = Vector3.right * _bolaDeFuegoSpeed;
+                        GameObject bolaDeFuego3 = Instantiate(_bolaDeFuego, transform.position, Quaternion.identity);
+                        bolaDeFuego3.GetComponent<Rigidbody2D>().velocity = Vector3.left * _bolaDeFuegoSpeed;
+                        _bolaDeFuego2 = bolaDeFuego2;
+                        _bolaDeFuego3 = bolaDeFuego3;
+                        _bolaInstance = true;
+                        _bolasInstance = true;
+                    }
+                    _elapsedAttack += Time.deltaTime;
+                    if (_elapsedAttack > 1.5 && _bolasInstance) {
+                        GameObject bolaDeFuego4 = Instantiate(_bolaDeFuego, _bolaDeFuego2.transform.position, Quaternion.identity);
+                        bolaDeFuego4.GetComponent<Rigidbody2D>().velocity = Vector3.one * _bolaDeFuegoSpeed;
+                        GameObject bolaDeFuego5 = Instantiate(_bolaDeFuego, _bolaDeFuego2.transform.position, Quaternion.identity);
+                        bolaDeFuego5.GetComponent<Rigidbody2D>().velocity = -Vector3.one * _bolaDeFuegoSpeed;
+                        GameObject bolaDeFuego6 = Instantiate(_bolaDeFuego, _bolaDeFuego2.transform.position, Quaternion.identity);
+                        bolaDeFuego6.GetComponent<Rigidbody2D>().velocity = new Vector2(-1, 1) * _bolaDeFuegoSpeed;
+                        GameObject bolaDeFuego7 = Instantiate(_bolaDeFuego, _bolaDeFuego2.transform.position, Quaternion.identity);
+                        bolaDeFuego7.GetComponent<Rigidbody2D>().velocity = new Vector2(1, -1) * _bolaDeFuegoSpeed;
+                        GameObject bolaDeFuego8 = Instantiate(_bolaDeFuego, _bolaDeFuego3.transform.position, Quaternion.identity);
+                        bolaDeFuego8.GetComponent<Rigidbody2D>().velocity = Vector3.one * _bolaDeFuegoSpeed;
+                        GameObject bolaDeFuego9 = Instantiate(_bolaDeFuego, _bolaDeFuego3.transform.position, Quaternion.identity);
+                        bolaDeFuego9.GetComponent<Rigidbody2D>().velocity = -Vector3.one * _bolaDeFuegoSpeed;
+                        GameObject bolaDeFuego10 = Instantiate(_bolaDeFuego, _bolaDeFuego3.transform.position, Quaternion.identity);
+                        bolaDeFuego10.GetComponent<Rigidbody2D>().velocity = new Vector2(-1, 1) * _bolaDeFuegoSpeed;
+                        GameObject bolaDeFuego11 = Instantiate(_bolaDeFuego, _bolaDeFuego3.transform.position, Quaternion.identity);
+                        bolaDeFuego11.GetComponent<Rigidbody2D>().velocity = new Vector2(1, -1) * _bolaDeFuegoSpeed;
+                        _bolasInstance = false;
+                    }
                     _elapsedAttackTime += Time.deltaTime;
                     if (_elapsedAttackTime > _bolasTime)
+                    {
+                        ExitState();
+                    }
+                    break;
+                case AttackStates.VOLCAN:
+
+                    _elapsedAttackTime += Time.deltaTime;
+                    if (_elapsedAttackTime > _volcanTime)
                     {
                         ExitState();
                     }
@@ -221,6 +288,13 @@ public class SeiryuManager : MonoBehaviour
                     }
                     break;
                 case AttackStates.PINCHOS:
+                    if (!_pinchosInstance) {
+                        for (int i = 0; i < _pinchosExplusados; i++) {
+                            GameObject pincho = Instantiate(_pinchoPrefab, transform.position, Quaternion.identity);
+                            pincho.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-1, 2), Random.Range(-1, 2)) * _pinchoSpeed;
+                            _pinchosInstance = true;
+                        }
+                    }
                     _elapsedAttackTime += Time.deltaTime;
                     if (_elapsedAttackTime > _pinchosTime)
                     {

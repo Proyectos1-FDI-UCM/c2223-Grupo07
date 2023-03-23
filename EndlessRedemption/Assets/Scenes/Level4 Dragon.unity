@@ -20036,6 +20036,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 360361649}
     - target: {fileID: -3097606435103339294, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
+      propertyPath: _bolaDeFuego
+      value: 
+      objectReference: {fileID: 7655677763705373577, guid: b9153703e2ca9c34a8254be3ff8c2f9a, type: 3}
+    - target: {fileID: -3097606435103339294, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
+      propertyPath: _pinchoPrefab
+      value: 
+      objectReference: {fileID: 8497460935108162333, guid: c9f375557f424b144ade803cd22f1220, type: 3}
+    - target: {fileID: -3097606435103339294, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
+      propertyPath: _bolaDeFuegoSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -3097606435103339294, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
       propertyPath: _maxTimeBetweenAttacks
       value: 8
       objectReference: {fileID: 0}

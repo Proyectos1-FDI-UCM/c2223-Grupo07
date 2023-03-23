@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8174108975509504865}
   - component: {fileID: -5900476777344324988}
   - component: {fileID: 8218068860022770704}
-  m_Layer: 13
+  m_Layer: 15
   m_Name: PinchoSeiryu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb654c2f38f9444890ec2198854ceac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeLife: 3.75
+  _timeLife: 10
 --- !u!50 &-5900476777344324988
 Rigidbody2D:
   serializedVersion: 4

@@ -30,10 +30,10 @@ public class SeiryuManager : MonoBehaviour
     private float _maxTimeBetweenAttacks = 9f;
     private float _timeBetweenAttacks;
     private float _basicTime = 6f;
-    private float _bolasTime = 6f;
-    private float _columnasTime = 6f;
-    private float _pinchosTime = 6f;
-    private float _embestidaTime = 6f;
+    private float _bolasTime = 3f;
+    private float _columnasTime = 10f;
+    private float _pinchosTime = 1f;
+    private float _embestidaTime = 2f;
     private int _signx;
     private int _signy;
     private int _randomcentre;
@@ -55,9 +55,10 @@ public class SeiryuManager : MonoBehaviour
     private Transform[] _roomCentre;
     private GameObject _bossUI;
     private Rigidbody2D _rigidbody2D;
+    private EnemyLifeComponent _lifeComponent;
 
     //Metodos
-    public void ChooseAttack(BossStates bossState)
+    public void ChooseAttack(BossStates bossState)//Seleccion de estado de ataque segun el boss state
     {
         switch (bossState)
         {
@@ -66,7 +67,7 @@ public class SeiryuManager : MonoBehaviour
                 if(_elapsedTime > _timeBetweenAttacks)
                 {
                     _randomAttack = Random.Range(0, 2);
-                    _currentAttackState = (AttackStates)_randomAttack;
+                    _currentAttackState = (AttackStates)_randomAttack;//Elige ataque random
                     EnterState(_currentAttackState);
                 }             
                 break;
@@ -90,7 +91,7 @@ public class SeiryuManager : MonoBehaviour
                 break;
         }
     }
-    void EnterState(AttackStates attackState)
+    void EnterState(AttackStates attackState)//Al entrar estado de ataque
     {
        
         _isAttacking = true;
@@ -101,7 +102,7 @@ public class SeiryuManager : MonoBehaviour
         _elapsedAttackTime = 0;
         Debug.Log(_currentAttackState);
     }
-    void ExitState()
+    void ExitState()//al salir del estado de ataque
     {
         _isAttacking = false;
         _randomCentreGenerated = false;
@@ -124,23 +125,28 @@ public class SeiryuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _currentMovementState = MovementStates.QUIETO;
+        _lifeComponent = GetComponent<EnemyLifeComponent>();
+        _currentMovementState = MovementStates.QUIETO;//Se inicia quieto
         _timeBetweenAttacks = Random.Range(_minTimeBetweenAttacks, _maxTimeBetweenAttacks + 1);
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _currentBossState = BossStates.MOLESTO;
+        _currentBossState = BossStates.MOLESTO;//Empieza en el estado molesto
     }
 
     // Update is called once per frame
     void Update()
     {
-        ChooseAttack(_currentBossState);
-       
-        
+        if (_rigidbody2D.velocity.x > 0 && transform.localScale.x < 0)//Rotacion
+            Girar();
+        else if (_rigidbody2D.velocity.x < 0 && transform.localScale.x > 0)
+            Girar();
+
+        ChooseAttack(_currentBossState);//Logica de selleccion de estados
+        _bossLifes = _lifeComponent.vidasEnemy;//vidas actuales       
         if(!_isAttacking)
         {
-            _elapsedTime += Time.deltaTime;
+            _elapsedTime += Time.deltaTime;//Si no esta atacando empieza a contar para hacer el proximo ataque
         }
-        if(_bossLifes <= 20)
+        if(_bossLifes <= 20)//Cambio a estado segun las vidas
         {
             _currentBossState = BossStates.FURIOSO;
         }
@@ -148,37 +154,23 @@ public class SeiryuManager : MonoBehaviour
         {
             _currentBossState = BossStates.ENFADADO;
         }
-       /* switch(_currentBossState)
-        {
-            case BossStates.MOLESTO:                
-                _bossSpeed = 1.0f;
-                break;
-            case BossStates.ENFADADO:
-                _bossSpeed = 1.2f;
-
-                break;
-            case BossStates.FURIOSO:
-                _bossSpeed = 1.5f;
-
-                break;
-        }*/
-
         switch(_currentMovementState)
         {
             case MovementStates.QUIETO:
-                _rigidbody2D.velocity = Vector2.zero;
+                _rigidbody2D.velocity = Vector2.zero;//Se para
                 break;
-            case MovementStates.RANDOM:
+            case MovementStates.RANDOM://Hace una "parabola" random
                 _parabolicIndex += Time.deltaTime;
                 if(!_randomDirectionGenerated)
                 {
                     _randomDirectionGenerated = true;
-                    _movementDirection.x = Random.Range(2, 4);
-                    _movementDirection.y = Random.Range(-3, 4);
-                    _signx = Random.Range(0, 2);
+                    _movementDirection.x = Random.Range(4, 6);//Seleccion de vector
+                    _movementDirection.y = Random.Range(4, 6);
+                    _signx = Random.Range(0, 2);//Seleccion de signo
                     _signy = Random.Range(0, 2);
+                    Debug.Log(""+_movementDirection+ _signx + _signy);
                 }            
-                _movementDirection = new Vector3(Mathf.Pow(_movementDirection.x * _parabolicIndex, 2), (_movementDirection.y * _parabolicIndex), 0);               
+                _movementDirection = new Vector3(Mathf.Pow(_movementDirection.x * _parabolicIndex, 2), Mathf.Pow(_movementDirection.y * _parabolicIndex, 2), 0);               
                     if (_signx == 1)
                         _movementDirection.x *= -1;
                     if (_signy == 1)
@@ -187,9 +179,9 @@ public class SeiryuManager : MonoBehaviour
                 {
                     _movementDirection *= -1;//Si se choca gira
                 }                
-                    _movementDirection.Normalize();
+                _movementDirection.Normalize();
                                               
-                _rigidbody2D.velocity = _movementDirection * _bossSpeed;
+                _rigidbody2D.velocity = _movementDirection * _bossSpeed;//Movimiento
                 break;
             case MovementStates.HUIR:
                 if(!_randomCentreGenerated)
@@ -197,13 +189,13 @@ public class SeiryuManager : MonoBehaviour
                     _randomcentre = Random.Range(0, _roomCentre.Length + 1);//elige al punto al que ir
                     _randomCentreGenerated = true;
                 }               
-                _movementDirection = _roomCentre[_randomcentre].position - transform.position;
+                _movementDirection = _roomCentre[_randomcentre-1].position - transform.position;//direccion hacia el punto seleccionado
                 _movementDirection.Normalize();
                 _rigidbody2D.velocity = _movementDirection * _bossSpeed;               
                 break;
         }
 
-        if (_isAttacking)
+        if (_isAttacking)//Ataque
         {
             switch (_currentAttackState)
             {
@@ -247,7 +239,7 @@ public class SeiryuManager : MonoBehaviour
         }
         
     }
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)//Detecta si se esta chocando para huir
     {
         _goCenter = true;
     }
@@ -255,7 +247,7 @@ public class SeiryuManager : MonoBehaviour
     {
         _goCenter = false;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)//Cambio de direccion durante el vuelo
     {
         if (_changeDirection)
             _changeDirection = !_changeDirection;

@@ -12,6 +12,7 @@ TagManager:
   - Cazarrecompensas
   - Dragon1
   - Dragon2
+  - Centre
   layers:
   - Default
   - TransparentFX

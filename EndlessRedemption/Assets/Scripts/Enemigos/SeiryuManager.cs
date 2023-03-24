@@ -37,7 +37,7 @@ public class SeiryuManager : MonoBehaviour
     private float _basicTime = 6f;
     private float _bolasTime = 3f;
     private float _volcanTime = 2.0f;
-    private float _columnasTime = 10f;
+    private float _columnasTime = 6f;
     private float _pinchosTime = 1f;
     private float _embestidaTime = 2f;
     private float _elapsedAttack = 0f;
@@ -81,6 +81,8 @@ public class SeiryuManager : MonoBehaviour
     private GameObject _puntoMedio;
     private ColumnasFuego _columnas;
 
+    private bool _activeCol=false;
+
     static private SeiryuManager _instance;
     static public SeiryuManager Instance { get { return _instance; } }
 
@@ -102,7 +104,7 @@ public class SeiryuManager : MonoBehaviour
                 _bossSpeed = _bossSpeed1;
                 if(_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(0, 4);
+                    _randomAttack = Random.Range(4,5);
                     _currentAttackState = (AttackStates)_randomAttack;//Elige ataque random
                     EnterState(_currentAttackState);
                 }             
@@ -129,13 +131,19 @@ public class SeiryuManager : MonoBehaviour
     }
     void EnterState(AttackStates attackState)//Al entrar estado de ataque
     {
-       
+        if(_currentAttackState==AttackStates.COLUMNAS)
+        {
+            _currentMovementState = MovementStates.HUIR;
+        }
+        else _currentMovementState = MovementStates.QUIETO;
+
         _isAttacking = true;
         _elapsedTime = 0;
         _parabolicIndex = -3;
         _currentAttackState = attackState;
-        _currentMovementState = MovementStates.QUIETO;
+        
         _elapsedAttackTime = 0;
+        Debug.Log(_currentMovementState);
         Debug.Log(_currentAttackState);
     }
     void ExitState()//al salir del estado de ataque
@@ -151,7 +159,8 @@ public class SeiryuManager : MonoBehaviour
         _timeBetweenAttacks = Random.Range(_minTimeBetweenAttacks, _maxTimeBetweenAttacks + 1);
         _bolaInstance = false;
         _pinchosInstance = false;
-        
+       
+
         Debug.Log(_currentMovementState);
     }
     public void Girar()
@@ -227,11 +236,17 @@ public class SeiryuManager : MonoBehaviour
                 _rigidbody2D.velocity = _movementDirection * _bossSpeed;//Movimiento
                 break;
             case MovementStates.HUIR:
-                if(!_randomCentreGenerated)
+                if(!_randomCentreGenerated && _currentAttackState!=AttackStates.COLUMNAS)
                 {
                     _randomcentre = Random.Range(0, _roomCentre.Length + 1);//elige al punto al que ir
                     _randomCentreGenerated = true;
-                }               
+                }
+                  if(_currentAttackState == AttackStates.COLUMNAS)
+                {
+                    _randomcentre =1;
+                    _randomCentreGenerated = true;
+                }
+                
                 _movementDirection = _roomCentre[_randomcentre-1].position - transform.position;//direccion hacia el punto seleccionado
                 _movementDirection.Normalize();
                 _rigidbody2D.velocity = _movementDirection * _bossSpeed;               
@@ -305,17 +320,25 @@ public class SeiryuManager : MonoBehaviour
                     break;
                 case AttackStates.COLUMNAS:
 
-                    Debug.Log("Columnas");
-                    Vector3 trayectoria=_puntoMedio.transform.position-transform.position;
-                    transform.Translate(trayectoria * Time.deltaTime * _bossSpeed2);
+                    
 
-                    if(_currentMovementState!= MovementStates.HUIR) 
+
+
+                    if (_activeCol)
                     {
-                        _currentMovementState = MovementStates.HUIR;
-                        _columnas.enabled = true;
-                        _columnas.Invocar();
+                        _elapsedAttack += Time.deltaTime;
+                        if (_elapsedAttack > 2)
+                        {
+                            _columnas.enabled = true;
+                            _columnas.Invocar();
+                            _activeCol = false;
+                            _elapsedAttack = 0;
+                        }
+                       
+                    }  
+                        
 
-                    }
+                    
 
                     _elapsedAttackTime += Time.deltaTime;
                     if (_elapsedAttackTime > _columnasTime)
@@ -351,14 +374,24 @@ public class SeiryuManager : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)//Detecta si se esta chocando para huir
     {
-        _goCenter = true;
+        if (collision.gameObject.tag != "Centre")
+        {
+            _goCenter = true;
+        }
+        
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         _goCenter = false;
+        
     }
     private void OnTriggerEnter2D(Collider2D collision)//Cambio de direccion durante el vuelo
     {
+        if(_currentAttackState== AttackStates.COLUMNAS && collision.gameObject.tag=="Centre")
+        {
+
+            _activeCol = true;
+        }
         if (_changeDirection)
             _changeDirection = !_changeDirection;
         else if (!_changeDirection)

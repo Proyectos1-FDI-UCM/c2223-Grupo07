@@ -194,7 +194,7 @@ public class SeiryuManager : MonoBehaviour
             Girar();
 
         ChooseAttack(_currentBossState);//Logica de selleccion de estados
-        _bossLifes = _lifeComponent.vidasEnemy;//vidas actuales       
+        _bossLifes = _lifeComponent.vidasEnemy;//vidas actuales
         if(!_isAttacking)
         {
             _elapsedTime += Time.deltaTime;//Si no esta atacando empieza a contar para hacer el proximo ataque

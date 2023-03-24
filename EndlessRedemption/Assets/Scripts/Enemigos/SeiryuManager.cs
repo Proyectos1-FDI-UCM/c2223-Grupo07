@@ -104,7 +104,7 @@ public class SeiryuManager : MonoBehaviour
                 _bossSpeed = _bossSpeed1;
                 if(_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(4,5);
+                    _randomAttack = Random.Range(0,5);
                     _currentAttackState = (AttackStates)_randomAttack;//Elige ataque random
                     EnterState(_currentAttackState);
                 }             
@@ -179,6 +179,7 @@ public class SeiryuManager : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _currentBossState = BossStates.MOLESTO;//Empieza en el estado molesto
         _columnas = GetComponent<ColumnasFuego>();
+        PlayerManager.Instance.GetComponent<InputComponent>().enabled = true;
 
 
 
@@ -327,7 +328,7 @@ public class SeiryuManager : MonoBehaviour
                     if (_activeCol)
                     {
                         _elapsedAttack += Time.deltaTime;
-                        if (_elapsedAttack > 2)
+                        if (_elapsedAttack > 3)
                         {
                             _columnas.enabled = true;
                             _columnas.Invocar();

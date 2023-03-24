@@ -21,10 +21,12 @@ public class ChestController : MonoBehaviour
     void Start()
     {
         _opened = false;
+        _spawned = false;
         _animator = GetComponent<Animator>();
-        _animator.SetBool("Open", _opened);
-        _spawned= false;
+        _animator.SetBool("Open", _opened);       
         _soundManager = FindObjectOfType<SoundManager>();
+        if (GetComponent<SeiryuManager>()) { _opened = true; }
+        _elapsedTime = 0;
     }
 
     // Update is called once per frame
@@ -45,11 +47,21 @@ public class ChestController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.GetComponent<DamageComponent>() != null && !_opened)
+        if(!GetComponent<SeiryuManager>())
         {
-            _opened= true;
-            _animator.SetBool("Open", _opened);
-            _soundManager.SeleccionAudio(3, 0.5f);
+            if (collider.GetComponent<DamageComponent>() != null && !_opened)
+            {
+                _opened = true;
+                _animator.SetBool("Open", _opened);
+                _soundManager.SeleccionAudio(3, 0.5f);
+            }
         }
+        
+    }
+    public void Restart()
+    {
+        _opened = true;
+        _elapsedTime = 0;
+        _spawned = false;
     }
 }

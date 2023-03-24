@@ -19,7 +19,7 @@ public class Shuriken : MonoBehaviour
         _collider= GetComponent<Collider2D>();      
         _rigidbody2D= GetComponent<Rigidbody2D>();
         _collider.enabled = false;
-        _randomLateralForce = Random.Range(-30, 30);
+        _randomLateralForce = Random.Range(-500, 500);
         _rigidbody2D.AddForce(Vector2.up * _spawnForce);
         _rigidbody2D.AddForce(Vector2.left * _randomLateralForce);
         _elapsed = 0;
@@ -27,11 +27,15 @@ public class Shuriken : MonoBehaviour
    
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if((collision.collider.GetComponent<PlayerManager>() || collision.collider.GetComponent<DisableCollider>()) && GameManager.Instance._hasShurikensBag) 
+        if(!GetComponent<SeiryuManager>())
         {
-            GameManager.Instance.PickShuriken();
-            Destroy(gameObject);
+            if ((collision.collider.GetComponent<PlayerManager>() || collision.collider.GetComponent<DisableCollider>()) && GameManager.Instance._hasShurikensBag)
+            {
+                GameManager.Instance.PickShuriken();
+                Destroy(gameObject);
+            }
         }
+       
     }
     private void Update()
     {

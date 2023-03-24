@@ -80,6 +80,8 @@ public class SeiryuManager : MonoBehaviour
     [SerializeField]
     private GameObject _puntoMedio;
     private ColumnasFuego _columnas;
+    private Animator _animator;
+    private ChestController _volcan;
 
     private bool _activeCol=false;
 
@@ -104,7 +106,7 @@ public class SeiryuManager : MonoBehaviour
                 _bossSpeed = _bossSpeed1;
                 if(_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(0,5);
+                    _randomAttack = Random.Range(2,3);
                     _currentAttackState = (AttackStates)_randomAttack;//Elige ataque random
                     EnterState(_currentAttackState);
                 }             
@@ -131,11 +133,26 @@ public class SeiryuManager : MonoBehaviour
     }
     void EnterState(AttackStates attackState)//Al entrar estado de ataque
     {
-        if(_currentAttackState==AttackStates.COLUMNAS)
+        if(_currentAttackState == AttackStates.VOLCAN)
+        {
+            _volcan.Restart();
+        }
+        if (_currentAttackState == AttackStates.COLUMNAS)
         {
             _currentMovementState = MovementStates.HUIR;
+            _animator.SetBool("Moving", true);
         }
-        else _currentMovementState = MovementStates.QUIETO;
+        else if(_currentAttackState == AttackStates.BASICO)
+        {
+            _animator.SetBool("Moving", false);
+            _animator.SetBool("Fire", true);
+        }
+        else
+        {
+            _animator.SetBool("Moving", false);
+            _animator.SetBool("Idle", true);
+            _currentMovementState = MovementStates.QUIETO;
+        }
 
         _isAttacking = true;
         _elapsedTime = 0;
@@ -148,6 +165,7 @@ public class SeiryuManager : MonoBehaviour
     }
     void ExitState()//al salir del estado de ataque
     {
+        _volcan.enabled = false;
         _isAttacking = false;
         _randomCentreGenerated = false;
         _randomDirectionGenerated = false;
@@ -155,6 +173,9 @@ public class SeiryuManager : MonoBehaviour
             _currentMovementState = MovementStates.HUIR;
         else
         _currentMovementState = MovementStates.RANDOM;
+        _animator.SetBool("Moving", true);
+        _animator.SetBool("Idle", false);
+        _animator.SetBool("Fire", false);
         _elapsedTime = 0;
         _timeBetweenAttacks = Random.Range(_minTimeBetweenAttacks, _maxTimeBetweenAttacks + 1);
         _bolaInstance = false;
@@ -181,6 +202,9 @@ public class SeiryuManager : MonoBehaviour
         _currentBossState = BossStates.MOLESTO;//Empieza en el estado molesto
         _columnas = GetComponent<ColumnasFuego>();
         PlayerManager.Instance.GetComponent<InputComponent>().enabled = true;
+        _animator = GetComponent<Animator>();
+        _volcan = GetComponent<ChestController>();
+        _volcan.enabled = false;
 
 
 
@@ -189,7 +213,7 @@ public class SeiryuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_rigidbody2D.velocity.x > 0 && transform.localScale.x < 0)//Rotacion
+        if (_rigidbody2D.velocity.x > 1 && transform.localScale.x < 0)//Rotacion
             Girar();
         else if (_rigidbody2D.velocity.x < 0 && transform.localScale.x > 0)
             Girar();
@@ -313,8 +337,10 @@ public class SeiryuManager : MonoBehaviour
                     }
                     break;
                 case AttackStates.VOLCAN:
+                    _volcan.enabled = true;
 
                     _elapsedAttackTime += Time.deltaTime;
+                   
                     if (_elapsedAttackTime > _volcanTime)
                     {
                         ExitState();
@@ -394,9 +420,13 @@ public class SeiryuManager : MonoBehaviour
 
             _activeCol = true;
         }
-        if (_changeDirection)
-            _changeDirection = !_changeDirection;
-        else if (!_changeDirection)
-            _changeDirection = !_changeDirection;
+        if (collision.gameObject.tag != "Centre")
+        {
+            if (_changeDirection)
+                _changeDirection = !_changeDirection;
+            else if (!_changeDirection)
+                _changeDirection = !_changeDirection;
+        }
+     
     }
 }

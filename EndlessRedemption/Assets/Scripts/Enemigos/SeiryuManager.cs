@@ -158,6 +158,7 @@ public class SeiryuManager : MonoBehaviour
         _elapsedTime = 0;
         _timeBetweenAttacks = Random.Range(_minTimeBetweenAttacks, _maxTimeBetweenAttacks + 1);
         _bolaInstance = false;
+        _bolasInstance = false;
         _pinchosInstance = false;
        
 

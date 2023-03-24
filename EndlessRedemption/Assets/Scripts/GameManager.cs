@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public enum GameStates { START, GAME, PAUSE, RESTART }
     private GameStates _currentState;
-    private string[] _sceneNames = { "Level1", "Level2", "Level3", "Castillo 2"};//Nombres de las escenas
+    private string[] _sceneNames = { "Level1", "Level2", "Level3", "Castillo 2", "Level4 Dragon"};//Nombres de las escenas
     private int _currentScene;
     [SerializeField]
     private Transform[] _checkPoints; //Array con los checkpoints, cada escena tiene los suyos
@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         _player.SetActive(true);
+        PlayerManager.Instance.GetComponent<InputComponent>().enabled = true;
         _currentCheckpoint = PlayerPrefs.GetInt("CheckpointX");
         for(int i = 0; i <= _currentCheckpoint; i++) //Desactivar anteriores
         {

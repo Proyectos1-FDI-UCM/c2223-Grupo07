@@ -91,5 +91,25 @@ public class InputComponent : MonoBehaviour
             }
             else _PauseMenu.PauseGame(PauseMenuObject);
         }
+        if(Input.GetKeyDown(KeyCode.T))
+        {
+            PlayerPrefs.SetInt("LevelX", PlayerPrefs.GetInt("LevelX") + 1);
+            Debug.Log("Level:" + PlayerPrefs.GetInt("LevelX"));
+        }
+        if(Input.GetKeyDown(KeyCode.Y))
+        {
+            PlayerPrefs.SetInt("CheckpointX", PlayerPrefs.GetInt("CheckpointX") + 1);
+            Debug.Log("Checkpoint:" + PlayerPrefs.GetInt( "CheckpointX"));
+        }
+        if(Input.GetKeyDown(KeyCode.G))
+        {
+            PlayerPrefs.SetInt("LevelX", 1);
+            Debug.Log("Level:" + PlayerPrefs.GetInt("LevelX"));
+        }
+        if(Input.GetKeyDown(KeyCode.H))
+        {
+            PlayerPrefs.SetInt("CheckpointX", 0);
+            Debug.Log("Checkpoint:" + PlayerPrefs.GetInt("CheckpointX"));
+        }
     }
 }

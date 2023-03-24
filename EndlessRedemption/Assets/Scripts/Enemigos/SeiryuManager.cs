@@ -74,6 +74,25 @@ public class SeiryuManager : MonoBehaviour
     [SerializeField]
     private GameObject _pinchoPrefab;
 
+    //SERGIO
+    [SerializeField]
+    public GameObject _trayec;
+    [SerializeField]
+    private GameObject _puntoMedio;
+    private ColumnasFuego _columnas;
+
+    static private SeiryuManager _instance;
+    static public SeiryuManager Instance { get { return _instance; } }
+
+
+
+    public void Awake()
+    {
+        _instance = this;
+    }
+
+
+
     //Metodos
     public void ChooseAttack(BossStates bossState)//Seleccion de estado de ataque segun el boss state
     {
@@ -150,6 +169,10 @@ public class SeiryuManager : MonoBehaviour
         _timeBetweenAttacks = Random.Range(_minTimeBetweenAttacks, _maxTimeBetweenAttacks + 1);
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _currentBossState = BossStates.MOLESTO;//Empieza en el estado molesto
+        _columnas = GetComponent<ColumnasFuego>();
+
+
+
     }
 
     // Update is called once per frame
@@ -281,6 +304,19 @@ public class SeiryuManager : MonoBehaviour
                     }
                     break;
                 case AttackStates.COLUMNAS:
+
+                    Debug.Log("Columnas");
+                    Vector3 trayectoria=_puntoMedio.transform.position-transform.position;
+                    transform.Translate(trayectoria * Time.deltaTime * _bossSpeed2);
+
+                    if(_currentMovementState!= MovementStates.HUIR) 
+                    {
+                        _currentMovementState = MovementStates.HUIR;
+                        _columnas.enabled = true;
+                        _columnas.Invocar();
+
+                    }
+
                     _elapsedAttackTime += Time.deltaTime;
                     if (_elapsedAttackTime > _columnasTime)
                     {

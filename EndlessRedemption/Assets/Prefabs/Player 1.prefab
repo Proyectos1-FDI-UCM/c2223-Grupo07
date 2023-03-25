@@ -947,9 +947,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bomb: {fileID: 2703695956334035655, guid: 2cbde8517334ab947927af4a25b53d4f, type: 3}
-  _elapsedTime: 0
+  _elapsedTime: 2
   _smokeTime: 3
-  _coolDown: 5
+  _enemiesNecessary: 0
   _smokePosition: {x: 0, y: 0, z: 0}
   _playerTarget: 1
 --- !u!114 &5064903639783295335

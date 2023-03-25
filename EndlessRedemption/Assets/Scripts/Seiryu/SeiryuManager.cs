@@ -71,6 +71,8 @@ public class SeiryuManager : MonoBehaviour
     [SerializeField]
     private GameObject _pinchoPrefab;
     private BolasSeiryu _bolasSeiryu;
+    [SerializeField]
+    private GameObject _seiryuBar;
 
     //SERGIO
     [SerializeField]
@@ -204,6 +206,7 @@ public class SeiryuManager : MonoBehaviour
         _volcan = GetComponent<ChestController>();
         _volcan.enabled = false;
         _bolasSeiryu = GetComponent<BolasSeiryu>();
+        _seiryuBar.GetComponent<SeiryuBar>().SetMaxHealth(_bossLifes);
     }
 
     // Update is called once per frame
@@ -215,7 +218,8 @@ public class SeiryuManager : MonoBehaviour
             Girar();
 
         ChooseAttack(_currentBossState);//Logica de selleccion de estados
-        _bossLifes = _lifeComponent.vidasEnemy;//vidas actuales       
+        _bossLifes = _lifeComponent.vidasEnemy;//vidas actuales
+        _seiryuBar.GetComponent<SeiryuBar>().SetHealth(_bossLifes);
         if(!_isAttacking)
         {
             _elapsedTime += Time.deltaTime;//Si no esta atacando empieza a contar para hacer el proximo ataque

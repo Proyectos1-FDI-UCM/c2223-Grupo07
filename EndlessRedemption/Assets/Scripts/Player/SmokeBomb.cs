@@ -8,8 +8,6 @@ public class SmokeBomb : MonoBehaviour
     [SerializeField]
     private GameObject _bomb;  
     public float _elapsedTime;
-    [SerializeField]
-    private int _hitsToCharge;
     private float _cooldownElapsed;
     [SerializeField]
     private float _smokeTime;
@@ -28,7 +26,7 @@ public class SmokeBomb : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _smokeAvailable = false;
+        _smokeAvailable = true;
         _elapsedTime = 0;
         _cooldownElapsed = 0;
         _smokeActive = false;
@@ -43,10 +41,10 @@ public class SmokeBomb : MonoBehaviour
         {
             _elapsedTime += Time.deltaTime;
         }
-        
-        if (PlayerPrefs.GetInt("SmokeHits") >= _hitsToCharge)
+        else _cooldownElapsed += Time.deltaTime;
+        if (_cooldownElapsed > _coolDown)
         {
-           
+            _cooldownElapsed = 0;
             _smokeAvailable = true;
         }
         
@@ -66,8 +64,6 @@ public class SmokeBomb : MonoBehaviour
     {
         if(_smokeAvailable && !_smokeActive)
         {
-            PlayerPrefs.SetInt("SmokeHits", 0);
-            GameManager.Instance.WinLife();
             PlayerManager.Instance.Invulnerable(3);
             _instanced =  Instantiate(_bomb, transform.position, Quaternion.identity);
             _smokeActive = true;

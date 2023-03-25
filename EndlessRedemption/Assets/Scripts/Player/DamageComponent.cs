@@ -40,9 +40,8 @@ public class DamageComponent : MonoBehaviour
                 Instantiate(_hitExplosion, _enemyLife.transform.position, Quaternion.identity);
             }
             _enemyLife.vidasEnemy = _enemyLife.vidasEnemy - _damage;
-            if(PlayerPrefs.GetInt("SmokeHits") < 5)
-            PlayerPrefs.SetInt("SmokeHits", PlayerPrefs.GetInt("SmokeHits") + _damage);
-            if (collision.gameObject.GetComponent<EnemyLifeComponent>())//Empuje
+            //if (collision != null) _clip.Play();
+            if (collision.gameObject.GetComponent<EnemyLifeComponent>())
             {
                 _empuje = new Vector3(collision.gameObject.transform.position.x - _myTransform.position.x, collision.gameObject.transform.position.y - _myTransform.position.y);
                 _empuje.Normalize();
@@ -51,7 +50,7 @@ public class DamageComponent : MonoBehaviour
                 collision.gameObject.GetComponent<Rigidbody2D>().AddForce(_empuje * _fuerza, ForceMode2D.Impulse);
             }
             
-            if (_downAttack)//Empuje al jugador
+            if (_downAttack)
             {
                 Instantiate(_DownExplosion, _enemyLife.transform.position, Quaternion.identity);
                 gameObject.GetComponentInParent<MovementComponent>().Up();
@@ -60,7 +59,7 @@ public class DamageComponent : MonoBehaviour
             {
                 Instantiate(_UpExplosion, _enemyLife.transform.position, Quaternion.identity);
             }
-            
+
 
         }
     }

@@ -850,7 +850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 721b0c2452bcbee45a08cab43f7e70cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseMenuObject: {fileID: 5573834193683105494, guid: 0d038428ccf401749854baa6e5889045, type: 3}
+  PauseMenuObject: {fileID: 0}
 --- !u!95 &5064903639783295330
 Animator:
   serializedVersion: 4
@@ -948,7 +948,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bomb: {fileID: 2703695956334035655, guid: 2cbde8517334ab947927af4a25b53d4f, type: 3}
   _elapsedTime: 0
-  _hitsToCharge: 5
   _smokeTime: 3
   _coolDown: 5
   _smokePosition: {x: 0, y: 0, z: 0}

@@ -14,14 +14,17 @@ public class UIManager : MonoBehaviour
     private TMP_Text shurikenText;
     [SerializeField]
     private TMP_Text _dashCooldown;
-    [SerializeField]
-    private TMP_Text _DBJumpCooldown;
-    [SerializeField]
+     [SerializeField]
     private GameObject DashIcon;
     [SerializeField]
     private GameObject DoubleJumpIcon;
     [SerializeField]
     private GameObject ShurikenImage;
+    [SerializeField]
+    private GameObject[] SmokeBomb;
+    [SerializeField]
+    private GameObject _glow;
+    private bool _glowActive;
 
     private void Awake()
     {
@@ -32,6 +35,7 @@ public class UIManager : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("hasDash") == 1) ShowDashIcon();
         if (PlayerPrefs.GetInt("hasDoubleJump") == 1) ShowDoubleJumpIcon();
+        _glowActive = false;
     }
     // Update is called once per frame
     void Update()
@@ -49,10 +53,22 @@ public class UIManager : MonoBehaviour
             _dashCooldown.SetText(" ");//Si dash cargado que no se vea el cooldown
         else//Cooldown dash
         _dashCooldown.SetText("" + Mathf.Round(1 +PlayerManager.Instance.GetComponent<MovementComponent>().Cooldown - PlayerManager.Instance.GetComponent<MovementComponent>()._cooldownElapsed));
-
-        if (Mathf.Round(PlayerManager.Instance.GetComponent<SmokeBomb>().SmokeCoolDown - PlayerManager.Instance.GetComponent<SmokeBomb>()._elapsedTime) == PlayerManager.Instance.GetComponent<SmokeBomb>().SmokeCoolDown)
-            _DBJumpCooldown.SetText(" ");
-        else _DBJumpCooldown.SetText("" + Mathf.Round((PlayerManager.Instance.GetComponent<SmokeBomb>().SmokeCoolDown - 1) - PlayerManager.Instance.GetComponent<SmokeBomb>()._elapsedTime));
+        for (int i = 0; i < SmokeBomb.Length; i++)
+        {
+            if (i == PlayerPrefs.GetInt("SmokeHits"))
+            {
+                SmokeBomb[i].SetActive(true);
+                if(!_glowActive)
+                _glow.SetActive(true);
+            }
+            else
+            {
+                SmokeBomb[i].SetActive(false);
+                if(_glowActive)
+                _glow.SetActive(false);
+            }
+        }
+       
     }
 
     public void ShowDashIcon()

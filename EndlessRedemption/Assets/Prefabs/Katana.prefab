@@ -71,10 +71,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d680697a0988d4aad3c83cc00889c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _mocoPrefab: {fileID: 7592514437684262613, guid: f4c1c4b345a906a45b2a16b77755b590, type: 3}
+  _spiderPrefab: {fileID: 1663019635897616295, guid: 02519316c9e1c0d4fb992e99bb952d34, type: 3}
+  _babyDragonPrefab: {fileID: 8420716314514321815, guid: 5b12ffc9a98d728449a70e83862dc089, type: 3}
+  _soldierPrefab: {fileID: 9171306965319987375, guid: 57cd8379f467aad488848c69fc42068c, type: 3}
+  _dragonPrefab: {fileID: 8420716314514321815, guid: 3fa99bb7c9c69764ea938c6638b5d7e9, type: 3}
+  _bountyHunterPrefab: {fileID: 1808385617853073851, guid: e4c6c11dde6aa7846bb939ce2ae899c6, type: 3}
   _hitExplosion: {fileID: 6242293705543363523, guid: fbf81cea100b62245a2b43c33df45c17, type: 3}
   _UpExplosion: {fileID: 6242293705543363523, guid: fbf81cea100b62245a2b43c33df45c17, type: 3}
   _DownExplosion: {fileID: 6242293705543363523, guid: fbf81cea100b62245a2b43c33df45c17, type: 3}
-  _clip: {fileID: 0}
   _fuerza: 4
   _damage: 1
   _elapsedTime: 0.25

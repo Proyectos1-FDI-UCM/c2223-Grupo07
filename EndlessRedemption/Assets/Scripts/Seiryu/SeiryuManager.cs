@@ -13,9 +13,7 @@ public class SeiryuManager : MonoBehaviour
     private AttackStates _currentAttackState;
     private MovementStates _currentMovementState;
 
-
-    //Propiedades
-    
+    #region properties
     private float _bossSpeed = 1.0f;
     [SerializeField]
     private float _bossSpeed1;
@@ -58,8 +56,9 @@ public class SeiryuManager : MonoBehaviour
     private float _elapsedTime = 0f;
     private float _elapsedAttackTime = 0;
     private float _parabolicIndex;
+    #endregion
 
-    //Referencias
+    #region refernces
     [SerializeField]
     private Transform[] _roomCentre;
     [SerializeField]
@@ -73,6 +72,8 @@ public class SeiryuManager : MonoBehaviour
     private BolasSeiryu _bolasSeiryu;
     [SerializeField]
     private GameObject _seiryuBar;
+    private SoundManager _soundManager;
+    #endregion
 
     //SERGIO
     [SerializeField]
@@ -207,6 +208,7 @@ public class SeiryuManager : MonoBehaviour
         _volcan.enabled = false;
         _bolasSeiryu = GetComponent<BolasSeiryu>();
         _seiryuBar.GetComponent<SeiryuBar>().SetMaxHealth(_bossLifes);
+        _soundManager = FindObjectOfType<SoundManager>();
     }
 
     // Update is called once per frame
@@ -292,6 +294,8 @@ public class SeiryuManager : MonoBehaviour
                         direction.Normalize();
                         bolaDeFuego.GetComponent<Rigidbody2D>().velocity = direction * _bolaDeFuegoSpeed;
                         _elapsedAttack = 0;
+                        _soundManager.SeleccionAudio(17, 0.5f);
+                        _soundManager.SeleccionAudio(18, 0.5f);
                     }
                     _elapsedAttackTime += Time.deltaTime;
                     if (_elapsedAttackTime > _basicTime) ExitState();
@@ -302,11 +306,14 @@ public class SeiryuManager : MonoBehaviour
                         _bolasSeiryu.BolasHorizontales();
                         _bolaInstance = true;
                         _bolasInstance = true;
+                        _soundManager.SeleccionAudio(5, 0.5f);
+                        _soundManager.SeleccionAudio(18, 0.5f);
                     }
                     _elapsedAttack += Time.deltaTime;
                     if (_elapsedAttack > 1.5 && _bolasInstance) {
                         _bolasSeiryu.BolasDiagonales();
                         _bolasInstance = false;
+                        _soundManager.SeleccionAudio(5, 0.5f);
                     }
                     _elapsedAttackTime += Time.deltaTime;
                     if (_elapsedAttackTime > _bolasTime) ExitState();
@@ -318,6 +325,8 @@ public class SeiryuManager : MonoBehaviour
                     _elapsedAttackTime += Time.deltaTime;
                    
                     if (_elapsedAttackTime > _volcanTime) ExitState();
+                    _soundManager.SeleccionAudio(5, 0.5f);
+                    _soundManager.SeleccionAudio(18, 0.5f);
                     break;
 
                 case AttackStates.COLUMNAS:
@@ -330,6 +339,7 @@ public class SeiryuManager : MonoBehaviour
                             _columnas.Invocar();
                             _activeCol = false;
                             _elapsedAttack = 0;
+                            _soundManager.SeleccionAudio(17, 0.5f);
                         }
                        
                     }  
@@ -343,6 +353,7 @@ public class SeiryuManager : MonoBehaviour
                             GameObject pincho = Instantiate(_pinchoPrefab, transform.position, Quaternion.identity);
                             pincho.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-1, 2), Random.Range(-1, 2)) * _pinchoSpeed;
                             _pinchosInstance = true;
+                            _soundManager.SeleccionAudio(2, 0.5f);
                         }
                     }
                     _elapsedAttackTime += Time.deltaTime;

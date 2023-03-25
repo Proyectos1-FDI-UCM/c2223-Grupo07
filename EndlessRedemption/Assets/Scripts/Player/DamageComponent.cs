@@ -40,7 +40,9 @@ public class DamageComponent : MonoBehaviour
                 Instantiate(_hitExplosion, _enemyLife.transform.position, Quaternion.identity);
             }
             _enemyLife.vidasEnemy = _enemyLife.vidasEnemy - _damage;
-            //if (collision != null) _clip.Play();
+            if (PlayerPrefs.GetInt("SmokeHits") < 5)
+                PlayerPrefs.SetInt("SmokeHits", PlayerPrefs.GetInt("SmokeHits") + _damage);
+            
             if (collision.gameObject.GetComponent<EnemyLifeComponent>())
             {
                 _empuje = new Vector3(collision.gameObject.transform.position.x - _myTransform.position.x, collision.gameObject.transform.position.y - _myTransform.position.y);

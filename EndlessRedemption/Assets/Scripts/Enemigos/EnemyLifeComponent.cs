@@ -18,7 +18,13 @@ public class EnemyLifeComponent : MonoBehaviour
     // Start is called before the first frame update
     public void Muerte()
     {
-        vidasEnemy= 0;
+        vidasEnemy = 0;
+        MuerteBool();
+    }
+
+    public bool MuerteBool()
+    {
+        return vidasEnemy == 0;
     }
     void Start()
     {

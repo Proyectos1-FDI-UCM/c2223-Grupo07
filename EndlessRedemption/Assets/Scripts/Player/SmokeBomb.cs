@@ -6,7 +6,7 @@ using UnityEngine.Audio;
 public class SmokeBomb : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _bomb;  
+    private GameObject _bomb;
     public float _elapsedTime;
     [SerializeField]
     private int _hitsToCharge;
@@ -49,8 +49,8 @@ public class SmokeBomb : MonoBehaviour
            
             _smokeAvailable = true;
         }
-        
-        if(_elapsedTime > _smokeTime)
+
+        if (_elapsedTime > _smokeTime)
         {
             _smokeAvailable = false;
             _smokeActive = false;
@@ -64,12 +64,12 @@ public class SmokeBomb : MonoBehaviour
     }
     public void ActivateSmoke()
     {
-        if(_smokeAvailable && !_smokeActive)
+        if (_smokeAvailable && !_smokeActive)
         {
             PlayerPrefs.SetInt("SmokeHits", 0);
             GameManager.Instance.WinLife();
             PlayerManager.Instance.Invulnerable(3);
-            _instanced =  Instantiate(_bomb, transform.position, Quaternion.identity);
+            _instanced = Instantiate(_bomb, transform.position, Quaternion.identity);
             _smokeActive = true;
             _playerTarget = false;
             _smokePosition = transform.position;

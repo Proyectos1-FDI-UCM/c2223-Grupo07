@@ -260,7 +260,7 @@ public class SeiryuManager : MonoBehaviour
             case MovementStates.HUIR:
                 if(!_randomCentreGenerated && _currentAttackState!=AttackStates.COLUMNAS)
                 {
-                    _randomcentre = Random.Range(0, _roomCentre.Length + 1);//elige al punto al que ir
+                    _randomcentre = Random.Range(0, _roomCentre.Length);//elige al punto al que ir
                     _randomCentreGenerated = true;
                 }
                   if(_currentAttackState == AttackStates.COLUMNAS)
@@ -269,7 +269,7 @@ public class SeiryuManager : MonoBehaviour
                     _randomCentreGenerated = true;
                 }
                 
-                _movementDirection = _roomCentre[_randomcentre-1].position - transform.position;//direccion hacia el punto seleccionado
+                _movementDirection = _roomCentre[_randomcentre].position - transform.position;//direccion hacia el punto seleccionado
                 _movementDirection.Normalize();
                 _rigidbody2D.velocity = _movementDirection * _bossSpeed;               
                 break;

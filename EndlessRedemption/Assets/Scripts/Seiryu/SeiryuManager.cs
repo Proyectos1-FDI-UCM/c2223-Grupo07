@@ -167,6 +167,7 @@ public class SeiryuManager : MonoBehaviour
         _isAttacking = false;
         _randomCentreGenerated = false;
         _randomDirectionGenerated = false;
+        _elapsedAttack = 0;
         _bolaInstance = false;
         if (_goCenter)
             _currentMovementState = MovementStates.HUIR;
@@ -177,7 +178,6 @@ public class SeiryuManager : MonoBehaviour
         _animator.SetBool("Fire", false);
         _elapsedTime = 0;
         _timeBetweenAttacks = Random.Range(_minTimeBetweenAttacks, _maxTimeBetweenAttacks + 1);
-        _bolasInstance = false;
         _pinchosInstance = false;
        
 

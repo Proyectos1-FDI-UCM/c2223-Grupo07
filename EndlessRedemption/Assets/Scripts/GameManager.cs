@@ -56,10 +56,14 @@ public class GameManager : MonoBehaviour
     }
     public void WinLife()
     {
-        _lifes++;
-        UIManager.Instance.GanaVidas();
-        Debug.Log("VIDAS: "+ _lifes);
-        _soundManager.SeleccionAudio(10, 0.5f);
+        if(_lifes < _maxLifes)
+        {
+            _lifes++;
+            UIManager.Instance.GanaVidas();
+            Debug.Log("VIDAS: " + _lifes);
+            _soundManager.SeleccionAudio(10, 0.5f);
+        }
+        
     }
     public void Muerte() //Para cuando cae al vacio una entidad
     {

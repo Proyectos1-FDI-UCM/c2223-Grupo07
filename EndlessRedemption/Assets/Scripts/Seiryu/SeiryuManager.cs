@@ -55,7 +55,6 @@ public class SeiryuManager : MonoBehaviour
     private bool _bolasInstance = false;
     private bool _pinchosInstance = false;
 
-
     private float _elapsedTime = 0f;
     private float _elapsedAttackTime = 0;
     private float _parabolicIndex;
@@ -69,10 +68,9 @@ public class SeiryuManager : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private EnemyLifeComponent _lifeComponent;
     private Vector3 _movementDirection;
-    private GameObject _bolaDeFuego2;
-    private GameObject _bolaDeFuego3;
     [SerializeField]
     private GameObject _pinchoPrefab;
+    private BolasSeiryu _bolasSeiryu;
 
     //SERGIO
     [SerializeField]
@@ -106,7 +104,7 @@ public class SeiryuManager : MonoBehaviour
                 _bossSpeed = _bossSpeed1;
                 if(_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(2,3);
+                    _randomAttack = Random.Range(0,2);
                     _currentAttackState = (AttackStates)_randomAttack;//Elige ataque random
                     EnterState(_currentAttackState);
                 }             
@@ -169,6 +167,7 @@ public class SeiryuManager : MonoBehaviour
         _isAttacking = false;
         _randomCentreGenerated = false;
         _randomDirectionGenerated = false;
+        _bolaInstance = false;
         if (_goCenter)
             _currentMovementState = MovementStates.HUIR;
         else
@@ -178,7 +177,6 @@ public class SeiryuManager : MonoBehaviour
         _animator.SetBool("Fire", false);
         _elapsedTime = 0;
         _timeBetweenAttacks = Random.Range(_minTimeBetweenAttacks, _maxTimeBetweenAttacks + 1);
-        _bolaInstance = false;
         _bolasInstance = false;
         _pinchosInstance = false;
        
@@ -205,9 +203,7 @@ public class SeiryuManager : MonoBehaviour
         _animator = GetComponent<Animator>();
         _volcan = GetComponent<ChestController>();
         _volcan.enabled = false;
-
-
-
+        _bolasSeiryu = GetComponent<BolasSeiryu>();
     }
 
     // Update is called once per frame
@@ -294,64 +290,33 @@ public class SeiryuManager : MonoBehaviour
                         _elapsedAttack = 0;
                     }
                     _elapsedAttackTime += Time.deltaTime;
-                    if (_elapsedAttackTime > _basicTime)
-                    {
-                        ExitState();
-                    }
+                    if (_elapsedAttackTime > _basicTime) ExitState();
                     break;
+
                 case AttackStates.BOLAS:
                     if (!_bolaInstance) {
-                        GameObject bolaDeFuego2 = Instantiate(_bolaDeFuego, transform.position, Quaternion.identity);
-                        bolaDeFuego2.GetComponent<Rigidbody2D>().velocity = Vector3.right * _bolaDeFuegoSpeed;
-                        GameObject bolaDeFuego3 = Instantiate(_bolaDeFuego, transform.position, Quaternion.identity);
-                        bolaDeFuego3.GetComponent<Rigidbody2D>().velocity = Vector3.left * _bolaDeFuegoSpeed;
-                        _bolaDeFuego2 = bolaDeFuego2;
-                        _bolaDeFuego3 = bolaDeFuego3;
+                        _bolasSeiryu.BolasHorizontales();
                         _bolaInstance = true;
                         _bolasInstance = true;
                     }
                     _elapsedAttack += Time.deltaTime;
                     if (_elapsedAttack > 1.5 && _bolasInstance) {
-                        GameObject bolaDeFuego4 = Instantiate(_bolaDeFuego, _bolaDeFuego2.transform.position, Quaternion.identity);
-                        bolaDeFuego4.GetComponent<Rigidbody2D>().velocity = Vector3.one * _bolaDeFuegoSpeed;
-                        GameObject bolaDeFuego5 = Instantiate(_bolaDeFuego, _bolaDeFuego2.transform.position, Quaternion.identity);
-                        bolaDeFuego5.GetComponent<Rigidbody2D>().velocity = -Vector3.one * _bolaDeFuegoSpeed;
-                        GameObject bolaDeFuego6 = Instantiate(_bolaDeFuego, _bolaDeFuego2.transform.position, Quaternion.identity);
-                        bolaDeFuego6.GetComponent<Rigidbody2D>().velocity = new Vector2(-1, 1) * _bolaDeFuegoSpeed;
-                        GameObject bolaDeFuego7 = Instantiate(_bolaDeFuego, _bolaDeFuego2.transform.position, Quaternion.identity);
-                        bolaDeFuego7.GetComponent<Rigidbody2D>().velocity = new Vector2(1, -1) * _bolaDeFuegoSpeed;
-                        GameObject bolaDeFuego8 = Instantiate(_bolaDeFuego, _bolaDeFuego3.transform.position, Quaternion.identity);
-                        bolaDeFuego8.GetComponent<Rigidbody2D>().velocity = Vector3.one * _bolaDeFuegoSpeed;
-                        GameObject bolaDeFuego9 = Instantiate(_bolaDeFuego, _bolaDeFuego3.transform.position, Quaternion.identity);
-                        bolaDeFuego9.GetComponent<Rigidbody2D>().velocity = -Vector3.one * _bolaDeFuegoSpeed;
-                        GameObject bolaDeFuego10 = Instantiate(_bolaDeFuego, _bolaDeFuego3.transform.position, Quaternion.identity);
-                        bolaDeFuego10.GetComponent<Rigidbody2D>().velocity = new Vector2(-1, 1) * _bolaDeFuegoSpeed;
-                        GameObject bolaDeFuego11 = Instantiate(_bolaDeFuego, _bolaDeFuego3.transform.position, Quaternion.identity);
-                        bolaDeFuego11.GetComponent<Rigidbody2D>().velocity = new Vector2(1, -1) * _bolaDeFuegoSpeed;
+                        _bolasSeiryu.BolasDiagonales();
                         _bolasInstance = false;
                     }
                     _elapsedAttackTime += Time.deltaTime;
-                    if (_elapsedAttackTime > _bolasTime)
-                    {
-                        ExitState();
-                    }
+                    if (_elapsedAttackTime > _bolasTime) ExitState();
                     break;
+
                 case AttackStates.VOLCAN:
                     _volcan.enabled = true;
 
                     _elapsedAttackTime += Time.deltaTime;
                    
-                    if (_elapsedAttackTime > _volcanTime)
-                    {
-                        ExitState();
-                    }
+                    if (_elapsedAttackTime > _volcanTime) ExitState();
                     break;
+
                 case AttackStates.COLUMNAS:
-
-                    
-
-
-
                     if (_activeCol)
                     {
                         _elapsedAttack += Time.deltaTime;
@@ -364,16 +329,10 @@ public class SeiryuManager : MonoBehaviour
                         }
                        
                     }  
-                        
-
-                    
-
                     _elapsedAttackTime += Time.deltaTime;
-                    if (_elapsedAttackTime > _columnasTime)
-                    {
-                        ExitState();
-                    }
+                    if (_elapsedAttackTime > _columnasTime) ExitState();
                     break;
+
                 case AttackStates.PINCHOS:
                     if (!_pinchosInstance) {
                         for (int i = 0; i < _pinchosExplusados; i++) {
@@ -383,17 +342,12 @@ public class SeiryuManager : MonoBehaviour
                         }
                     }
                     _elapsedAttackTime += Time.deltaTime;
-                    if (_elapsedAttackTime > _pinchosTime)
-                    {
-                        ExitState();
-                    }
+                    if (_elapsedAttackTime > _pinchosTime) ExitState();
                     break;
+
                 case AttackStates.EMBESTIDA:
                     _elapsedAttackTime += Time.deltaTime;
-                    if (_elapsedAttackTime > _embestidaTime)
-                    {
-                        ExitState();
-                    }
+                    if (_elapsedAttackTime > _embestidaTime) ExitState();
                     break;
             }
 

@@ -527,7 +527,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 13
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -551,7 +551,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80796207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.19999953, y: 4.5000014, z: -10}
+  m_LocalPosition: {x: -0.19999929, y: 5.580002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20788,6 +20788,10 @@ PrefabInstance:
       propertyPath: _roomCentre.Array.data[2]
       value: 
       objectReference: {fileID: 717408154}
+    - target: {fileID: -707990864237661690, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
+      propertyPath: _bolaDeFuego
+      value: 
+      objectReference: {fileID: 7655677763705373577, guid: b9153703e2ca9c34a8254be3ff8c2f9a, type: 3}
     - target: {fileID: 3522833807123880488, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
       propertyPath: _trayec
       value: 
@@ -21016,7 +21020,7 @@ MonoBehaviour:
   m_Follow: {fileID: 885996800}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 10
+    OrthographicSize: 13
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0

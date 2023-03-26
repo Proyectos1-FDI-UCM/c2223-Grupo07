@@ -97,8 +97,9 @@ public class GameManager : MonoBehaviour
                 {
                     if (!_hasDeath)
                     {
-                        Instantiate(_playerDeath, _player.transform.position, Quaternion.identity);
-                        _player.SetActive(false);
+                        Instantiate(_playerDeath, PlayerManager.Instance.transform.position, Quaternion.identity);
+                        PlayerManager.Instance.GetComponent<Renderer>().enabled = false;
+                        PlayerManager.Instance.GetComponent<InputComponent>().enabled = false;
                         _hasDeath = true;
                     }
                     _elapsedTime += Time.deltaTime;

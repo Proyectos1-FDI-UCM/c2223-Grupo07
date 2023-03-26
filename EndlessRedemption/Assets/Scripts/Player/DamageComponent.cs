@@ -7,6 +7,18 @@ public class DamageComponent : MonoBehaviour
 {
     #region references
     [SerializeField]
+    private GameObject _mocoPrefab;
+    [SerializeField]
+    private GameObject _spiderPrefab;
+    [SerializeField]
+    private GameObject _babyDragonPrefab;
+    [SerializeField]
+    private GameObject _soldierPrefab;
+    [SerializeField]
+    private GameObject _dragonPrefab;
+    [SerializeField]
+    private GameObject _bountyHunterPrefab;
+    [SerializeField]
     private GameObject _hitExplosion;
     [SerializeField]
     private GameObject _UpExplosion;
@@ -15,7 +27,7 @@ public class DamageComponent : MonoBehaviour
     private AttackComponent _attack;
     private Transform _myTransform;
     private EnemyLifeComponent _enemyLife;
-    public AudioSource _clip;
+    private SoundManager _soundManager;
     #endregion
 
     #region properties
@@ -40,7 +52,9 @@ public class DamageComponent : MonoBehaviour
                 Instantiate(_hitExplosion, _enemyLife.transform.position, Quaternion.identity);
             }
             _enemyLife.vidasEnemy = _enemyLife.vidasEnemy - _damage;
-            //if (collision != null) _clip.Play();
+            if (PlayerPrefs.GetInt("SmokeHits") < 5)
+                PlayerPrefs.SetInt("SmokeHits", PlayerPrefs.GetInt("SmokeHits") + _damage);
+            
             if (collision.gameObject.GetComponent<EnemyLifeComponent>())
             {
                 _empuje = new Vector3(collision.gameObject.transform.position.x - _myTransform.position.x, collision.gameObject.transform.position.y - _myTransform.position.y);
@@ -59,9 +73,13 @@ public class DamageComponent : MonoBehaviour
             {
                 Instantiate(_UpExplosion, _enemyLife.transform.position, Quaternion.identity);
             }
-
-
         }
+        if (collision.gameObject == _mocoPrefab) _soundManager.SeleccionAudio(6, 0.5f);
+        else if (collision.gameObject == _spiderPrefab) _soundManager.SeleccionAudio(1, 0.5f);
+        else if (collision.gameObject == _babyDragonPrefab) _soundManager.SeleccionAudio(13, 0.5f);
+        else if (collision.gameObject == _soldierPrefab) _soundManager.SeleccionAudio(14, 0.5f);
+        else if (collision.gameObject == _dragonPrefab) _soundManager.SeleccionAudio(15, 0.5f);
+        else if (collision.gameObject == _bountyHunterPrefab) _soundManager.SeleccionAudio(16, 0.5f);
     }
     #endregion
 
@@ -70,6 +88,7 @@ public class DamageComponent : MonoBehaviour
     {
         _attack = GetComponentInParent<AttackComponent>();
         _myTransform = transform;
+        _soundManager = FindObjectOfType<SoundManager>();
     }
 
     // Update is called once per frame

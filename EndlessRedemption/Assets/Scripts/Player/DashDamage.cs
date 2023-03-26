@@ -31,6 +31,8 @@ public class DashDamage : MonoBehaviour
         {
             if(other.gameObject.GetComponent<EnemyLifeComponent>())
             {
+                if (PlayerPrefs.GetInt("SmokeHits") < 5)
+                    PlayerPrefs.SetInt("SmokeHits", PlayerPrefs.GetInt("SmokeHits") + _damage);
                 _enemyLife = other.gameObject.GetComponent<EnemyLifeComponent>();
                 Instantiate(_hitParticles, _enemyLife.transform.position, Quaternion.identity);
                 _enemyLife.vidasEnemy = _enemyLife.vidasEnemy - _damage;

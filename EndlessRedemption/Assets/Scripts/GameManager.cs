@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public enum GameStates { START, GAME, PAUSE, RESTART }
     private GameStates _currentState;
-    private string[] _sceneNames = { "Level1", "Level2", "Level3", "Castillo 2"};//Nombres de las escenas
+    private string[] _sceneNames = { "Level1", "Level2", "Level3", "Castillo 2", "Level4 Dragon"};//Nombres de las escenas
     private int _currentScene;
     [SerializeField]
     private Transform[] _checkPoints; //Array con los checkpoints, cada escena tiene los suyos
@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         _player.SetActive(true);
+        PlayerManager.Instance.GetComponent<InputComponent>().enabled = true;
         _currentCheckpoint = PlayerPrefs.GetInt("CheckpointX");
         for(int i = 0; i <= _currentCheckpoint; i++) //Desactivar anteriores
         {
@@ -55,10 +56,14 @@ public class GameManager : MonoBehaviour
     }
     public void WinLife()
     {
-        _lifes++;
-        UIManager.Instance.GanaVidas();
-        Debug.Log("VIDAS: "+ _lifes);
-        _soundManager.SeleccionAudio(10, 0.5f);
+        if(_lifes < _maxLifes)
+        {
+            _lifes++;
+            UIManager.Instance.GanaVidas();
+            Debug.Log("VIDAS: " + _lifes);
+            _soundManager.SeleccionAudio(10, 0.5f);
+        }
+        
     }
     public void Muerte() //Para cuando cae al vacio una entidad
     {
@@ -92,8 +97,9 @@ public class GameManager : MonoBehaviour
                 {
                     if (!_hasDeath)
                     {
-                        Instantiate(_playerDeath, _player.transform.position, Quaternion.identity);
-                        _player.SetActive(false);
+                        Instantiate(_playerDeath, PlayerManager.Instance.transform.position, Quaternion.identity);
+                        PlayerManager.Instance.GetComponent<Renderer>().enabled = false;
+                        PlayerManager.Instance.GetComponent<InputComponent>().enabled = false;
                         _hasDeath = true;
                     }
                     _elapsedTime += Time.deltaTime;

@@ -19,6 +19,7 @@ public class SmokeBomb : MonoBehaviour
     private Animator _animator;
     private GameObject _instanced;
     public Vector3 _smokePosition;
+    private int _hitsToCharge = 5;
     public bool _playerTarget = true;
     public float SmokeCoolDown { get { return _coolDown; } }
 
@@ -26,7 +27,7 @@ public class SmokeBomb : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _smokeAvailable = true;
+        _smokeAvailable = false;
         _elapsedTime = 0;
         _cooldownElapsed = 0;
         _smokeActive = false;
@@ -41,10 +42,9 @@ public class SmokeBomb : MonoBehaviour
         {
             _elapsedTime += Time.deltaTime;
         }
-        else _cooldownElapsed += Time.deltaTime;
-        if (_cooldownElapsed > _coolDown)
-        {
-            _cooldownElapsed = 0;
+        
+        if (PlayerPrefs.GetInt("SmokeHits") >= _hitsToCharge)
+        {           
             _smokeAvailable = true;
         }
         
@@ -64,6 +64,8 @@ public class SmokeBomb : MonoBehaviour
     {
         if(_smokeAvailable && !_smokeActive)
         {
+            PlayerPrefs.SetInt("SmokeHits", 0);
+            GameManager.Instance.WinLife();
             PlayerManager.Instance.Invulnerable(3);
             _instanced =  Instantiate(_bomb, transform.position, Quaternion.identity);
             _smokeActive = true;

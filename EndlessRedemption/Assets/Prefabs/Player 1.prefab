@@ -967,7 +967,7 @@ MonoBehaviour:
   _jumps: 0
   _jumpsAvailable: 1
   _maxFallSpeed: -20
-  _secondJump: {fileID: 1462327970484030, guid: f01c1eba69de19e44b04d8d651aaac37, type: 3}
+  _secondJump: {fileID: 1134129239631916, guid: 7e48ba6b1b968764490bbc70b66e3fe1, type: 3}
   _speed: 1500
   _maxSpeed: 7
   _jumpForce: 15

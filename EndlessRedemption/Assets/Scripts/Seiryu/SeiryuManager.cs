@@ -31,6 +31,8 @@ public class SeiryuManager : MonoBehaviour
     private float _maxTimeBetweenAttacks = 9f;
     [SerializeField]
     private float _pinchoSpeed = 1f;
+    [SerializeField]
+    private float _velocidadEmbestida = 2.5f;
     private float _timeBetweenAttacks;
     private float _basicTime = 6f;
     private float _bolasTime = 3f;
@@ -52,6 +54,7 @@ public class SeiryuManager : MonoBehaviour
     private bool _bolaInstance = false;
     private bool _bolasInstance = false;
     private bool _pinchosInstance = false;
+    private bool _embestida = false;
 
     private float _elapsedTime = 0f;
     private float _elapsedAttackTime = 0;
@@ -107,7 +110,7 @@ public class SeiryuManager : MonoBehaviour
                 _bossSpeed = _bossSpeed1;
                 if(_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(0,2);
+                    _randomAttack = Random.Range(5,6);
                     _currentAttackState = (AttackStates)_randomAttack;//Elige ataque random
                     EnterState(_currentAttackState);
                 }             
@@ -172,6 +175,7 @@ public class SeiryuManager : MonoBehaviour
         _randomDirectionGenerated = false;
         _elapsedAttack = 0;
         _bolaInstance = false;
+        _embestida = false;
         if (_goCenter)
             _currentMovementState = MovementStates.HUIR;
         else
@@ -290,9 +294,9 @@ public class SeiryuManager : MonoBehaviour
                     if (_elapsedAttack > 0.2)
                     {
                         GameObject bolaDeFuego = Instantiate(_bolaDeFuego, transform.position, Quaternion.identity);
-                        Vector3 direction = -transform.position + PlayerManager.Instance.transform.position;
-                        direction.Normalize();
-                        bolaDeFuego.GetComponent<Rigidbody2D>().velocity = direction * _bolaDeFuegoSpeed;
+                        Vector3 directionBola = -transform.position + PlayerManager.Instance.transform.position;
+                        directionBola.Normalize();
+                        bolaDeFuego.GetComponent<Rigidbody2D>().velocity = directionBola * _bolaDeFuegoSpeed;
                         _elapsedAttack = 0;
                         _soundManager.SeleccionAudio(17, 0.5f);
                         _soundManager.SeleccionAudio(18, 0.5f);
@@ -353,7 +357,7 @@ public class SeiryuManager : MonoBehaviour
                             GameObject pincho = Instantiate(_pinchoPrefab, transform.position, Quaternion.identity);
                             pincho.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-1, 2), Random.Range(-1, 2)) * _pinchoSpeed;
                             _pinchosInstance = true;
-                            _soundManager.SeleccionAudio(2, 0.5f);
+                            _soundManager.SeleccionAudio(9, 0.5f);
                         }
                     }
                     _elapsedAttackTime += Time.deltaTime;
@@ -361,11 +365,17 @@ public class SeiryuManager : MonoBehaviour
                     break;
 
                 case AttackStates.EMBESTIDA:
+                    if (!_embestida) {
+                        Vector3 directionSeiryu = PlayerManager.Instance.transform.position - transform.position;
+                        directionSeiryu.Normalize();
+                        GetComponent<Rigidbody2D>().velocity = directionSeiryu * _velocidadEmbestida;
+                        //transform.Translate(directionSeiryu * _velocidadEmbestida);
+                        _embestida = true;
+                    }
                     _elapsedAttackTime += Time.deltaTime;
                     if (_elapsedAttackTime > _embestidaTime) ExitState();
                     break;
             }
-
         }
         
     }

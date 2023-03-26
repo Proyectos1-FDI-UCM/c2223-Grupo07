@@ -551,7 +551,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80796207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.21174105, y: 3.8239512, z: -10}
+  m_LocalPosition: {x: -0.21173914, y: 3.8241458, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20849,6 +20849,14 @@ PrefabInstance:
       propertyPath: _bolaDeFuego
       value: 
       objectReference: {fileID: 7655677763705373577, guid: b9153703e2ca9c34a8254be3ff8c2f9a, type: 3}
+    - target: {fileID: 712856740153923155, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452418100978169687, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 3522833807123880488, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
       propertyPath: _trayec
       value: 
@@ -20909,6 +20917,10 @@ PrefabInstance:
       propertyPath: _roomCentre.Array.data[2]
       value: 
       objectReference: {fileID: 717408154}
+    - target: {fileID: 3532420334875305735, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 3985608430014038905, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -20967,7 +20979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3985608430014038908, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3985608430014038908, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
       propertyPath: m_TagString
@@ -20976,6 +20988,18 @@ PrefabInstance:
     - target: {fileID: 3985608430014038910, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
       propertyPath: m_SortingOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033288492573515289, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7804551358668220526, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296850292079113050, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
+      propertyPath: m_Layer
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 8815068601415067982, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
       propertyPath: _fuego
@@ -21014,7 +21038,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966437008}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.011741638, y: 1.3960505, z: 0}
+  m_LocalPosition: {x: 0.011739731, y: 1.3958559, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

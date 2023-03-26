@@ -110,7 +110,7 @@ public class SeiryuManager : MonoBehaviour
                 _bossSpeed = _bossSpeed1;
                 if(_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(5,6);
+                    _randomAttack = Random.Range(0,6);
                     _currentAttackState = (AttackStates)_randomAttack;//Elige ataque random
                     EnterState(_currentAttackState);
                 }             
@@ -327,10 +327,13 @@ public class SeiryuManager : MonoBehaviour
                     _volcan.enabled = true;
 
                     _elapsedAttackTime += Time.deltaTime;
-                   
-                    if (_elapsedAttackTime > _volcanTime) ExitState();
-                    _soundManager.SeleccionAudio(5, 0.5f);
-                    _soundManager.SeleccionAudio(18, 0.5f);
+
+                    if (_elapsedAttackTime > _volcanTime)
+                    {
+                        ExitState();
+                        _soundManager.SeleccionAudio(5, 0.5f);
+                        _soundManager.SeleccionAudio(18, 0.5f);
+                    }
                     break;
 
                 case AttackStates.COLUMNAS:

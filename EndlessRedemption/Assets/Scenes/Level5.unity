@@ -551,7 +551,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80796207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.4956226, y: 4.039734, z: -10}
+  m_LocalPosition: {x: -0.21173914, y: 3.8240638, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20744,6 +20744,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3741846880632254315, guid: b4efe30ac8e5019488ad46eba3d07661, type: 3}
+      propertyPath: m_Value
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 5983950569132715339, guid: b4efe30ac8e5019488ad46eba3d07661, type: 3}
       propertyPath: m_Name
       value: SeiryuBar
@@ -20799,6 +20803,14 @@ PrefabInstance:
     - target: {fileID: 9079090939718378861, guid: b4efe30ac8e5019488ad46eba3d07661, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9079090939718378861, guid: b4efe30ac8e5019488ad46eba3d07661, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.7944946
+      objectReference: {fileID: 0}
+    - target: {fileID: 9079090939718378861, guid: b4efe30ac8e5019488ad46eba3d07661, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4efe30ac8e5019488ad46eba3d07661, type: 3}
@@ -21098,7 +21110,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966437008}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.295624, y: 1.1802678, z: 0}
+  m_LocalPosition: {x: 0.011739731, y: 1.3959379, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

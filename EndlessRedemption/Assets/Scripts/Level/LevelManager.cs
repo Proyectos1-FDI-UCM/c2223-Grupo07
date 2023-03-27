@@ -27,6 +27,7 @@ public class LevelManager : MonoBehaviour
                 break;
             case 5:
                 SceneManager.LoadScene("Level5");
+                break;
             default:
                 break;           
         }

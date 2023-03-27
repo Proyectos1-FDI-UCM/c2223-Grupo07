@@ -551,7 +551,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80796207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.21173914, y: 3.8241458, z: -10}
+  m_LocalPosition: {x: -0.21173914, y: 3.8240638, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21038,7 +21038,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966437008}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.011739731, y: 1.3958559, z: 0}
+  m_LocalPosition: {x: 0.011739731, y: 1.3959379, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23537,7 +23537,7 @@ MonoBehaviour:
   - {fileID: 729437910}
   _currentCheckpoint: 0
   _lifes: 3
-  _currenShurikens: 30
+  _currenShurikens: 0
   _maxShurikens: 30
   _hasShurikensBag: 0
   _maxLifes: 5

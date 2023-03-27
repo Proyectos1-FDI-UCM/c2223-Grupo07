@@ -74347,7 +74347,7 @@ MonoBehaviour:
   - {fileID: 1189400667}
   _currentCheckpoint: 0
   _lifes: 3
-  _currenShurikens: 30
+  _currenShurikens: 0
   _maxShurikens: 0
   _hasShurikensBag: 0
   _maxLifes: 5
@@ -113032,7 +113032,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2524647105572618080, guid: cd0abd01448b140438a6af81c3b2e41a, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd0abd01448b140438a6af81c3b2e41a, type: 3}

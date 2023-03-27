@@ -1902,7 +1902,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: con la tecla q lanzas una bomba de humo en tu posicion que te vuelve invulnerable
-    durante unos segundos y atrae a los enemigos
+    durante unos segundos, atrae a los enemigos y te regenera una vida.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b984ea028a27f8042b5ac73ab4d3fdcf, type: 2}
   m_sharedMaterial: {fileID: -2388327907754561420, guid: b984ea028a27f8042b5ac73ab4d3fdcf, type: 2}

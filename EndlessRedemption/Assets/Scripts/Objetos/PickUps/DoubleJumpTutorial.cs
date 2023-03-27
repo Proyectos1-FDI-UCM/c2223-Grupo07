@@ -9,11 +9,6 @@ public class DoubleJumpTutorial : MonoBehaviour
     private float _doublejumpTime = 0.5f;//Para desactivarlo solo cuando haya hecho un doble salto
     private float _doublejumpAnimationTime = 10f;//Para cuando termine la animacion al cogerlo
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -21,12 +16,12 @@ public class DoubleJumpTutorial : MonoBehaviour
         _elapsedTime += Time.deltaTime;
         if(_elapsedTime > _doublejumpAnimationTime)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump"))
             {
                 _elapsedTime2 += Time.deltaTime;
                 if (_elapsedTime2 < _doublejumpTime)
                 {
-                    if (Input.GetKeyDown(KeyCode.Space))
+                    if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump"))
                     {
                         gameObject.SetActive(false);
                     }

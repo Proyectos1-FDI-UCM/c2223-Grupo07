@@ -32,25 +32,25 @@ public class TutorialManager : MonoBehaviour
         switch (i)//cada caja de texto desaparece para dar paso a la siguiente dependiendo del input que coincide con la mecánica enseñada
         {
             case 0:
-                if(Input.GetKey(KeyCode.A))
+                if(Input.GetKey(KeyCode.A) || Input.GetAxis("StickHorizontal") == -1)
                 {
                      ClickBox();
                 }
                 break;
             case 1:
-                if (Input.GetKeyDown(KeyCode.Space))
+                if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump"))
                 {
                     ClickBox();
                 }
                 break;
             case 2:
-                if (Input.GetKeyDown(KeyCode.Mouse0))
+                if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetButtonDown("Square"))
                 {
                     ClickBox();
                 }
                 break;
             case 3:
-                if (Input.GetKeyDown(KeyCode.Q))
+                if (Input.GetKeyDown(KeyCode.Q) || Input.GetButtonDown("Triangle"))
                 {
                     ClickBox();
                 }

@@ -7,19 +7,13 @@ public class DashTutorial : MonoBehaviour
     private float _elapsedTime = 0;
     private float _dashAnimationTime = 10f;//Para cuando termine la animacion al cogerlo
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
         _elapsedTime += Time.deltaTime;
         if (_elapsedTime > _dashAnimationTime)
         {
-            if (Input.GetKeyDown(KeyCode.LeftShift))
+            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetButtonDown("R2"))
             {
                 gameObject.SetActive(false);
             }

@@ -23,8 +23,10 @@ public class LevelManager : MonoBehaviour
                 SceneManager.LoadScene("Level3");
                 break;
             case 4:
-                SceneManager.LoadScene("Level4 Dragon");
+                SceneManager.LoadScene("Level4");
                 break;
+            case 5:
+                SceneManager.LoadScene("Level5");
             default:
                 break;           
         }

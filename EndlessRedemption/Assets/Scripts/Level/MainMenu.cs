@@ -7,17 +7,17 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayNormalGame()
     {
-        SceneManager.LoadScene("Level1"); //Cargar juego en modo normal
         PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("Lifes", 3);
+        PlayerPrefs.SetInt("Shurikens", 15);
+        SceneManager.LoadScene("Level1"); //Cargar juego en modo normal      
     }
 
     public void PlayNightmareGame()
     {
-       
-        SceneManager.LoadScene("Level1"); //Cargar juego en modo pesadilla
-        GameManager.Instance._maxLifes = 3;
-        GameManager.Instance._maxShurikens = 10;
-
+        PlayerPrefs.SetInt("Lifes", 3);
+        PlayerPrefs.SetInt("Shurikens", 15);
+        SceneManager.LoadScene("Level1"); //Cargar juego en modo pesadilla    
     }
 
     public void QuitGame()

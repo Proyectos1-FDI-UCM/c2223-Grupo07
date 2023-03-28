@@ -41,6 +41,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         _player.SetActive(true);
+        _maxLifes = PlayerPrefs.GetInt("Lifes");
+        _maxShurikens = PlayerPrefs.GetInt("Shurikens");
         PlayerManager.Instance.GetComponent<InputComponent>().enabled = true;
         _currentCheckpoint = PlayerPrefs.GetInt("CheckpointX");
         for(int i = 0; i <= _currentCheckpoint; i++) //Desactivar anteriores

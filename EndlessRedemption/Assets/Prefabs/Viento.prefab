@@ -157,4 +157,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _right: 1
-  _windForce: 0.3
+  _windForce: 0.2

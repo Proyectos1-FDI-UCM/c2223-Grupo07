@@ -10,7 +10,7 @@ public class SeiryuManager : MonoBehaviour
     public enum BossStates { MOLESTO, ENFADADO, FURIOSO}
     public enum AttackStates { BASICO, BOLAS, VOLCAN, PINCHOS,COLUMNAS , EMBESTIDA}
     public enum MovementStates { HUIR, RANDOM, QUIETO, EMBESTIDA}
-    private BossStates _currentBossState;
+    public BossStates _currentBossState;
     private AttackStates _currentAttackState;
     private MovementStates _currentMovementState;
 

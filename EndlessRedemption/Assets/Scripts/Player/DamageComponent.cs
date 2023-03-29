@@ -53,7 +53,11 @@ public class DamageComponent : MonoBehaviour
             }
             _enemyLife.vidasEnemy = _enemyLife.vidasEnemy - _damage;
             if (PlayerPrefs.GetInt("SmokeHits") < 5)
-                PlayerPrefs.SetInt("SmokeHits", PlayerPrefs.GetInt("SmokeHits") + _damage);
+                if (!collision.gameObject.GetComponent<SeiryuManager>())
+                {
+                    PlayerPrefs.SetInt("SmokeHits", PlayerPrefs.GetInt("SmokeHits") + _damage);
+                }
+                
             
             if (collision.gameObject.GetComponent<EnemyLifeComponent>())
             {
@@ -73,6 +77,8 @@ public class DamageComponent : MonoBehaviour
             {
                 Instantiate(_UpExplosion, _enemyLife.transform.position, Quaternion.identity);
             }
+            _attack.EndOfAttack();
+            Destroy(gameObject);
         }
         if (collision.gameObject == _mocoPrefab) _soundManager.SeleccionAudio(6, 0.5f);
         else if (collision.gameObject == _spiderPrefab) _soundManager.SeleccionAudio(1, 0.5f);
@@ -80,6 +86,7 @@ public class DamageComponent : MonoBehaviour
         else if (collision.gameObject == _soldierPrefab) _soundManager.SeleccionAudio(14, 0.5f);
         else if (collision.gameObject == _dragonPrefab) _soundManager.SeleccionAudio(15, 0.5f);
         else if (collision.gameObject == _bountyHunterPrefab) _soundManager.SeleccionAudio(16, 0.5f);
+       
     }
     #endregion
 

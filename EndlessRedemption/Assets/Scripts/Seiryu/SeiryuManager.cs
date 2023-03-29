@@ -112,7 +112,7 @@ public class SeiryuManager : MonoBehaviour
                 _bossSpeed = _bossSpeed1;
                 if(_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(5,6);
+                    _randomAttack = Random.Range(0,6);
                     _currentAttackState = (AttackStates)_randomAttack;//Elige ataque random
                     EnterState(_currentAttackState);
                 }             
@@ -232,6 +232,7 @@ public class SeiryuManager : MonoBehaviour
 
         ChooseAttack(_currentBossState);//Logica de selleccion de estados
         _bossLifes = _lifeComponent.vidasEnemy;//vidas actuales
+        Debug.Log(_bossLifes);
         _seiryuBar.GetComponent<SeiryuBar>().SetHealth(_bossLifes);
         if(!_isAttacking)
         {

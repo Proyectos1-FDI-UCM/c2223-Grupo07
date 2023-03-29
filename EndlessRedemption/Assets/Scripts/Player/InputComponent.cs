@@ -118,5 +118,15 @@ public class InputComponent : MonoBehaviour
             PlayerPrefs.SetInt("CheckpointX", 0);
             Debug.Log("Checkpoint:" + PlayerPrefs.GetInt("CheckpointX"));
         }
+        if(Input.GetKeyDown(KeyCode.U))
+        {
+            PlayerPrefs.SetInt("hasDash", 1);
+            PlayerManager.Instance.GetComponent<MovementComponent>()._dashPickUp = true;
+        }
+        if(Input.GetKeyDown(KeyCode.J)) 
+        {
+            PlayerManager.Instance.GetComponent<MovementComponent>()._jumpsAvailable++;
+            PlayerPrefs.SetInt("hasDoubleJump", 1);
+        }
     }
 }

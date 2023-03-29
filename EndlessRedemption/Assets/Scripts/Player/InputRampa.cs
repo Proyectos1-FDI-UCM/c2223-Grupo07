@@ -14,7 +14,7 @@ public class InputRampa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump"));
         {
             _myMovementComponent.Jump();
         }

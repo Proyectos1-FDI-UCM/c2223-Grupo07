@@ -27,6 +27,8 @@ public class DamageComponent : MonoBehaviour
     private AttackComponent _attack;
     private Transform _myTransform;
     private EnemyLifeComponent _enemyLife;
+    
+
     private SoundManager _soundManager;
     #endregion
 
@@ -73,7 +75,8 @@ public class DamageComponent : MonoBehaviour
                 Instantiate(_DownExplosion, _enemyLife.transform.position, Quaternion.identity);
                 gameObject.GetComponentInParent<MovementComponent>().Up();
                 _downAttack = false;
-            }else if (_upAttack)
+            }
+            else if (_upAttack)
             {
                 Instantiate(_UpExplosion, _enemyLife.transform.position, Quaternion.identity);
             }
@@ -96,6 +99,7 @@ public class DamageComponent : MonoBehaviour
         _attack = GetComponentInParent<AttackComponent>();
         _myTransform = transform;
         _soundManager = FindObjectOfType<SoundManager>();
+
     }
 
     // Update is called once per frame

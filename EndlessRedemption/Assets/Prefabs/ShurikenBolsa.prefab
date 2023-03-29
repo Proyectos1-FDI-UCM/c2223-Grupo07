@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8891679913973516154}
   - component: {fileID: 3535239194891633343}
   - component: {fileID: 6301727505482869173}
-  - component: {fileID: -4508655499266754231}
   - component: {fileID: -4953915460907209782}
   - component: {fileID: 1508794225255649019}
+  - component: {fileID: 118223993716234415}
   m_Layer: 0
   m_Name: ShurikenBolsa
   m_TagString: Untagged
@@ -47,7 +47,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0036980808, y: 0.029581912}
@@ -127,20 +127,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-4508655499266754231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7912549995762480900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7205d32295ea71449d49dd4ae78c85a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _spawnForce: 300
-  availableTime: 0.5
 --- !u!50 &-4953915460907209782
 Rigidbody2D:
   serializedVersion: 4
@@ -161,7 +147,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &1508794225255649019
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -172,9 +158,23 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.53125}
   serializedVersion: 2
   m_Radius: 0.53125
+--- !u!114 &118223993716234415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7912549995762480900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7205d32295ea71449d49dd4ae78c85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnForce: 200
+  availableTime: 0.5

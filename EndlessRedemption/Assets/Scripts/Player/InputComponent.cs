@@ -31,15 +31,14 @@ public class InputComponent : MonoBehaviour
             _movementComponent.Jump();
         }
         // Sistema de movimiento
-        if (Input.GetKey(KeyCode.D) || Input.GetAxis("StickHorizontal") == 1)
+        if (Input.GetKey(KeyCode.D) || Input.GetAxis("StickHorizontal") >= 0.7)
         {
             _movementComponent.Right();
 
         }
-        else if (Input.GetKey(KeyCode.A) || Input.GetAxis("StickHorizontal") == -1)
+        else if (Input.GetKey(KeyCode.A) || Input.GetAxis("StickHorizontal") <= -0.7)
         {
             _movementComponent.Left();
-
         }
         //Dash
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetButtonDown("R2"))
@@ -54,18 +53,17 @@ public class InputComponent : MonoBehaviour
         //Ataque
         if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetButtonDown("Square"))
         {
-            if(Input.GetAxis("StickVertical") == 1)
+            if(Input.GetAxis("StickVertical") >=0.7)
             {
                 _attack.UpAttack();
             }
-            else if(Input.GetAxis("StickVertical") == -1)
+            else if(Input.GetAxis("StickVertical") <= -0.7)
             {
                 _attack.DownAttack();
             }
             else
             {
                 _attack.HorizontalAttack();
-
             }
         }
         else if (Input.GetKeyDown(KeyCode.W))
@@ -77,11 +75,11 @@ public class InputComponent : MonoBehaviour
             _attack.DownAttack();
         }
        //Lanzamiento shuriken
-        if((Input.GetKey(KeyCode.W) && Input.GetKeyDown(KeyCode.Mouse1)) || (Input.GetButtonDown("R1")&& Input.GetAxis("StickVertical") == 1))
+        if((Input.GetKey(KeyCode.W) && Input.GetKeyDown(KeyCode.Mouse1)) || (Input.GetButtonDown("R1")&& Input.GetAxis("StickVertical") >= 0.7))
         {
             _shurikenLauncher.UpThrow();
         }
-        else if ((Input.GetKey(KeyCode.S) && Input.GetKeyDown(KeyCode.Mouse1)) || (Input.GetButtonDown("R1") && Input.GetAxis("StickVertical") == -1))
+        else if ((Input.GetKey(KeyCode.S) && Input.GetKeyDown(KeyCode.Mouse1)) || (Input.GetButtonDown("R1") && Input.GetAxis("StickVertical") <= -0.7))
         {
             _shurikenLauncher.DownThrow();
         }

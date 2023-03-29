@@ -9,19 +9,15 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private GameObject _dragon;
 
-    private float _time = 10f;
+    private float _time = 15f;
     private float _elapsed = 0f;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        _elapsed+= Time.deltaTime;
+        _elapsed += Time.deltaTime;
         if(_elapsed > _time)
         {
             for (int i = 0; i < _roomCentre.Length; i++)

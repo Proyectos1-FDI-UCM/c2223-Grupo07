@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 //using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ public class SeiryuManager : MonoBehaviour
     //Estados
     public enum BossStates { MOLESTO, ENFADADO, FURIOSO}
     public enum AttackStates { BASICO, BOLAS, VOLCAN, PINCHOS,COLUMNAS , EMBESTIDA}
-    public enum MovementStates { HUIR, RANDOM, QUIETO}
+    public enum MovementStates { HUIR, RANDOM, QUIETO, EMBESTIDA}
     private BossStates _currentBossState;
     private AttackStates _currentAttackState;
     private MovementStates _currentMovementState;
@@ -39,6 +40,7 @@ public class SeiryuManager : MonoBehaviour
     private float _volcanTime = 2.0f;
     private float _columnasTime = 6f;
     private float _pinchosTime = 1f;
+    [SerializeField]
     private float _embestidaTime = 2f;
     private float _elapsedAttack = 0f;
     [SerializeField]
@@ -110,7 +112,7 @@ public class SeiryuManager : MonoBehaviour
                 _bossSpeed = _bossSpeed1;
                 if(_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(0,6);
+                    _randomAttack = Random.Range(5,6);
                     _currentAttackState = (AttackStates)_randomAttack;//Elige ataque random
                     EnterState(_currentAttackState);
                 }             
@@ -150,6 +152,11 @@ public class SeiryuManager : MonoBehaviour
         {
             _animator.SetBool("Moving", false);
             _animator.SetBool("Fire", true);
+        }
+        else if (_currentAttackState == AttackStates.EMBESTIDA)
+        {
+            _animator.SetBool("Moving", false);
+            _currentMovementState = MovementStates.EMBESTIDA;
         }
         else
         {
@@ -283,6 +290,20 @@ public class SeiryuManager : MonoBehaviour
                 _movementDirection.Normalize();
                 _rigidbody2D.velocity = _movementDirection * _bossSpeed;               
                 break;
+
+            case MovementStates.EMBESTIDA:
+                if (!_embestida)
+                {
+                    Vector3 directionSeiryu = PlayerManager.Instance.transform.position - transform.position;
+                    directionSeiryu.Normalize();
+                    GetComponent<Rigidbody2D>().velocity = directionSeiryu * _velocidadEmbestida;
+                    //transform.Translate(directionSeiryu * _velocidadEmbestida);
+                    _embestida = true;
+                }
+                _elapsedAttackTime += Time.deltaTime;
+                if (_elapsedAttackTime > _embestidaTime) ExitState();
+                break;
+
         }
 
         if (_isAttacking)//Ataque
@@ -368,15 +389,7 @@ public class SeiryuManager : MonoBehaviour
                     break;
 
                 case AttackStates.EMBESTIDA:
-                    if (!_embestida) {
-                        Vector3 directionSeiryu = PlayerManager.Instance.transform.position - transform.position;
-                        directionSeiryu.Normalize();
-                        GetComponent<Rigidbody2D>().velocity = directionSeiryu * _velocidadEmbestida;
-                        //transform.Translate(directionSeiryu * _velocidadEmbestida);
-                        _embestida = true;
-                    }
-                    _elapsedAttackTime += Time.deltaTime;
-                    if (_elapsedAttackTime > _embestidaTime) ExitState();
+                    _soundManager.SeleccionAudio(17, 0.5f);
                     break;
             }
         }

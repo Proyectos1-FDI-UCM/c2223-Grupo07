@@ -44,6 +44,7 @@ public class ChestController : MonoBehaviour
             for (int i = 0; i < _ShurikensSpawned; i++)
             {
                 Instantiate(_pickUp, transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+                if(!GetComponent<EnemyLifeComponent>())
                 shurikenTutorial.SetActive(true);
             }
         }

@@ -157,6 +157,7 @@ public class SeiryuManager : MonoBehaviour
         {
             _animator.SetBool("Moving", false);
             _currentMovementState = MovementStates.EMBESTIDA;
+            _soundManager.SeleccionAudio(17, 0.5f);
         }
         else
         {
@@ -390,7 +391,7 @@ public class SeiryuManager : MonoBehaviour
                     break;
 
                 case AttackStates.EMBESTIDA:
-                    _soundManager.SeleccionAudio(17, 0.5f);
+                    
                     break;
             }
         }

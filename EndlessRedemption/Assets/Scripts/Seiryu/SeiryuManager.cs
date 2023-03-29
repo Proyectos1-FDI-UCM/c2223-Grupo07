@@ -63,7 +63,7 @@ public class SeiryuManager : MonoBehaviour
     private float _parabolicIndex;
     #endregion
 
-    #region refernces
+    #region references
     [SerializeField]
     private Transform[] _roomCentre;
     [SerializeField]
@@ -91,6 +91,7 @@ public class SeiryuManager : MonoBehaviour
 
     static private SeiryuManager _instance;
     static public SeiryuManager Instance { get { return _instance; } }
+    private SpriteRenderer _spriteRenderer;//Para cambiar de color en función del estado
 
 
 
@@ -101,7 +102,7 @@ public class SeiryuManager : MonoBehaviour
 
 
 
-    //Metodos
+    #region Methods
     public void ChooseAttack(BossStates bossState)//Seleccion de estado de ataque segun el boss state
     {
         switch (bossState)
@@ -117,6 +118,7 @@ public class SeiryuManager : MonoBehaviour
                 break;
             case BossStates.ENFADADO:
                 _bossSpeed = _bossSpeed2;
+                _spriteRenderer.color = Color.magenta;
                 if (_elapsedTime > _timeBetweenAttacks)
                 {
                     _randomAttack = Random.Range(1, 4);
@@ -126,6 +128,7 @@ public class SeiryuManager : MonoBehaviour
                 break;
             case BossStates.FURIOSO:
                 _bossSpeed = _bossSpeed3;
+                _spriteRenderer.color = Color.red;
                 if (_elapsedTime > _timeBetweenAttacks)
                 {
                     _randomAttack = Random.Range(2, 6);
@@ -202,6 +205,7 @@ public class SeiryuManager : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
     }
+    #endregion
 
     // Start is called before the first frame update
     void Start()
@@ -219,6 +223,8 @@ public class SeiryuManager : MonoBehaviour
         _bolasSeiryu = GetComponent<BolasSeiryu>();
         SeiryuBar.Instance.SetMaxHealth(_bossLifes);
         _soundManager = FindObjectOfType<SoundManager>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+
     }
 
     // Update is called once per frame
@@ -229,10 +235,10 @@ public class SeiryuManager : MonoBehaviour
         else if (_rigidbody2D.velocity.x < 0 && transform.localScale.x > 0)
             Girar();
 
-        ChooseAttack(_currentBossState);//Logica de selleccion de estados
+        ChooseAttack(_currentBossState);//Logica de seleccion de estados
         _bossLifes = _lifeComponent.vidasEnemy;//vidas actuales
         Debug.Log(_bossLifes);
-        SeiryuBar.Instance.SetHealth(_bossLifes);
+        SeiryuBar.Instance.SetHealth(_bossLifes);//Barra de vida
         if(!_isAttacking)
         {
             _elapsedTime += Time.deltaTime;//Si no esta atacando empieza a contar para hacer el proximo ataque
@@ -280,9 +286,9 @@ public class SeiryuManager : MonoBehaviour
                     _randomcentre = Random.Range(0, _roomCentre.Length);//elige al punto al que ir
                     _randomCentreGenerated = true;
                 }
-                  if(_currentAttackState == AttackStates.COLUMNAS)
+                if(_currentAttackState == AttackStates.COLUMNAS)
                 {
-                    _randomcentre =1;
+                    _randomcentre = 1;
                     _randomCentreGenerated = true;
                 }
                 

@@ -17,7 +17,7 @@ public class EnemyDetectionComponent : MonoBehaviour
     {
         _directionRight = false;
         _attacking = false;
-        _playerTransform = PlayerManager.Instance.transform;
+        _playerTransform = PlayerManager.Instance.gameObject.transform;
         _enemyManager = GetComponent<EnemyManager>(); 
         _mySmokeBomb = FindObjectOfType<SmokeBomb>();
     }
@@ -34,19 +34,16 @@ public class EnemyDetectionComponent : MonoBehaviour
                 _attacking = true;
                 transform.Translate(_vectorDirection * Time.fixedDeltaTime * _enemySpeed);
             }
-            else
-            {
-                _attacking = false;
-            }
-            if (_vectorDirection.x > 0&& transform.localScale.x>0)
-            {
-                _enemyManager.Girar();            }
-            if (_vectorDirection.x < 0 && transform.localScale.x < 0)
+            if (_vectorDirection.x > 0 && transform.localScale.x > 0)
             {
                 _enemyManager.Girar();
             }
+            if (_vectorDirection.x < 0 && transform.localScale.x < 0)
+            {
+                _enemyManager.Girar();
+            }    
         }
-        else if(!_mySmokeBomb._playerTarget)
+        else if(!_mySmokeBomb._playerTarget && Mathf.Abs(_playerTransform.position.x - transform.position.x) < EnemyManager.Instance._appearingDistance)
         {
             _vectorDirection = _mySmokeBomb._smokePosition - transform.position;
             _vectorDirection.Normalize();

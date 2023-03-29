@@ -35,10 +35,6 @@ public class AttackComponent : MonoBehaviour
             item.transform.parent = gameObject.transform;
             _soundManager.SeleccionAudio(0, 0.5f);
         }
-    
-
-             
-
     }
     public void DownAttack()
     {
@@ -91,7 +87,5 @@ public class AttackComponent : MonoBehaviour
         _myDownTransform = gameObject.transform.GetChild(5);
         _soundManager = FindObjectOfType<SoundManager>();
     }
-
-    // Update is called once per frame
    
 }

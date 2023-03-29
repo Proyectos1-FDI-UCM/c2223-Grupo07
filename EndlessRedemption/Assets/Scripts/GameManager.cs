@@ -53,8 +53,9 @@ public class GameManager : MonoBehaviour
         PlayerManager.Instance.transform.position = new Vector3 (_checkPoints[_currentCheckpoint].position.x, _checkPoints[_currentCheckpoint].position.y, _checkPoints[_currentCheckpoint].position.z); //Mover al jugador a la posicion del checkpoint
         _currentScene = PlayerPrefs.GetInt("LevelX");
         _currentState = GameStates.GAME;
-
         _soundManager = FindObjectOfType<SoundManager>();
+
+        if(_currentScene == 0 && _currentCheckpoint == 0) PlayerPrefs.SetInt("SmokeHits", 5);//Para tener la bomba de humo al principio;
     }
     public void WinLife()
     {

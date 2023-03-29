@@ -53,11 +53,11 @@ public class InputComponent : MonoBehaviour
         //Ataque
         if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetButtonDown("Square"))
         {
-            if(Input.GetAxis("StickVertical") >=0.7)
+            if(Input.GetAxis("StickVertical") >=0.5)
             {
                 _attack.UpAttack();
             }
-            else if(Input.GetAxis("StickVertical") <= -0.7)
+            else if(Input.GetAxis("StickVertical") <= -0.5)
             {
                 _attack.DownAttack();
             }

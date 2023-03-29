@@ -119794,6 +119794,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: thing1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7592514437684262613, guid: f4c1c4b345a906a45b2a16b77755b590, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7592514437684262613, guid: f4c1c4b345a906a45b2a16b77755b590, type: 3}
+      propertyPath: m_TagString
+      value: Moco
+      objectReference: {fileID: 0}
     - target: {fileID: 7592514437684262617, guid: f4c1c4b345a906a45b2a16b77755b590, type: 3}
       propertyPath: m_Size.y
       value: 0.2

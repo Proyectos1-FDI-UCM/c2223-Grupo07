@@ -74,9 +74,7 @@ public class SeiryuManager : MonoBehaviour
     private Vector3 _movementDirection;
     [SerializeField]
     private GameObject _pinchoPrefab;
-    private BolasSeiryu _bolasSeiryu;
-    [SerializeField]
-    private GameObject _seiryuBar;
+    private BolasSeiryu _bolasSeiryu;    
     private SoundManager _soundManager;
     #endregion
 
@@ -219,7 +217,7 @@ public class SeiryuManager : MonoBehaviour
         _volcan = GetComponent<ChestController>();
         _volcan.enabled = false;
         _bolasSeiryu = GetComponent<BolasSeiryu>();
-        _seiryuBar.GetComponent<SeiryuBar>().SetMaxHealth(_bossLifes);
+        SeiryuBar.Instance.SetMaxHealth(_bossLifes);
         _soundManager = FindObjectOfType<SoundManager>();
     }
 
@@ -234,7 +232,7 @@ public class SeiryuManager : MonoBehaviour
         ChooseAttack(_currentBossState);//Logica de selleccion de estados
         _bossLifes = _lifeComponent.vidasEnemy;//vidas actuales
         Debug.Log(_bossLifes);
-        _seiryuBar.GetComponent<SeiryuBar>().SetHealth(_bossLifes);
+        SeiryuBar.Instance.SetHealth(_bossLifes);
         if(!_isAttacking)
         {
             _elapsedTime += Time.deltaTime;//Si no esta atacando empieza a contar para hacer el proximo ataque

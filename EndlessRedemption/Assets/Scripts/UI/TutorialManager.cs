@@ -13,6 +13,7 @@ public class TutorialManager : MonoBehaviour
     private float _boxTime = 1f;
     private bool _boxClicked = false;
     private int i = 0; //indice del array
+    public SmokeBomb smokeBomb;
 
     public void ClickBox()
     {
@@ -25,6 +26,7 @@ public class TutorialManager : MonoBehaviour
     {
         _tutorial.SetActive(true);
     }
+
 
     // Update is called once per frame
     void Update()
@@ -50,9 +52,10 @@ public class TutorialManager : MonoBehaviour
                 }
                 break;
             case 3:
-                if (Input.GetKeyDown(KeyCode.Q) || Input.GetButtonDown("Triangle"))
+                if ((Input.GetKeyDown(KeyCode.Q) || Input.GetButtonDown("Triangle")) && smokeBomb._smokeAvailable)
                 {
                     ClickBox();
+                    smokeBomb._smokeAvailable = false;  
                 }
                 break;
         }

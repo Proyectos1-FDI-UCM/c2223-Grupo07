@@ -14,7 +14,7 @@ public class SmokeBomb : MonoBehaviour
     [SerializeField]
     private float _coolDown;
     private bool _smokeActive;
-    private bool _smokeAvailable;
+    public bool _smokeAvailable;
     [Header("Animation")]
     private Animator _animator;
     private GameObject _instanced;
@@ -43,10 +43,10 @@ public class SmokeBomb : MonoBehaviour
             _elapsedTime += Time.deltaTime;
         }
         
-        if (PlayerPrefs.GetInt("SmokeHits") >= _hitsToCharge)
+       /* if (PlayerPrefs.GetInt("SmokeHits") >= _hitsToCharge)
         {           
             _smokeAvailable = true;
-        }
+        }*/
         
         if(_elapsedTime > _smokeTime)
         {
@@ -72,6 +72,7 @@ public class SmokeBomb : MonoBehaviour
             _playerTarget = false;
             _smokePosition = transform.position;
             _soundManager.SeleccionAudio(2, 0.5f);
+            
         }
     }
 }

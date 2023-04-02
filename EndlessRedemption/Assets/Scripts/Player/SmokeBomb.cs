@@ -43,10 +43,10 @@ public class SmokeBomb : MonoBehaviour
             _elapsedTime += Time.deltaTime;
         }
         
-       /* if (PlayerPrefs.GetInt("SmokeHits") >= _hitsToCharge)
+        if (PlayerPrefs.GetInt("SmokeHits") >= _hitsToCharge)
         {           
             _smokeAvailable = true;
-        }*/
+        }
         
         if(_elapsedTime > _smokeTime)
         {

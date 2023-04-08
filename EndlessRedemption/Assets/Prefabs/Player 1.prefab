@@ -950,6 +950,7 @@ MonoBehaviour:
   _elapsedTime: 0
   _smokeTime: 3
   _coolDown: 5
+  _smokeAvailable: 0
   _smokePosition: {x: 0, y: 0, z: 0}
   _playerTarget: 1
 --- !u!114 &5064903639783295335

@@ -4,6 +4,8 @@ using System.Runtime.CompilerServices;
 //using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
+using UnityEngine.SceneManagement;
+
 public class SeiryuManager : MonoBehaviour
 {
     //Estados
@@ -237,6 +239,9 @@ public class SeiryuManager : MonoBehaviour
 
         ChooseAttack(_currentBossState);//Logica de seleccion de estados
         _bossLifes = _lifeComponent.vidasEnemy;//vidas actuales
+        if (_bossLifes <= 0)//Pendiente de hacer cinematica
+            SceneManager.LoadScene("Menu");
+
         Debug.Log(_bossLifes);
         SeiryuBar.Instance.SetHealth(_bossLifes);//Barra de vida
         if(!_isAttacking)

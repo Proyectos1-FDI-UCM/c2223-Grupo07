@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 555
+  controlID: 3720
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 556
+  controlID: 3721
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 557
+  controlID: 3722
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,9 +224,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d27e0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: fcf9ffffda6e00008e700000
+      m_SelectedIDs: 2ef8ffff
+      m_LastClickedID: -2002
+      m_ExpandedIDs: fa4cffffeaf8fffff0f8ffffa6f9ffffb2f9ffff0afbffff7e690000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -525,9 +525,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.521373, y: 1.2464763, z: -1.2161355}
+    m_Target: {x: 18.332521, y: -9.512893, z: 0}
     speed: 2
-    m_Value: {x: -5.521373, y: 1.2464763, z: -1.2161355}
+    m_Value: {x: 18.332521, y: -9.512893, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -578,9 +578,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 14.66833
+    m_Target: 0.7894614
     speed: 2
-    m_Value: 14.66833
+    m_Value: 0.7894614
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -822,22 +822,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\TheEndlessRedemptionGithub\c2223-Grupo07\EndlessRedemption
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: d27e0000
-    m_LastClickedID: 32466
-    m_ExpandedIDs: 00000000b27e0000d47e000000ca9a3b
+    m_SelectedIDs: c47c0000
+    m_LastClickedID: 31940
+    m_ExpandedIDs: 00000000b27c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -865,7 +865,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b27e000000ca9a3b
+    m_ExpandedIDs: 00000000b27c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -890,8 +890,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: d27e0000
-    m_LastClickedInstanceID: 32466
+    m_SelectedInstanceIDs: 2ef8ffff
+    m_LastClickedInstanceID: -2002
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300007e780000c48800009c810000aa700000
     m_RenameOverlay:
@@ -968,8 +968,8 @@ MonoBehaviour:
     y: 0
     width: 624
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}

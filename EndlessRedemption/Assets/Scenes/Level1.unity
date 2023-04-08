@@ -88649,7 +88649,6 @@ MonoBehaviour:
   - {fileID: 1529421591}
   - {fileID: 168208900}
   - {fileID: 1794376950}
-  smokeBomb: {fileID: 0}
 --- !u!4 &1175925673 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6863033024712025937, guid: 11b2baafc877b0540a8719c2d3606492, type: 3}
@@ -125614,6 +125613,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2524647105572618080, guid: cd0abd01448b140438a6af81c3b2e41a, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092476207302032419, guid: cd0abd01448b140438a6af81c3b2e41a, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

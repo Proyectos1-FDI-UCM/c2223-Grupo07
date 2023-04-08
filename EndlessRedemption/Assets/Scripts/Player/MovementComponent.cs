@@ -198,7 +198,7 @@ public class MovementComponent : MonoBehaviour
         if(_dashCoolDown)
         {           
             _cooldownElapsed += Time.deltaTime;
-            Debug.Log("DASH CD: " + _cooldownElapsed);
+          
         }
         if(_cooldownElapsed > _cooldown)
         {

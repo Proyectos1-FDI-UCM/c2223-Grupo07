@@ -34,11 +34,11 @@ public class MusicManager : MonoBehaviour
                     SelectSong(3, 0.8f);
                     break;
                 case 2:
-                    SelectSong(0, 0.2f);
-                    SelectSong(1, 2f);
+                    SelectSong(0, 0.1f);
+                    SelectSong(1, 3f);
                     break;
                 case 3:
-                    SelectSong(0, 0.3f);
+                    SelectSong(0, 0.1f);
                     SelectSong(1, 0.1f);
                     break;
                 case 4:
@@ -59,8 +59,8 @@ public class MusicManager : MonoBehaviour
                     SelectSong(3, 0.8f);
                     break;
                 case 2:
-                    SelectSong(0, 0.3f);
-                    SelectSong(1, 2f);
+                    SelectSong(0, 0.1f);
+                    SelectSong(1, 3f);
                     break;
                 case 3:
                     SelectSong(0, 0.3f);

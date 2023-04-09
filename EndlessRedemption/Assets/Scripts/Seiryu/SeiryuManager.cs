@@ -242,7 +242,6 @@ public class SeiryuManager : MonoBehaviour
         if (_bossLifes <= 0)//Pendiente de hacer cinematica
             SceneManager.LoadScene("Menu");
 
-        Debug.Log(_bossLifes);
         SeiryuBar.Instance.SetHealth(_bossLifes);//Barra de vida
         if(!_isAttacking)
         {

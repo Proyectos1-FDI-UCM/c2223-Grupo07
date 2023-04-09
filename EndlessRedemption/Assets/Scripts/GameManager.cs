@@ -6,7 +6,7 @@ using UnityEngine.Audio;
 
 public class GameManager : MonoBehaviour
 {
-    public enum GameStates { START, GAME, PAUSE, RESTART }
+    public enum GameStates { GAME, PAUSE, RESTART }
     private GameStates _currentState;
     private string[] _sceneNames = { "Level1", "Level2", "Level3", "Level4", "Level5"};//Nombres de las escenas
     private int _currentScene;
@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     private float _elapsedTime = 0f;
     private float _maxDeath = 3f;
     public bool _hasDeath = false;
-
+    [SerializeField]
     private SoundManager _soundManager;
     private void Awake()
     {
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
         PlayerManager.Instance.transform.position = new Vector3 (_checkPoints[_currentCheckpoint].position.x, _checkPoints[_currentCheckpoint].position.y, _checkPoints[_currentCheckpoint].position.z); //Mover al jugador a la posicion del checkpoint
         _currentScene = PlayerPrefs.GetInt("LevelX");
         _currentState = GameStates.GAME;
-        _soundManager = FindObjectOfType<SoundManager>();
+        
 
         if(_currentScene == 0 && _currentCheckpoint == 0) PlayerPrefs.SetInt("SmokeHits", 5);//Para tener la bomba de humo al principio;
     }
@@ -92,10 +92,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(_currentState);
         switch(_currentState)
         {
-            case GameStates.START:
-                break;
+            
             case GameStates.GAME:
                 if(_lifes <= 0)
                 {

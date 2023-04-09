@@ -80,7 +80,7 @@ public class DamageComponent : MonoBehaviour
             {
                 Instantiate(_UpExplosion, _enemyLife.transform.position, Quaternion.identity);
             }
-            _attack.EndOfAttack();
+            
             
         }
         if (collision.gameObject == _mocoPrefab) _soundManager.SeleccionAudio(6, 0.5f);

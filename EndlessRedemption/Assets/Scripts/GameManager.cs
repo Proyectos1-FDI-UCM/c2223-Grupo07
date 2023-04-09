@@ -74,6 +74,7 @@ public class GameManager : MonoBehaviour
     }
     public void LoseLife()
     {
+        if(_lifes > 0)
         _lifes--;
         UIManager.Instance.PierdeVidas();
         Debug.Log("VIDAS: " + _lifes);

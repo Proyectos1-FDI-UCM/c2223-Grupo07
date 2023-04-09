@@ -81,7 +81,7 @@ public class DamageComponent : MonoBehaviour
                 Instantiate(_UpExplosion, _enemyLife.transform.position, Quaternion.identity);
             }
             _attack.EndOfAttack();
-            Destroy(gameObject);
+            
         }
         if (collision.gameObject == _mocoPrefab) _soundManager.SeleccionAudio(6, 0.5f);
         else if (collision.gameObject == _spiderPrefab) _soundManager.SeleccionAudio(1, 0.5f);

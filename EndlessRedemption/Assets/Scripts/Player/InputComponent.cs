@@ -26,7 +26,7 @@ public class InputComponent : MonoBehaviour
     void Update()
     {
         // Sistema de salto
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Square"))
         {
             _movementComponent.Jump();
         }
@@ -51,7 +51,7 @@ public class InputComponent : MonoBehaviour
             _smokeBomb.ActivateSmoke();
         }
         //Ataque
-        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetButtonDown("Square"))
+        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetButtonDown("Jump"))
         {
             if(Input.GetAxis("StickVertical") >=0.5)
             {

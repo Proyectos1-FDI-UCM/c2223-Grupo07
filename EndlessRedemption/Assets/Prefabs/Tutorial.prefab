@@ -921,7 +921,7 @@ GameObject:
   - component: {fileID: 8309140335985375959}
   - component: {fileID: 8309140335985375960}
   - component: {fileID: 8309140335985375961}
-  - component: {fileID: 8152875960850370861}
+  - component: {fileID: 5766453126805432127}
   m_Layer: 5
   m_Name: Tutorial
   m_TagString: Untagged
@@ -1016,7 +1016,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8152875960850370861
+--- !u!114 &5766453126805432127
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1028,7 +1028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f917e6697253ed489ac115ea22cf364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tutorial: {fileID: 8309140335985375962}
   _tutorialBoxes:
   - {fileID: 8309140336332855558}
   - {fileID: 8309140336938340037}
@@ -1718,7 +1717,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8152875960850370861}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
         m_MethodName: ClickBox
         m_Mode: 1

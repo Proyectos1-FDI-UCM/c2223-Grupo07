@@ -3017,7 +3017,7 @@ GameObject:
   - component: {fileID: 480777776}
   - component: {fileID: 480777775}
   m_Layer: 5
-  m_Name: MovementTutorial
+  m_Name: historia4text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3063,8 +3063,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: De momento ryuma se encuentra preparandose para sus venideras aventuras
-    en su lugubre refugio
+  m_text: ryuma no le teme a nada, y se prepara para emprender una aventura peligrosa...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b984ea028a27f8042b5ac73ab4d3fdcf, type: 2}
   m_sharedMaterial: {fileID: -2388327907754561420, guid: b984ea028a27f8042b5ac73ab4d3fdcf, type: 2}
@@ -3368,7 +3367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8309140335645723237, guid: 6b7fa23c32ded274a9550d8bd1919b7b, type: 3}
       propertyPath: m_text
-      value: Ryuma es un samurai de la antigua japon, la semana pasada fue acusado
+      value: ryuma es un samurai del japon medieval. la semana pasada fue acusado
         falsalmente de asesinato por parte de un grupo de nobles del shogunato
       objectReference: {fileID: 0}
     - target: {fileID: 8309140335645723237, guid: 6b7fa23c32ded274a9550d8bd1919b7b, type: 3}
@@ -11891,7 +11890,7 @@ GameObject:
   - component: {fileID: 740473740}
   - component: {fileID: 740473739}
   m_Layer: 5
-  m_Name: MovementTutorial
+  m_Name: historia3text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11937,9 +11936,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Para recupenar su honor y redimirse debera adentrarse en los sombrios montes
-    y acabar con el mitico dragon seiryu que lleva aterrorizxando la aldea desde
-    tiempos inmemoriables
+  m_text: para recupenar su honor y redimirse, debera acabar con el mitico dragon
+    seiryu que aterroriza la aldea desde tiempos inmemoriables
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b984ea028a27f8042b5ac73ab4d3fdcf, type: 2}
   m_sharedMaterial: {fileID: -2388327907754561420, guid: b984ea028a27f8042b5ac73ab4d3fdcf, type: 2}
@@ -20916,7 +20914,7 @@ GameObject:
   - component: {fileID: 1693608382}
   - component: {fileID: 1693608381}
   m_Layer: 5
-  m_Name: MovementTutorial
+  m_Name: historia2text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20962,8 +20960,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Esto se debe al gran poder y misterio que porta ryuma, de esta forma ha
-    sido exiliado de la aldea por el shogun
+  m_text: debido a su gran poder y misterio, lo culparon de ser el unico capaz de
+    tal atrocidad, y fue exiliado de la aldea...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b984ea028a27f8042b5ac73ab4d3fdcf, type: 2}
   m_sharedMaterial: {fileID: -2388327907754561420, guid: b984ea028a27f8042b5ac73ab4d3fdcf, type: 2}
@@ -22577,6 +22575,7 @@ MonoBehaviour:
   _player: {fileID: 39132619}
   _playerDeath: {fileID: 2863547037217844996, guid: 9f48c0777a9f79d428a092fa521b8995, type: 3}
   _hasDeath: 0
+  _soundManager: {fileID: 0}
 --- !u!4 &1928136388
 Transform:
   m_ObjectHideFlags: 0

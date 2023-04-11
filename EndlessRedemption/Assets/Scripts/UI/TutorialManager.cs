@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class TutorialManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject _tutorial;//Objeto con las cajas de texto
 
     [SerializeField]
     private GameObject[] _tutorialBoxes = new GameObject[4];//array de cajas de texto
@@ -23,7 +21,7 @@ public class TutorialManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider2D)//Trigger puesto en el primer checkpoint
     {
-        _tutorial.SetActive(true);
+        _tutorialBoxes[0].SetActive(true);
     }
 
 

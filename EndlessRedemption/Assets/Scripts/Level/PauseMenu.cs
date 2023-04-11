@@ -13,12 +13,16 @@ public class PauseMenu : MonoBehaviour
     [SerializeField]
     private GameObject _playerObject;
     private InputComponent _myInputComponent;
+    private PausaInput _myPausaInput;
     #endregion
 
+    #region methods
     public void PauseGame(GameObject pauseMenuUI)//Objeto del menú
     {
         _myInputComponent = _playerObject.GetComponent<InputComponent>();
+        _myPausaInput = _playerObject.GetComponent<PausaInput>();
         _myInputComponent.enabled = false;
+        _myPausaInput.enabled = true;
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused= true;
@@ -27,7 +31,9 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame(GameObject pauseMenuUI)
     {
         _myInputComponent = _playerObject.GetComponent<InputComponent>();
+        _myPausaInput = _playerObject.GetComponent<PausaInput>();
         _myInputComponent.enabled = true;
+        _myPausaInput.enabled = false;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused= false;
@@ -37,4 +43,5 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    #endregion
 }

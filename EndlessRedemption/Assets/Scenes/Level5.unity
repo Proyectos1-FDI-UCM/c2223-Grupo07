@@ -11545,7 +11545,7 @@ GameObject:
   - component: {fileID: 624322490}
   - component: {fileID: 624322491}
   m_Layer: 0
-  m_Name: Centre (1)
+  m_Name: ActivarCol
   m_TagString: Centre
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21112,6 +21112,14 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3522833807123880488, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
+      propertyPath: _maxTimeBetweenAttacks
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522833807123880488, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
+      propertyPath: _minTimeBetweenAttacks
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522833807123880488, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
       propertyPath: _roomCentre.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -22362,6 +22370,22 @@ MonoBehaviour:
   _ShurikensSpawned: 10
   _spawnTime: 0
   shurikenTutorial: {fileID: 0}
+--- !u!114 &1366411518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366411491}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 801be976f1c79a146aa0c6d54fa21047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explosion: {fileID: 3631743433365692412, guid: aff1c45dc49d89f4b8abc631a500d22a, type: 3}
+  _centreTransform: {fileID: 624322490}
+  _time: 3
+  _velocidad: 10
 --- !u!1 &1376266438
 GameObject:
   m_ObjectHideFlags: 0

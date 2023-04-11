@@ -150,6 +150,7 @@ GameObject:
   - component: {fileID: 8815068601415067982}
   - component: {fileID: -707990864237661690}
   - component: {fileID: 5036597692284867489}
+  - component: {fileID: 1024554252717986049}
   m_Layer: 0
   m_Name: SeiryuEnfadado
   m_TagString: Untagged
@@ -262,6 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff2634e717cac824f9b51115c540da5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _currentBossState: 0
   _bossSpeed1: 0
   _bossSpeed2: 0
   _bossSpeed3: 0
@@ -323,6 +325,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 1
+--- !u!114 &1024554252717986049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3985608430014038908}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 801be976f1c79a146aa0c6d54fa21047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explosion: {fileID: 0}
+  _centreTransform: {fileID: 0}
+  _time: 3
+  _velocidad: 10
 --- !u!1 &6033288492573515289
 GameObject:
   m_ObjectHideFlags: 0

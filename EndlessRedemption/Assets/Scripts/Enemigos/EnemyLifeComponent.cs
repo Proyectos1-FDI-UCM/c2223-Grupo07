@@ -30,14 +30,19 @@ public class EnemyLifeComponent : MonoBehaviour
     {
         if (vidasEnemy <= 0)
         {
-            if(prob == 0 && !_taken)
+            if (!gameObject.GetComponent<SeiryuManager>())
             {
-                _taken = true;
-                aux = Instantiate(VidaPickUp, transform.position, Quaternion.identity);
-                aux.GetComponent<Rigidbody2D>().AddForce(transform.up * thrust, ForceMode2D.Impulse);
+                if (prob == 0 && !_taken)
+                {
+                    _taken = true;
+                    aux = Instantiate(VidaPickUp, transform.position, Quaternion.identity);
+                    aux.GetComponent<Rigidbody2D>().AddForce(transform.up * thrust, ForceMode2D.Impulse);
+                }
+                Instantiate(_deadExplosion, transform.position, Quaternion.identity);
+                Destroy(gameObject);
             }
-            Instantiate(_deadExplosion, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            else this.enabled = false;
+    
         }
     }
 }

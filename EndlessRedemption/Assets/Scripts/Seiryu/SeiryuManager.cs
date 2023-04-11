@@ -86,6 +86,7 @@ public class SeiryuManager : MonoBehaviour
     [SerializeField]
     private GameObject _puntoMedio;
     private ColumnasFuego _columnas;
+    private MuerteSeiryu _muerteSeiryu;
     private Animator _animator;
     private ChestController _volcan;
 
@@ -113,7 +114,7 @@ public class SeiryuManager : MonoBehaviour
                 _bossSpeed = _bossSpeed1;
                 if(_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(0,6);
+                    _randomAttack = Random.Range(4,5);
                     _currentAttackState = (AttackStates)_randomAttack;//Elige ataque random
                     EnterState(_currentAttackState);
                 }             
@@ -123,7 +124,7 @@ public class SeiryuManager : MonoBehaviour
                 _spriteRenderer.color = Color.magenta;
                 if (_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(1, 4);
+                    _randomAttack = Random.Range(3, 6);
                     _currentAttackState = (AttackStates)_randomAttack;
                     EnterState(_currentAttackState);
                 }                  
@@ -133,7 +134,7 @@ public class SeiryuManager : MonoBehaviour
                 _spriteRenderer.color = Color.red;
                 if (_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(2, 6);
+                    _randomAttack = Random.Range(3, 7);
                     _currentAttackState = (AttackStates)_randomAttack;
                     EnterState(_currentAttackState);
                 }                
@@ -150,6 +151,7 @@ public class SeiryuManager : MonoBehaviour
         {
             _currentMovementState = MovementStates.HUIR;
             _animator.SetBool("Moving", true);
+            
         }
         else if(_currentAttackState == AttackStates.BASICO)
         {
@@ -226,6 +228,7 @@ public class SeiryuManager : MonoBehaviour
         SeiryuBar.Instance.SetMaxHealth(_bossLifes);
         _soundManager = FindObjectOfType<SoundManager>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _muerteSeiryu = GetComponent<MuerteSeiryu>();
 
     }
 
@@ -239,8 +242,12 @@ public class SeiryuManager : MonoBehaviour
 
         ChooseAttack(_currentBossState);//Logica de seleccion de estados
         _bossLifes = _lifeComponent.vidasEnemy;//vidas actuales
-        if (_bossLifes <= 0)//Pendiente de hacer cinematica
-            SceneManager.LoadScene("Menu");
+        if (_bossLifes <= 0)
+        {
+            _muerteSeiryu.enabled = true;
+        }//Pendiente de hacer cinematica
+            //SceneManager.LoadScene("Menu");
+
 
         SeiryuBar.Instance.SetHealth(_bossLifes);//Barra de vida
         if(!_isAttacking)
@@ -368,11 +375,13 @@ public class SeiryuManager : MonoBehaviour
                     break;
 
                 case AttackStates.COLUMNAS:
-                    if (_activeCol)
-                    {
+                    //if (_activeCol)
+                    //{
                         _elapsedAttack += Time.deltaTime;
                         if (_elapsedAttack > 3)
                         {
+                            _animator.SetBool("Moving", false);
+                            _animator.SetBool("Fire", true);
                             _columnas.enabled = true;
                             _columnas.Invocar();
                             _activeCol = false;
@@ -380,7 +389,7 @@ public class SeiryuManager : MonoBehaviour
                             _soundManager.SeleccionAudio(17, 0.5f);
                         }
                        
-                    }  
+                    //}  
                     _elapsedAttackTime += Time.deltaTime;
                     if (_elapsedAttackTime > _columnasTime) ExitState();
                     break;
@@ -420,12 +429,13 @@ public class SeiryuManager : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)//Cambio de direccion durante el vuelo
     {
-        if(_currentAttackState== AttackStates.COLUMNAS && collision.gameObject.tag=="Centre")
+        if(_currentAttackState== AttackStates.COLUMNAS && collision.gameObject.tag=="ActivarCol")
         {
 
             _activeCol = true;
+            Debug.Log("333");
         }
-        if (collision.gameObject.tag != "Centre")
+        if (collision.gameObject.tag != "ActivarCol")
         {
             if (_changeDirection)
                 _changeDirection = !_changeDirection;

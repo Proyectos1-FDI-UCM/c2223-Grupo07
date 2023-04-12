@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb654c2f38f9444890ec2198854ceac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeLife: 10
+  _timeLife: 5
 --- !u!50 &-5900476777344324988
 Rigidbody2D:
   serializedVersion: 4
@@ -151,9 +151,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.021728516, y: -0.03983593}
+  m_Offset: {x: -0.23434797, y: -0.62644005}
   serializedVersion: 2
-  m_Radius: 0.43843555
+  m_Radius: 0.39489254
 --- !u!95 &8157568586782086222
 Animator:
   serializedVersion: 4
@@ -307,7 +307,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3155628184364386231, guid: e6d2c85d8d3436642bf965969af12d41, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e6d2c85d8d3436642bf965969af12d41, type: 3}
 --- !u!4 &6016071253282670930 stripped
 Transform:
@@ -377,7 +378,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8784361102237590828, guid: 5fe408c8bf759ce449fe2d105d5b46dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5fe408c8bf759ce449fe2d105d5b46dd, type: 3}
 --- !u!4 &7258861013289581403 stripped
 Transform:

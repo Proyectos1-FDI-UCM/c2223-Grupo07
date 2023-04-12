@@ -8,7 +8,7 @@ public class Spawner : MonoBehaviour
     private Transform[] _roomCentre;
     [SerializeField]
     private GameObject _dragon;
-
+    [SerializeField]
     private float _time = 15f;
     private float _elapsed = 0f;
 

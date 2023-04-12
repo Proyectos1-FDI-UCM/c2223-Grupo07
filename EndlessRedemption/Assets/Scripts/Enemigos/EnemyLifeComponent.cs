@@ -30,7 +30,7 @@ public class EnemyLifeComponent : MonoBehaviour
     {
         if (vidasEnemy <= 0)
         {
-            if (!gameObject.GetComponent<SeiryuManager>())
+            if (!GetComponent<SeiryuManager>())
             {
                 if (prob == 0 && !_taken)
                 {

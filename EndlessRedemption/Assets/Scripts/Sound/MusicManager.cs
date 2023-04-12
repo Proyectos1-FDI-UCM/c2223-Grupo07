@@ -107,8 +107,8 @@ public class MusicManager : MonoBehaviour
                 case 2:
                     SelectSong(2, 0.3f);
                     break;
-
                 case 3:
+                    SelectSong(3, 0.5f);
                     break;
                 case 4:
                     break;

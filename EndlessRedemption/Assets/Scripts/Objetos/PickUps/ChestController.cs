@@ -58,7 +58,7 @@ public class ChestController : MonoBehaviour
             {
                 _opened = true;
                 _animator.SetBool("Open", _opened);
-                _soundManager.SeleccionAudio(3, 0.5f);
+                _soundManager.SeleccionAudio(3, 2f);
             }
         }
         

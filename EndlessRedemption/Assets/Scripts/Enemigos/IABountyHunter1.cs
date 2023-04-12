@@ -23,6 +23,7 @@ public class IABountyHunter1 : MonoBehaviour
     private float _detectionDistance;
     public Vector3 _vectorDirection;
     private int _random;
+    private bool _detectionSound = false;
     public enum BountyHunterStates { STOP, RESTING, WALKING, ATTACKING, SHOOTING }
     public BountyHunterStates _currentState;
     // Start is called before the first frame update
@@ -77,7 +78,13 @@ public class IABountyHunter1 : MonoBehaviour
                 _walking = true;
                 _lateralMovement.enabled = true;
                 break;
-            case BountyHunterStates.ATTACKING:                                                                          
+            case BountyHunterStates.ATTACKING:
+                if (!_detectionSound)
+                {
+                    SoundManager.Instance.SeleccionAudio(19, 0.5f);
+                    _detectionSound = true;
+                }
+                   
                 transform.Translate(_vectorDirection* Time.fixedDeltaTime * _attackingSpeed);
                 _walking = true;
                 break;

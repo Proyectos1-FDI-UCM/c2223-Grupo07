@@ -74,6 +74,7 @@ public class DamageComponent : MonoBehaviour
             else if (collision.gameObject.GetComponent<Soldier>()) _soundManager.SeleccionAudio(14, 0.5f);
             else if (collision.gameObject.GetComponent<FireDragon>()) _soundManager.SeleccionAudio(15, 0.5f);
             else if (collision.gameObject.GetComponent<IABountyHunter1>()) _soundManager.SeleccionAudio(16, 0.5f);
+            else if (collision.gameObject.GetComponent<SeiryuManager>()){ }
             else _soundManager.SeleccionAudio(6, 0.5f);
 
         }

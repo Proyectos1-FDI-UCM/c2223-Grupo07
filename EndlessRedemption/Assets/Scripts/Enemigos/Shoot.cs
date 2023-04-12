@@ -42,7 +42,7 @@ public class Shoot : MonoBehaviour
                     GameObject bullet = Instantiate(_bullet, transform.position + _offset, Quaternion.identity);
                     bullet.GetComponent<Rigidbody2D>().velocity = _IABountyHunter._vectorDirection * _bulletSpeed;
                     _elapsedTime = 0;
-                    _soundManager.SeleccionAudio(12, 0.1f);
+                    _soundManager.SeleccionAudio(12, 0.3f);
                 }
             }
         }

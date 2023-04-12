@@ -231,6 +231,7 @@ public class SeiryuManager : MonoBehaviour
         _soundManager = FindObjectOfType<SoundManager>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _muerteSeiryu = GetComponent<MuerteSeiryu>();
+       
 
     }
 

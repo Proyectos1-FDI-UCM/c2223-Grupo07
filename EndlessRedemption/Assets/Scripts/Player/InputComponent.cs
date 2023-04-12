@@ -90,7 +90,7 @@ public class InputComponent : MonoBehaviour
         //Pausa
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Options"))
         {
-            if (PauseMenu.isPaused) 
+            if (_PauseMenu._isPaused) 
             {
                 _PauseMenu.ResumeGame(PauseMenuObject); 
             }

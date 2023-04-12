@@ -8,6 +8,7 @@ public class EnemyManager : MonoBehaviour
     private Transform _playerTransform;
     private EnemyDetectionComponent _myEnemyDetection;
     private LateralMovement _myLateralMovement;
+    private Rigidbody2D _myRigidbody2D;
     private CameraComponent _cameraComponent;
     private Animator _animator;
     private SmokeBomb _mySmokeBomb;
@@ -63,6 +64,7 @@ public class EnemyManager : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _myEnemyDetection = GetComponent<EnemyDetectionComponent>();
+        _myRigidbody2D= GetComponent<Rigidbody2D>();
         _cameraComponent = PlayerManager.Instance._cameraComponent;
         _myLateralMovement = GetComponent<LateralMovement>();
         _mySmokeBomb = FindObjectOfType<SmokeBomb>();
@@ -109,5 +111,10 @@ public class EnemyManager : MonoBehaviour
             _myLateralMovement.enabled = false;
             _myEnemyDetection.enabled = true;
         }
+
+        if (PauseMenu.Instance._isPaused)
+        {
+            _myRigidbody2D.isKinematic = true;
+        }else _myRigidbody2D.isKinematic = false;
     }
 }

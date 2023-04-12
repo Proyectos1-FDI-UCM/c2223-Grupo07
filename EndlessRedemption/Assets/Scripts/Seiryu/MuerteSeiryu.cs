@@ -37,8 +37,10 @@ public class MuerteSeiryu : MonoBehaviour
         _camera.SetActive(false);
         _deadrocks.SetActive(true);
         PlayerManager.Instance.GetComponent<PlayerManager>().enabled = false;
+       
        // MusicManager.Instance.StopMusic();
         PlayerManager.Instance.GetComponent<InputComponent>().enabled= false;
+        GameManager.Instance._lifes = 100;
         
         
     }

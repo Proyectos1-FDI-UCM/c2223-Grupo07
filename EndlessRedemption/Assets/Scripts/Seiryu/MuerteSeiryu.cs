@@ -9,6 +9,7 @@ public class MuerteSeiryu : MonoBehaviour
     [SerializeField] private GameObject _deadCamera;
     [SerializeField]
     private GameObject _explosion;
+    [SerializeField] private GameObject _deadrocks; 
     [SerializeField]
     private GameObject _explosion2;
     private GameObject explosion;
@@ -33,6 +34,7 @@ public class MuerteSeiryu : MonoBehaviour
         directionSeiryu = new Vector3(0, -15,0);
         _camera.SetActive(false);
         //_deadCamera.SetActive(true);
+        _deadrocks.SetActive(true);
         PlayerManager.Instance.GetComponent<PlayerManager>().enabled = false;
         
         PlayerManager.Instance.GetComponent<InputComponent>().enabled= false;

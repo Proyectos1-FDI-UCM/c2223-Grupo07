@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 38434
+  controlID: 38614
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 38435
+  controlID: 38615
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 38436
+  controlID: 38616
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,8 +186,8 @@ MonoBehaviour:
     y: 0
     width: 208
     height: 619
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -223,8 +223,8 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 575}
-      m_SelectedIDs: 
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 62490200
       m_LastClickedID: 0
       m_ExpandedIDs: 1861f8ff0efcfdffa6fefdffcc65feff82d6feffa6dbfeffd4e0feffbee2feff48480200c848020062490200
       m_RenameOverlay:
@@ -525,9 +525,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 15.5683975, y: 2.9864955, z: -0.16946593}
+    m_Target: {x: 5.8478513, y: 14.017287, z: 0.080306694}
     speed: 2
-    m_Value: {x: 15.5683975, y: 2.9864955, z: -0.16946593}
+    m_Value: {x: 5.8478513, y: 14.017287, z: 0.080306694}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -578,9 +578,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 37.34598
+    m_Target: 12.368719
     speed: 2
-    m_Value: 37.34598
+    m_Value: 12.368719
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -839,21 +839,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Recursos exteriores/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Recursos exteriores/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: U:\hlocal\Proyectos\c2223-Grupo07\EndlessRedemption
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 479}
-    m_SelectedIDs: a0450300
-    m_LastClickedID: 214432
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: f4fe0100
+    m_LastClickedID: 130804
     m_ExpandedIDs: 00000000e6fe0100f6fe01007e4503008e4503009445030000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -907,9 +907,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 62490200
+    m_LastClickedInstanceID: 149858
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300007e780000c48800009c810000aa700000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -985,8 +985,8 @@ MonoBehaviour:
     y: 0
     width: 624
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -1027,7 +1027,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 1834
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

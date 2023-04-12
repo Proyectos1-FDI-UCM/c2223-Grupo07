@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1478032385843581298}
+  - component: {fileID: 9178183897482478170}
+  - component: {fileID: 1757369417689026723}
   m_Layer: 0
   m_Name: CaidaMuerteSeiryu
   m_TagString: Untagged
@@ -31,3 +33,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9178183897482478170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443323714529080724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c677801872c7842a4ec38b6ff5cd1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pickUp: {fileID: 6287931282743731785, guid: 22175682651eb4f41acfeaf04fcd86f7, type: 3}
+  _ShurikensSpawned: 10
+  _spawnTime: 0
+  shurikenTutorial: {fileID: 0}
+--- !u!114 &1757369417689026723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443323714529080724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dbf00d12ba261c4f9a194da272cb01b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _time: 3

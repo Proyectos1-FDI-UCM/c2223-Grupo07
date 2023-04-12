@@ -27,7 +27,7 @@ public class ChestController : MonoBehaviour
         _animator = GetComponent<Animator>();
         _animator.SetBool("Open", _opened);       
         _soundManager = FindObjectOfType<SoundManager>();
-        if (GetComponent<SeiryuManager>()) { _opened = true; }
+        if (GetComponent<SeiryuManager>() || GetComponent<ChestController>()) { _opened = true; }
         _elapsedTime = 0;
     }
 
@@ -38,7 +38,7 @@ public class ChestController : MonoBehaviour
         {
             _elapsedTime += Time.deltaTime;
         }
-        if(_elapsedTime> _spawnTime && !_spawned) 
+        if(_elapsedTime > _spawnTime && !_spawned) 
         {
             _spawned= true;
             for (int i = 0; i < _ShurikensSpawned; i++)

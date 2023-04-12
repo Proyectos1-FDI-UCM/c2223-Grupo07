@@ -10790,6 +10790,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2179244884616129054, guid: 5fe408c8bf759ce449fe2d105d5b46dd, type: 3}
   m_PrefabInstance: {fileID: 321659928}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &328565455 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8010269007753832051, guid: 446a6b8cb35810641925e1b19049c649, type: 3}
+  m_PrefabInstance: {fileID: 343651290}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61ef798d096139e4693a1580bab55370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &343651290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22782,7 +22793,7 @@ MonoBehaviour:
   _pickUp: {fileID: 7655677763705373577, guid: 4f11b35a91653224d8f46a914f41c8e3, type: 3}
   _ShurikensSpawned: 10
   _spawnTime: 0
-  shurikenTutorial: {fileID: 0}
+  shurikenTutorial: {fileID: 100006, guid: bcaff8fc36e95584bb27cc3cf7c6cb14, type: 3}
 --- !u!114 &1366411518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25234,7 +25245,7 @@ MonoBehaviour:
   _player: {fileID: 5064903639783295333, guid: b9b2a75de7583904eaf5e39f9f1058be, type: 3}
   _playerDeath: {fileID: 2863547037217844996, guid: 9f48c0777a9f79d428a092fa521b8995, type: 3}
   _hasDeath: 0
-  _soundManager: {fileID: 0}
+  _soundManager: {fileID: 328565455}
 --- !u!4 &2080510649
 Transform:
   m_ObjectHideFlags: 0

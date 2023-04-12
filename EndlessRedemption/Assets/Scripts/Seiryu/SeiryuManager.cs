@@ -218,7 +218,8 @@ public class SeiryuManager : MonoBehaviour
     {
         _lifeComponent = GetComponent<EnemyLifeComponent>();
         _currentMovementState = MovementStates.QUIETO;//Se inicia quieto
-        _timeBetweenAttacks = Random.Range(_minTimeBetweenAttacks, _maxTimeBetweenAttacks + 1);
+
+        _timeBetweenAttacks = 1;
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _currentBossState = BossStates.MOLESTO;//Empieza en el estado molesto
         _columnas = GetComponent<ColumnasFuego>();

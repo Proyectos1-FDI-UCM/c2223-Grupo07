@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class SeiryuManager : MonoBehaviour
 {
     //Estados
-    public enum BossStates { MOLESTO, ENFADADO, FURIOSO}
+    public enum BossStates { MOLESTO, ENFADADO, FURIOSO, DEAD}
     public enum AttackStates { BASICO, BOLAS, VOLCAN, PINCHOS,COLUMNAS , EMBESTIDA}
     public enum MovementStates { HUIR, RANDOM, QUIETO, EMBESTIDA}
     public BossStates _currentBossState;
@@ -114,7 +114,7 @@ public class SeiryuManager : MonoBehaviour
                 _bossSpeed = _bossSpeed1;
                 if(_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(4,5);
+                    _randomAttack = Random.Range(0,3);
                     _currentAttackState = (AttackStates)_randomAttack;//Elige ataque random
                     EnterState(_currentAttackState);
                 }             
@@ -124,7 +124,7 @@ public class SeiryuManager : MonoBehaviour
                 _spriteRenderer.color = Color.magenta;
                 if (_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(3, 6);
+                    _randomAttack = Random.Range(2, 5);
                     _currentAttackState = (AttackStates)_randomAttack;
                     EnterState(_currentAttackState);
                 }                  
@@ -134,11 +134,13 @@ public class SeiryuManager : MonoBehaviour
                 _spriteRenderer.color = Color.red;
                 if (_elapsedTime > _timeBetweenAttacks)
                 {
-                    _randomAttack = Random.Range(3, 7);
+                    _randomAttack = Random.Range(3, 6);
                     _currentAttackState = (AttackStates)_randomAttack;
                     EnterState(_currentAttackState);
                 }                
                 break;
+            case BossStates.DEAD:
+                break;    
         }
     }
     void EnterState(AttackStates attackState)//Al entrar estado de ataque
@@ -244,7 +246,9 @@ public class SeiryuManager : MonoBehaviour
         _bossLifes = _lifeComponent.vidasEnemy;//vidas actuales
         if (_bossLifes <= 0)
         {
+            _currentMovementState = MovementStates.HUIR;
             _muerteSeiryu.enabled = true;
+            
         }//Pendiente de hacer cinematica
             //SceneManager.LoadScene("Menu");
 
@@ -292,12 +296,12 @@ public class SeiryuManager : MonoBehaviour
                 _rigidbody2D.velocity = _movementDirection * _bossSpeed;//Movimiento
                 break;
             case MovementStates.HUIR:
-                if(!_randomCentreGenerated && _currentAttackState!=AttackStates.COLUMNAS)
+                if((!_randomCentreGenerated && _currentAttackState!=AttackStates.COLUMNAS)&&_bossLifes>0)
                 {
                     _randomcentre = Random.Range(0, _roomCentre.Length);//elige al punto al que ir
                     _randomCentreGenerated = true;
                 }
-                if(_currentAttackState == AttackStates.COLUMNAS)
+                if(_currentAttackState == AttackStates.COLUMNAS||_bossLifes<=0)
                 {
                     _randomcentre = 1;
                     _randomCentreGenerated = true;

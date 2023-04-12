@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 308973773254603650}
   - component: {fileID: 2371535943020325899}
-  m_Layer: 7
+  m_Layer: 16
   m_Name: ColumnasFuego
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,15 +111,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 565426417740684338, guid: 9336a308c87cece4b94c6e6001a5ebef, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 565426417740684340, guid: 9336a308c87cece4b94c6e6001a5ebef, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 565426417740684342, guid: 9336a308c87cece4b94c6e6001a5ebef, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 565426417758649588, guid: 9336a308c87cece4b94c6e6001a5ebef, type: 3}
       propertyPath: m_SortingOrder

@@ -22775,7 +22775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b34bf638b19c914390ea83e81b14a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidasEnemy: 60
+  vidasEnemy: 100
   VidaPickUp: {fileID: 5156510250345167162, guid: 78d45011921c34c4fabbbaecfadaabe5, type: 3}
   _deadExplosion: {fileID: 5642766282230003982, guid: b5c8ca7ed10b61e499cce8ec3b6e2e4c, type: 3}
 --- !u!114 &1366411510

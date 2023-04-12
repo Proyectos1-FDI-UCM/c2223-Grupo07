@@ -24,7 +24,7 @@ public class SeiryuManager : MonoBehaviour
     private float _bossSpeed2;
     [SerializeField]
     private float _bossSpeed3;
-    private int _bossLifes = 60;
+    private int _bossLifes = 100;
     private int _randomAttack;
     [SerializeField]
     private int _pinchosExplusados = 6;
@@ -260,11 +260,11 @@ public class SeiryuManager : MonoBehaviour
         {
             _elapsedTime += Time.deltaTime;//Si no esta atacando empieza a contar para hacer el proximo ataque
         }
-        if(_bossLifes <= 20)//Cambio a estado segun las vidas
+        if(_bossLifes <= 33)//Cambio a estado segun las vidas
         {
             _currentBossState = BossStates.FURIOSO;
         }
-        else if(_bossLifes <= 40 )
+        else if(_bossLifes <= 67 )
         {
             _currentBossState = BossStates.ENFADADO;
         }

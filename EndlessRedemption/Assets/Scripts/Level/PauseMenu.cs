@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     #region properties
-    public static bool isPaused = false;
+    public bool _isPaused = false;
+    //public bool getPaused(){ return _isPaused; }
     #endregion
 
     #region references
@@ -14,6 +16,8 @@ public class PauseMenu : MonoBehaviour
     private GameObject _playerObject;
     private InputComponent _myInputComponent;
     private PausaInput _myPausaInput;
+    static private PauseMenu _instance;
+    static public PauseMenu Instance { get { return _instance; } }
     #endregion
 
     #region methods
@@ -25,7 +29,7 @@ public class PauseMenu : MonoBehaviour
         _myPausaInput.enabled = true;
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
-        isPaused= true;
+        _isPaused= true;
     }
 
     public void ResumeGame(GameObject pauseMenuUI)
@@ -36,7 +40,7 @@ public class PauseMenu : MonoBehaviour
         _myPausaInput.enabled = false;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-        isPaused= false;
+        _isPaused= false;
     }
 
     public void PauseQuit()
@@ -44,4 +48,8 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(0);
     }
     #endregion
+    private void Awake()
+    {
+        _instance = this;
+    }
 }

@@ -32,11 +32,12 @@ public class MuerteSeiryu : MonoBehaviour
     {
         _manager= GetComponent<SeiryuManager>();
         directionSeiryu = new Vector3(0, -15,0);
+        
+        _deadCamera.SetActive(true);
         _camera.SetActive(false);
-        //_deadCamera.SetActive(true);
         _deadrocks.SetActive(true);
         PlayerManager.Instance.GetComponent<PlayerManager>().enabled = false;
-        
+       // MusicManager.Instance.StopMusic();
         PlayerManager.Instance.GetComponent<InputComponent>().enabled= false;
         
         

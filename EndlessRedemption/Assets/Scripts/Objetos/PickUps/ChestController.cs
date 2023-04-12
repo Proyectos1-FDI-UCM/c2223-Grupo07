@@ -25,9 +25,10 @@ public class ChestController : MonoBehaviour
         _opened = false;
         _spawned = false;
         _animator = GetComponent<Animator>();
+        if(!GetComponentInParent<RockSpawner>())
         _animator.SetBool("Open", _opened);       
         _soundManager = FindObjectOfType<SoundManager>();
-        if (GetComponent<SeiryuManager>() || GetComponent<ChestController>()) { _opened = true; }
+        if (GetComponent<SeiryuManager>() || GetComponentInParent<RockSpawner>()) { _opened = true; }
         _elapsedTime = 0;
     }
 
@@ -44,7 +45,7 @@ public class ChestController : MonoBehaviour
             for (int i = 0; i < _ShurikensSpawned; i++)
             {
                 Instantiate(_pickUp, transform.position + new Vector3(0, 1, 0), Quaternion.identity);
-                if(!GetComponent<EnemyLifeComponent>())
+                if(!GetComponent<EnemyLifeComponent>() || !GetComponentInParent<RockSpawner>())
                 shurikenTutorial.SetActive(true);
             }
         }

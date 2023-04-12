@@ -7,23 +7,31 @@ public class RockSpawner : MonoBehaviour
     private float _elapsedTime = 0;
     [SerializeField]
     private float _time;
-    private ChestController _rockSpawn;
+    [SerializeField]
+    private GameObject[] spawners;
+    private int index = 0;
     // Start is called before the first frame update
-    void Start()
-    {
-        _rockSpawn= GetComponent<ChestController>();
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
         _elapsedTime+= Time.deltaTime;
-        if(_elapsedTime > _time)
+        if(_elapsedTime > _time && index < spawners.Length)
         {
-            _rockSpawn.enabled= false;
-            _rockSpawn.enabled= true;
+            spawners[index].SetActive(true);
+           
+                  
+            index++;
             _elapsedTime = 0;
+        }
+    }
+    private void Start()
+    {
+        SoundManager.Instance.SeleccionAudio(18, 2f);
+        
+        for (int i = 0; i < spawners.Length; i++)
+        {
+            spawners[i].SetActive(false);
+
         }
     }
 }

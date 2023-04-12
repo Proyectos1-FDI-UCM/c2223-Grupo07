@@ -8,9 +8,16 @@ public class SoundManager : MonoBehaviour
     private AudioClip[] _audios;
 
     private AudioSource _controlAudio;
+    static private SoundManager _soundManager;
+    static public SoundManager Instance { get { return _soundManager; } }
+    private void Awake()
+    {
+        _soundManager = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
+        
         _controlAudio = GetComponent<AudioSource>();
     }
 

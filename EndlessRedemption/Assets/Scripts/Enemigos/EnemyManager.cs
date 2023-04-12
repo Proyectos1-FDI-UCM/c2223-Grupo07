@@ -112,9 +112,9 @@ public class EnemyManager : MonoBehaviour
             _myEnemyDetection.enabled = true;
         }
 
-        if (PauseMenu.Instance._isPaused)
+        /*if (PauseMenu.Instance._isPaused)
         {
             _myRigidbody2D.isKinematic = true;
-        }else _myRigidbody2D.isKinematic = false;
+        }else _myRigidbody2D.isKinematic = false;*/
     }
 }

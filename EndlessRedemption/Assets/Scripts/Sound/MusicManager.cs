@@ -7,11 +7,11 @@ public class MusicManager : MonoBehaviour
     [SerializeField]
     private AudioClip[] _audioClips;
     private AudioSource _audioSourceMusic;
-    private MusicManager _musicManager;
+    static private MusicManager _musicManager;
     [SerializeField]
     private bool _playAtStart;
     private bool _enterZone;
-    public MusicManager MusicManage {get {return _musicManager;}}
+    static public MusicManager Instance {get {return _musicManager;}}
     // Start is called before the first frame update
     private void Awake()
     {
@@ -81,6 +81,14 @@ public class MusicManager : MonoBehaviour
     {
         _audioSourceMusic.Stop();
     }  
+    public void PauseMusic()
+    {
+        _audioSourceMusic.Pause();
+    }
+    public void UnPauseMusic()
+    {
+        _audioSourceMusic.Play();
+    }
    
     private void OnTriggerEnter2D(Collider2D collision)//Cambio de musica al entrar en una zona
     {

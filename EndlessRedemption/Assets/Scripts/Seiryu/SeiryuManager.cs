@@ -250,6 +250,7 @@ public class SeiryuManager : MonoBehaviour
         {
             _currentMovementState = MovementStates.HUIR;
             _muerteSeiryu.enabled = true;
+            _currentBossState = BossStates.DEAD;
             
         }//Pendiente de hacer cinematica
             //SceneManager.LoadScene("Menu");

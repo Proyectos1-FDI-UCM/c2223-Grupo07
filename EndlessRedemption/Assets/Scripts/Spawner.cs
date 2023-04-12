@@ -13,10 +13,15 @@ public class Spawner : MonoBehaviour
     private float _elapsed = 0f;
 
     // Start is called before the first frame update
+    private void Start()
+    {
+        _elapsed = _time - 5;
+    }
 
     // Update is called once per frame
     void Update()
     {
+        if(SeiryuManager.Instance._currentBossState != SeiryuManager.BossStates.DEAD)
         _elapsed += Time.deltaTime;
         if(_elapsed > _time)
         {

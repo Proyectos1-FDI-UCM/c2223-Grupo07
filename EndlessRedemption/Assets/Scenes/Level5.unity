@@ -21258,7 +21258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3522833807123880488, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
       propertyPath: _maxTimeBetweenAttacks
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522833807123880488, guid: 2041c7240af8d854882143f1c3903dff, type: 3}
       propertyPath: _minTimeBetweenAttacks

@@ -26,11 +26,14 @@ public class MuerteSeiryu : MonoBehaviour
     private Vector3 directionSeiryu;
     private bool _entra = true;
     private bool _boom = true;
+    private bool _death = true;
+    private Animator _animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        _manager= GetComponent<SeiryuManager>();
+        _animator = GetComponent<Animator>();
+        _manager = GetComponent<SeiryuManager>();
         directionSeiryu = new Vector3(0, -15,0);
         
         _deadCamera.SetActive(true);
@@ -63,7 +66,10 @@ public class MuerteSeiryu : MonoBehaviour
             if (_elapsedTime2 > 5)
             {
                 
-               Destroy(explosion); 
+               Destroy(explosion);
+                _animator.SetBool("DEATH", true);
+                GetComponent<Rigidbody2D>().gravityScale = 4;
+                _boom= false;
                 //Destroy(gameObject);
             }
         }

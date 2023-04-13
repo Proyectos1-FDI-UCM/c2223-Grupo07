@@ -3349,6 +3349,10 @@ PrefabInstance:
       propertyPath: m_text
       value: con la te
       objectReference: {fileID: 0}
+    - target: {fileID: 5766453126805432127, guid: 6b7fa23c32ded274a9550d8bd1919b7b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8058655537307519970, guid: 6b7fa23c32ded274a9550d8bd1919b7b, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3368,7 +3372,7 @@ PrefabInstance:
     - target: {fileID: 8309140335645723237, guid: 6b7fa23c32ded274a9550d8bd1919b7b, type: 3}
       propertyPath: m_text
       value: ryuma es un samurai del japon medieval. la semana pasada fue acusado
-        falsalmente de asesinato por parte de un grupo de nobles del shogunato
+        falsamente de asesinato por parte de un grupo de nobles del shogunato
       objectReference: {fileID: 0}
     - target: {fileID: 8309140335645723237, guid: 6b7fa23c32ded274a9550d8bd1919b7b, type: 3}
       propertyPath: m_margin.w

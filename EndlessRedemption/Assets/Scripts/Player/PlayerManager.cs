@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField]
     private Camera _camera;
     public CameraComponent _cameraComponent;
+  
     #endregion
 
     #region properties
@@ -59,10 +60,12 @@ public class PlayerManager : MonoBehaviour
         _animator.SetBool("Smoke", _invulnerable); //Animación se hará en función de la variable invulnerable
         if (_invulnerable)
         {
+           
             gameObject.layer = 8; //Layer en la que no colisionan Player y Enemigo
             _elapsedTime += Time.deltaTime;
             if(_elapsedTime > _timeInvulnerable)
             {
+                
                 gameObject.layer = _myLayer; //Devolver layer anterior
                 _invulnerable = false;
                 _elapsedTime = 0;

@@ -22,6 +22,8 @@ public class UIManager : MonoBehaviour
     private GameObject ShurikenImage;
     [SerializeField]
     private GameObject[] SmokeBomb;
+    [SerializeField]
+    private TMP_Text _deaths;
 
     private void Awake()
     {
@@ -36,6 +38,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        _deaths.SetText("x" +  PlayerPrefs.GetInt("Deaths"));
         if (GameManager.Instance._hasShurikensBag)
         {
             shurikenText.SetText("x" + GameManager.Instance._currenShurikens);

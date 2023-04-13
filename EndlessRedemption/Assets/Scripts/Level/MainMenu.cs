@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("Lifes", 5);
         PlayerPrefs.SetInt("Shurikens", 30);
+        PlayerPrefs.SetInt("Deaths", 0);
         SceneManager.LoadScene("CinematicaInicio"); //Cargar juego en modo normal      
     }
 
@@ -18,6 +19,7 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("Lifes", 3);
         PlayerPrefs.SetInt("Shurikens", 15);
+        PlayerPrefs.SetInt("Deaths", 0);
         SceneManager.LoadScene("CinematicaInicio"); //Cargar juego en modo pesadilla    
     }
 

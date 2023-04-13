@@ -88,14 +88,7 @@ public class InputComponent : MonoBehaviour
             _shurikenLauncher.LateralThrow();
         }
         //Pausa
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Options"))
-        {
-            if (_PauseMenu._isPaused) 
-            {
-                _PauseMenu.ResumeGame(PauseMenuObject); 
-            }
-            else _PauseMenu.PauseGame(PauseMenuObject);
-        }
+      
         if(Input.GetKeyDown(KeyCode.T))
         {
             PlayerPrefs.SetInt("LevelX", PlayerPrefs.GetInt("LevelX") + 1);

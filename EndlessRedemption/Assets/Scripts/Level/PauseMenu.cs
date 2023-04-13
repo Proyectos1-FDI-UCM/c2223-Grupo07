@@ -7,13 +7,12 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     #region properties
-    public bool _isPaused = false;
-    //public bool getPaused(){ return _isPaused; }
+     public bool _isPaused = false;   
     #endregion
 
     #region references
     [SerializeField]
-    private GameObject _playerObject;
+    private GameObject _Canvas;
     private InputComponent _myInputComponent;
     private PausaInput _myPausaInput;
     static private PauseMenu _instance;
@@ -21,35 +20,32 @@ public class PauseMenu : MonoBehaviour
     #endregion
 
     #region methods
-    public void PauseGame(GameObject pauseMenuUI)//Objeto del menú
+    public void PauseGame()//Objeto del menú
     {
-        _myInputComponent = _playerObject.GetComponent<InputComponent>();
-        _myPausaInput = _playerObject.GetComponent<PausaInput>();
-        _myInputComponent.enabled = false;
-        _myPausaInput.enabled = true;
-        pauseMenuUI.SetActive(true);
+        _Canvas.SetActive(true);
+        _myInputComponent = PlayerManager.Instance.GetComponent<InputComponent>();       
+        _myInputComponent.enabled = false; 
         Time.timeScale = 0f;
-        _isPaused= true;
+        _isPaused = true;
+        
     }
 
-    public void ResumeGame(GameObject pauseMenuUI)
+    public void ResumeGame()
     {
-        _myInputComponent = _playerObject.GetComponent<InputComponent>();
-        _myPausaInput = _playerObject.GetComponent<PausaInput>();
-        _myInputComponent.enabled = true;
-        _myPausaInput.enabled = false;
-        pauseMenuUI.SetActive(false);
+        _Canvas.SetActive(false);
+        _myInputComponent = PlayerManager.Instance.GetComponent<InputComponent>();
+        _myInputComponent.enabled = true;   
         Time.timeScale = 1f;
-        _isPaused= false;
+        _isPaused = false;
     }
 
     public void PauseQuit()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MenuPrincipal");
     }
     #endregion
     private void Awake()
-    {
+    {      
         _instance = this;
     }
 }

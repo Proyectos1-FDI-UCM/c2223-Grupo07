@@ -252,8 +252,15 @@ public class SeiryuManager : MonoBehaviour
             _muerteSeiryu.enabled = true;
             _currentBossState = BossStates.DEAD;
             
-        }//Pendiente de hacer cinematica
-            //SceneManager.LoadScene("Menu");
+        }
+        else if (_bossLifes <= 33)//Cambio a estado segun las vidas
+        {
+            _currentBossState = BossStates.FURIOSO;
+        }
+        else if (_bossLifes <= 67)
+        {
+            _currentBossState = BossStates.ENFADADO;
+        }
 
 
         SeiryuBar.Instance.SetHealth(_bossLifes);//Barra de vida
@@ -261,14 +268,7 @@ public class SeiryuManager : MonoBehaviour
         {
             _elapsedTime += Time.deltaTime;//Si no esta atacando empieza a contar para hacer el proximo ataque
         }
-        if(_bossLifes <= 33)//Cambio a estado segun las vidas
-        {
-            _currentBossState = BossStates.FURIOSO;
-        }
-        else if(_bossLifes <= 67 )
-        {
-            _currentBossState = BossStates.ENFADADO;
-        }
+        
         switch(_currentMovementState)
         {
             case MovementStates.QUIETO:

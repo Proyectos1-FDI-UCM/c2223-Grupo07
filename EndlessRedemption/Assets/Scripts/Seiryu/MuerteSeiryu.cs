@@ -16,7 +16,10 @@ public class MuerteSeiryu : MonoBehaviour
     private SeiryuManager _manager;
     [SerializeField]
     private Transform _centreTransform;
-
+    [SerializeField]
+    private Transform _Transform;
+    [SerializeField]
+    private GameObject _Roquitas;
     [SerializeField]
     private float _time;
     private float _elapsedTime=0f;
@@ -27,6 +30,7 @@ public class MuerteSeiryu : MonoBehaviour
     private bool _entra = true;
     private bool _boom = true;
     private bool _death = true;
+    private bool _dead = false;
     private Animator _animator;
 
     // Start is called before the first frame update
@@ -70,7 +74,17 @@ public class MuerteSeiryu : MonoBehaviour
                 _animator.SetBool("DEATH", true);
                 GetComponent<Rigidbody2D>().gravityScale = 4;
                 _boom= false;
+                if (_dead)
+                {
+                    _death = true;
+                    _dead = false;
+                }
                 //Destroy(gameObject);
+            }
+            if (_death)
+            {
+                Instantiate(_Roquitas, _Transform.position, Quaternion.identity);
+                _death= false;
             }
         }
     }

@@ -32,15 +32,17 @@ public class PauseMenu : MonoBehaviour
 
     public void ResumeGame()
     {
+        Time.timeScale = 1f;
         _Canvas.SetActive(false);
         _myInputComponent = PlayerManager.Instance.GetComponent<InputComponent>();
         _myInputComponent.enabled = true;   
-        Time.timeScale = 1f;
+       
         _isPaused = false;
     }
 
     public void PauseQuit()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MenuPrincipal");
     }
     #endregion

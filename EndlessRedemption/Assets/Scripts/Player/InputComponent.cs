@@ -87,7 +87,7 @@ public class InputComponent : MonoBehaviour
             _shurikenLauncher.LateralThrow();
         }
         //Pausa
-      
+        /*
         if(Input.GetKeyDown(KeyCode.T))
         {
             PlayerPrefs.SetInt("LevelX", PlayerPrefs.GetInt("LevelX") + 1);
@@ -117,6 +117,6 @@ public class InputComponent : MonoBehaviour
         {
             PlayerManager.Instance.GetComponent<MovementComponent>()._jumpsAvailable++;
             PlayerPrefs.SetInt("hasDoubleJump", 1);
-        }
+        }*/
     }
 }

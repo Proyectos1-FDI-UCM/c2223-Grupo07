@@ -9,8 +9,6 @@ public class InputComponent : MonoBehaviour
     private SmokeBomb _smokeBomb;
     private AttackComponent _attack;
     private ShurikenLauncher _shurikenLauncher;
-    [SerializeField]
-    private GameObject PauseMenuObject;
     #endregion
 
     void Start()
@@ -30,15 +28,7 @@ public class InputComponent : MonoBehaviour
             _movementComponent.Jump();
         }
         // Sistema de movimiento
-        if (Input.GetKey(KeyCode.D) || Input.GetAxis("StickHorizontal") >= 0.7)
-        {
-            _movementComponent.Right();
-
-        }
-        else if (Input.GetKey(KeyCode.A) || Input.GetAxis("StickHorizontal") <= -0.7)
-        {
-            _movementComponent.Left();
-        }
+        
         //Dash
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetButtonDown("R2"))
         {
@@ -118,5 +108,17 @@ public class InputComponent : MonoBehaviour
             PlayerManager.Instance.GetComponent<MovementComponent>()._jumpsAvailable++;
             PlayerPrefs.SetInt("hasDoubleJump", 1);
         }*/
+    }
+    private void FixedUpdate()
+    {
+        if (Input.GetKey(KeyCode.D) || Input.GetAxis("StickHorizontal") >= 0.7)
+        {
+            _movementComponent.Right();
+
+        }
+        else if (Input.GetKey(KeyCode.A) || Input.GetAxis("StickHorizontal") <= -0.7)
+        {
+            _movementComponent.Left();
+        }
     }
 }

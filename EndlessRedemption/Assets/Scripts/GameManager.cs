@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     // Preparación de escena y checkpoint
     void Start()
     {
+        Application.targetFrameRate = 144;
         _player.SetActive(true);
         _maxLifes = PlayerPrefs.GetInt("Lifes");
         _maxShurikens = PlayerPrefs.GetInt("Shurikens");

@@ -61,18 +61,15 @@ public class MovementComponent : MonoBehaviour
     {
         if (_rigidbody2D.velocity.x > -_maxSpeed)
         {
-            _rigidbody2D.AddForce(Vector2.left * _speed * Time.fixedDeltaTime, ForceMode2D.Force);
-            
+            _rigidbody2D.AddForce(Vector2.left * _speed * Time.fixedDeltaTime * 3, ForceMode2D.Force);          
         }
          
     }
     public void Right()
     {
         if (_rigidbody2D.velocity.x < _maxSpeed)
-        {
-            
-            _rigidbody2D.AddForce(Vector2.right * _speed * Time.fixedDeltaTime, ForceMode2D.Force);
-            
+        {         
+            _rigidbody2D.AddForce(Vector2.right * _speed * Time.fixedDeltaTime * 3, ForceMode2D.Force);                    
         }
         
     }
@@ -188,7 +185,7 @@ public class MovementComponent : MonoBehaviour
 
         _soundManager = FindObjectOfType<SoundManager>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (PlayerPrefs.GetInt("hasDash") == 1) _dashPickUp = true;
         if (PlayerPrefs.GetInt("hasDoubleJump") == 1) _jumpsAvailable = 2;

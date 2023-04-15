@@ -28,9 +28,13 @@ public class Soldier : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         _elapsed += Time.deltaTime;
+    }
+    void FixedUpdate()
+    {
+        
         if(_elapsed > _jumpTime && _moving == false)
         {
             _elapsed = 0;

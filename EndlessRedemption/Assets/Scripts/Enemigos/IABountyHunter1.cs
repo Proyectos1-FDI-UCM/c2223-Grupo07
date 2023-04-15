@@ -50,16 +50,20 @@ public class IABountyHunter1 : MonoBehaviour
             _currentState = BountyHunterStates.WALKING;
         }
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        _vectorDirection = PlayerManager.Instance.transform.position - transform.position;
-        _vectorDirection.Normalize();//Direccion del jugador
         if (!_playerDetected)//Si no ha detectado al jugador empieza a contar
         {
             _elapsedTime += Time.deltaTime;
         }
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        _vectorDirection = PlayerManager.Instance.transform.position - transform.position;
+        _vectorDirection.Normalize();//Direccion del jugador
+       
         if (_elapsedTime > _randomStateTime)//Al pasar un tiempo elige un comportamiento aleatorio
         {
             RandomState();

@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shootDistance: 7
-  _attackingSpeed: 2
+  _attackingSpeed: 6
   _randomStateTime: 5
   _detectionDistance: 9
   _vectorDirection: {x: 0, y: 0, z: 0}

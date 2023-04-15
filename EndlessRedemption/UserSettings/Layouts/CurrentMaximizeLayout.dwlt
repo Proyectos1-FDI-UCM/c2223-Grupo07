@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 21110
+  controlID: 19
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 21111
+  controlID: 20
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 21112
+  controlID: 21
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,9 +224,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 60840000
+      m_SelectedIDs: e82a0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 187afaff6cbafaff82bffaff30c1faffe624fbff5e50fbfff650fbff7067fbff84c5fbff32c7fbffcae0fbff1aeffbff7af5fbff74fefbff8605fcffd613fcff0a1afcff0423fcff4e2cfcff9e3afcff148cfcff109efcffcaa0fcff6ca4fcffc07cfdffc458feffdc62feffa478feff661fffffb22fffff883fffff46acffffb8deffffc2deffff16eaffff0afbffff108500006a8500000c860000c08e000090760200ca76020078c7020010d6020018e002000a020300120c03001ce8030038ed03006eee030040cc0400eacd0400
+      m_ExpandedIDs: 3416ffffd816ffff5c19ffff5c1cffffe623ffff002cffff7e35ffff9444ffff8452ffff9652ffffa067ffffaa68ffff8869ffff5876ffff6878ffff0a79ffff8e7bffff8e7effff1886ffff328effffb097ffffcea6ffff12b5ffff1cb5ffffb6b9ffff5abaffffdabcffffd6bfffff58c7ffff6ecfffffe8d8ffff02e8ffff42f6ffff48f6ffff0afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -525,9 +525,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 77.9243, y: 22.929628, z: -2.1697059}
+    m_Target: {x: 812.17444, y: 524.6086, z: -10.367499}
     speed: 2
-    m_Value: {x: 77.9243, y: 22.929628, z: -2.1697059}
+    m_Value: {x: 812.17444, y: 524.6086, z: -10.367499}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -578,9 +578,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 54.386013
+    m_Target: 668.52203
     speed: 2
-    m_Value: 54.386013
+    m_Value: 668.52203
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -856,22 +856,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/Player
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/Player
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\TheEndlessRedemptionGithub\c2223-Grupo07\EndlessRedemption
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 32840000
-    m_LastClickedID: 33842
-    m_ExpandedIDs: 00000000de83000000ca9a3b
+    scrollPos: {x: 0, y: 40}
+    m_SelectedIDs: a2710000
+    m_LastClickedID: 29090
+    m_ExpandedIDs: 000000005a7100008e71000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -899,7 +899,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000de83000000ca9a3b
+    m_ExpandedIDs: 000000005a710000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -924,8 +924,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 60840000
-    m_LastClickedInstanceID: 33888
+    m_SelectedInstanceIDs: e82a0000
+    m_LastClickedInstanceID: 10984
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300007e780000c48800009c810000aa700000
     m_RenameOverlay:

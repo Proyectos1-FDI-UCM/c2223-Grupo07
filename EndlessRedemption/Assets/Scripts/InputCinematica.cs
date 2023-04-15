@@ -12,7 +12,8 @@ public class InputCinematica : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _movementComponent = PlayerManager.Instance.GetComponent<MovementComponent>();
+        _movementComponent = PlayerManager.Instance.GetComponent<MovementComponent>();     
+        PlayerPrefs.SetString("Scene", "Level1");
     }
 
     // Update is called once per frame

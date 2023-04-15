@@ -28,4 +28,8 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quit");
         Application.Quit(); //Saldrá del ejecutable
     }
+    public void ContinueGame()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetInt("LevelX") + 1);
+    }
 }

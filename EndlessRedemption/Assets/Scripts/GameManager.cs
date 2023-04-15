@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public enum GameStates { GAME, PAUSE, RESTART }
     private GameStates _currentState;
-    private string[] _sceneNames = { "Level1", "Level2", "Level3", "Level4", "Level5"};//Nombres de las escenas
-    private int _currentScene;
+    static private string[] _sceneNames = { "Level1", "Level2", "Level3", "Level4", "Level5"};//Nombres de las escenas
+    static private int _currentScene;
     [SerializeField]
     private Transform[] _checkPoints; //Array con los checkpoints, cada escena tiene los suyos
     public int _currentCheckpoint;
@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
     public bool _hasDeath = false;
     [SerializeField]
     private SoundManager _soundManager;
+    public string[] Scenes { get { return _sceneNames; } }
+    public int CurrentScene { get { return _currentScene; } }
     private void Awake()
     {
         _instance = this;
@@ -52,6 +54,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Empieza en " + _currentCheckpoint);
         PlayerManager.Instance.transform.position = new Vector3 (_checkPoints[_currentCheckpoint].position.x, _checkPoints[_currentCheckpoint].position.y, _checkPoints[_currentCheckpoint].position.z); //Mover al jugador a la posicion del checkpoint
         _currentScene = PlayerPrefs.GetInt("LevelX");
+        Debug.Log(PlayerPrefs.GetString("Scene"));
         _currentState = GameStates.GAME;
         
 
@@ -118,6 +121,7 @@ public class GameManager : MonoBehaviour
             case GameStates.RESTART:
                 PlayerPrefs.SetInt("Deaths", PlayerPrefs.GetInt("Deaths") + 1);
                 PlayerPrefs.SetInt("FirstRound", 1);
+                PlayerPrefs.SetString("Scene", _sceneNames[_currentScene]);
                 SceneManager.LoadScene(_sceneNames[_currentScene]);
                 break;           
         }    

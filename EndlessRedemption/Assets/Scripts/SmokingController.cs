@@ -17,7 +17,11 @@ public class SmokingController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_stop && (PlayerManager.Instance.GetComponent<Rigidbody2D>().velocity.x > 1 || PlayerManager.Instance.GetComponent<Rigidbody2D>().velocity.x < -1) || !PlayerManager.Instance.GetComponent<MovementComponent>()._onGround)
+        if(GameManager.Instance._lifes<= 0)
+        {
+            _stopSmoke.SetActive(false);
+        }
+        else if (_stop && (PlayerManager.Instance.GetComponent<Rigidbody2D>().velocity.x > 1 || PlayerManager.Instance.GetComponent<Rigidbody2D>().velocity.x < -1) || !PlayerManager.Instance.GetComponent<MovementComponent>()._onGround)
         {
             _stopSmoke.SetActive(false);
             _stop = false;

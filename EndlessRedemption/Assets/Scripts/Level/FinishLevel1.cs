@@ -21,10 +21,15 @@ public class FinishLevel1 : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        PlayerPrefs.SetInt("FirstRound", 0);
-        PlayerPrefs.SetInt("LevelX", _nextLevel);
-        PlayerPrefs.SetInt("CheckpointX", 0);
-        StartCoroutine(SceneLoad(_nextLevel));
+       
+            Debug.Log("entro");
+            PlayerPrefs.SetInt("FirstRound", 0);
+            PlayerPrefs.SetInt("LevelX", _nextLevel);
+            PlayerPrefs.SetInt("CheckpointX", 0);
+            PlayerPrefs.SetString("Scene", GameManager.Instance.Scenes[GameManager.Instance.CurrentScene + 1]);
+            StartCoroutine(SceneLoad(_nextLevel));
+        
+       
     }
 
     private IEnumerator SceneLoad(int _nextLevel)

@@ -15,11 +15,15 @@ public class InputCinematica : MonoBehaviour
         _movementComponent = PlayerManager.Instance.GetComponent<MovementComponent>();     
         PlayerPrefs.SetString("Scene", "Level1");
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         _elapsedTime += Time.deltaTime;
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+       
         if(_elapsedTime > _timeStill )
         {
             

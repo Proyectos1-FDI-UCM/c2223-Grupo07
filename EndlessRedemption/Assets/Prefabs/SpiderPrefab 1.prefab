@@ -179,7 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _detectionDistance: 5
   _detectionDistanceY: 10
-  _enemySpeed: 1.5
+  _enemySpeed: 4.5
 --- !u!95 &-8877440301036667359
 Animator:
   serializedVersion: 4

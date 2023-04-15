@@ -22,7 +22,7 @@ public class EnemyDetectionComponent : MonoBehaviour
         _mySmokeBomb = FindObjectOfType<SmokeBomb>();
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(_playerTransform != null && _mySmokeBomb._playerTarget)
         {

@@ -47,19 +47,11 @@ public class FireDragon : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         _vectorDirection = PlayerManager.Instance.transform.position - transform.position;
         _vectorDirection.Normalize();
-        //if(!_playerDetected )
-       // {
-            //_elapsedTime += Time.deltaTime;
-            //if (_elapsedTime > _randomStateTime)
-            //{
-               // RandomState();
-                //_elapsedTime = 0;
-            //}
-        //}
+     
         DetectionController();
         switch (_currentState)//Ejecucion de los estados
         {

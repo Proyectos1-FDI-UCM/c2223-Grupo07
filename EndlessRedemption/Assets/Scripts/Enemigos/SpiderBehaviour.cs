@@ -32,7 +32,7 @@ public class SpiderBehaviour : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         _vectorDirection = _playerTransform.position - transform.position;
         _vectorDirection.Normalize();

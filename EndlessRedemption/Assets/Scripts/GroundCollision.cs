@@ -6,8 +6,16 @@ public class GroundCollision : MonoBehaviour
 {
     [SerializeField]
     private MovementComponent _movementComponent;
-    
+    [SerializeField]
+    private GameObject _suelo;
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer != 7)
+        {
+            Instantiate(_suelo, transform.position, Quaternion.identity);
+        }
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (!(collision.gameObject.GetComponent<WindComponent>() && !collision.gameObject.GetComponent<EnemyLifeComponent>()))

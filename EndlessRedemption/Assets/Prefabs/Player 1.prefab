@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movementComponent: {fileID: 5064903639783295335}
+  _suelo: {fileID: 1462327970484030, guid: d438d08df3ac5a845b12324b34c61a30, type: 3}
 --- !u!1 &5064903637886941821
 GameObject:
   m_ObjectHideFlags: 0

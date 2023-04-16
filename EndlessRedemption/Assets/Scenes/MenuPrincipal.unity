@@ -5500,7 +5500,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 515626561}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: UltraNightmareGame
         m_Mode: 1

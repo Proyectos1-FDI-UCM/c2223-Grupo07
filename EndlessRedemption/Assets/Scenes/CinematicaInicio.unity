@@ -11940,7 +11940,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: para recupenar su honor y redimirse, debera acabar con el mitico dragon
+  m_text: para recuperar su honor y redimirse, debera acabar con el mitico dragon
     seiryu que aterroriza la aldea desde tiempos inmemoriables
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b984ea028a27f8042b5ac73ab4d3fdcf, type: 2}

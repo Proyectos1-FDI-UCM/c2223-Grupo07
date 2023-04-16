@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MuerteSeiryu : MonoBehaviour
 {
@@ -81,6 +82,11 @@ public class MuerteSeiryu : MonoBehaviour
                 }
                 //Destroy(gameObject);
             }
+            if (_elapsedTime2 > 10)
+            {
+                SceneManager.LoadScene("Creditos Finales");
+            }
+
             if (_death)
             {
                 Instantiate(_Roquitas, _Transform.position, Quaternion.identity);

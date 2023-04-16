@@ -23,6 +23,8 @@ public class CinematicaSuicidio : MonoBehaviour
     private bool _stopMoving = false;
     [SerializeField]
     private float _rotation = 0.5f;
+    [SerializeField]
+    private float _speed = 500;
     private Rigidbody2D _myrb2D;
     private float _empujeFuerza = 5f;
     private bool _inputDesactivado = true;
@@ -38,15 +40,28 @@ public class CinematicaSuicidio : MonoBehaviour
     private GameObject _comentario3;
     [SerializeField]
     private Transform _checkpoint1;
+    [SerializeField]
+    private GameObject _banda1;
+    [SerializeField]
+    private GameObject _banda2;
+    [SerializeField]
+    private GameObject _hud;
 
     // Start is called before the first frame update
     void Start()
     {
         if (PlayerPrefs.GetInt("Cine") == 1)//Para que no se repita cada vez que mueres
             this.enabled = false;
-        _movementComponent = GetComponent<MovementComponent>();
-        _myrb2D = GetComponent<Rigidbody2D>();
-        _myInputComponent = GetComponent<InputComponent>();
+        else
+        {
+            _movementComponent = GetComponent<MovementComponent>();
+            _myrb2D = GetComponent<Rigidbody2D>();
+            _myInputComponent = GetComponent<InputComponent>();
+            _banda1.SetActive(true);
+            _banda2.SetActive(true);
+            _hud.SetActive(false);
+        }
+       
     }
 
     void FixedUpdate()
@@ -58,8 +73,9 @@ public class CinematicaSuicidio : MonoBehaviour
         if(_elapsedTime > _timeStill1 && !_stopMoving)
         {
             Debug.Log("hey");
-            _comentario1.SetActive(false);          
+            _comentario1.SetActive(false);
             _movementComponent.Right();
+            
             if (_elapsedTime > _timeMoving)
             {
                 _stopMoving= true;
@@ -94,6 +110,9 @@ public class CinematicaSuicidio : MonoBehaviour
         if (_elapsedTime > _timeComentario3)
         {
             _comentario3.SetActive(false);
+            _banda1.SetActive(false);
+            _banda2.SetActive(false);
+            _hud.SetActive(true);
             this.enabled = false;
         }
     }

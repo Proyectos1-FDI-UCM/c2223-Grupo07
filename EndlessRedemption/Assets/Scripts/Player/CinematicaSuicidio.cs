@@ -29,34 +29,38 @@ public class CinematicaSuicidio : MonoBehaviour
     private bool _doitOnce = true;
     [SerializeField]
     private GameObject _pantallaEnNegro;
-    [SerializeField]
+    /*[SerializeField]
     private GameObject _comentario1;
     [SerializeField]
     private GameObject _comentario2;
     [SerializeField]
-    private GameObject _comentario3;
+    private GameObject _comentario3;*/
     [SerializeField]
     private Transform _checkpoint1;
 
     // Start is called before the first frame update
     void Start()
     {
+        if (PlayerPrefs.GetInt("Cine") == 1)//Para que no se repita cada vez que mueres
+            this.enabled = false;
         _movementComponent = GetComponent<MovementComponent>();
         _myrb2D = GetComponent<Rigidbody2D>();
         _myInputComponent = GetComponent<InputComponent>();
+        
     }
 
     void FixedUpdate()
     {     
-        _elapsedTime += Time.deltaTime;
+        
 
-        if (!_stopMoving) _comentario1.SetActive(true);
+        //if (!_stopMoving) _comentario1.SetActive(true);
 
         if(_elapsedTime > _timeStill1 && !_stopMoving)
         {
-            _comentario1.SetActive(false);
+            Debug.Log("hey");
+            // _comentario1.SetActive(false);          
             _movementComponent.Right();
-            if(_elapsedTime > _timeMoving)
+            if (_elapsedTime > _timeMoving)
             {
                 _stopMoving= true;
                 _elapsedTime= 0;
@@ -65,7 +69,7 @@ public class CinematicaSuicidio : MonoBehaviour
 
         if (_stopMoving && _elapsedTime > _timeStill2 && _elapsedTime < _timeFalling)
         {
-            _comentario2.SetActive(true);
+           // _comentario2.SetActive(true);
             if(!_noEmpujar) _myrb2D.AddForce(Vector2.right * _empujeFuerza, ForceMode2D.Impulse);
             _noEmpujar = true; //Solo una vez
             transform.Rotate(0, 0, -_rotation);
@@ -75,25 +79,28 @@ public class CinematicaSuicidio : MonoBehaviour
         {
             transform.position = _checkpoint1.transform.position;
             _pantallaEnNegro.SetActive(true);
-            _comentario2.SetActive(false);
+            // _comentario2.SetActive(false);
+            SoundManager.Instance.SeleccionAudio(18, 2f);
+            PlayerPrefs.SetInt("Cine", 1);
             _doitOnce= false;
         }
         if (_elapsedTime > _timeBlack)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
             _pantallaEnNegro.SetActive(false);
-            _comentario3.SetActive(true);
+            //_comentario3.SetActive(true);
             _inputDesactivado = false;
         }
         if (_elapsedTime > _timeComentario3)
         {
-            _comentario3.SetActive(false);
+           // _comentario3.SetActive(false);
             this.enabled = false;
         }
     }
 
     void Update()
     {
+        _elapsedTime += Time.deltaTime;
         if (_inputDesactivado) _myInputComponent.enabled = false;
         else _myInputComponent.enabled = true;
     }

@@ -23,6 +23,14 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("CinematicaInicio"); //Cargar juego en modo pesadilla    
     }
 
+    public void UltraNightmareGame()//No recuperas vidas
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("Shurikens", 10);
+        PlayerPrefs.SetInt("Deaths", 0);
+        SceneManager.LoadScene("CinematicaInicio");
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quit");

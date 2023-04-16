@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     // Preparación de escena y checkpoint
     void Start()
     {
+        
         Application.targetFrameRate = 144;
         _player.SetActive(true);
         _maxLifes = PlayerPrefs.GetInt("Lifes");
@@ -96,7 +97,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(_currentState);
+    
         switch(_currentState)
         {
             

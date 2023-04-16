@@ -851,7 +851,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 721b0c2452bcbee45a08cab43f7e70cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseMenuObject: {fileID: 0}
 --- !u!95 &5064903639783295330
 Animator:
   serializedVersion: 4

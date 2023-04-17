@@ -126,11 +126,11 @@ public class IABountyHunter1 : MonoBehaviour
 
         if(_currentState != BountyHunterStates.WALKING)
         {
-            if (distance > 0 && transform.localScale.x < 0)//Mira si hay que rotar
+            if (PlayerManager.Instance.transform.position.x - transform.position.x > 0 && transform.localScale.x < 0)//Mira si hay que rotar
             {
                 Turn();
             }
-            if (distance < 0 && transform.localScale.x >= 0)
+            if (PlayerManager.Instance.transform.position.x - transform.position.x < 0 && transform.localScale.x >= 0)
             {
                 Turn();
             }

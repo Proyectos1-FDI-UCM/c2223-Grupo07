@@ -110,7 +110,7 @@ public class IABountyHunter1 : MonoBehaviour
         _walking = false;
         _resting = false;
         _lateralMovement.enabled = false;
-        float distance = PlayerManager.Instance.transform.position.x - transform.position.x;
+        float distance = Mathf.Sqrt(Mathf.Pow( PlayerManager.Instance.transform.position.x - transform.position.x, 2) + Mathf.Pow(PlayerManager.Instance.transform.position.y - transform.position.y, 2));
         if (Mathf.Abs(distance) < _shootDistance)
         {
             _playerDetected = true;

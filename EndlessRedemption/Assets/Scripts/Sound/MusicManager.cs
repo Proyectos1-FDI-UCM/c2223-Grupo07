@@ -42,7 +42,7 @@ public class MusicManager : MonoBehaviour
                     SelectSong(1, 0.1f);
                     break;
                 case 4:
-                    SelectSong(0, 0.5f);
+                    SelectSong(0, 0.4f);
                     SelectSong(1, 0.3f);
                     break;
             }
@@ -67,7 +67,7 @@ public class MusicManager : MonoBehaviour
                     SelectSong(1, 0.1f);
                     break;
                 case 4:
-                    SelectSong(0, 0.5f);
+                    SelectSong(0, 0.4f);
                     SelectSong(1, 0.3f);
                     break;
             }

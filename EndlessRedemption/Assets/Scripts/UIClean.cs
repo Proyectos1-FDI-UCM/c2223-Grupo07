@@ -14,10 +14,7 @@ public class UIClean : MonoBehaviour
     private void Start()
     {
         _clean = false;
-       if(PlayerPrefs.GetInt("Studio") == 1)
-        {
-            _timeToClean = 0;
-        }
+
     }
 
     // Update is called once per frame

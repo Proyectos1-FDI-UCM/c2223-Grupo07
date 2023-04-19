@@ -14,14 +14,7 @@ public class SoundMenu : MonoBehaviour
         PlaySound(0, 0.2f);
      
     }
-    private void Awake()
-    {
-        if (PlayerPrefs.GetInt("Studio") == 1)
-        {
-            GetComponent<UIClean>()._timeToClean = 0;
-
-        }
-    }
+  
 
     // Update is called once per frame
 

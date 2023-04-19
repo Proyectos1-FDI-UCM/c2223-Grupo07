@@ -84,7 +84,7 @@ public class MuerteSeiryu : MonoBehaviour
             }
             if (_elapsedTime2 > 10)
             {
-                SceneManager.LoadScene("Creditos Finales");
+                SceneManager.LoadScene("Level6");
             }
 
             if (_death)

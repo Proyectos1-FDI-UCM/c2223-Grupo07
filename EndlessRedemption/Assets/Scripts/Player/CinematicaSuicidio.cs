@@ -68,7 +68,7 @@ public class CinematicaSuicidio : MonoBehaviour
     {     
         
 
-        if (!_stopMoving) _comentario1.SetActive(true);
+        if (!_stopMoving && _elapsedTime > 2.5f) _comentario1.SetActive(true);
 
         if(_elapsedTime > _timeStill1 && !_stopMoving)
         {

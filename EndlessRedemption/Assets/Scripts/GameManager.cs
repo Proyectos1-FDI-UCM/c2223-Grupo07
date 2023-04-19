@@ -109,6 +109,7 @@ public class GameManager : MonoBehaviour
                         Instantiate(_playerDeath, PlayerManager.Instance.transform.position, Quaternion.identity);
                         PlayerManager.Instance.GetComponent<Renderer>().enabled = false;
                         PlayerManager.Instance.GetComponent<InputComponent>().enabled = false;
+                        PlayerManager.Instance.GetComponentInChildren<GroundCollision>().enabled= false;
                         _hasDeath = true;
                     }
                     _elapsedTime += Time.deltaTime;

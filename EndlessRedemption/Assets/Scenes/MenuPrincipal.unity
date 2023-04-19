@@ -4733,6 +4733,7 @@ MonoBehaviour:
   - {fileID: 1679530611}
   - {fileID: 1189066919}
   - {fileID: 255593699}
+  - {fileID: 1858558596}
   - {fileID: 1629432512}
   _timeToClean: 8
 --- !u!1 &748106666
@@ -10194,7 +10195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1629432513
 Animator:
   serializedVersion: 4
@@ -11430,7 +11431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1858558597
 RectTransform:
   m_ObjectHideFlags: 0

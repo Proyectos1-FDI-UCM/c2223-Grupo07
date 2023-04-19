@@ -45,6 +45,9 @@ public class MusicManager : MonoBehaviour
                     SelectSong(0, 0.4f);
                     SelectSong(1, 0.3f);
                     break;
+                default:
+                    SelectSong(0, 1f);
+                    break;
             }
         if(PlayerPrefs.GetInt("FirstRound") == 1)
         {

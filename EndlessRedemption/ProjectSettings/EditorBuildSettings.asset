@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CinematicaInicio.unity
     guid: c2d4f4f4238d7164497583ad3b84f292
   - enabled: 1
+    path: Assets/Scenes/Level6.unity
+    guid: da03ddb1bc02e0b4f93930219df22077
+  - enabled: 1
     path: Assets/Scenes/Creditos Finales.unity
     guid: 4f513062b86b3aa40816925c70608ece
   m_configObjects: {}

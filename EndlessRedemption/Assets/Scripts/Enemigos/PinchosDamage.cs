@@ -5,6 +5,7 @@ using UnityEngine;
 public class PinchosDamage : MonoBehaviour
 {
     #region properties
+    [SerializeField]
     private int  _damage = 1;
     #endregion
     #region methods

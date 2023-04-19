@@ -1104,6 +1104,10 @@ PrefabInstance:
       propertyPath: shurikenTutorial
       value: 
       objectReference: {fileID: 113623533727589962, guid: 69294f335d2aa1e43a00e2367aa8d338, type: 3}
+    - target: {fileID: 6015671992420572162, guid: 6314c3f89e657634aba9764908329aa9, type: 3}
+      propertyPath: _ShurikensSpawned
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6314c3f89e657634aba9764908329aa9, type: 3}
 --- !u!1 &296094853
@@ -11553,6 +11557,10 @@ PrefabInstance:
       propertyPath: shurikenTutorial
       value: 
       objectReference: {fileID: 113623533727589962, guid: 69294f335d2aa1e43a00e2367aa8d338, type: 3}
+    - target: {fileID: 6015671992420572162, guid: 6314c3f89e657634aba9764908329aa9, type: 3}
+      propertyPath: _ShurikensSpawned
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6314c3f89e657634aba9764908329aa9, type: 3}
 --- !u!1001 &505716861
@@ -22657,6 +22665,10 @@ PrefabInstance:
       propertyPath: shurikenTutorial
       value: 
       objectReference: {fileID: 113623533727589962, guid: 69294f335d2aa1e43a00e2367aa8d338, type: 3}
+    - target: {fileID: 6015671992420572162, guid: 6314c3f89e657634aba9764908329aa9, type: 3}
+      propertyPath: _ShurikensSpawned
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6314c3f89e657634aba9764908329aa9, type: 3}
 --- !u!1 &1201412630

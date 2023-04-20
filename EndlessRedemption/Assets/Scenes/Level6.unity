@@ -92461,8 +92461,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11475408, guid: b046278bb9b6e104790392b566667ba5, type: 3}
       propertyPath: RainIntensity
-      value: 0.439
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11475408, guid: b046278bb9b6e104790392b566667ba5, type: 3}
+      propertyPath: RainSoundAudioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 28149c784b83abd488f4b64328ab9377, type: 2}
     - target: {fileID: 11475408, guid: b046278bb9b6e104790392b566667ba5, type: 3}
       propertyPath: WindSoundVolumeModifier
       value: 0.1
@@ -99983,10 +99987,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _checkPoints:
   - {fileID: 1236129422}
-  - {fileID: 390448336}
-  - {fileID: 1476781139}
-  - {fileID: 1375745999}
-  - {fileID: 1189400667}
   _currentCheckpoint: 0
   _lifes: 3
   _currenShurikens: 0
@@ -102374,11 +102374,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 391d4c63d5667d941957cba61c5675b0, type: 3}
---- !u!4 &1189400667 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5325937758783936061, guid: 391d4c63d5667d941957cba61c5675b0, type: 3}
-  m_PrefabInstance: {fileID: 1189400666}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1193679452
 GameObject:
   m_ObjectHideFlags: 0
@@ -129281,7 +129276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1446340528171504189, guid: 38664579ab2bf1145914bc1a35b25678, type: 3}
       propertyPath: _playAtStart
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1446340528171504189, guid: 38664579ab2bf1145914bc1a35b25678, type: 3}
       propertyPath: _audioClips.Array.data[1]
@@ -130003,11 +129998,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 391d4c63d5667d941957cba61c5675b0, type: 3}
---- !u!4 &1375745999 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5325937758783936061, guid: 391d4c63d5667d941957cba61c5675b0, type: 3}
-  m_PrefabInstance: {fileID: 1375745998}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1379739831
 GameObject:
   m_ObjectHideFlags: 0
@@ -131722,11 +131712,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 391d4c63d5667d941957cba61c5675b0, type: 3}
---- !u!4 &1476781139 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5325937758783936061, guid: 391d4c63d5667d941957cba61c5675b0, type: 3}
-  m_PrefabInstance: {fileID: 1476781138}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1483611149
 GameObject:
   m_ObjectHideFlags: 0
@@ -133692,7 +133677,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelSetting
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2891219988886194351, guid: 6347e5232e60a204fb5aaf01cfe3f3f8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6347e5232e60a204fb5aaf01cfe3f3f8, type: 3}
 --- !u!1001 &1640749689
 PrefabInstance:

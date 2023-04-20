@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour
         {
             _checkPoints[i].gameObject.SetActive(false);
         }
+        Debug.Log(PlayerPrefs.GetInt("LevelX"));
         Debug.Log("Empieza en " + _currentCheckpoint);
         PlayerManager.Instance.transform.position = new Vector3 (_checkPoints[_currentCheckpoint].position.x, _checkPoints[_currentCheckpoint].position.y, _checkPoints[_currentCheckpoint].position.z); //Mover al jugador a la posicion del checkpoint
         _currentScene = PlayerPrefs.GetInt("LevelX");

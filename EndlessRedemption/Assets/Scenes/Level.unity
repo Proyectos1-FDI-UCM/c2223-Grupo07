@@ -901,6 +901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movementComponent: {fileID: 2001665858}
+  _suelo: {fileID: 0}
 --- !u!61 &64433512
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12803,7 +12804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11475408, guid: b046278bb9b6e104790392b566667ba5, type: 3}
       propertyPath: RainIntensity
-      value: 0.439
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11475408, guid: b046278bb9b6e104790392b566667ba5, type: 3}
       propertyPath: WindSoundVolumeModifier
@@ -16385,6 +16386,7 @@ MonoBehaviour:
   _player: {fileID: 0}
   _playerDeath: {fileID: 0}
   _hasDeath: 0
+  _soundManager: {fileID: 0}
 --- !u!4 &1072419575
 Transform:
   m_ObjectHideFlags: 0
@@ -43636,7 +43638,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 721b0c2452bcbee45a08cab43f7e70cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseMenuObject: {fileID: 0}
 --- !u!114 &2001665858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43813,6 +43814,7 @@ MonoBehaviour:
   _elapsedTime: 0
   _smokeTime: 3
   _coolDown: 5
+  _smokeAvailable: 0
   _smokePosition: {x: 0, y: 0, z: 0}
   _playerTarget: 1
 --- !u!114 &2001665865

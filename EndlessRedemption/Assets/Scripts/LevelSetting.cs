@@ -7,7 +7,7 @@ public class LevelSetting : MonoBehaviour
     [SerializeField]
     private int _currentLevel;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         PlayerPrefs.SetInt("LevelX", _currentLevel - 1);
     }

@@ -25,8 +25,7 @@ public class FinishLevel1 : MonoBehaviour
             Debug.Log("entro");
             PlayerPrefs.SetInt("FirstRound", 0);
             PlayerPrefs.SetInt("LevelX", _nextLevel);
-            PlayerPrefs.SetInt("CheckpointX", 0);
-            PlayerPrefs.SetString("Scene", GameManager.Instance.Scenes[GameManager.Instance.CurrentScene + 1]);
+            PlayerPrefs.SetInt("CheckpointX", 0);       
             StartCoroutine(SceneLoad(_nextLevel));
         
        

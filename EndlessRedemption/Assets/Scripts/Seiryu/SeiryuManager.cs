@@ -343,8 +343,7 @@ public class SeiryuManager : MonoBehaviour
                         directionBola.Normalize();
                         bolaDeFuego.GetComponent<Rigidbody2D>().velocity = directionBola * _bolaDeFuegoSpeed;
                         _elapsedAttack = 0;
-                        _soundManager.SeleccionAudio(17, 0.5f);
-                        _soundManager.SeleccionAudio(18, 0.5f);
+                        _soundManager.SeleccionAudio(17, 0.3f);                       
                     }
                     _elapsedAttackTime += Time.deltaTime;
                     if (_elapsedAttackTime > _basicTime) ExitState();

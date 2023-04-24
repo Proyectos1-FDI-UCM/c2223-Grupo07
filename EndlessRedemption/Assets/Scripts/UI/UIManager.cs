@@ -61,6 +61,12 @@ public class UIManager : MonoBehaviour
             }
             else SmokeBomb[i].SetActive(false);
         }
+        _vidas = (int)(GameManager.Instance._lifes);
+
+        for(int i = 0; i < _vidas; i++)
+        {
+            Vidas[i].SetActive(true);
+        }
     }
 
     public void ShowDashIcon()
@@ -73,14 +79,14 @@ public class UIManager : MonoBehaviour
         DoubleJumpIcon.SetActive(true);
     }
 
-    public void GanaVidas()
+    /*public void GanaVidas()
     {
         _vidas = (int)(GameManager.Instance._lifes - 1f);
         if (_vidas < Vidas.Length)
         {
             Vidas[_vidas].SetActive(true);
         }
-    }
+    }*/
 
     public void PierdeVidas()
     {

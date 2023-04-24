@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
         Application.targetFrameRate = 144;
         _player.SetActive(true);
         _maxLifes = PlayerPrefs.GetInt("Lifes");
+        _lifes = _maxLifes;
         _maxShurikens = PlayerPrefs.GetInt("Shurikens");
         PlayerManager.Instance.GetComponent<InputComponent>().enabled = true;
         _currentCheckpoint = PlayerPrefs.GetInt("CheckpointX");
@@ -68,7 +69,6 @@ public class GameManager : MonoBehaviour
         if(_lifes < _maxLifes)
         {
             _lifes++;
-            UIManager.Instance.GanaVidas();
             Debug.Log("VIDAS: " + _lifes);
             _soundManager.SeleccionAudio(10, 0.5f);
         }

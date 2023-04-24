@@ -21,7 +21,7 @@ public class UIClean : MonoBehaviour
     void Update()
     {
         _elapsed += Time.deltaTime;
-        if(_elapsed > _timeToClean && !_clean)
+        if((_elapsed > _timeToClean && !_clean) || Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump"))
         {
             PlayerPrefs.SetInt("Studio", 1);
             _clean = true;

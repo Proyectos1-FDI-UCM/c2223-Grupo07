@@ -26,6 +26,7 @@ public class MainMenu : MonoBehaviour
     public void UltraNightmareGame()//No recuperas vidas
     {
         PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("Lifes", 1);
         PlayerPrefs.SetInt("Shurikens", 10);
         PlayerPrefs.SetInt("Deaths", 0);
         SceneManager.LoadScene("CinematicaInicio");

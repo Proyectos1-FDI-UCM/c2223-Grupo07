@@ -20,10 +20,18 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetInt("Lifes", 3);
         PlayerPrefs.SetInt("Shurikens", 15);
         PlayerPrefs.SetInt("Deaths", 0);
-        SceneManager.LoadScene("CinematicaInicio"); //Cargar juego en modo pesadilla    
+        SceneManager.LoadScene("CinematicaInicio");    
+    }
+    public void NightmareGame1()//para que el pesadilla sea como el antiguo que no recuperas vidas pero empiezas con 3
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetString("Modo", "pesadilla");
+        PlayerPrefs.SetInt("Shurikens", 10);
+        PlayerPrefs.SetInt("Deaths", 0);
+        SceneManager.LoadScene("CinematicaInicio");
     }
 
-    public void UltraNightmareGame()//No recuperas vidas
+    public void UltraNightmareGame()//Una vida
     {
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("Lifes", 1);

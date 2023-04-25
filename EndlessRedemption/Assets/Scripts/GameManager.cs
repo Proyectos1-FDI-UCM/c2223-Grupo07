@@ -46,7 +46,9 @@ public class GameManager : MonoBehaviour
         Application.targetFrameRate = 144;
         _player.SetActive(true);
         _maxLifes = PlayerPrefs.GetInt("Lifes");
-        _lifes = _maxLifes;
+        if (PlayerPrefs.GetString("Modo") != "pesadilla")//para que el pesadilla sea como el antiguo que no recuperas vidas pero empiezas con 3
+            _lifes = _maxLifes;
+        else _lifes = 3;
         _maxShurikens = PlayerPrefs.GetInt("Shurikens");
         PlayerManager.Instance.GetComponent<InputComponent>().enabled = true;
         _currentCheckpoint = PlayerPrefs.GetInt("CheckpointX");
@@ -88,6 +90,7 @@ public class GameManager : MonoBehaviour
     }
     public void PickShuriken()
     {
+        if(_currenShurikens < _maxShurikens)
         _currenShurikens += 5;
     }
     public void ChangeState(GameStates newState)

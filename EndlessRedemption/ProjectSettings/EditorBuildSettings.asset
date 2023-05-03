@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuPrincipal.unity
     guid: dfb0ef477872bd34cba30c4e59b57c82
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Level1.unity
-    guid: 2c8f18a866fd45745bb472a7220084df
+    guid: 24f747515c2347045afb806bb7ea1cf7
   - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: d68bfdf1163130549b86b2a1a0187d52
@@ -24,12 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Level5.unity
     guid: 1d66172c73351c94a8b678c6d64240cf
   - enabled: 1
-    path: Assets/Scenes/CinematicaInicio.unity
-    guid: c2d4f4f4238d7164497583ad3b84f292
-  - enabled: 1
     path: Assets/Scenes/Level6.unity
     guid: da03ddb1bc02e0b4f93930219df22077
   - enabled: 1
     path: Assets/Scenes/Creditos Finales.unity
     guid: 4f513062b86b3aa40816925c70608ece
+  - enabled: 1
+    path: Assets/Scenes/CinematicaInicio.unity
+    guid: c2d4f4f4238d7164497583ad3b84f292
   m_configObjects: {}

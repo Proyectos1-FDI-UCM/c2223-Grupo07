@@ -78,6 +78,7 @@ public class CinematicaSuicidio : MonoBehaviour
             
             if (_elapsedTime > _timeMoving)
             {
+
                 _stopMoving= true;
                 _elapsedTime= 0;
             }
@@ -85,8 +86,14 @@ public class CinematicaSuicidio : MonoBehaviour
 
         if (_stopMoving && _elapsedTime > _timeStill2 && _elapsedTime < _timeFalling)
         {
-           _comentario2.SetActive(true);
-            if(!_noEmpujar) _myrb2D.AddForce(Vector2.right * _empujeFuerza, ForceMode2D.Impulse);
+           
+          
+            if (!_noEmpujar)
+            {
+   
+                _comentario2.SetActive(true);
+                _myrb2D.AddForce(Vector2.right * _empujeFuerza, ForceMode2D.Impulse);
+            }
             _noEmpujar = true; //Solo una vez
             transform.Rotate(0, 0, -_rotation);
         }

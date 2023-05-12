@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     private GameObject _playerDeath;
     private float _elapsedTime = 0f;
     private float _maxDeath = 3f;
+    private float _elapsedTime1 = 0;
     public bool _hasDeath = false;
     [SerializeField]
     private SoundManager _soundManager;
@@ -62,6 +63,7 @@ public class GameManager : MonoBehaviour
         _currentScene = PlayerPrefs.GetInt("LevelX");
         Debug.Log(PlayerPrefs.GetString("Scene"));
         _currentState = GameStates.GAME;
+
         
 
         if(_currentScene == 0 && _currentCheckpoint == 0) PlayerPrefs.SetInt("SmokeHits", 5);//Para tener la bomba de humo al principio;
@@ -106,9 +108,11 @@ public class GameManager : MonoBehaviour
         {
             
             case GameStates.GAME:
-                if(_lifes <= 0)
+
+                if (_lifes <= 0)
                 {
-                    if (!_hasDeath)
+                 
+                        if (!_hasDeath)
                     {
                         Instantiate(_playerDeath, PlayerManager.Instance.transform.position, Quaternion.identity);
                         PlayerManager.Instance.GetComponent<Renderer>().enabled = false;
@@ -121,6 +125,7 @@ public class GameManager : MonoBehaviour
                     {
                         ChangeState(GameStates.RESTART);
                     }
+                    
                 }           
                 break;
             case GameStates.PAUSE:

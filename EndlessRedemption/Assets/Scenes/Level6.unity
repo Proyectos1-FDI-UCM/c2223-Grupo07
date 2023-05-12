@@ -140449,7 +140449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 393467685711286758, guid: cd0abd01448b140438a6af81c3b2e41a, type: 3}
       propertyPath: _nextLevel
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 393467685711286759, guid: cd0abd01448b140438a6af81c3b2e41a, type: 3}
       propertyPath: m_Size.x

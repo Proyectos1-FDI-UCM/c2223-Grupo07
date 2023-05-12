@@ -86,7 +86,7 @@ public class MuerteSeiryu : MonoBehaviour
             {
                 PlayerPrefs.SetInt("Cine", 0);
                 PlayerPrefs.SetInt("LevelX", 6);
-                SceneManager.LoadScene(7);
+                SceneManager.LoadScene("Level6");
             }
 
             if (_death)

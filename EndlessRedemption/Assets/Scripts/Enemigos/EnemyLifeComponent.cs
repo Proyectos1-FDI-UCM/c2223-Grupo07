@@ -12,8 +12,10 @@ public class EnemyLifeComponent : MonoBehaviour
     private GameObject _deadExplosion;
     private GameObject aux;
     private float thrust = 3f;
+    private float _elapsed = 0;
     private int prob;
     private bool _taken;
+    private bool _once = false;
 
     // Start is called before the first frame update
     public void Muerte()
@@ -30,6 +32,7 @@ public class EnemyLifeComponent : MonoBehaviour
     {
         if (vidasEnemy <= 0)
         {
+            _elapsed += Time.deltaTime;
             if (!GetComponent<SeiryuManager>())
             {
                 if (prob == 0 && !_taken)
@@ -37,9 +40,25 @@ public class EnemyLifeComponent : MonoBehaviour
                     _taken = true;
                     aux = Instantiate(VidaPickUp, transform.position, Quaternion.identity);
                     aux.GetComponent<Rigidbody2D>().AddForce(transform.up * thrust, ForceMode2D.Impulse);
+
                 }
-                Instantiate(_deadExplosion, transform.position, Quaternion.identity);
-                Destroy(gameObject);
+                if(!_once)
+                {
+                
+                    Instantiate(_deadExplosion, transform.position, Quaternion.identity);
+                    Time.timeScale = 0.5f;
+                    SoundManager.Instance.SeleccionAudio(22, 0.4f);
+                    _once = true;
+                    GetComponent<SpriteRenderer>().enabled = false;
+                    GetComponent<Collider2D>().enabled = false;
+                }
+                if(_elapsed > 0.4f)
+                {
+                    Time.timeScale = 1f;
+                    Destroy(gameObject);
+                }
+          
+               
             }
             else this.enabled = false;
     

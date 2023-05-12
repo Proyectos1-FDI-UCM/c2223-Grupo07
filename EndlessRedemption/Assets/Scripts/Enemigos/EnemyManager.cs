@@ -85,11 +85,13 @@ public class EnemyManager : MonoBehaviour
         {
             if (Mathf.Abs(_playerTransform.position.x - transform.position.x) < _appearingDistance && !aparecido)
             {
+                
                 GetComponent<Renderer>().enabled = true;
                 Appearing();
                 _elapsedTime += Time.deltaTime;
                 if (_elapsedTime > _appearingTime)
                 {
+                    SoundManager.Instance.SeleccionAudio(20, 1f);
                     EndOfAppearing();
                     aparecido = true;
                 }

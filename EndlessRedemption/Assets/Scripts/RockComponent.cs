@@ -36,7 +36,12 @@ public class RockComponent : MonoBehaviour
         {
             Instantiate(_rock, transform.position, Quaternion.identity);
             _rigidbody2D.gravityScale = _velocity;
+            if(!_falling)
+            {
+                SoundManager.Instance.SeleccionAudio(21, 1f);
+            }
             _falling = true;
+
         }
     }
 }

@@ -42,6 +42,7 @@ public class MusicManager : MonoBehaviour
                     SelectSong(1, 0.1f);
                     break;
                 case 4:
+                    SelectSong(0, 0.3f);
                     SelectSong(1, 0.3f);
                     break;
                 default:
@@ -64,11 +65,11 @@ public class MusicManager : MonoBehaviour
                     SelectSong(0, 0.1f);
                     SelectSong(1, 3f);
                     break;
-                case 3:
-                    SelectSong(0, 0.3f);
+                case 3:                
                     SelectSong(1, 0.1f);
                     break;
                 case 4:
+                    SelectSong(0, 0.3f);
                     SelectSong(1, 0.3f);
                     break;
             }
